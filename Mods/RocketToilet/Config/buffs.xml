@@ -1,0 +1,46 @@
+<configs>
+	<append xpath="/buffs">
+		<buff name="buffToiletFire" hidden="true"> <!-- 0:idle | 1:walk | 2:run -->
+			<stack_type value="ignore"/>
+			<update_rate value=".1"/>
+	
+			<effect_group> <!-- transition to walk -->
+				<requirement name="CVarCompare" cvar="$RFood" operation="Equals" value=".002"/>
+	<!--			<requirement name="CVarCompare" cvar="$MovementStatus" target="self" operation="NotEquals" value="1"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$MovementStatus" operation="set" value="1"/> -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="true" transform_path="fire01"/>	
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="true" transform_path="fire02"/>	
+			</effect_group>
+			<effect_group> <!-- transition to run -->
+				<requirement name="CVarCompare" cvar="$RFood" operation="Equals" value=".0101"/>
+				<requirement name="CVarCompare" cvar="$MovementStatus" target="self" operation="NotEquals" value="2"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$MovementStatus" operation="set" value="2"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="true" transform_path="Bike\Toilet\fire01"/>	
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="true" transform_path="Bike\Toilet\fire02"/>	
+			</effect_group>
+			<effect_group> <!-- transition to idle -->
+				<requirement name="CVarCompare" cvar="$RFood" operation="Equals" value="1"/>
+<!--				<requirement name="CVarCompare" cvar="$MovementStatus" target="self" operation="NotEquals" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" cvar="$MovementStatus" operation="set" value="0"/> -->
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" transform_path="fire01"/>	
+				<triggered_effect trigger="onSelfBuffUpdate" action="SetTransformActive" active="false" transform_path="fire02"/>			
+			</effect_group>
+		</buff>
+		<buff name="buffToiletFirePlayer" hidden="true">
+			<stack_type value="replace"/>
+			<update_rate value=".1"/>
+			<effect_group>
+				<requirement name="CVarCompare" cvar="_vehicleFood" operation="Equals" value="0"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" range="1" cvar="$RFood" operation="set" value="1"/>
+			</effect_group>
+			<effect_group>
+				<requirement name="CVarCompare" cvar="_vehicleFood" operation="Equals" value="0.003"/>
+					<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" range="1" cvar="$RFood" operation="set" value=".002"/> 
+			</effect_group>
+			<effect_group>
+				<requirement name="CVarCompare" cvar="_vehicleFood" operation="Equals" value=".0101"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="ModifyCVar" target="selfAOE" range="1" cvar="$RFood" operation="set" value=".0101"/>
+			</effect_group>
+		</buff>
+	</append>
+</configs>

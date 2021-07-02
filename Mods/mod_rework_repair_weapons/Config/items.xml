@@ -1,0 +1,202 @@
+<survager>
+
+	<!--<remove xpath="/blocks/block[@name='cntStorageChest']" />
+	<remove xpath="/blocks/block[@name='cntSecureStorageChest']" />
+	<remove xpath="/blocks/block[@name='cntLootChestHero']" />
+	<remove xpath="/blocks/block[@name='cntLootChestHeroInsecure']" />-->
+	
+	<!-- Пистолеты -->
+	<append xpath="/items/item[@name='gunHandgunT1PistolParts']">
+		<property name="RepairTime" value="10"/>
+		<property name="RepairAmount" value="32000"/>
+		<!--<property name="Group" value="Resources"/>-->
+	</append>
+	
+		<!-- Пистолет -->
+	<set xpath="/items/item[@name='gunHandgunT1Pistol']/property[@name='RepairTools']/@value">gunHandgunT1PistolParts</set>
+	<set xpath="/items/item[@name='gunHandgunT1Pistol']/effect_group[@name='gunHandgunT1Pistol']/passive_effect[@name='DegradationPerUse'][@operation='base_set']/@value">0.4</set>
+		
+		<!-- SMG -->
+	<set xpath="/items/item[@name='gunHandgunT3SMG5']/property[@name='RepairTools']/@value">gunHandgunT1PistolParts</set>
+	<set xpath="/items/item[@name='gunHandgunT3SMG5']/effect_group[@name='gunHandgunT3SMG5']/passive_effect[@name='DegradationPerUse'][@operation='base_set']/@value">0.4</set>
+	
+		<!-- Magnum 44 -->
+	<set xpath="/items/item[@name='gunHandgunT2Magnum44']/property[@name='RepairTools']/@value">gunHandgunT1PistolParts</set>
+	<set xpath="/items/item[@name='gunHandgunT2Magnum44']/effect_group[@name='gunHandgunT2Magnum44']/passive_effect[@name='DegradationPerUse'][@operation='base_set']/@value">0.4</set>
+	
+		<!-- Desert Vulture -->
+	<set xpath="/items/item[@name='gunHandgunT3DesertVulture']/property[@name='RepairTools']/@value">gunHandgunT1PistolParts</set>
+	<set xpath="/items/item[@name='gunHandgunT3DesertVulture']/effect_group[@name='gunHandgunT3DesertVulture']/passive_effect[@name='DegradationPerUse'][@operation='base_set']/@value">0.4</set>
+	
+	
+	<!-- Дробовики -->
+	<append xpath="/items/item[@name='gunShotgunT1DoubleBarrelParts']">
+		<property name="RepairTime" value="10"/>
+		<property name="RepairAmount" value="32000"/>
+		<!--<property name="Group" value="Resources"/>-->
+	</append>
+	
+		<!-- Двустволка -->
+	<set xpath="/items/item[@name='gunShotgunT1DoubleBarrel']/property[@name='RepairTools']/@value">gunShotgunT1DoubleBarrelParts</set>
+	<set xpath="/items/item[@name='gunShotgunT1DoubleBarrel']/effect_group[@name='gunShotgunT1DoubleBarrel']/passive_effect[@name='DegradationPerUse'][@operation='base_set']/@value">0.4</set>
+	
+		<!-- Помповый дробовик -->
+	<set xpath="/items/item[@name='gunShotgunT2PumpShotgun']/property[@name='RepairTools']/@value">gunShotgunT1DoubleBarrelParts</set>
+	<set xpath="/items/item[@name='gunShotgunT2PumpShotgun']/effect_group[@name='gunShotgunT2PumpShotgun']/passive_effect[@name='DegradationPerUse'][@operation='base_set']/@value">0.4</set>
+	
+		<!-- Автоматический дробовик -->
+	<set xpath="/items/item[@name='gunShotgunT3AutoShotgun']/property[@name='RepairTools']/@value">gunShotgunT1DoubleBarrelParts</set>
+	<set xpath="/items/item[@name='gunShotgunT3AutoShotgun']/effect_group[@name='gunShotgunT3AutoShotgun']/passive_effect[@name='DegradationPerUse'][@operation='base_set']/@value">0.4</set>
+	
+	
+	<!-- Винтовки -->
+	<append xpath="/items/item[@name='gunRifleT1HuntingRifleParts']">
+		<property name="RepairTime" value="10"/>
+		<property name="RepairAmount" value="32000"/>
+		<!--<property name="Group" value="Resources"/>-->
+	</append>
+	
+		<!-- Охотничья винтовка -->
+	<set xpath="/items/item[@name='gunRifleT1HuntingRifle']/property[@name='RepairTools']/@value">gunRifleT1HuntingRifleParts</set>
+	<set xpath="/items/item[@name='gunRifleT1HuntingRifle']/effect_group[@name='gunRifleT1HuntingRifle']/passive_effect[@name='DegradationPerUse'][@operation='base_set']/@value">0.4</set>
+	
+		<!-- Снайперка MR10 -->
+	<set xpath="/items/item[@name='gunRifleT2MarksmanRifle']/property[@name='RepairTools']/@value">gunRifleT1HuntingRifleParts</set>
+	<set xpath="/items/item[@name='gunRifleT2MarksmanRifle']/effect_group[@name='gunRifleT2MarksmanRifle']/passive_effect[@name='DegradationPerUse'][@operation='base_set']/@value">0.4</set>
+	
+		<!-- Снайперка СВД -->
+	<set xpath="/items/item[@name='gunRifleT3SniperRifle']/property[@name='RepairTools']/@value">gunRifleT1HuntingRifleParts</set>
+	<set xpath="/items/item[@name='gunRifleT3SniperRifle']/effect_group[@name='gunRifleT3SniperRifle']/passive_effect[@name='DegradationPerUse'][@operation='base_set']/@value">0.4</set>
+	
+	
+	<!-- Автоматы -->
+	<append xpath="/items/item[@name='gunMGT1AK47Parts']">
+		<property name="RepairTime" value="10"/>
+		<property name="RepairAmount" value="32000"/>
+		<!--<property name="Group" value="Resources"/>-->
+	</append>
+	
+		<!-- Калашмат -->
+	<set xpath="/items/item[@name='gunMGT1AK47']/property[@name='RepairTools']/@value">gunMGT1AK47Parts</set>
+	<set xpath="/items/item[@name='gunMGT1AK47']/effect_group[@name='gunMGT1AK47']/passive_effect[@name='DegradationPerUse'][@operation='base_set']/@value">0.4</set>
+	
+		<!-- Tactical AR -->
+	<set xpath="/items/item[@name='gunMGT2TacticalAR']/property[@name='RepairTools']/@value">gunMGT1AK47Parts</set>
+	<set xpath="/items/item[@name='gunMGT2TacticalAR']/effect_group[@name='gunMGT2TacticalAR']/passive_effect[@name='DegradationPerUse'][@operation='base_set']/@value">0.4</set>
+	
+		<!-- M60 -->
+	<set xpath="/items/item[@name='gunMGT3M60']/property[@name='RepairTools']/@value">gunMGT1AK47Parts</set>
+	<set xpath="/items/item[@name='gunMGT3M60']/effect_group[@name='gunMGT3M60']/passive_effect[@name='DegradationPerUse'][@operation='base_set']/@value">0.4</set>
+	
+	
+	<!-- РПГ -->
+	<append xpath="/items/item[@name='gunExplosivesT3RocketLauncherParts']">
+		<property name="RepairTime" value="10"/>
+		<property name="RepairAmount" value="32000"/>
+		<!--<property name="Group" value="Resources"/>-->
+	</append>
+	
+	<set xpath="/items/item[@name='gunExplosivesT3RocketLauncher']/property[@name='RepairTools']/@value">gunExplosivesT3RocketLauncherParts</set>
+	<set xpath="/items/item[@name='gunExplosivesT3RocketLauncher']/effect_group[@name='gunExplosivesT3RocketLauncher']/passive_effect[@name='DegradationPerUse'][@operation='base_set']/@value">0.4</set>
+	
+	
+	<!-- Луки, Арбалеты -->
+	<append xpath="/items/item[@name='gunBowT1WoodenBowParts']">
+		<property name="RepairTime" value="10"/>
+		<property name="RepairAmount" value="32000"/>
+		<!--<property name="Group" value="Resources"/>-->
+	</append>
+	
+		<!-- Деревянный лук -->
+	<set xpath="/items/item[@name='gunBowT1WoodenBow']/property[@name='RepairTools']/@value">gunBowT1WoodenBowParts</set>
+	<set xpath="/items/item[@name='gunBowT1WoodenBow']/effect_group[@name='gunBowT1WoodenBow']/passive_effect[@name='DegradationPerUse'][@operation='base_set']/@value">0.4</set>
+	
+		<!-- Составной лук -->
+	<set xpath="/items/item[@name='gunBowT3CompoundBow']/property[@name='RepairTools']/@value">gunBowT1WoodenBowParts</set>
+	<set xpath="/items/item[@name='gunBowT3CompoundBow']/effect_group[@name='gunBowT3CompoundBow']/passive_effect[@name='DegradationPerUse'][@operation='base_set']/@value">0.4</set>
+	
+		<!-- Железный Арбалет -->
+	<set xpath="/items/item[@name='gunBowT1IronCrossbow']/property[@name='RepairTools']/@value">gunBowT1WoodenBowParts</set>
+	<set xpath="/items/item[@name='gunBowT1IronCrossbow']/effect_group[@name='gunBowT1IronCrossbow']/passive_effect[@name='DegradationPerUse'][@operation='base_set']/@value">0.4</set>
+	
+		<!-- Составной Арбалет -->
+	<set xpath="/items/item[@name='gunBowT3CompoundCrossbow']/property[@name='RepairTools']/@value">gunBowT1WoodenBowParts</set>
+	<set xpath="/items/item[@name='gunBowT3CompoundCrossbow']/effect_group[@name='gunBowT3CompoundCrossbow']/passive_effect[@name='DegradationPerUse'][@operation='base_set']/@value">0.4</set>
+	
+	<!-- Бензопила, Бур -->
+	<append xpath="/items/item[@name='meleeToolAxeT3ChainsawParts']">
+		<property name="RepairTime" value="10"/>
+		<property name="RepairAmount" value="32000"/>
+		<!--<property name="Group" value="Resources"/>-->
+	</append>
+	
+		<!-- Бур -->
+	<set xpath="/items/item[@name='meleeToolPickT3Auger']/property[@name='RepairTools']/@value">meleeToolAxeT3ChainsawParts</set>
+	<set xpath="/items/item[@name='meleeToolPickT3Auger']/effect_group[@name='meleeToolPickT3Auger']/passive_effect[@name='DegradationPerUse'][@operation='base_set']/@value">0.3</set>
+	
+		<!-- Бензопила -->
+	<set xpath="/items/item[@name='meleeToolAxeT3Chainsaw']/property[@name='RepairTools']/@value">meleeToolAxeT3ChainsawParts</set>
+	<set xpath="/items/item[@name='meleeToolAxeT3Chainsaw']/effect_group[@name='meleeToolAxeT3Chainsaw']/passive_effect[@name='DegradationPerUse'][@operation='base_set']/@value">0.3</set>
+	
+	
+	<!-- Гайковерт -->
+	<!--
+	<append xpath="/items/item[@name='meleeToolSalvageParts']">
+		<property name="RepairTime" value="10"/>
+		<property name="RepairAmount" value="32000"/>
+	</append>
+	-->
+	
+	<set xpath="/items/item[@name='meleeToolSalvageT3ImpactDriver']/property[@name='RepairTools']/@value">meleeToolAxeT3ChainsawParts</set>
+	<set xpath="/items/item[@name='meleeToolSalvageT3ImpactDriver']/effect_group[@name='meleeToolSalvageT3ImpactDriver']/passive_effect[@name='DegradationPerUse'][@operation='base_set']/@value">0.3</set>
+	
+	
+	<!-- Стальная Дубина -->
+	<append xpath="/items/item[@name='meleeWpnClubT3SteelClubParts']">
+		<property name="RepairTime" value="10"/>
+		<property name="RepairAmount" value="32000"/>
+		<!--<property name="Group" value="Resources"/>-->
+	</append>
+	
+	<set xpath="/items/item[@name='meleeWpnClubT3SteelClub']/property[@name='RepairTools']/@value">meleeWpnClubT3SteelClubParts</set>
+	<set xpath="/items/item[@name='meleeWpnClubT3SteelClub']/effect_group[@name='meleeWpnClubT3SteelClub']/passive_effect[@name='DegradationPerUse'][@operation='base_set']/@value">0.4</set>
+	
+	
+	<!-- Стальная кувалда -->
+	<append xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammerParts']">
+		<property name="RepairTime" value="10"/>
+		<property name="RepairAmount" value="32000"/>
+		<!--<property name="Group" value="Resources"/>-->
+	</append>
+	
+	<set xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']/property[@name='RepairTools']/@value">meleeWpnSledgeT3SteelSledgehammerParts</set>
+	<set xpath="/items/item[@name='meleeWpnSledgeT3SteelSledgehammer']/effect_group[@name='meleeWpnSledgeT3SteelSledgehammer']/passive_effect[@name='DegradationPerUse'][@operation='base_set']/@value">0.4</set>
+	
+	<!-- Шок дубинка -->
+	<append xpath="/items/item[@name='meleeWpnBatonT2StunBatonParts']">
+		<property name="RepairTime" value="10"/>
+		<property name="RepairAmount" value="32000"/>
+		<!--<property name="Group" value="Resources"/>-->
+	</append>
+	
+	<set xpath="/items/item[@name='meleeWpnBatonT2StunBaton']/property[@name='RepairTools']/@value">meleeWpnBatonT2StunBatonParts</set>
+	<set xpath="/items/item[@name='meleeWpnBatonT2StunBaton']/effect_group[@name='meleeWpnBatonT2StunBaton']/passive_effect[@name='DegradationMax'][@operation='base_set']/@value">1000,2400</set>
+	<set xpath="/items/item[@name='meleeWpnBatonT2StunBaton']/effect_group[@name='meleeWpnBatonT2StunBaton']/passive_effect[@name='DegradationPerUse'][@operation='base_set']/@value">2</set>
+	
+	<!-- Мусорная пушка и Мусорный Молот -->
+	<append xpath="/items/item[@name='gunBotRoboticsParts']">
+		<property name="RepairTime" value="10"/>
+		<property name="RepairAmount" value="32000"/>
+	</append>
+	
+		<!-- Мусорная пушка -->
+	<set xpath="/items/item[@name='gunBotT2JunkTurret']/property[@name='RepairTools']/@value">gunBotRoboticsParts</set>
+	<set xpath="/items/item[@name='gunBotT2JunkTurret']/effect_group[@name='gunBotT2JunkTurret']/passive_effect[@name='DegradationMax'][@operation='base_set']/@value">1000,2400</set>
+	<set xpath="/items/item[@name='gunBotT2JunkTurret']/effect_group[@name='gunBotT2JunkTurret']/passive_effect[@name='DegradationPerUse'][@operation='base_set']/@value">2</set>
+	
+		<!-- Мусорный Молот -->
+	<set xpath="/items/item[@name='gunBotT1JunkSledge']/property[@name='RepairTools']/@value">gunBotRoboticsParts</set>
+	<set xpath="/items/item[@name='gunBotT1JunkSledge']/effect_group[@name='gunBotT1JunkSledge']/passive_effect[@name='DegradationMax'][@operation='base_set']/@value">1000,2400</set>
+	<set xpath="/items/item[@name='gunBotT1JunkSledge']/effect_group[@name='gunBotT1JunkSledge']/passive_effect[@name='DegradationPerUse'][@operation='base_set']/@value">2</set>
+	
+</survager>

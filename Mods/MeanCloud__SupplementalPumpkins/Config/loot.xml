@@ -1,0 +1,21 @@
+<MeanCloud_Pumpkins>
+
+  <!-- DOUGH: Removing as this line gives a warning
+  <remove xpath="/Ignore_Warnings_In_This_Modelet[@modname='MeanCloud_Pumpkins'][@filename='\Config\loot.xml']" />
+  -->
+
+  <!-- DOUGH: Changed farmingCookingRecipes lootgroup to farmingCookingRecipesT0
+  NOTE: May be able to remove this file as vnilla a19.2 is identical, in function. ? Not sure yet.
+  -->
+  <remove xpath="/lootcontainers/lootgroup[@name='farmingCookingRecipesT0']/item[@name='plantedPumpkin1Schematic']" />
+  <remove xpath="/lootcontainers/lootgroup[@name='seeds']/item[@name='plantedPumpkin1']" />
+
+  <append xpath="/lootcontainers/lootgroup[@name='farmingCookingRecipesT0']">
+    <item name="plantedPumpkin1Schematic"/>
+  </append>
+
+  <append xpath="/lootcontainers/lootgroup[@name='seeds']">
+    <item name="plantedPumpkin1"/>
+  </append>
+
+</MeanCloud_Pumpkins>

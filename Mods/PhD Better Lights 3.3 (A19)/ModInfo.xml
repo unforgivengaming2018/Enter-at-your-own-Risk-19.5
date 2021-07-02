@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<xml>
+	<ModInfo>
+		<Name value="PhD Better Lights" />
+		<Description value="Makes 30 of the Dev Lights available to the player." />
+		<Author value="PhDGaming" />
+		<Version value="3.3" />
+		<Website value="https://www.patreon.com/PhDGaming" />
+	</ModInfo>
+</xml>

@@ -1,0 +1,71 @@
+<configs>
+	
+	<append xpath="/buffs">	
+
+		<!--buff name="GuardsimDeco" hidden="true">
+			<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Other/Items?Weapons/Melee/TaserBaton/TaserBatonPrefab.prefab" local_offset="-.1,-.05,-.05" local_rotation="0,0,0" parent_transform="RightHand"/>
+			<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_electric_shock_small" local_offset="-.1,-.05,-.05" local_rotation="0,0,0" parent_transform="RightHand"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Other/Items?Weapons/Melee/TaserBaton/TaserBatonPrefab.prefab" local_offset="-.1,0,0" local_rotation="180,0,0" parent_transform="LeftHand"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="p_electric_shock_small" local_offset="-.1,0,0" local_rotation="180,0,0" parent_transform="LeftHand"/>
+			</effect_group>
+		</buff-->
+		
+		<buff name="GuardlionDeco" hidden="true">
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/OutdoorDecor/cowSkullPrefab" local_offset="0,0.1,0.1" local_rotation="30,0,0" parent_transform="Head"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="torch02_firePrefab" local_offset=".1,0.05,0.2" local_rotation="90,0,180" parent_transform="Head"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="particleeffects/torch02_firePrefab" local_offset="-.1,0.05,0.2" local_rotation="90,0,180" parent_transform="Head"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Other/Items?Weapons/Melee/ClubIron/ClubIronPrefab.prefab" local_offset="-0.05,0.2,-0.25" local_rotation="0,0,180" parent_transform="Head"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Animals/Vulture/animalVultureStandard" local_offset="0,0,0" local_rotation="90,0,0" parent_transform="Spine"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Entities/Zombies?Zombies/zombieStandardSpiderRagdoll.prefab" local_offset="0,0.15,-0.2" local_rotation="0,0,0" parent_transform="Spine2"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Other/Items?Weapons/Melee/ClubIron/ClubIronPrefab.prefab" local_offset="0.13,0,0.4" local_rotation="0,90,-180" parent_transform="Spine3"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Plants/pumpkinJackoLanternPrefab" local_offset="0,0.54,0.33" local_rotation="30,0,0" parent_transform="Spine"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="GuardbearDeco" hidden="true">
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/OutdoorDecor/cowSkullPrefab" local_offset="0,0.5,0.1" local_rotation="30,0,0" parent_transform="Head"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="torch02_firePrefab" local_offset=".2,0.1,-0.8" local_rotation="180,0,180" parent_transform="Head"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="particleeffects/torch02_firePrefab" local_offset="-.2,0.1,-0.8" local_rotation="180,0,180" parent_transform="Head"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Animals/Vulture/animalVultureStandard" local_offset="0,0.3,-1.2" local_rotation="90,0,0" parent_transform="Spine"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Animals/Vulture/animalVultureStandard" local_offset="0,0.2,-1.1" local_rotation="90,0,0" parent_transform="Spine1"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Entities/Zombies?Zombies/zombieStandardSpiderRagdoll.prefab" local_offset="0,-0.2,0" local_rotation="220,0,0" parent_transform="Spine2"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/OutdoorDecor/cowSkullPrefab" local_offset="0,-1,-0.65" local_rotation="220,0,0" parent_transform="Spine3"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="GuardWolfDeco" hidden="true">
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/OutdoorDecor/cowSkullPrefab" local_offset="0,0.3,0.2" local_rotation="30,0,0" parent_transform="Head"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="torch02_firePrefab" local_offset=".05,0.05,0.5" local_rotation="90,0,180" parent_transform="Head"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="particleeffects/torch02_firePrefab" local_offset="-.05,0.05,0.5" local_rotation="90,0,180" parent_transform="Head"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="Entities/Animals/Vulture/animalVultureStandard" local_offset="0,0,-0.4" local_rotation="90,0,0" parent_transform="Spine"/>
+			</effect_group>
+		</buff>
+		
+		<buff name="GuardBoarDeco" hidden="true">
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="Entities/OutdoorDecor/cowSkullPrefab" local_offset="0,0.3,0.2" local_rotation="30,0,0" parent_transform="Head"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachParticleEffectToEntity" particle="torch02_firePrefab" local_offset=".05,0.05,0.5" local_rotation="90,0,180" parent_transform="Head"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="particleeffects/torch02_firePrefab" local_offset="-.05,0.05,0.5" local_rotation="90,0,180" parent_transform="Head"/>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="Entities/Animals/Vulture/animalVultureStandard" local_offset="0,0,-0.4" local_rotation="90,0,0" parent_transform="Spine"/>
+			</effect_group>
+		</buff>
+		
+		<!--buff name="GuardPsyrenDeco" hidden="true">
+			<effect_group>
+			<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Other/Items?Weapons/Melee/Axe/steelAxePrefab.prefab" local_offset="-.1,-.05,-.05" local_rotation="0,0,0" parent_transform="RightHand"/>
+				<triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Other/Items?Weapons/Melee/Axe/steelAxePrefab.prefab" local_offset="-.1,0,0" local_rotation="180,0,0" parent_transform="LeftHand"/>
+			</effect_group>
+		</buff-->
+		
+		<buff name="GuardDogDeco" hidden="true">
+			<effect_group>
+				<triggered_effect trigger="onSelfBuffUpdate" action="AttachPrefabToEntity" prefab="Entities/OutdoorDecor/cowSkullPrefab" local_offset="0,0.3,0.2" local_rotation="30,0,0" parent_transform="Head"/>
+			</effect_group>
+		</buff>		
+		
+	</append>
+</configs>

@@ -1,0 +1,71 @@
+<configs>
+	
+<append xpath="/recipes">
+	
+<recipe name="resourceElectricParts" count="1" craft_time = "10" craft_area="workbench" tags="perkAdvancedEngineering">
+	<ingredient name="resourceForgedSteel" count="5"/>
+	<ingredient name="resourcePotassiumNitratePowder" count="5"/>
+	<ingredient name="resourceScrapPolymers" count="20"/>
+	<ingredient name="resourceOil" count="5"/>
+</recipe>
+
+<recipe name="resourceMechanicalParts" count="1" craft_time = "10" craft_area="workbench" tags="perkAdvancedEngineering">
+	<ingredient name="resourceForgedSteel" count="5"/>
+	<ingredient name="resourceScrapPolymers" count="20"/>
+	<ingredient name="resourceOil" count="5"/>
+</recipe>
+
+<recipe name="resourceAcid" count="1" craft_time = "40" craft_area="chemistryStation" tags="chemStationCrafting">
+	<ingredient name="resourcePotassiumNitratePowder" count="15"/>
+	<ingredient name="drinkJarPureMineralWater" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="5"/>
+	<ingredient name="resourceScrapLead" count="5"/>
+</recipe>
+
+<recipe name="resourceAcid" count="2" craft_time = "40" craft_area="chemistryStation" tags="perkAdvancedEngineering">
+	<ingredient name="carBattery" count="1"/>
+	<ingredient name="resourceScrapPolymers" count="64"/>
+	
+</recipe>
+
+<recipe name="smallEngine" count="1" craft_time = "120" craft_area="workbench" tags="perkAdvancedEngineering">
+	<ingredient name="resourceForgedSteel" count="100"/>
+	<ingredient name="resourceMechanicalParts" count="40"/>
+	<ingredient name="resourceElectricParts" count="10"/>
+	<ingredient name="resourceScrapPolymers" count="100"/>
+	<ingredient name="resourceOil" count="25"/>
+</recipe>
+
+<recipe name="drugPainkillers" count="10" craft_time = "120" craft_area="chemistryStation" tags="chemStationCrafting">
+	<ingredient name="resourceAcid" count="3"/>
+	<ingredient name="resourceScrapLead" count="50"/>
+	<ingredient name="resourceAnimalFat" count="2"/>
+	<ingredient name="resourcePotassiumNitratePowder" count="15"/>
+
+</recipe>
+
+<recipe name="foodRottingFlesh" count="1" craft_time = "3" tags="chemStationCrafting">
+	<ingredient name="foodRawMeat" count="1"/>
+	<ingredient name="resourceOil" count="1"/>
+</recipe>
+
+<recipe name="foodRottingFlesh" count="5" craft_time = "5" craft_area="chemistryStation" tags="chemStationCrafting">
+	<ingredient name="foodRawMeat" count="5"/>
+	<ingredient name="resourceOil" count="1"/>
+</recipe>
+
+<recipe name="toolBeaker" count="1" craft_time = "30" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
+	<ingredient name="unit_glass" count="100"/>
+	<ingredient name="unit_clay" count="15"/>
+	<ingredient name="resourceOil" count="1"/>
+</recipe>
+<recipe name="resourceSpring" count="3" craft_time = "30" material_based="true" craft_area="forge" craft_tool="toolForgeCrucible" tags="perkAdvancedEngineering">
+	<ingredient name="resourceForgedSteel" count="10"/>
+	<ingredient name="resourceMechanicalParts" count="3"/>
+	<ingredient name="resourceOil" count="5"/>
+</recipe>
+
+
+
+</append>
+</configs>

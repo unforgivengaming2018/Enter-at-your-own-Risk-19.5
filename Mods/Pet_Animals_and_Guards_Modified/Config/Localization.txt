@@ -1,0 +1,187 @@
+Key,File,Type,UsedInMainMenu,NoTranslate,english
+
+PetBoar,blocks,block,,,Pet Boar,,,,,
+PetRabbit,blocks,block,,,Pet Rabbit,,,,,
+PetStag,blocks,block,,,Pet Stag,,,,,
+PetChicken,blocks,block,,,Pet Chicken,,,,,
+PetPig,blocks,block,,,Pet Pig,,,,,
+PetBear,blocks,block,,,Pet Bear,,,,,
+PetWolf,blocks,block,,,Pet Wolf,,,,,
+PetCoyote,blocks,block,,,Pet Coyote,,,,,
+PetDoe,blocks,block,,,Pet Doe,,,,,
+
+GenericPetDesc,items,,,,"This is a Pet Animal, place down to keep as a pet or harvest for meat. Best to keep in a high pen of 3 or more blocks or they will escape."
+
+GuardHellBear,blocks,block,,,Hell Bear (Guard),,,,,
+GuardHellBoar,blocks,block,,,Hell Boar (Guard),,,,,
+GuardHellWolf,blocks,block,,,Hell Wolf (Guard),,,,,
+GuardHellLion,blocks,block,,,Hell Lion (Guard),,,,,
+GuardRabbit,blocks,block,,,Rabbit (Guard),,,,,
+GuardDogLead,blocks,block,,,Dog (Guard Lead),,,,,
+GuardDogCoal,blocks,block,,,Dog (Guard Coal),,,,,
+GuardDogNitrate,blocks,block,,,Dog (Guard Nitrate),,,,,
+GuardDogShale,blocks,block,,,Dog (Guard Shale),,,,,
+
+TurretGuardSim,blocks,block,,,Sim (Turret Guard),,,,,
+GuardTurretLizzy,blocks,block,,,Lizzy (Turret Guard),,,,,
+GuardTurretDre,blocks,block,,,Dre (Turret Guard),,,,,
+GuardTurretFox,blocks,block,,,Fox (Turret Guard),,,,,
+GuardTurretBandit,blocks,block,,,Bandit (Turret Guard),,,,,
+GuardTurretBanditFoxy,blocks,block,,,Bandit Foxy (Turret Guard),,,,,
+TurretGuardLeader,blocks,block,,,Leader (Turret Guard),,,,,
+TurretGuardCompoundBowMan,blocks,block,,,Bow Man (Turret Guard),,,,,
+
+GuardSimAlastair,blocks,block,,,Sim Alastair (Guard),,,,,
+GuardLizzy,blocks,block,,,Lizzy (Guard),,,,,
+GuardPsyren,blocks,block,,,Psyren (Guard),,,,,
+GuardZeus,blocks,block,,,Zeus (Guard),,,,,
+
+GenericGuardDesc,items,,,,"This is a Guard, place down and it will stand guard until a zombie is in range at which point it will go into attack mode."
+
+ChickenFeed,items,,,,Chicken Feed,,,,,
+ChickenFeedDesc,items,,,,"Use the Chicken Feed with right mouse click on the Chicken Coop to feed the chickens."
+
+RabbitFeed,items,,,,Rabbit Feed,,,,,
+RabbitFeedDesc,items,,,,"Use the Rabbit Feed with right mouse click on the Rabbit Cage Trap to set the trap and attract a rabbit."
+
+ChickenCoop-Needs-ChickenFeed,blocks,block,,,Chicken Coop (Needs Chicken Feed),,,,,
+ChickenCoopDesc,items,,,,"Feed the chickens in the coop with Chicken Feed and over time they will produce feathers, eggs, and periodically another chicken."
+ChickenCoopNesting,blocks,block,,,Chicken Coop Nesting Stage,,,,,
+ChickenCoopHatched,blocks,block,,,Chicken Coop Hatched and Waiting,,,,,
+
+RabbitCageTrap-Needs-RabbitFeed,blocks,block,,,Rabbit Cage Trap (Needs Rabbit Feed),,,,,
+RabbitCageTrapDesc,items,,,,"Put on the ground, bate it with Rabbit Feed, and wait."
+RabbitCageTrap-Set,blocks,block,,,Rabbit Cage Trap Baited and Set,,,,,
+RabbitCageTrap-Sprung,blocks,block,,,Rabbit Cage Trap Sprung and Waiting,,,,,
+
+Chicken_Hatched,items,Quest - Challenge,,,"Hatched Chicken"
+Chicken_Hatched_Desc,items,Quest - Challenge,,,"You have a Pet Chicken."
+Chicken,Quest,Quest Info,,,"Accept to Release the Hatched Chicken for Placement."
+Get_Chicken,Quest,Quest Info,,,":)"
+
+Rabbit_trap,items,Quest - Challenge,,,"Trapped Rabbit"
+Rabbit_trap_Desc,items,Quest - Challenge,,,"You have a Pet Rabbit."
+Rabbit,Quest,Quest Info,,,"Accept to Release the Trapped Rabbit for Placement."
+Get_Rabbit,Quest,Quest Info,,,":)"
+
+PetBoar1,items,Quest - Challenge,,,"Pet Boar"
+PetBoar1Desc,items,Quest - Challenge,,,"You have a Pet Boar."
+Boar,Quest,Quest Info,,,"Accept to Release the Pet Boar for Placement."
+Get_PetBoar,Quest,Quest Info,,,":)"
+
+PetStag1,items,Quest - Challenge,,,"Pet Stag"
+PetStag1Desc,items,Quest - Challenge,,,"You have a Pet Stag."
+Stag,Quest,Quest Info,,,"Accept to Release the Pet Stag for Placement."
+Get_PetStag,Quest,Quest Info,,,":)"
+
+PetPig1,items,Quest - Challenge,,,"Pet Pig"
+PetPig1Desc,items,Quest - Challenge,,,"You have a Pet Pig."
+Pig,Quest,Quest Info,,,"Accept to Release the Pet Pig for Placement."
+Get_PetPig,Quest,Quest Info,,,":)"
+
+PetBear1,items,Quest - Challenge,,,"Pet Bear"
+PetBear1Desc,items,Quest - Challenge,,,"You have a Pet Bear."
+Bear,Quest,Quest Info,,,"Accept to Release the Pet Bear for Placement."
+Get_PetBear,Quest,Quest Info,,,":)"
+
+PetWolf1,items,Quest - Challenge,,,"Pet Wolf"
+PetWolf1Desc,items,Quest - Challenge,,,"You have a Pet Wolf."
+Wolf,Quest,Quest Info,,,"Accept to Release the Pet Wolf for Placement."
+Get_PetWolf,Quest,Quest Info,,,":)"
+
+PetCoyote1,items,Quest - Challenge,,,"Pet Coyote"
+PetCoyote1Desc,items,Quest - Challenge,,,"You have a Pet Coyote."
+Coyote,Quest,Quest Info,,,"Accept to Release the Pet Coyote for Placement."
+Get_PetCoyote,Quest,Quest Info,,,":)"
+
+PetDoe1,items,Quest - Challenge,,,"Pet Doe"
+PetDoe1Desc,items,Quest - Challenge,,,"You have a Pet Doe."
+Doe,Quest,Quest Info,,,"Accept to Release the Pet Doe for Placement."
+Get_PetDoe,Quest,Quest Info,,,":)"
+
+GuardRabbit1,items,Quest - Challenge,,,"Guard Rabbit"
+GuardRabbit1Desc,items,Quest - Challenge,,,"You have a Guard Rabbit."
+GuardR,Quest,Quest Info,,,"Accept to Release the Guard Rabbit for Placement."
+Get_Guard,Quest,Quest Info,,,":)"
+
+GuardHellLion1,items,Quest - Challenge,,,"Guard Hell Lion"
+GuardHellLion1Desc,items,Quest - Challenge,,,"You have a Guard Hell Lion."
+GuardHLion,Quest,Quest Info,,,"Accept to Release Guard Hell Lion for Placement."
+Get_Guard,Quest,Quest Info,,,":)"
+
+GuardHellWolf1,items,Quest - Challenge,,,"Guard Hell Wolf"
+GuardHellWolf1Desc,items,Quest - Challenge,,,"You have a Guard Hell Wolf."
+GuardHWolf,Quest,Quest Info,,,"Accept to Release the Guard Hell Wolf for Placement."
+Get_Guard,Quest,Quest Info,,,":)"
+
+GuardHellBoar1,items,Quest - Challenge,,,"Guard Hell Boar"
+GuardHellBoar1Desc,items,Quest - Challenge,,,"You have a Guard Hell Boar."
+GuardHBoar,Quest,Quest Info,,,"Accept to Release the Guard Hell Boar for Placement."
+Get_Guard,Quest,Quest Info,,,":)"
+
+GuardHellBear1,items,Quest - Challenge,,,"Guard Hell Bear"
+GuardHellBear1Desc,items,Quest - Challenge,,,"You have a Guard Hell Bear."
+GuardHBear,Quest,Quest Info,,,"Accept to Release the Guard Hell Bear for Placement."
+Get_Guard,Quest,Quest Info,,,":)"
+
+GuardDogLead1,items,Quest - Challenge,,,"Guard Lead Dog"
+GuardLeadDog1Desc,items,Quest - Challenge,,,"You have a Guard Lead Dog."
+GuardDLead,Quest,Quest Info,,,"Accept to Release the Guard Lead Dog for Placement."
+Get_Guard,Quest,Quest Info,,,":)"
+
+GuardDogCoal1,items,Quest - Challenge,,,"Guard Coal Dog"
+GuardCoalDog1Desc,items,Quest - Challenge,,,"You have a Guard Coal Dog."
+GuardDCoal,Quest,Quest Info,,,"Accept to Release the Guard Coal Dog for Placement."
+Get_Guard,Quest,Quest Info,,,":)"
+
+GuardDogNitrate1,items,Quest - Challenge,,,"Guard Nitrate Dog"
+GuardNitrateDog1Desc,items,Quest - Challenge,,,"You have a Guard Nitrate Dog."
+GuardDNitrate,Quest,Quest Info,,,"Accept to Release the Guard Nitrate Dog for Placement."
+Get_Guard,Quest,Quest Info,,,":)"
+
+GuardDogShale1,items,Quest - Challenge,,,"Guard Shale Dog"
+GuardShaleDog1Desc,items,Quest - Challenge,,,"You have a Guard Shale Dog."
+GuardDShale,Quest,Quest Info,,,"Accept to Release the Guard Shale Dog for Placement."
+Get_Guard,Quest,Quest Info,,,":)"
+
+TurretGuardSim1,items,Quest - Challenge,,,"Turret Guard Sim"
+TurretGuardSim1Desc,items,Quest - Challenge,,,"You have Turret Guard Sim."
+TurretGSim,Quest,Quest Info,,,"Accept to Release Turret Guard Sim for Placement."
+Get_Guard,Quest,Quest Info,,,":)"
+
+GuardTurretLizzy1,items,Quest - Challenge,,,"Turret Guard Lizzy"
+GuardTurretLizzy1Desc,items,Quest - Challenge,,,"You have Turret Guard Lizzy."
+GTurretLizzy,Quest,Quest Info,,,"Accept to Release Turret Guard Lizzy for Placement."
+Get_Guard,Quest,Quest Info,,,":)"
+
+GuardTurretDre1,items,Quest - Challenge,,,"Turret Guard Dre"
+GuardTurretDre1Desc,items,Quest - Challenge,,,"You have Turret Guard Dre."
+GTurretDre,Quest,Quest Info,,,"Accept to Release Turret Guard Dre for Placement."
+Get_Guard,Quest,Quest Info,,,":)"
+
+GuardTurretFox1,items,Quest - Challenge,,,"Turret Guard Fox"
+GuardTurretFox1Desc,items,Quest - Challenge,,,"You have Turret Guard Fox."
+GTurretFox,Quest,Quest Info,,,"Accept to Release Turret Guard Fox for Placement."
+Get_Guard,Quest,Quest Info,,,":)"
+
+GuardTurretBandit1,items,Quest - Challenge,,,"Turret Guard Bandit"
+GuardTurretBandit1Desc,items,Quest - Challenge,,,"You have Turret Guard Bandit."
+GTurretBandit,Quest,Quest Info,,,"Accept to Release Turret Guard Bandit for Placement."
+Get_Guard,Quest,Quest Info,,,":)"
+
+GuardTurretBanditFoxy1,items,Quest - Challenge,,,"Turret Guard Bandit Foxy"
+GuardTurretBanditFoxy1Desc,items,Quest - Challenge,,,"You have Turret Guard Bandit Foxy."
+GTurretBanditFoxy,Quest,Quest Info,,,"Accept to Release Turret Guard Bandit Foxy for Placement."
+Get_Guard,Quest,Quest Info,,,":)"
+
+TurretGuardLeader1,items,Quest - Challenge,,,"Turret Guard Leader"
+TurretGuardLeader1Desc,items,Quest - Challenge,,,"You have Turret Guard Leader."
+TurretGLeader,Quest,Quest Info,,,"Accept to Release Turret Guard Leader for Placement."
+Get_Guard,Quest,Quest Info,,,":)"
+
+TurretGuardCompoundBowMan1,items,Quest - Challenge,,,"Turret Guard Bow Man"
+TurretGuardCompoundBowMan1Desc,items,Quest - Challenge,,,"You have Turret Guard Bow Man."
+TurretGCompoundBowMan,Quest,Quest Info,,,"Accept to Release Turret Guard Bow Man for Placement."
+Get_Guard,Quest,Quest Info,,,":)"
+
+FarmJeep,vehicles,vehicle,,,Farm Jeep (Farm Friend),,,,,

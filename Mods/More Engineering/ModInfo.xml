@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="More Engineering" />
+		<Description value="Recipes for parts and stuf" />
+		<Author value="SadLegionary" />
+		<Version value="1.3.0" compat="A19" />
+	</ModInfo>
+</xml>

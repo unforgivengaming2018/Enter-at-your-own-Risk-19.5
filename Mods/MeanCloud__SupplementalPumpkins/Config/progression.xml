@@ -1,0 +1,26 @@
+<MeanCloud_Pumpkins>
+
+  <!-- DOUGH: Removing as this line gives a warning
+  <remove xpath="/Ignore_Warnings_In_This_Modelet[@modname='MeanCloud_Pumpkins'][@filename='\Config\progression.xml']" />
+  -->
+
+  <!-- DOUGH: NOTE: This append below may be able to me more targeted to the effect group? -->
+  <append xpath="/progression/perks/perk[@name='perkMasterChef']">
+    <effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1,5" value="1" tags="drinkJarPumpkinSpiceLatte"/>
+      <!-- DOUGH: NOTE: This line below is identical to a19.2 and may be deleted? -->
+      <passive_effect name="RecipeTagUnlocked" operation="base_set" level="2,5" value="1" tags="foodPumpkinPie,foodPumpkinCheesecake,foodPumpkinBread"/>
+		</effect_group>
+  </append>
+
+  <!-- DOUGH: NOTE: This append below may be able to me more targeted to the effect group?
+  Vanilla a19.2 has seeds all in 1 group, this adds them to a different level.
+  May want to remove them from Vanilla group?
+  -->
+  <append xpath="/progression/perks/perk[@name='perkLivingOffTheLand']">
+    <effect_group>
+			<passive_effect name="RecipeTagUnlocked" operation="base_set" level="3,5" value="1" tags="plantedPumpkin1"/>
+		</effect_group>
+  </append>
+
+</MeanCloud_Pumpkins>

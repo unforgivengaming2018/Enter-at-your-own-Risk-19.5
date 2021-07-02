@@ -1,0 +1,38 @@
+<configs>
+	<append xpath="/entity_classes">
+
+
+		<entity_class name="vehicleRocketToilet">
+			<property name="Tags" value="moto,pedals"/>
+			<property name="Class" value="EntityMotorcycle"/>
+			<property name="Parent" value="Cars"/>
+			<property name="Prefab" value="#@modfolder:Resources/datoilet.unity3d?DaToilet2"/>
+			<property name="CustomIcon" value="DaToilet"/>
+			<property name="ModelType" value="Standard"/>
+			<property name="SurfaceCategory" value="metal"/>
+			<property name="IgnoreTrigger" value="true"/>
+			<property name="LootListAlive" value="78"/>
+			<property name="IsEnemyEntity" value="false"/>
+			<property name="Explosion.ParticleIndex" value="6"/>
+			<property name="Explosion.RadiusBlocks" value="5"/>
+			<property name="Explosion.RadiusEntities" value="5"/>
+			<property name="Explosion.BlockDamage" value="100"/>
+			<property name="Explosion.EntityDamage" value="100"/>
+			<property name="RotateToGround" value="true"/>
+			<property name="Faction" value="none"/>
+			<property name="MapIcon" value="DaToileticon"/>
+			<property name="NavObject" value="DaToilet" />
+			<effect_group name="Base Effects">
+				<passive_effect event="onSelfFirstSpawn" action="AddBuff" buff="buffToiletFire"/>
+			</effect_group>
+			<property name="Buffs" value="buffToiletFire"/>
+		</entity_class>
+				
+	 </append>
+		<append xpath="/entity_classes/entity_class[@name='playerMale']">
+		<effect_group>	
+			<triggered_effect trigger="onSelfEnteredGame" action="AddBuff" target="self" buff="buffToiletFirePlayer"/>
+			<triggered_effect trigger="onSelfRespawn" action="AddBuff" target="self" buff="buffToiletFirePlayer"/>
+		</effect_group>
+	</append> 
+</configs>

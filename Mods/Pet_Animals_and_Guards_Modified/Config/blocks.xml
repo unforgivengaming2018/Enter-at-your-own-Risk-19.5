@@ -1,0 +1,1351 @@
+<configs>
+	<append xpath="/blocks" >
+		<block name="PetBoar">
+			<property name="Extends" value="decoMannequinFemale"/>
+			<property name="Model" value="Entities/Animals/Boar/sleeperPose/idleSleepBoar"/>		
+			<property name="CustomIcon" value="decoClassicDogHouse"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="DescriptionKey" value="GenericPetDesc"/>
+			<property name="Stacknumber" value="1"/> 
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="PetBoarAnimal"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowOnTop" value="PetBoarSpawner" />
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.01"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>	
+		<block name="PetBoarSpawner">
+		<property name="CreativeMode" value="None"/>
+			<property name="Material" value="PetAnimalMaterials"/>
+			<property name="Extends" value="spawnTrader"/>
+			<property name="Shape" value="ModelEntity"/>			
+			<property name="Model" value="Entities/Decor/cobwebPrefab"/>	
+			<drop event="Fall" count="0" prob="0"/>		
+			<property name="SpawnClass" value="PetBoar"/>			
+		</block>
+		<block name="PetBoarAnimal">
+		<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="looseBoardsTrapPlate1x1"/>			
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="looseBoardsTrapPlate1x1"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.1"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>
+		
+		<block name="PetRabbit">
+			<property name="Extends" value="decoMannequinFemale"/>
+			<property name="Model" value="Entities/Animals/Boar/sleeperPose/idleSleepBoar"/>		
+			<property name="CustomIcon" value="decoClassicDogHouse"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="DescriptionKey" value="GenericPetDesc"/>
+			<property name="Stacknumber" value="1"/> 
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="PetRabbitAnimal"/>
+			<property name="PlantGrowing.GrowOnTop" value="PetRabbitSpawner" />
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.01"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>	
+		<block name="PetRabbitSpawner">
+		<property name="CreativeMode" value="None"/>
+			<property name="Material" value="PetAnimalMaterials"/>
+			<property name="Extends" value="spawnTrader"/>
+			<property name="Shape" value="ModelEntity"/>			
+			<property name="Model" value="Entities/Decor/cobwebPrefab"/>	
+			<drop event="Fall" count="0" prob="0"/>		
+			<property name="SpawnClass" value="PetRabbit"/>			
+		</block>
+		<block name="PetRabbitAnimal">
+		<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="looseBoardsTrapPlate1x1"/>			
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="looseBoardsTrapPlate1x1"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.1"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>
+		
+		<block name="PetStag">
+			<property name="Extends" value="decoMannequinFemale"/>
+			<property name="Model" value="Entities/Animals/Boar/sleeperPose/idleSleepBoar"/>		
+			<property name="CustomIcon" value="decoClassicDogHouse"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="DescriptionKey" value="GenericPetDesc"/>
+			<property name="Stacknumber" value="1"/> 
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="PetStagAnimal"/>
+			<property name="PlantGrowing.GrowOnTop" value="PetStagSpawner" />
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.01"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>	
+		<block name="PetStagSpawner">
+		<property name="CreativeMode" value="None"/>
+			<property name="Material" value="PetAnimalMaterials"/>
+			<property name="Extends" value="spawnTrader"/>
+			<property name="Shape" value="ModelEntity"/>			
+			<property name="Model" value="Entities/Decor/cobwebPrefab"/>	
+			<drop event="Fall" count="0" prob="0"/>		
+			<property name="SpawnClass" value="PetStag"/>			
+		</block>
+		<block name="PetStagAnimal">
+		<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="looseBoardsTrapPlate1x1"/>			
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="looseBoardsTrapPlate1x1"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.1"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>
+		
+		<block name="PetChicken">
+			<property name="Extends" value="decoMannequinFemale"/>
+			<property name="Model" value="Entities/Animals/Boar/sleeperPose/idleSleepBoar"/>		
+			<property name="CustomIcon" value="decoClassicDogHouse"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="DescriptionKey" value="GenericPetDesc"/>
+			<property name="Stacknumber" value="1"/> 
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="PetChickenAnimal"/>
+			<property name="PlantGrowing.GrowOnTop" value="PetChickenSpawner" />
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.01"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>	
+		<block name="PetChickenSpawner">
+		<property name="CreativeMode" value="None"/>
+			<property name="Material" value="PetAnimalMaterials"/>
+			<property name="Extends" value="spawnTrader"/>
+			<property name="Shape" value="ModelEntity"/>			
+			<property name="Model" value="Entities/Decor/cobwebPrefab"/>	
+			<drop event="Fall" count="0" prob="0"/>		
+			<property name="SpawnClass" value="PetChicken"/>			
+		</block>
+		<block name="PetChickenAnimal">
+		<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="looseBoardsTrapPlate1x1"/>			
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="looseBoardsTrapPlate1x1"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.1"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>
+		
+		<block name="PetPig">
+			<property name="Extends" value="decoMannequinFemale"/>
+			<property name="Model" value="Entities/Animals/Boar/sleeperPose/idleSleepBoar"/>		
+			<property name="CustomIcon" value="decoClassicDogHouse"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="DescriptionKey" value="GenericPetDesc"/>
+			<property name="Stacknumber" value="1"/> 
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="PetPigAnimal"/>
+			<property name="PlantGrowing.GrowOnTop" value="PetPigSpawner" />
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.01"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>	
+		<block name="PetPigSpawner">
+		<property name="CreativeMode" value="None"/>
+			<property name="Material" value="PetAnimalMaterials"/>
+			<property name="Extends" value="spawnTrader"/>
+			<property name="Shape" value="ModelEntity"/>			
+			<property name="Model" value="Entities/Decor/cobwebPrefab"/>	
+			<drop event="Fall" count="0" prob="0"/>		
+			<property name="SpawnClass" value="PetPig"/>			
+		</block>
+		<block name="PetPigAnimal">
+		<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="looseBoardsTrapPlate1x1"/>			
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="looseBoardsTrapPlate1x1"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.1"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>
+		<block name="PetBear">
+			<property name="Extends" value="decoMannequinFemale"/>
+			<property name="Model" value="Entities/Animals/Boar/sleeperPose/idleSleepBoar"/>		
+			<property name="CustomIcon" value="decoClassicDogHouse"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="DescriptionKey" value="GenericPetDesc"/>
+			<property name="Stacknumber" value="1"/> 
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="PetBearAnimal"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowOnTop" value="PetBearSpawner" />
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.01"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>	
+		<block name="PetBearSpawner">
+		<property name="CreativeMode" value="None"/>
+			<property name="Material" value="PetAnimalMaterials"/>
+			<property name="Extends" value="spawnTrader"/>
+			<property name="Shape" value="ModelEntity"/>			
+			<property name="Model" value="Entities/Decor/cobwebPrefab"/>	
+			<drop event="Fall" count="0" prob="0"/>		
+			<property name="SpawnClass" value="PetBear"/>			
+		</block>
+		<block name="PetBearAnimal">
+		<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="looseBoardsTrapPlate1x1"/>			
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="looseBoardsTrapPlate1x1"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.1"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>
+		
+		<block name="PetWolf">
+			<property name="Extends" value="decoMannequinFemale"/>
+			<property name="Model" value="Entities/Animals/Boar/sleeperPose/idleSleepBoar"/>		
+			<property name="CustomIcon" value="decoClassicDogHouse"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="DescriptionKey" value="GenericPetDesc"/>
+			<property name="Stacknumber" value="1"/> 
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="PetWolfAnimal"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowOnTop" value="PetWolfSpawner" />
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.01"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>	
+		<block name="PetWolfSpawner">
+		<property name="CreativeMode" value="None"/>
+			<property name="Material" value="PetAnimalMaterials"/>
+			<property name="Extends" value="spawnTrader"/>
+			<property name="Shape" value="ModelEntity"/>			
+			<property name="Model" value="Entities/Decor/cobwebPrefab"/>	
+			<drop event="Fall" count="0" prob="0"/>		
+			<property name="SpawnClass" value="PetWolf"/>			
+		</block>
+		<block name="PetWolfAnimal">
+		<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="looseBoardsTrapPlate1x1"/>			
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="looseBoardsTrapPlate1x1"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.1"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>
+		
+		<block name="PetCoyote">
+			<property name="Extends" value="decoMannequinFemale"/>
+			<property name="Model" value="Entities/Animals/Boar/sleeperPose/idleSleepBoar"/>		
+			<property name="CustomIcon" value="decoClassicDogHouse"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="DescriptionKey" value="GenericPetDesc"/>
+			<property name="Stacknumber" value="1"/> 
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="PetCoyoteAnimal"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowOnTop" value="PetCoyoteSpawner" />
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.01"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>	
+		<block name="PetCoyoteSpawner">
+		<property name="CreativeMode" value="None"/>
+			<property name="Material" value="PetAnimalMaterials"/>
+			<property name="Extends" value="spawnTrader"/>
+			<property name="Shape" value="ModelEntity"/>			
+			<property name="Model" value="Entities/Decor/cobwebPrefab"/>	
+			<drop event="Fall" count="0" prob="0"/>		
+			<property name="SpawnClass" value="PetCoyote"/>			
+		</block>
+		<block name="PetCoyoteAnimal">
+		<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="looseBoardsTrapPlate1x1"/>			
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="looseBoardsTrapPlate1x1"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.1"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>
+		
+		<block name="PetDoe">
+			<property name="Extends" value="decoMannequinFemale"/>
+			<property name="Model" value="Entities/Animals/Boar/sleeperPose/idleSleepBoar"/>		
+			<property name="CustomIcon" value="decoClassicDogHouse"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="DescriptionKey" value="GenericPetDesc"/>
+			<property name="Stacknumber" value="1"/> 
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="PetDoeAnimal"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowOnTop" value="PetDoeSpawner" />
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.01"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>	
+		<block name="PetDoeSpawner">
+		<property name="CreativeMode" value="None"/>
+			<property name="Material" value="PetAnimalMaterials"/>
+			<property name="Extends" value="spawnTrader"/>
+			<property name="Shape" value="ModelEntity"/>			
+			<property name="Model" value="Entities/Decor/cobwebPrefab"/>	
+			<drop event="Fall" count="0" prob="0"/>		
+			<property name="SpawnClass" value="PetDoe"/>			
+		</block>
+		<block name="PetDoeAnimal">
+		<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="looseBoardsTrapPlate1x1"/>			
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="looseBoardsTrapPlate1x1"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.1"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>		
+		
+		<block name="GuardHellBear">
+			<property name="Extends" value="decoMannequinFemale"/>
+			<property name="Model" value="Entities/Animals/Boar/sleeperPose/idleSleepBoar"/>		
+			<property name="CustomIcon" value="sleeperBoarAnimal"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="DescriptionKey" value="GenericGuardDesc"/>
+			<property name="Stacknumber" value="1"/> 
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="GuardHellBearAnimal"/>
+			<property name="PlantGrowing.GrowOnTop" value="GuardHellBearSpawner" />
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.01"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>	
+		<block name="GuardHellBearSpawner">
+		<property name="CreativeMode" value="None"/>
+			<property name="Material" value="PetAnimalMaterials"/>
+			<property name="Extends" value="spawnTrader"/>
+			<property name="Shape" value="ModelEntity"/>			
+			<property name="Model" value="Entities/Decor/cobwebPrefab"/>	
+			<drop event="Fall" count="0" prob="0"/>		
+			<property name="SpawnClass" value="GuardHellBear"/>			
+		</block>
+		<block name="GuardHellBearAnimal">
+		<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="looseBoardsTrapPlate1x1"/>			
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="looseBoardsTrapPlate1x1"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.1"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>
+		
+		<block name="GuardHellBoar">
+			<property name="Extends" value="decoMannequinFemale"/>
+			<property name="Model" value="Entities/Animals/Boar/sleeperPose/idleSleepBoar"/>		
+			<property name="CustomIcon" value="sleeperBoarAnimal"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="DescriptionKey" value="GenericGuardDesc"/>
+			<property name="Stacknumber" value="1"/> 
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="GuardHellBoarAnimal"/>
+			<property name="PlantGrowing.GrowOnTop" value="GuardHellBoarSpawner" />
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.01"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>	
+		<block name="GuardHellBoarSpawner">
+		<property name="CreativeMode" value="None"/>
+			<property name="Material" value="PetAnimalMaterials"/>
+			<property name="Extends" value="spawnTrader"/>
+			<property name="Shape" value="ModelEntity"/>			
+			<property name="Model" value="Entities/Decor/cobwebPrefab"/>	
+			<drop event="Fall" count="0" prob="0"/>		
+			<property name="SpawnClass" value="GuardHellBoar"/>			
+		</block>
+		<block name="GuardHellBoarAnimal">
+		<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="looseBoardsTrapPlate1x1"/>			
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="looseBoardsTrapPlate1x1"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.1"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>
+		
+		<block name="GuardHellWolf">
+			<property name="Extends" value="decoMannequinFemale"/>
+			<property name="Model" value="Entities/Animals/Boar/sleeperPose/idleSleepBoar"/>		
+			<property name="CustomIcon" value="sleeperBoarAnimal"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="DescriptionKey" value="GenericGuardDesc"/>
+			<property name="Stacknumber" value="1"/> 
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="GuardHellWolfAnimal"/>
+			<property name="PlantGrowing.GrowOnTop" value="GuardHellWolfSpawner" />
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.01"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>	
+		<block name="GuardHellWolfSpawner">
+		<property name="CreativeMode" value="None"/>
+			<property name="Material" value="PetAnimalMaterials"/>
+			<property name="Extends" value="spawnTrader"/>
+			<property name="Shape" value="ModelEntity"/>			
+			<property name="Model" value="Entities/Decor/cobwebPrefab"/>	
+			<drop event="Fall" count="0" prob="0"/>		
+			<property name="SpawnClass" value="GuardHellWolf"/>			
+		</block>
+		<block name="GuardHellWolfAnimal">
+		<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="looseBoardsTrapPlate1x1"/>			
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="looseBoardsTrapPlate1x1"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.1"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>
+		
+		<block name="GuardHellLion">
+			<property name="Extends" value="decoMannequinFemale"/>
+			<property name="Model" value="Entities/Animals/Boar/sleeperPose/idleSleepBoar"/>		
+			<property name="CustomIcon" value="sleeperBoarAnimal"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="DescriptionKey" value="GenericGuardDesc"/>
+			<property name="Stacknumber" value="1"/> 
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="GuardHellLionAnimal"/>
+			<property name="PlantGrowing.GrowOnTop" value="GuardHellLionSpawner" />
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.01"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>	
+		<block name="GuardHellLionSpawner">
+		<property name="CreativeMode" value="None"/>
+			<property name="Material" value="PetAnimalMaterials"/>
+			<property name="Extends" value="spawnTrader"/>
+			<property name="Shape" value="ModelEntity"/>			
+			<property name="Model" value="Entities/Decor/cobwebPrefab"/>	
+			<drop event="Fall" count="0" prob="0"/>		
+			<property name="SpawnClass" value="GuardHellLion"/>			
+		</block>
+		<block name="GuardHellLionAnimal">
+		<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="looseBoardsTrapPlate1x1"/>			
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="looseBoardsTrapPlate1x1"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.1"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>
+		
+			<block name="GuardRabbit">
+			<property name="Extends" value="decoMannequinFemale"/>
+			<property name="Model" value="Entities/Animals/Boar/sleeperPose/idleSleepBoar"/>		
+			<property name="CustomIcon" value="sleeperBoarAnimal"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="DescriptionKey" value="GenericGuardDesc"/>
+			<property name="Stacknumber" value="1"/> 
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="GuardRabbitAnimal"/>
+			<property name="PlantGrowing.GrowOnTop" value="GuardRabbitSpawner" />
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.01"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>	
+		<block name="GuardRabbitSpawner">
+		<property name="CreativeMode" value="None"/>
+			<property name="Material" value="PetAnimalMaterials"/>
+			<property name="Extends" value="spawnTrader"/>
+			<property name="Shape" value="ModelEntity"/>			
+			<property name="Model" value="Entities/Decor/cobwebPrefab"/>	
+			<drop event="Fall" count="0" prob="0"/>		
+			<property name="SpawnClass" value="GuardRabbit"/>			
+		</block>
+		<block name="GuardRabbitAnimal">
+		<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="looseBoardsTrapPlate1x1"/>			
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="looseBoardsTrapPlate1x1"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.1"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>
+		
+	<!--block name="GuardSimAlastair">
+			<property name="Extends" value="decoMannequinFemale"/>
+			<property name="Model" value="#Entities/Zombies?Zombies/SleeperPoses/idleSleepPrefab.prefab"/>		
+			<property name="CustomIcon" value="sleeperIdle"/>
+			<property name="CustomIconTint" value="72,33,150"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="DescriptionKey" value="GenericGuardDesc"/>
+			<property name="Stacknumber" value="1"/> 
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="GuardSimAlastairAnimal"/>
+			<property name="PlantGrowing.GrowOnTop" value="GuardSimAlastairSpawner" />
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.01"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>	
+		<block name="GuardSimAlastairSpawner">
+		<property name="CreativeMode" value="None"/>
+			<property name="Material" value="PetAnimalMaterials"/>
+			<property name="Extends" value="spawnTrader"/>
+			<property name="Shape" value="ModelEntity"/>			
+			<property name="Model" value="Entities/Decor/cobwebPrefab"/>	
+			<drop event="Fall" count="0" prob="0"/>		
+			<property name="SpawnClass" value="GuardSimAlastair"/>			
+		</block>
+		<block name="GuardSimAlastairAnimal">
+		<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="looseBoardsTrapPlate1x1"/>			
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="looseBoardsTrapPlate1x1"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.1"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>
+		
+		<block name="GuardLizzy">
+			<property name="Extends" value="decoMannequinFemale"/>
+			<property name="Model" value="#Entities/Zombies?Zombies/SleeperPoses/idleSleepPrefab.prefab"/>		
+			<property name="CustomIcon" value="sleeperIdle"/>
+			<property name="CustomIconTint" value="172,33,50"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="DescriptionKey" value="GenericGuardDesc"/>
+			<property name="Stacknumber" value="1"/> 
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="GuardLizzyAnimal"/>
+			<property name="PlantGrowing.GrowOnTop" value="GuardLizzySpawner" />
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.01"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>	
+		<block name="GuardLizzySpawner">
+		<property name="CreativeMode" value="None"/>
+			<property name="Material" value="PetAnimalMaterials"/>
+			<property name="Extends" value="spawnTrader"/>
+			<property name="Shape" value="ModelEntity"/>			
+			<property name="Model" value="Entities/Decor/cobwebPrefab"/>	
+			<drop event="Fall" count="0" prob="0"/>		
+			<property name="SpawnClass" value="GuardLizzy"/>			
+		</block>
+		<block name="GuardLizzyAnimal">
+		<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="looseBoardsTrapPlate1x1"/>			
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="looseBoardsTrapPlate1x1"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.1"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>
+		
+		<block name="GuardPsyren">
+			<property name="Extends" value="decoMannequinFemale"/>
+			<property name="Model" value="#Entities/Zombies?Zombies/SleeperPoses/idleSleepPrefab.prefab"/>		
+			<property name="CustomIcon" value="sleeperIdle"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="DescriptionKey" value="GenericGuardDesc"/>
+			<property name="Stacknumber" value="1"/> 
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="GuardPsyrenAnimal"/>
+			<property name="PlantGrowing.GrowOnTop" value="GuardPsyrenSpawner" />
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.01"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>	
+		<block name="GuardPsyrenSpawner">
+		<property name="CreativeMode" value="None"/>
+			<property name="Material" value="PetAnimalMaterials"/>
+			<property name="Extends" value="spawnTrader"/>
+			<property name="Shape" value="ModelEntity"/>			
+			<property name="Model" value="Entities/Decor/cobwebPrefab"/>	
+			<drop event="Fall" count="0" prob="0"/>		
+			<property name="SpawnClass" value="GuardPsyren"/>			
+		</block>
+		<block name="GuardPsyrenAnimal">
+		<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="looseBoardsTrapPlate1x1"/>			
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="looseBoardsTrapPlate1x1"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.1"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>
+		
+		<block name="GuardZeus">
+			<property name="Extends" value="decoMannequinFemale"/>
+			<property name="Model" value="#Entities/Zombies?Zombies/SleeperPoses/idleSleepPrefab.prefab"/>		
+			<property name="CustomIcon" value="sleeperIdle"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="DescriptionKey" value="GenericGuardDesc"/>
+			<property name="Stacknumber" value="1"/> 
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="GuardZeusAnimal"/>
+			<property name="PlantGrowing.GrowOnTop" value="GuardZeusSpawner" />
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.01"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>	
+		<block name="GuardZeusSpawner">
+		<property name="CreativeMode" value="None"/>
+			<property name="Material" value="PetAnimalMaterials"/>
+			<property name="Extends" value="spawnTrader"/>
+			<property name="Shape" value="ModelEntity"/>			
+			<property name="Model" value="Entities/Decor/cobwebPrefab"/>	
+			<drop event="Fall" count="0" prob="0"/>		
+			<property name="SpawnClass" value="GuardZeus"/>			
+		</block>
+		<block name="GuardZeusAnimal">
+		<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="looseBoardsTrapPlate1x1"/>			
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="looseBoardsTrapPlate1x1"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.1"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block-->
+		
+		<block name="ChickenCoop-Needs-ChickenFeed">
+			<property name="DescriptionKey" value="ChickenCoopDesc"/>
+			<property name="DisplayInfo" value="Name"/>
+			<property name="CustomIcon" value="decoClassicDogHouse"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Material" value="Mwood_weak"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>	
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/OutdoorDecor/classicDogHousePrefab" />	
+			<property name="CreativeMode" value="Player"/>
+			<property class="RepairItems"> <property name="resourceWood" value="2"/> </property>
+			<property class="UpgradeBlock">
+			<property name="ToBlock" value="ChickenCoopNesting"/>
+			<property name="Item" value="ChickenFeed"/>
+			<property name="ItemCount" value="1"/>
+			<property name="UpgradeHitCount" value="1"/>
+			</property>
+			<drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="CanPickup" value="true"/>
+		</block>
+	
+		<block name="ChickenCoopNesting">
+			<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+			<property name="CustomIcon" value="decoClassicDogHouse"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Material" value="Mwood_weak"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/OutdoorDecor/classicDogHousePrefab" />
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="60"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+			<property name="PlantGrowing.Next" value="ChickenCoopHatched"/>
+			<property name="Group" value="Food/Cooking"/>
+		</block>
+
+		<block name="ChickenCoopHatched">
+			<property name="Extends" value="cntMedicalPileSmall"/>
+			<property name="CustomIcon" value="decoClassicDogHouse"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Material" value="Mwood_weak"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/OutdoorDecor/classicDogHousePrefab" />
+			<property name="LootList" value="201"/>
+			<property name="CreativeMode" value="Player"/>
+			<drop event="Destroy" count="0" />
+			<property name="DowngradeBlock" value="ChickenCoop-Needs-ChickenFeed"/>
+		</block>
+
+		<block name="RabbitCageTrap-Needs-RabbitFeed">
+			<property name="Extends" value="treeMaster" param1="CustomIcon,DescriptionKey"/>
+			<property name="DescriptionKey" value="RabbitCageTrapDesc"/>
+			<property name="DisplayInfo" value="Name"/>
+			<property name="CustomIcon" value="decoLargePetCage"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Material" value="Mwood_weak"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/OutdoorDecor/largePetCagePrefab" />
+			<property name="CreativeMode" value="Player"/>
+			<property class="RepairItems"> <property name="resourceWood" value="2"/> </property>
+    
+			<property class="UpgradeBlock">
+			<property name="ToBlock" value="RabbitCageTrap-Set"/>
+			<property name="Item" value="RabbitFeed"/>
+			<property name="ItemCount" value="1"/>
+			<property name="UpgradeHitCount" value="1"/>
+			</property>
+			<drop event="Harvest" name="resourceWood" count="2" tag="allHarvest"/>
+			<drop event="Destroy" count="0"/>
+			<property name="CanPickup" value="true"/>
+		</block>
+	
+		<block name="RabbitCageTrap-Set">
+			<property name="Extends" value="cropsGrowingMaster" param1="CustomIcon,DescriptionKey"/>
+			<property name="CustomIcon" value="decoLargePetCage"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Material" value="Mwood_weak"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/OutdoorDecor/largePetCagePrefab" />
+			<property name="PlantGrowing.FertileLevel" value="1"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="40"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+			<property name="PlantGrowing.Next" value="RabbitCageTrap-Sprung"/>
+			<property name="Group" value="Food/Cooking"/>
+		</block>
+
+		<block name="RabbitCageTrap-Sprung">
+			<property name="Extends" value="cntMedicalPileSmall"/>
+			<property name="CustomIcon" value="decoLargePetCage"/>
+			<property name="CreativeMode" value="Player"/>
+			<property name="Material" value="Mwood_weak"/>
+			<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+			<property name="Shape" value="ModelEntity"/>
+			<property name="Model" value="Entities/OutdoorDecor/largePetCagePrefab" />
+			<property name="LootList" value="202"/>
+			<property name="CreativeMode" value="Player"/>
+			<drop event="Destroy" count="0" />
+			<property name="DowngradeBlock" value="RabbitCageTrap-Needs-RabbitFeed"/>
+		</block>
+
+		<block name="GuardDogLead">
+			<property name="Extends" value="decoMannequinFemale"/>
+			<property name="Model" value="Entities/Animals/Boar/sleeperPose/idleSleepBoar"/>		
+			<property name="CustomIcon" value="sleeperBoarAnimal"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="DescriptionKey" value="GenericGuardDesc"/>
+			<property name="Stacknumber" value="1"/> 
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="GuardDogLeadAnimal"/>
+			<property name="PlantGrowing.GrowOnTop" value="GuardDogLeadSpawner" />
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.01"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>	
+		<block name="GuardDogLeadSpawner">
+		<property name="CreativeMode" value="None"/>
+			<property name="Material" value="PetAnimalMaterials"/>
+			<property name="Extends" value="spawnTrader"/>
+			<property name="Shape" value="ModelEntity"/>			
+			<property name="Model" value="Entities/Decor/cobwebPrefab"/>	
+			<drop event="Fall" count="0" prob="0"/>		
+			<property name="SpawnClass" value="GuardDogLead"/>			
+		</block>
+		<block name="GuardDogLeadAnimal">
+		<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="looseBoardsTrapPlate1x1"/>			
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="looseBoardsTrapPlate1x1"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.1"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>
+		
+		<block name="GuardDogCoal">
+			<property name="Extends" value="decoMannequinFemale"/>
+			<property name="Model" value="Entities/Animals/Boar/sleeperPose/idleSleepBoar"/>		
+			<property name="CustomIcon" value="sleeperBoarAnimal"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="DescriptionKey" value="GenericGuardDesc"/>
+			<property name="Stacknumber" value="1"/> 
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="GuardDogCoalAnimal"/>
+			<property name="PlantGrowing.GrowOnTop" value="GuardDogCoalSpawner" />
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.01"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>	
+		<block name="GuardDogCoalSpawner">
+		<property name="CreativeMode" value="None"/>
+			<property name="Material" value="PetAnimalMaterials"/>
+			<property name="Extends" value="spawnTrader"/>
+			<property name="Shape" value="ModelEntity"/>			
+			<property name="Model" value="Entities/Decor/cobwebPrefab"/>	
+			<drop event="Fall" count="0" prob="0"/>		
+			<property name="SpawnClass" value="GuardDogCoal"/>			
+		</block>
+		<block name="GuardDogCoalAnimal">
+		<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="looseBoardsTrapPlate1x1"/>			
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="looseBoardsTrapPlate1x1"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.1"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>
+		
+		<block name="GuardDogNitrate">
+			<property name="Extends" value="decoMannequinFemale"/>
+			<property name="Model" value="Entities/Animals/Boar/sleeperPose/idleSleepBoar"/>		
+			<property name="CustomIcon" value="sleeperBoarAnimal"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="DescriptionKey" value="GenericGuardDesc"/>
+			<property name="Stacknumber" value="1"/> 
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="GuardDogNitrateAnimal"/>
+			<property name="PlantGrowing.GrowOnTop" value="GuardDogNitrateSpawner" />
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.01"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>	
+		<block name="GuardDogNitrateSpawner">
+		<property name="CreativeMode" value="None"/>
+			<property name="Material" value="PetAnimalMaterials"/>
+			<property name="Extends" value="spawnTrader"/>
+			<property name="Shape" value="ModelEntity"/>			
+			<property name="Model" value="Entities/Decor/cobwebPrefab"/>	
+			<drop event="Fall" count="0" prob="0"/>		
+			<property name="SpawnClass" value="GuardDogNitrate"/>			
+		</block>
+		<block name="GuardDogNitrateAnimal">
+		<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="looseBoardsTrapPlate1x1"/>			
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="looseBoardsTrapPlate1x1"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.1"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>
+		
+		<block name="GuardDogShale">
+			<property name="Extends" value="decoMannequinFemale"/>
+			<property name="Model" value="Entities/Animals/Boar/sleeperPose/idleSleepBoar"/>		
+			<property name="CustomIcon" value="sleeperBoarAnimal"/>
+			<property name="CustomIconTint" value="ff8080"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="DescriptionKey" value="GenericGuardDesc"/>
+			<property name="Stacknumber" value="1"/> 
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="GuardDogShaleAnimal"/>
+			<property name="PlantGrowing.GrowOnTop" value="GuardDogShaleSpawner" />
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.01"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>	
+		<block name="GuardDogShaleSpawner">
+		<property name="CreativeMode" value="None"/>
+			<property name="Material" value="PetAnimalMaterials"/>
+			<property name="Extends" value="spawnTrader"/>
+			<property name="Shape" value="ModelEntity"/>			
+			<property name="Model" value="Entities/Decor/cobwebPrefab"/>	
+			<drop event="Fall" count="0" prob="0"/>		
+			<property name="SpawnClass" value="GuardDogShale"/>			
+		</block>
+		<block name="GuardDogShaleAnimal">
+		<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="looseBoardsTrapPlate1x1"/>			
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="looseBoardsTrapPlate1x1"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.1"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>
+		
+	<block name="GuardTurretStuner">
+			<property name="Extends" value="decoMannequinFemale"/>
+			<property name="Model" value="#Entities/Zombies?Zombies/SleeperPoses/idleSleepPrefab.prefab"/>		
+			<property name="CustomIcon" value="sleeperIdle"/>
+			<property name="CustomIconTint" value="72,33,150"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="DescriptionKey" value="GenericGuardDesc"/>
+			<property name="Stacknumber" value="1"/> 
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="GuardTurretStunerAnimal"/>
+			<property name="PlantGrowing.GrowOnTop" value="GuardTurretStunerSpawner" />
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.01"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>	
+		<block name="GuardTurretStunerSpawner">
+		<property name="CreativeMode" value="None"/>
+			<property name="Material" value="PetAnimalMaterials"/>
+			<property name="Extends" value="spawnTrader"/>
+			<property name="Shape" value="ModelEntity"/>			
+			<property name="Model" value="Entities/Decor/cobwebPrefab"/>	
+			<drop event="Fall" count="0" prob="0"/>		
+			<property name="SpawnClass" value="GuardTurretStuner"/>			
+		</block>
+		<block name="GuardTurretStunerAnimal">
+		<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="looseBoardsTrapPlate1x1"/>			
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="looseBoardsTrapPlate1x1"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.1"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>
+		
+		<block name="TurretGuardSim">
+			<property name="Extends" value="decoMannequinFemale"/>
+			<property name="Model" value="#Entities/Zombies?Zombies/SleeperPoses/idleSleepPrefab.prefab"/>		
+			<property name="CustomIcon" value="sleeperIdle"/>
+			<property name="CustomIconTint" value="172,33,50"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="DescriptionKey" value="GenericGuardDesc"/>
+			<property name="Stacknumber" value="1"/> 
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="TurretGuardSimAnimal"/>
+			<property name="PlantGrowing.GrowOnTop" value="TurretGuardSimSpawner" />
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.01"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>	
+		<block name="TurretGuardSimSpawner">
+		<property name="CreativeMode" value="None"/>
+			<property name="Material" value="PetAnimalMaterials"/>
+			<property name="Extends" value="spawnTrader"/>
+			<property name="Shape" value="ModelEntity"/>			
+			<property name="Model" value="Entities/Decor/cobwebPrefab"/>	
+			<drop event="Fall" count="0" prob="0"/>		
+			<property name="SpawnClass" value="TurretGuardSim"/>			
+		</block>
+		<block name="TurretGuardSimAnimal">
+		<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="looseBoardsTrapPlate1x1"/>			
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="looseBoardsTrapPlate1x1"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.1"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>
+		
+		<block name="GuardTurretLizzy">
+			<property name="Extends" value="decoMannequinFemale"/>
+			<property name="Model" value="#Entities/Zombies?Zombies/SleeperPoses/idleSleepPrefab.prefab"/>		
+			<property name="CustomIcon" value="sleeperIdle"/>
+			<property name="CustomIconTint" value="172,33,50"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="DescriptionKey" value="GenericGuardDesc"/>
+			<property name="Stacknumber" value="1"/> 
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="GuardTurretLizzyAnimal"/>
+			<property name="PlantGrowing.GrowOnTop" value="GuardTurretLizzySpawner" />
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.01"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>	
+		<block name="GuardTurretLizzySpawner">
+		<property name="CreativeMode" value="None"/>
+			<property name="Material" value="PetAnimalMaterials"/>
+			<property name="Extends" value="spawnTrader"/>
+			<property name="Shape" value="ModelEntity"/>			
+			<property name="Model" value="Entities/Decor/cobwebPrefab"/>	
+			<drop event="Fall" count="0" prob="0"/>		
+			<property name="SpawnClass" value="GuardTurretLizzy"/>			
+		</block>
+		<block name="GuardTurretLizzyAnimal">
+		<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="looseBoardsTrapPlate1x1"/>			
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="looseBoardsTrapPlate1x1"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.1"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>
+		
+		<block name="GuardTurretDre">
+			<property name="Extends" value="decoMannequinFemale"/>
+			<property name="Model" value="#Entities/Zombies?Zombies/SleeperPoses/idleSleepPrefab.prefab"/>		
+			<property name="CustomIcon" value="sleeperIdle"/>
+			<property name="CustomIconTint" value="172,33,50"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="DescriptionKey" value="GenericGuardDesc"/>
+			<property name="Stacknumber" value="1"/> 
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="GuardTurretDreAnimal"/>
+			<property name="PlantGrowing.GrowOnTop" value="GuardTurretDreSpawner" />
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.01"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>	
+		<block name="GuardTurretDreSpawner">
+		<property name="CreativeMode" value="None"/>
+			<property name="Material" value="PetAnimalMaterials"/>
+			<property name="Extends" value="spawnTrader"/>
+			<property name="Shape" value="ModelEntity"/>			
+			<property name="Model" value="Entities/Decor/cobwebPrefab"/>	
+			<drop event="Fall" count="0" prob="0"/>		
+			<property name="SpawnClass" value="GuardTurretDre"/>			
+		</block>
+		<block name="GuardTurretDreAnimal">
+		<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="looseBoardsTrapPlate1x1"/>			
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="looseBoardsTrapPlate1x1"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.1"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>
+		
+		<block name="GuardTurretFox">
+			<property name="Extends" value="decoMannequinFemale"/>
+			<property name="Model" value="#Entities/Zombies?Zombies/SleeperPoses/idleSleepPrefab.prefab"/>		
+			<property name="CustomIcon" value="sleeperIdle"/>
+			<property name="CustomIconTint" value="172,33,50"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="DescriptionKey" value="GenericGuardDesc"/>
+			<property name="Stacknumber" value="1"/> 
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="GuardTurretFoxAnimal"/>
+			<property name="PlantGrowing.GrowOnTop" value="GuardTurretFoxSpawner" />
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.01"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>	
+		<block name="GuardTurretFoxSpawner">
+		<property name="CreativeMode" value="None"/>
+			<property name="Material" value="PetAnimalMaterials"/>
+			<property name="Extends" value="spawnTrader"/>
+			<property name="Shape" value="ModelEntity"/>			
+			<property name="Model" value="Entities/Decor/cobwebPrefab"/>	
+			<drop event="Fall" count="0" prob="0"/>		
+			<property name="SpawnClass" value="GuardTurretFox"/>			
+		</block>
+		<block name="GuardTurretFoxAnimal">
+		<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="looseBoardsTrapPlate1x1"/>			
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="looseBoardsTrapPlate1x1"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.1"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>
+		
+		<block name="GuardTurretBandit">
+			<property name="Extends" value="decoMannequinFemale"/>
+			<property name="Model" value="#Entities/Zombies?Zombies/SleeperPoses/idleSleepPrefab.prefab"/>		
+			<property name="CustomIcon" value="sleeperIdle"/>
+			<property name="CustomIconTint" value="172,33,50"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="DescriptionKey" value="GenericGuardDesc"/>
+			<property name="Stacknumber" value="1"/> 
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="GuardTurretBanditAnimal"/>
+			<property name="PlantGrowing.GrowOnTop" value="GuardTurretBanditSpawner" />
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.01"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>	
+		<block name="GuardTurretBanditSpawner">
+		<property name="CreativeMode" value="None"/>
+			<property name="Material" value="PetAnimalMaterials"/>
+			<property name="Extends" value="spawnTrader"/>
+			<property name="Shape" value="ModelEntity"/>			
+			<property name="Model" value="Entities/Decor/cobwebPrefab"/>	
+			<drop event="Fall" count="0" prob="0"/>		
+			<property name="SpawnClass" value="GuardTurretBandit"/>			
+		</block>
+		<block name="GuardTurretBanditAnimal">
+		<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="looseBoardsTrapPlate1x1"/>			
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="looseBoardsTrapPlate1x1"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.1"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>
+		
+		<block name="GuardTurretBanditFoxy">
+			<property name="Extends" value="decoMannequinFemale"/>
+			<property name="Model" value="#Entities/Zombies?Zombies/SleeperPoses/idleSleepPrefab.prefab"/>		
+			<property name="CustomIcon" value="sleeperIdle"/>
+			<property name="CustomIconTint" value="172,33,50"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="DescriptionKey" value="GenericGuardDesc"/>
+			<property name="Stacknumber" value="1"/> 
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="GuardTurretBanditFoxyAnimal"/>
+			<property name="PlantGrowing.GrowOnTop" value="GuardTurretBanditFoxySpawner" />
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.01"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>	
+		<block name="GuardTurretBanditFoxySpawner">
+		<property name="CreativeMode" value="None"/>
+			<property name="Material" value="PetAnimalMaterials"/>
+			<property name="Extends" value="spawnTrader"/>
+			<property name="Shape" value="ModelEntity"/>			
+			<property name="Model" value="Entities/Decor/cobwebPrefab"/>	
+			<drop event="Fall" count="0" prob="0"/>		
+			<property name="SpawnClass" value="GuardTurretBanditFoxy"/>			
+		</block>
+		<block name="GuardTurretBanditFoxyAnimal">
+		<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="looseBoardsTrapPlate1x1"/>			
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="looseBoardsTrapPlate1x1"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.1"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>
+		
+		<block name="TurretGuardLeader">
+			<property name="Extends" value="decoMannequinFemale"/>
+			<property name="Model" value="#Entities/Zombies?Zombies/SleeperPoses/idleSleepPrefab.prefab"/>		
+			<property name="CustomIcon" value="sleeperIdle"/>
+			<property name="CustomIconTint" value="172,33,50"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="DescriptionKey" value="GenericGuardDesc"/>
+			<property name="Stacknumber" value="1"/> 
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="TurretGuardLeaderAnimal"/>
+			<property name="PlantGrowing.GrowOnTop" value="TurretGuardLeaderSpawner" />
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.01"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>	
+		<block name="TurretGuardLeaderSpawner">
+		<property name="CreativeMode" value="None"/>
+			<property name="Material" value="PetAnimalMaterials"/>
+			<property name="Extends" value="spawnTrader"/>
+			<property name="Shape" value="ModelEntity"/>			
+			<property name="Model" value="Entities/Decor/cobwebPrefab"/>	
+			<drop event="Fall" count="0" prob="0"/>		
+			<property name="SpawnClass" value="TurretGuardLeader"/>			
+		</block>
+		<block name="TurretGuardLeaderAnimal">
+		<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="looseBoardsTrapPlate1x1"/>			
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="looseBoardsTrapPlate1x1"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.1"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>
+		
+		<block name="TurretGuardCompoundBowMan">
+			<property name="Extends" value="decoMannequinFemale"/>
+			<property name="Model" value="#Entities/Zombies?Zombies/SleeperPoses/idleSleepPrefab.prefab"/>		
+			<property name="CustomIcon" value="sleeperIdle"/>
+			<property name="CustomIconTint" value="172,33,50"/>
+			<property name="StabilitySupport" value="true"/>
+			<property name="DescriptionKey" value="GenericGuardDesc"/>
+			<property name="Stacknumber" value="1"/> 
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="TurretGuardCompoundBowAnimal"/>
+			<property name="PlantGrowing.GrowOnTop" value="TurretGuardCompoundBowSpawner" />
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.01"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>	
+		<block name="TurretGuardCompoundBowSpawner">
+		<property name="CreativeMode" value="None"/>
+			<property name="Material" value="PetAnimalMaterials"/>
+			<property name="Extends" value="spawnTrader"/>
+			<property name="Shape" value="ModelEntity"/>			
+			<property name="Model" value="Entities/Decor/cobwebPrefab"/>	
+			<drop event="Fall" count="0" prob="0"/>		
+			<property name="SpawnClass" value="TurretGuardCompoundBowMan"/>			
+		</block>
+		<block name="TurretGuardCompoundBowAnimal">
+		<property name="CreativeMode" value="None"/>
+			<property name="Extends" value="looseBoardsTrapPlate1x1"/>			
+			<property name="Class" value="PlantGrowing"/>
+			<property name="PlantGrowing.IsGrowOnTopEnabled" value="true"/>
+			<property name="PlantGrowing.Next" value="looseBoardsTrapPlate1x1"/>
+			<property name="PlantGrowing.FertileLevel" value="0"/>
+			<property name="PlantGrowing.LightLevelGrow" value="0"/>
+			<property name="PlantGrowing.GrowthRate" value="0.1"/>
+			<property name="PlantGrowing.IsRandom" value="false"/>
+			<property name="PlantGrowing.LightLevelStay" value="0"/>
+		</block>		
+
+	</append>
+
+</configs>

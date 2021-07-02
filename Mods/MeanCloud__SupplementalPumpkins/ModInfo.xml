@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+  <ModInfo>
+    <Name value="MeanCloud's Supplemental Pumpkins"/>
+    <Description value="Finishes support for and supplements the pumpkin-themed content available around Halloween 2019."/>
+    <Author value="Maintainer: Doughphungus. Orig Author: Mean.Cloud"/>
+    <Version value="A19.2 1.00"/>
+		<Website value="http://mean.cloud/" />
+  </ModInfo>
+</xml>

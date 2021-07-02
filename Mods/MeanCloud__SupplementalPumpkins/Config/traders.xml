@@ -1,0 +1,22 @@
+<MeanCloud_Pumpkins>
+
+  <!-- DOUGH: Removing as this line gives a warning
+  <remove xpath="/Ignore_Warnings_In_This_Modelet[@modname='MeanCloud_Pumpkins'][@filename='\Config\traders.xml']" />
+  -->
+
+  <!-- DOUGH:
+  NOTE: Removed and replaced trader_item_groups are identical to vanilla a19.2
+  Can likely remove this file unless this is to ensure earlier loaded mods do not overwrite
+  -->
+  <remove xpath="/traders/trader_item_groups/trader_item_group[@name='farmingCookingRecipes']/item[@name='plantedPumpkin1Schematic']" />
+  <remove xpath="/traders/trader_item_groups/trader_item_group[@name='seeds']/item[@name='plantedPumpkin1']" />
+
+  <append xpath="/traders/trader_item_groups/trader_item_group[@name='farmingCookingRecipes']">
+    <item name="plantedPumpkin1Schematic"/>
+  </append>
+
+  <append xpath="/traders/trader_item_groups/trader_item_group[@name='seeds']">
+    <item name="plantedPumpkin1"/>
+  </append>
+
+</MeanCloud_Pumpkins>

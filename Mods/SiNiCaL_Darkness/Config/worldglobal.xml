@@ -1,0 +1,8 @@
+<configs>
+<!-- <property name="fogPower" value="1, 1"/> -->		<!-- day, night lower = more Fog-->
+<set xpath="/worldglobal/environment/property[@name='fogPower']/@value">0.99,0.55</set>
+<!-- <property name="ambientInsideThreshold" value=".2"/> -->	
+<set xpath="/worldglobal/environment/property[@name='ambientInsideThreshold']/@value">1.3</set>
+<!-- <property name="ambientMoon" value=".6, .4"/> --> <!-- add, scale -->
+<set xpath="/worldglobal/environment/property[@name='ambientMoon']/@value">0.45, 0.4</set>
+</configs>

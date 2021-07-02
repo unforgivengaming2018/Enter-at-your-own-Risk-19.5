@@ -1,0 +1,76 @@
+<MeanCloud_Pumpkins>
+
+  <!-- DOUGH: Removing as this line gives a warning
+  <remove xpath="/Ignore_Warnings_In_This_Modelet[@modname='MeanCloud_Pumpkins'][@filename='\Config\recipes.xml']" />
+  -->
+  <!-- DOUGH: NOTE:
+  Removing nodes is discouraged. Not sure of the purpose yet other than enforcing against previous modifications.
+  These can likely be removed once sure and below recipes be modified according to NOTES.
+  -->
+  <remove xpath="/recipes/recipe[@name='foodPumpkinPie']" />
+  <remove xpath="/recipes/recipe[@name='foodPumpkinCheesecake']" />
+  <remove xpath="/recipes/recipe[@name='foodPumpkinBread']" />
+  <remove xpath="/recipes/recipe[@name='plantedPumpkin1']" />
+  <remove xpath="/recipes/recipe[@name='decoPumpkinJackOLantern']" />
+
+  <append xpath="/recipes">
+    <!-- DOUGH: NOTE: foodPumpkinPie props and ingredients are identical to vanilla a19.2 (minus changes noted)
+    Recipe can likely be redone to adjust documented changes below:
+    -->
+    <recipe name="foodPumpkinPie" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+      <ingredient name="foodCropPumpkin" count="5"/>   <!-- DOUGH: CHANGE. DEFAULT = 2 -->
+      <ingredient name="foodEgg" count="1"/>
+      <ingredient name="foodCornMeal" count="1"/>
+      <ingredient name="resourceAnimalFat" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+    </recipe>
+
+    <!-- DOUGH: NOTE: foodPumpkinCheesecake props and ingredients are identical to vanilla a19.2 (minus changes noted)
+    Recipe can likely be redone to adjust documented changes below:
+    -->
+    <recipe name="foodPumpkinCheesecake" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+      <ingredient name="foodCropPumpkin" count="5"/> <!-- DOUGH: CHANGE. DEFAULT = 1 -->
+      <ingredient name="foodEgg" count="1"/>
+      <ingredient name="foodCornMeal" count="1"/>
+      <ingredient name="resourceAnimalFat" count="1"/>
+      <ingredient name="drinkJarGrainAlcohol" count="1"/>
+    </recipe>
+
+    <!-- DOUGH: NOTE: foodPumpkinBread props and ingredients are identical to vanilla a19.2 (minus changes noted)
+    Recipe can likely be redone to adjust documented changes below:
+    -->
+    <recipe name="foodPumpkinBread" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+      <ingredient name="foodCropPumpkin" count="5"/> <!-- DOUGH: CHANGE. DEFAULT = 1 -->
+      <ingredient name="foodCornMeal" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+    </recipe>
+
+    <!-- DOUGH: NOTE: plantedPumpkin1 props and ingredients are identical to vanilla a19.2 (minus changes noted)
+    Recipe can likely be removed
+    -->
+    <recipe name="plantedPumpkin1" count="1" craft_time="1" tags="learnable">
+      <ingredient name="foodCropPumpkin" count="5"/>
+    </recipe>
+
+    <!-- DOUGH: NOTE: plantedPumpkin1 props and ingredients are identical to vanilla a19.2 (minus changes noted)
+    Recipe can likely be removed
+    -->
+    <recipe name="decoPumpkinJackOLantern" count="1" craft_time="1" >
+      <ingredient name="foodCropPumpkin" count="1"/>
+      <ingredient name="candle" count="1"/>
+    </recipe>
+
+  </append>
+
+  <append xpath="/recipes">
+    <!-- DOUGH: NOTE: drinkJarPumpkinSpiceLatte = NEW recipe
+    -->
+    <recipe name="drinkJarPumpkinSpiceLatte" count="1" craft_area="campfire" craft_tool="toolCookingPot" tags="learnable,perkMasterChef">
+      <ingredient name="foodCropPumpkin" count="5"/>
+      <ingredient name="resourceCropCoffeeBeans" count="1"/>
+      <ingredient name="drinkJarBoiledWater" count="1"/>
+    </recipe>
+
+  </append>
+
+</MeanCloud_Pumpkins>

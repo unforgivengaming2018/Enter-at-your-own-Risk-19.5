@@ -1,0 +1,206 @@
+<configs>
+
+	<append xpath="/recipes">
+	
+		<recipe name="PhDPorchLight01" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="2"/>
+		  <ingredient name="resourceForgedIron" count="4"/>
+		  <ingredient name="resourceBrokenGlass" count="1"/>
+		</recipe>
+
+		<recipe name="PhDPorchLight04" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="4"/>
+		  <ingredient name="resourceForgedIron" count="5"/>
+		  <ingredient name="resourceBrokenGlass" count="9"/>
+		</recipe>
+
+		<recipe name="PhDPorchLight04Brass" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="4"/>
+		  <ingredient name="resourceForgedIron" count="1"/>
+		  <ingredient name="resourceScrapBrass" count="4"/>
+		  <ingredient name="resourceBrokenGlass" count="9"/>
+		</recipe>
+
+		<recipe name="PhDCeilingLight01" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="2"/>
+		  <ingredient name="resourceForgedIron" count="1"/>
+		  <ingredient name="resourceBrokenGlass" count="1"/>
+		</recipe>
+
+		<recipe name="PhDCeilingLight02" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="4"/>
+		  <ingredient name="resourceForgedIron" count="4"/>
+		  <ingredient name="resourceBrokenGlass" count="5"/>
+		</recipe>
+
+		<recipe name="PhDCeilingLight02Brass" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="4"/>
+		  <ingredient name="resourceForgedIron" count="1"/>
+		  <ingredient name="resourceScrapBrass" count="3"/>
+		  <ingredient name="resourceBrokenGlass" count="5"/>
+		</recipe>
+
+		<recipe name="PhDCeilingLight04" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="2"/>
+		  <ingredient name="resourceForgedIron" count="3"/>
+		  <ingredient name="resourceBrokenGlass" count="1"/>
+		</recipe>
+
+		<recipe name="PhDCeilingLight05" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="2"/>
+		  <ingredient name="resourceForgedIron" count="2"/>
+		  <ingredient name="resourceBrokenGlass" count="6"/>
+		</recipe>
+
+		<recipe name="PhDCeilingLight05Brass" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="2"/>
+		  <ingredient name="resourceForgedIron" count="1"/>
+		  <ingredient name="resourceScrapBrass" count="1"/>
+		  <ingredient name="resourceBrokenGlass" count="6"/>
+		</recipe>
+
+		<recipe name="PhDRecessedLight" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="2"/>
+		  <ingredient name="resourceForgedIron" count="2"/>
+		  <ingredient name="resourceBrokenGlass" count="6"/>
+		</recipe>
+
+		<recipe name="PhDWallLight" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="3"/>
+		  <ingredient name="resourceForgedIron" count="6"/>
+		  <ingredient name="resourceBrokenGlass" count="1"/>
+		</recipe>
+
+		<recipe name="PhDFluorescentLight01" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="8"/>
+		  <ingredient name="resourceForgedIron" count="5"/>
+		  <ingredient name="resourceBrokenGlass" count="10"/>
+		</recipe>
+
+		<recipe name="PhDFluorescentLight02" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="8"/>
+		  <ingredient name="resourceForgedIron" count="5"/>
+		  <ingredient name="resourceBrokenGlass" count="10"/>
+		</recipe>
+
+		<recipe name="PhDTrackLight" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="8"/>
+		  <ingredient name="resourceForgedIron" count="5"/>
+		  <ingredient name="resourceBrokenGlass" count="10"/>
+		</recipe>
+
+		<recipe name="PhDStreetLight01" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="10"/>
+		  <ingredient name="resourceForgedIron" count="25"/>
+		  <ingredient name="resourceBrokenGlass" count="4"/>
+		</recipe>
+
+		<recipe name="PhDStreetLightClassic" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="9"/>
+		  <ingredient name="resourceForgedIron" count="20"/>
+		  <ingredient name="resourceBrokenGlass" count="5"/>
+		</recipe>
+
+		<recipe name="PhDIndustrialLight" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="8"/>
+		  <ingredient name="resourceForgedIron" count="5"/>
+		  <ingredient name="resourceBrokenGlass" count="10"/>
+		</recipe>
+
+		<recipe name="PhDSconceLight" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="2"/>
+		  <ingredient name="resourceForgedIron" count="3"/>
+		  <ingredient name="resourceBrokenGlass" count="4"/>
+		</recipe>
+
+		<recipe name="PhDSconceLightShadow" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="2"/>
+		  <ingredient name="resourceForgedIron" count="3"/>
+		  <ingredient name="resourceBrokenGlass" count="4"/>
+		</recipe>
+
+		<recipe name="PhDIndustrialLight02" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="2"/>
+		  <ingredient name="resourceForgedIron" count="3"/>
+		  <ingredient name="resourceBrokenGlass" count="1"/>
+		</recipe>
+
+		<recipe name="PhDIndustrialLight02Red" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="2"/>
+		  <ingredient name="resourceForgedIron" count="3"/>
+		  <ingredient name="resourceBrokenGlass" count="1"/>
+		</recipe>
+
+		<recipe name="PhDCeilingFanLight" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="5"/>
+		  <ingredient name="resourceForgedIron" count="6"/>
+		  <ingredient name="resourceBrokenGlass" count="4"/>
+		  <ingredient name="resourceWood" count="4"/>
+		</recipe>
+
+		<recipe name="PhDChandelierLight" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="5"/>
+		  <ingredient name="resourceScrapBrass" count="3"/>
+		  <ingredient name="resourceBrokenGlass" count="4"/>
+		</recipe>
+
+		<recipe name="PhDExitSign" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="5"/>
+		  <ingredient name="resourceForgedIron" count="3"/>
+		  <ingredient name="resourceBrokenGlass" count="4"/>
+		</recipe>
+
+		<recipe name="PhDRoadBarricade" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="8"/>
+		  <ingredient name="resourceForgedIron" count="10"/>
+		  <ingredient name="resourceBrokenGlass" count="6"/>
+		  <ingredient name="resourceWood" count="8"/>
+		</recipe>
+
+		<recipe name="PhDDeskLamp" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="2"/>
+		  <ingredient name="resourceForgedIron" count="1"/>
+		  <ingredient name="resourceScrapBrass" count="3"/>
+		  <ingredient name="resourceBrokenGlass" count="4"/>
+		</recipe>
+
+		<recipe name="PhDTableLamp" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="2"/>
+		  <ingredient name="resourceForgedIron" count="1"/>
+		  <ingredient name="resourceBrokenGlass" count="1"/>
+		  <ingredient name="resourceClayLump" count="2"/>
+		  <ingredient name="resourceCloth" count="1"/>
+		</recipe>
+
+		<recipe name="PhDWorkLight" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="2"/>
+		  <ingredient name="resourceForgedIron" count="6"/>
+		  <ingredient name="resourceBrokenGlass" count="10"/>
+		</recipe>
+
+		<recipe name="PhDSignShopOpen" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="5"/>
+		  <ingredient name="resourceForgedIron" count="3"/>
+		  <ingredient name="resourceBrokenGlass" count="4"/>
+		</recipe>
+
+		<recipe name="PhDSpotlightPlayer" count="1" craft_area="workbench">
+			<ingredient name="resourceHeadlight" count="1"/>
+			<ingredient name="resourceElectricParts" count="8"/>
+			<ingredient name="resourceDuctTape" count="2"/>
+			<ingredient name="resourceScrapIron" count="50"/>
+		</recipe>
+
+		<recipe name="PhDFuseBox" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="5"/>
+		  <ingredient name="resourceForgedIron" count="3"/>
+		</recipe>
+
+		<recipe name="PhDFuseBlock" count="1" craft_area="workbench">
+		  <ingredient name="resourceElectricParts" count="5"/>
+		  <ingredient name="resourceForgedIron" count="10"/>
+		</recipe>
+
+	</append>
+	
+</configs>

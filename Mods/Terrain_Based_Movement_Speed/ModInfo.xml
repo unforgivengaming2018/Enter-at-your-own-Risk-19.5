@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <ModInfo>
+        <Name value="Terrain Based Movemeent Speed" />
+        <Description value="This changes how fast you walk/run based on the terrain you are standing on. It ranges from +35% on asphalt, to -25% on ice. *warning the zombies get the same changes." />
+        <Author value="Elucidus" />
+        <Version value="1.0.0" />
+        <Website value="https://community.7daystodie.com/topic/8204-terrain-based-movement-speed/" />
+    </ModInfo>
+</xml>

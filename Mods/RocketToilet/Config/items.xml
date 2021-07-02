@@ -1,0 +1,22 @@
+<configs>
+	<append xpath="/items">
+
+
+		<item name="vehicleRocketToiletplaceable">
+			<property name="Extends" value="vehicleMinibikePlaceable"/>
+			<property name="CustomIcon" value="DaToilet"/>
+			<property name="DescriptionKey" value="vehicleRocketToiletPlaceableDesc"/>
+			<property name="Meshfile" value="#@modfolder:Resources/datoilet.unity3d?DaToilet2"/>
+			<property name="EconomicValue" value="11000"/>
+			<property class="Action1">
+				<property name="Vehicle" value="vehicleRocketToilet"/>
+				<property name="VehicleSize" value="2.7, 2.4, 5"/>
+			</property>
+			<effect_group name="Base Effects">
+				<passive_effect name="ModSlots" operation="base_set" value="4"/>
+				<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+				<passive_effect name="DegradationMax" operation="base_set" value="3500"/>
+			</effect_group>
+		</item>			
+	 </append>
+ </configs>

@@ -1,0 +1,890 @@
+<configs>
+	<append xpath="/items">
+		
+<!--item name="GuardHandsim">
+	<property name="Extends" value="meleeHandMaster"/>
+	<property name="Tags" value="blunt,melee,light"/>	
+	<property name="CreativeMode" value="None"/>
+	<property name="HoldType" value="9"/>
+	<property name="Material" value="Morganic"/>
+	<property name="Canhold" value="false"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="Candrop" value="false"/>
+	<property class="Action0">
+		<property name="Class" value="Melee"/>
+		<property name="Delay" value="1"/>
+		<property name="Range" value="1.88"/> 
+		<property name="Sphere" value="0.4"/>
+		<property name="Block_range" value="2.3"/>
+		<property name="DamageEntity" value="41"/>
+		<property name="DamageBlock" value="0"/>
+		<property name="Buff" value="buffArmBroken,buffShocked"/>			
+		<property name="Sound_start" value="swoosh"/>
+	</property>
+		<effect_group name="meleeHandsim" tiered="false">	
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="1.65"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value=".12" tags="buffArmBroken"/>
+		<passive_effect name="BuffProcChance" operation="base_set" value=".25" tags="buffShocked"/>		
+	</effect_group>
+</item-->
+
+<item name="Chicken_Hatched">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="Chicken_Hatched_Desc"/>
+			<property name="CustomIcon" value="cntBirdnest"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="Chicken_Hatched"/>
+			</property>
+		</item>
+
+<item name="Rabbit_trap">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="Rabbit_trap_Desc"/>
+			<property name="CustomIcon" value="resourceLeather"/>
+	        <property name="CustomIconTint" value="210,0,210"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="Rabbit_trap"/>
+			</property>
+		</item>
+		
+<!--item name="GuardZeus1">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="GenericGuardDesc"/>
+			<property name="CustomIcon" value="sleeperIdle"/>
+	        <property name="CustomIconTint" value="210,0,210"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="GuardZeus"/>
+			</property>
+			<property name="Group" value="Tools/Traps"/>			
+		</item>	
+		
+<item name="GuardPsyren1">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="GenericGuardDesc"/>
+			<property name="CustomIcon" value="sleeperIdle"/>
+	        <property name="CustomIconTint" value="210,0,210"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="GuardPsyren"/>
+			</property>
+			<property name="Group" value="Tools/Traps"/>			
+		</item>	
+
+		<item name="GuardLizzy1">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="GenericGuardDesc"/>
+			<property name="CustomIcon" value="sleeperIdle"/>
+	        <property name="CustomIconTint" value="210,0,210"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="GuardLizzy"/>
+			</property>
+			<property name="Group" value="Tools/Traps"/>			
+		</item>	
+		
+<item name="GuardSimAlastair1">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="GenericGuardDesc"/>
+			<property name="CustomIcon" value="sleeperIdle"/>
+	        <property name="CustomIconTint" value="210,0,210"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="GuardSimAlastair"/>
+			</property>
+			<property name="Group" value="Tools/Traps"/>			
+		</item-->
+
+	<item name="GuardRabbit1">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="GuardRabbit1Desc"/>
+			<property name="CustomIcon" value="sleeperBoarAnimal"/>
+	        <property name="CustomIconTint" value="210,0,210"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="GuardRabbit"/>
+			</property>
+			<property name="Group" value="Tools/Traps"/>			
+		</item>		
+
+		<item name="GuardHellLion1">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="GuardHellLion1Desc"/>
+			<property name="CustomIcon" value="sleeperBoarAnimal"/>
+	        <property name="CustomIconTint" value="110,0,110"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="GuardHellLion"/>
+			</property>
+			<property name="Group" value="Tools/Traps"/>			
+		</item>		
+		
+		<item name="GuardHellWolf1">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="GuardHellWolf1Desc"/>
+			<property name="CustomIcon" value="sleeperBoarAnimal"/>
+	        <property name="CustomIconTint" value="110,0,110"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="GuardHellWolf"/>
+			</property>
+			<property name="Group" value="Tools/Traps"/>			
+		</item>		
+		
+		<item name="GuardHellBoar1">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="GuardHellBoar1Desc"/>
+			<property name="CustomIcon" value="sleeperBoarAnimal"/>
+	        <property name="CustomIconTint" value="110,30,110"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="GuardHellBoar"/>
+			</property>
+			<property name="Group" value="Tools/Traps"/>			
+		</item>		
+		
+		<item name="GuardHellBear1">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="GuardHellBear1Desc"/>
+			<property name="CustomIcon" value="sleeperBoarAnimal"/>
+	        <property name="CustomIconTint" value="110,70,110"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="GuardHellBear"/>
+			</property>
+			<property name="Group" value="Tools/Traps"/>			
+		</item>		
+		
+		<item name="PetPig1">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="PetPig1Desc"/>
+			<property name="CustomIcon" value="sleeperBoarAnimal"/>
+	        <property name="CustomIconTint" value="110,70,110"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="PetPig"/>
+			</property>
+			<property name="Group" value="Tools/Traps"/>			
+		</item>		
+		
+		<item name="PetStag1">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="PetStag1Desc"/>
+			<property name="CustomIcon" value="sleeperBoarAnimal"/>
+	        <property name="CustomIconTint" value="110,70,110"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="PetStag"/>
+			</property>
+			<property name="Group" value="Tools/Traps"/>			
+		</item>		
+		
+		<item name="PetBoar1">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="PetBoar1Desc"/>
+			<property name="CustomIcon" value="sleeperBoarAnimal"/>
+	        <property name="CustomIconTint" value="110,70,110"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="PetBoar"/>
+			</property>
+			<property name="Group" value="Tools/Traps"/>			
+		</item>
+
+		<item name="PetBear1">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="PetBear1Desc"/>
+			<property name="CustomIcon" value="sleeperBoarAnimal"/>
+	        <property name="CustomIconTint" value="110,70,110"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="PetBear"/>
+			</property>
+			<property name="Group" value="Tools/Traps"/>			
+		</item>		
+		
+		<item name="PetWolf1">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="PetWolf1Desc"/>
+			<property name="CustomIcon" value="sleeperBoarAnimal"/>
+	        <property name="CustomIconTint" value="110,70,110"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="PetWolf"/>
+			</property>
+			<property name="Group" value="Tools/Traps"/>			
+		</item>		
+		
+		<item name="PetCoyote1">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="PetCoyote1Desc"/>
+			<property name="CustomIcon" value="sleeperBoarAnimal"/>
+	        <property name="CustomIconTint" value="110,70,110"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="PetCoyote"/>
+			</property>
+			<property name="Group" value="Tools/Traps"/>			
+		</item>		
+		
+		<item name="PetDoe1">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="PetDoe1Desc"/>
+			<property name="CustomIcon" value="sleeperBoarAnimal"/>
+	        <property name="CustomIconTint" value="110,70,110"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="PetDoe"/>
+			</property>
+			<property name="Group" value="Tools/Traps"/>			
+		</item>		
+
+<item name="ChickenFeed">
+<property name="DescriptionKey" value="ChickenFeedDesc"/>
+<property name="CustomIcon" value="foodCornMeal"/> <property name="CustomIconTint" value="b0ffb0"/>
+	<property name="Meshfile" value="#Other/Items?Food/seed_corn" />
+	<property name="Material" value="Morganic" />
+	<property name="HoldType" value="21" />
+	<property name="CraftingIngredientTime" value="8" />
+	<property name="Stacknumber" value="20" />
+	<property class="Action1">
+		<property name="Class" value="Repair"/>
+		<property name="Repair_amount" value="50"/>
+		<property name="Upgrade_hit_offset" value="-4"/>
+		<property name="Sound_start" value="repair_block"/>
+		<property name="Delay" value="1.3"/>
+		<property name="Upgrade_action_sound" value="ImpactSurface/metalhitearth"/>
+		<property name="Allowed_upgrade_items" value="ChickenFeed"/>
+	</property>
+	<effect_group name="Base Effects" tiered="false">
+		<passive_effect name="MaxRange" operation="base_set" value="3"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="0"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="0"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="70"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="0" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="100" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
+	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+</item>
+
+<item name="RabbitFeed">
+<property name="DescriptionKey" value="RabbitFeedDesc"/>
+<property name="CustomIcon" value="foodCropYuccaFruit"/> <property name="CustomIconTint" value="b0ffb0"/>
+	<property name="Meshfile" value="#Other/Items?Food/seed_corn" />
+	<property name="Material" value="Morganic" />
+	<property name="HoldType" value="21" />
+	<property name="CraftingIngredientTime" value="8" />
+	<property name="Stacknumber" value="20" />
+	<property class="Action1">
+		<property name="Class" value="Repair"/>
+		<property name="Repair_amount" value="50"/>
+		<property name="Upgrade_hit_offset" value="-4"/>
+		<property name="Sound_start" value="repair_block"/>
+		<property name="Delay" value="1.3"/>
+		<property name="Upgrade_action_sound" value="ImpactSurface/metalhitearth"/>
+		<property name="Allowed_upgrade_items" value="RabbitFeed"/>
+	</property>
+	<effect_group name="Base Effects" tiered="false">
+		<passive_effect name="MaxRange" operation="base_set" value="3"/>
+		<passive_effect name="BlockRange" operation="base_set" value="3"/>
+		<passive_effect name="EntityDamage" operation="base_set" value="0"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="0"/>
+		<passive_effect name="AttacksPerMinute" operation="base_set" value="70"/>
+		<passive_effect name="StaminaLoss" operation="base_set" value="0" tags="primary"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="100" />
+		<passive_effect name="ModSlots" operation="base_set" value="0" />
+	</effect_group>
+	<property name="Group" value="Food/Cooking,CFFood/Cooking"/>
+</item>
+
+	<item name="FarmJeep">
+		<property name="Extends" value="vehicleMinibikePlaceable"/>
+		<property name="CustomIcon" value="vehicle4x4TruckPlaceable"/>
+		<property name="CustomIconTint" value="255,0,0"/>
+		<property name="Meshfile" value="#Entities/Vehicles?jeep_Prefab.prefab"/>
+		<property name="EconomicValue" value="3000"/>
+		<property class="Action1">
+		<property name="Vehicle" value="FarmJeep"/>
+		<property name="VehicleSize" value="2,2,3"/>
+	</property>
+	<effect_group name="vehicle4x4TruckPlaceable" tiered="false">
+		<passive_effect name="ModSlots" operation="base_set" value="4"/>
+		<passive_effect name="ModPowerBonus" operation="base_add" value="300" tags="EconomicValue"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="7500"/>
+	</effect_group>
+	</item>
+	
+<item name="GuardDogLead1">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="GuardLeadDog1Desc"/>
+			<property name="CustomIcon" value="sleeperBoarAnimal"/>
+	        <property name="CustomIconTint" value="110,70,110"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="GuardDogLead"/>
+			</property>
+			<property name="Group" value="Tools/Traps"/>			
+		</item>		
+		
+		<item name="GuardDogCoal1">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="GuardCoalDog1Desc"/>
+			<property name="CustomIcon" value="sleeperBoarAnimal"/>
+	        <property name="CustomIconTint" value="110,70,110"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="GuardDogCoal"/>
+			</property>
+			<property name="Group" value="Tools/Traps"/>			
+		</item>		
+		
+		<item name="GuardDogNitrate1">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="GuardNitrateDog1Desc"/>
+			<property name="CustomIcon" value="sleeperBoarAnimal"/>
+	        <property name="CustomIconTint" value="110,70,110"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="GuardDogNitrate"/>
+			</property>
+			<property name="Group" value="Tools/Traps"/>			
+		</item>		
+		
+		<item name="GuardDogShale1">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="GuardShaleDog1Desc"/>
+			<property name="CustomIcon" value="sleeperBoarAnimal"/>
+	        <property name="CustomIconTint" value="110,70,110"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="GuardDogShale"/>
+			</property>
+			<property name="Group" value="Tools/Traps"/>			
+		</item>
+
+<item name="GuardTurretStuner1">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="GenericGuardDesc"/>
+			<property name="CustomIcon" value="sleeperIdle"/>
+			<property name="CustomIconTint" value="72,33,150"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="GuardTurretStuner"/>
+			</property>
+			<property name="Group" value="Tools/Traps"/>			
+		</item>	
+		
+<item name="TurretGuardSim1">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="TurretGuardSim1Desc"/>
+			<property name="CustomIcon" value="sleeperIdle"/>
+	        <property name="CustomIconTint" value="210,0,210"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="TurretGuardSim"/>
+			</property>
+			<property name="Group" value="Tools/Traps"/>			
+		</item>	
+		
+		<item name="GuardTurretDre1">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="GuardTurretDre1Desc"/>
+			<property name="CustomIcon" value="sleeperIdle"/>
+	        <property name="CustomIconTint" value="210,0,210"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="GuardTurretDre"/>
+			</property>
+			<property name="Group" value="Tools/Traps"/>			
+		</item>	
+		
+		<item name="GuardTurretFox1">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="GuardTurretFox1Desc"/>
+			<property name="CustomIcon" value="sleeperIdle"/>
+	        <property name="CustomIconTint" value="210,0,210"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="GuardTurretFox"/>
+			</property>
+			<property name="Group" value="Tools/Traps"/>			
+		</item>	
+		
+		<item name="GuardTurretLizzy1">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="GuardTurretLizzy1Desc"/>
+			<property name="CustomIcon" value="sleeperIdle"/>
+	        <property name="CustomIconTint" value="210,0,210"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="GuardTurretLizzy"/>
+			</property>
+			<property name="Group" value="Tools/Traps"/>			
+		</item>	
+		
+		<item name="GuardTurretBandit1">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="GuardTurretBandit1Desc"/>
+			<property name="CustomIcon" value="sleeperIdle"/>
+	        <property name="CustomIconTint" value="210,0,210"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="GuardTurretBandit"/>
+			</property>
+			<property name="Group" value="Tools/Traps"/>			
+		</item>	
+		
+		<item name="GuardTurretBanditFoxy1">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="GuardTurretBanditFoxy1Desc"/>
+			<property name="CustomIcon" value="sleeperIdle"/>
+	        <property name="CustomIconTint" value="210,0,210"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="GuardTurretBanditFoxy"/>
+			</property>
+			<property name="Group" value="Tools/Traps"/>			
+		</item>	
+		
+		<item name="TurretGuardLeader1">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="TurretGuardLeader1Desc"/>
+			<property name="CustomIcon" value="sleeperIdle"/>
+	        <property name="CustomIconTint" value="210,0,210"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="TurretGuardLeader"/>
+			</property>
+			<property name="Group" value="Tools/Traps"/>			
+		</item>	
+		
+		<item name="TurretGuardCompoundBowMan1">
+			<property name="Extends" value="challengeQuestMaster"/>
+			<property name="DescriptionKey" value="TurretGuardCompoundBowMan1Desc"/>
+			<property name="CustomIcon" value="sleeperIdle"/>
+	        <property name="CustomIconTint" value="210,0,210"/>
+			<property class="Action0">
+				<property name="UseAnimation" value="false"/>
+				<property name="QuestGiven" value="TurretGuardCompoundBowMan"/>
+			</property>
+			<property name="Group" value="Tools/Traps"/>			
+		</item>	
+		
+		<item name="GuardTurretPistol">
+	<property name="CreativeMode" value="None"/>
+	<property name="Tags" value="weapon,ranged,9mmGun"/>
+	<property name="TintColor" value="252,215,5"/>
+	<property name="DisplayType" value="rangedGun"/>
+	<property name="Candrop" value="false"/>
+	<property name="HoldType" value="1"/>
+	<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Pistol/PistolPrefab.prefab"/>
+	<property name="Material" value="MHandGunParts"/> <property name="Weight" value="4"/>
+	<property name="SoundJammed" value="weapon_jam"/>
+	<property name="Sound_Sight_In" value="pistol_sight_in"/>
+	<property name="Sound_Sight_Out" value="pistol_sight_out"/>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="LightValue" value=".45"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="ShowQuality" value="true"/>
+
+	<property class="Action0">
+		<property name="Class" value="Ranged"/>
+		<property name="Magazine_items" value="ammo9mmBulletGuard"/>
+		<property name="Infinite_ammo" value="true"/>
+		<property name="Sound_start" value="Pistol_Fire"/>
+		<property name="Sound_loop" value="Pistol_Fire"/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value="dryfire"/>
+		<property name="Sound_reload" value="pistol_reload"/>
+		<property name="Particles_muzzle_fire" value="gunfire_pistol"/>
+		<property name="Particles_muzzle_fire_fpv" value="gunfire_pistol_fpv"/>
+		<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
+	</property>
+
+	<effect_group name="GuardTurretPistol">
+		<passive_effect name="MaxRange" operation="base_set" value="70" tags="9mmGun"/>
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="70" tags="9mmGun"/>		
+		<passive_effect name="RoundsPerMinute" operation="base_set" value="40"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="1"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="120,250" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="0"/>
+	</effect_group>
+</item>
+
+<item name="ammo9mmBulletGuard">
+    <property name="CreativeMode" value="None"/>
+	<property name="Tags" value="ammo"/>
+	<property name="DisplayType" value="ammoBullet"/>
+	<property name="Candrop" value="false"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mbrass"/>
+	<property name="MeltTimePerUnit" value=".4"/>
+	<property name="Stacknumber" value="30"/> <!-- STK ammo high -->
+	<property name="EconomicValue" value="9"/>
+	<property name="Group" value="Ammo/Weapons"/>
+	<effect_group name="ammo9mmBulletGuard" tiered="false">
+		<passive_effect name="EntityDamage" operation="base_set" value="32" tags="9mmGun"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="7"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+	</effect_group>
+</item>
+
+<item name="TurretGuardAutoShotgun">
+	<property name="CreativeMode" value="None"/>
+	<property name="Tags" value="weapon,ranged,9mmGun"/>
+	<property name="TintColor" value="252,215,5"/>
+	<property name="DisplayType" value="rangedGun"/>
+	<property name="Candrop" value="false"/>
+	<property name="HoldType" value="76"/>
+	<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Auto Shotgun/autoShotgunPrefab.prefab"/>
+	<property name="Material" value="MShotgunParts"/> <property name="Weight" value="6"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="weapon_jam"/>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="LightValue" value=".45"/>
+	<property name="EconomicValue" value="15"/>
+	<property name="ShowQuality" value="true"/>
+
+	<property class="Action0">
+		<property name="Class" value="Ranged"/>
+		<property name="Delay" value=".8"/> <!-- obsolete if rounds per minute exists -->
+		<property name="Infinite_ammo" value="true"/>
+		<property name="Magazine_items" value="ammoTurretGuardShell"/>
+		<property name="Reload_time" value="2.6"/>
+		<property name="Sound_start" value="autoshotgun_fire"/>
+		<property name="Sound_loop" value="autoshotgun_fire"/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value="dryfire"/>
+		<property name="Particles_muzzle_fire" value="gunfire_autoshotgun"/>
+		<property name="Particles_muzzle_fire_fpv" value="gunfire_autoshotgun_fpv"/>
+	</property>
+
+	<effect_group name="TurretGuardAutoShotgun">
+		<passive_effect name="MaxRange" operation="base_set" value="70" tags="9mmGun"/>
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="60" tags="9mmGun"/>		
+		<passive_effect name="RoundsPerMinute" operation="base_set" value="40"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="3"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="3"/>
+		 <triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffBurningElement">
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10" />
+				</triggered_effect>
+		<passive_effect name="DegradationMax" operation="base_set" value="120,250" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="0"/>
+	</effect_group>
+</item>
+
+<item name="ammoTurretGuardShell">
+    <property name="CreativeMode" value="None"/>
+	<property name="Tags" value="ammo,shotgun"/>
+	<property name="DisplayType" value="ammoShotgun"/>
+	<property name="Candrop" value="false"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mlead_scrap"/>
+	<property name="Stacknumber" value="15"/> <!-- STK ammo low -->
+	<property name="EconomicValue" value="11"/>
+	<property name="Group" value="Ammo/Weapons"/>
+	<effect_group name="ammoTurretGuardShell" tiered="false">
+		<passive_effect name="EntityDamage" operation="base_set" value="20" tags="9mmGun"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="7"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+	</effect_group>
+</item>
+
+<item name="TurretGuardMGT1AK47">
+    <property name="CreativeMode" value="None"/>
+	<property name="Tags" value="weapon,ranged,9mmGun"/>
+	<property name="DisplayType" value="rangedGun"/>
+	<property name="TintColor" value="252,215,5"/>
+	<property name="Candrop" value="false"/>
+	<property name="HoldType" value="48"/>
+	<property name="Meshfile" value="#Other/Items?Weapons/Ranged/ak47/ak47Prefab.prefab"/>
+	<property name="Material" value="MMachineGunParts"/> <property name="Weight" value="4"/>
+
+	<property name="SoundJammed" value="weapon_jam"/>
+	<property name="Sound_Sight_In" value="rifle_sight_in"/>
+	<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+	<property name="EconomicValue" value="50"/>
+	<property name="ShowQuality" value="true"/>
+	<property name="Group" value="Ammo/Weapons"/>
+
+	<property class="Action0">
+		<property name="Class" value="Ranged"/>
+		<property name="Magazine_items" value="ammo762mmBulletGuard"/>
+		<property name="Infinite_ammo" value="true"/>
+		<property name="Sound_start" value="ak47_fire"/>
+		<property name="Sound_loop" value="ak47_fire"/>
+		<property name="Sound_empty" value="dryfire"/>
+		<property name="Sound_reload" value="ak47_reload"/>
+		<property name="Sound_end" value="ak47_fire_end"/>
+		<property name="Particles_muzzle_fire" value="gunfire_AK47"/>
+		<property name="Particles_muzzle_fire_fpv" value="gunfire_AK47_fpv"/>
+	</property>
+	<effect_group name="TurretGuardMGT1AK47">
+		<passive_effect name="MaxRange" operation="base_set" value="100" tags="9mmGun"/>
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="90" tags="9mmGun"/>		
+		<passive_effect name="RoundsPerMinute" operation="base_set" value="70"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="1"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="120,250" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="0"/>
+	</effect_group>
+</item>
+
+<item name="ammo762mmBulletGuard">
+	 <property name="CreativeMode" value="None"/>
+	<property name="Tags" value="ammo,9mmGun"/>
+	<property name="DisplayType" value="ammoBullet"/>
+	<property name="Candrop" value="false"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="#Other/Items?Misc/sackPrefab.prefab"/>
+	<property name="DropMeshfile" value="#Other/Items?Misc/sack_droppedPrefab.prefab"/>
+	<property name="Material" value="Mbrass"/>
+	<property name="MeltTimePerUnit" value=".4"/>
+	<property name="Stacknumber" value="30"/> <!-- STK ammo high -->
+	<property name="EconomicValue" value="9"/>
+	<property name="Group" value="Ammo/Weapons"/>
+	<effect_group name="ammo762mmBulletGuard" tiered="false">
+		<passive_effect name="EntityDamage" operation="base_set" value="32" tags="9mmGun"/>
+		<passive_effect name="BlockDamage" operation="base_set" value="7"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="-.8" tags="earth"/>
+		<passive_effect name="DamageModifier" operation="perc_add" value="2" tags="wood"/>
+	</effect_group>
+</item>
+
+ <item name="GuardCrossBow">
+   <property name="CreativeMode" value="None"/>
+	<property name="Tags" value="weapon,ranged,9mmGun,crossbow"/>
+	<property name="DisplayType" value="rangedBow"/>
+	<property name="HoldType" value="69"/>
+	<property name="TintColor" value="252,215,5"/>
+	<property name="Candrop" value="false"/>
+	<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Bows/AdvancedBow/AdvancedCompoundCrossbow/AdvancedCompoundCrossbowPrefab.prefab"/>
+	<property name="Material" value="MBowCrossbowParts"/> <property name="Weight" value="6"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
+	<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
+	<property name="Sound_Sight_In" value="crossbow_sight_in"/>
+	<property name="Sound_Sight_Out" value="crossbow_sight_out"/>
+	<property name="SoundUnholster" value="crossbow2_unholster"/>
+	<property name="SoundHolster" value="crossbow2_holster"/>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="ShowQuality" value="true"/>
+	<property class="Action0">
+		<property name="Class" value="Ranged"/>
+		<property name="Magazine_items" value="ammo762mmBulletGuard"/>
+		<property name="Infinite_ammo" value="true"/>
+		<property name="Sound_start" value="crossbow2_fire"/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value="dryfire"/>
+		<property name="Sound_reload" value="crossbow2_reload"/>
+	</property>
+	<effect_group name="GuardCrossBow">
+		<passive_effect name="MaxRange" operation="base_set" value="100" tags="9mmGun"/>
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="90" tags="9mmGun"/>		
+		<passive_effect name="RoundsPerMinute" operation="base_set" value="50"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="1"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="120,250" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="0"/>
+	</effect_group>
+</item>
+
+<item name="TurretGuardMGT3M60">
+    <property name="CreativeMode" value="None"/>
+	<property name="Tags" value="weapon,9mmGun,ranged,gun"/>
+	<property name="DisplayType" value="rangedGun"/>
+	<property name="HoldType" value="60"/>
+	<property name="Meshfile" value="#Other/Items?Weapons/Ranged/m60/m60Prefab.prefab"/>
+	<property name="Material" value="MMachineGunParts"/> <property name="Weight" value="6"/>
+	<property name="TintColor" value="252,215,5"/>
+	<property name="Candrop" value="false"/>
+
+	<property name="SoundJammed" value="weapon_jam"/>
+	<property name="Sound_Sight_In" value="rifle_sight_in"/>
+	<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+
+	<property name="EconomicValue" value="50"/>
+	<property name="ShowQuality" value="true"/>
+	<property name="Group" value="Ammo/Weapons"/>
+
+	<property class="Action0">
+		<property name="Class" value="Ranged"/>
+		<property name="Delay" value=".150"/> <!-- obsolete if rounds per minute exists -->
+		<property name="Magazine_items" value="ammo762mmBulletGuard"/>
+		<property name="Infinite_ammo" value="true"/>
+		<property name="Sound_start" value="m60_fire"/>
+		<property name="Sound_loop" value="m60_fire"/>
+		<property name="Sound_empty" value="dryfire"/>
+		<property name="Sound_reload" value="m60_reload"/>
+		<property name="Sound_end" value="m60_fire_end"/>
+		<property name="Particles_muzzle_fire" value="gunfire_m60"/>
+		<property name="Particles_muzzle_smoke" value="gunfire_smoke"/>
+		<property name="Particles_muzzle_fire_fpv" value="gunfire_m60_fpv"/>
+		<property name="Particles_muzzle_smoke_fpv" value="gunfire_smoke_fpv"/>
+	</property>
+
+	<effect_group name="TurretGuardMGT3M60">
+	<passive_effect name="MaxRange" operation="base_set" value="100" tags="9mmGun"/>
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="100" tags="9mmGun"/>
+		<passive_effect name="RoundsPerMinute" operation="base_set" value="70"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="60"/>
+		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>
+
+		<passive_effect name="WeaponHandling" operation="base_set" value=".83"/> 
+
+		<passive_effect name="DegradationMax" operation="base_set" value="300,650" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="0"/>
+
+	</effect_group>
+</item>
+
+<item name="TurretGuardTacticalAR">
+  <property name="CreativeMode" value="None"/>
+	<property name="Tags" value="weapon,9mmGun,ranged,gun"/>
+	<property name="DisplayType" value="rangedGun"/>
+	<property name="HoldType" value="71"/>
+	<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Tactical Assault Rifle/tacticalAssaultRiflePrefab.prefab"/>
+	<property name="Material" value="MMachineGunParts"/> <property name="Weight" value="4"/>
+	<property name="TintColor" value="252,215,5"/>
+	<property name="Candrop" value="false"/>
+
+	<property name="RepairTools" value="resourceRepairKit"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+
+	<property name="SoundJammed" value="weapon_jam"/>
+	<property name="EconomicValue" value="10"/>
+	<property name="ShowQuality" value="true"/>
+	<property name="Group" value="Ammo/Weapons"/>
+
+	<property class="Action0">
+		<property name="Class" value="Ranged"/>
+		<property name="Magazine_items" value="ammo762mmBulletGuard"/>
+		<property name="Infinite_ammo" value="true"/>
+		<property name="Sound_start" value="tacticalar_fire"/>
+		<property name="Sound_loop" value="tacticalar_fire"/>
+		<property name="Sound_empty" value="dryfire"/>
+		<property name="Particles_muzzle_fire" value="gunfire_assault_rifle"/>
+		<property name="Particles_muzzle_fire_fpv" value="gunfire_assault_rifle_fpv"/>
+		<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
+	</property>
+
+	<effect_group name="TurretGuardTacticalAR">
+		<passive_effect name="MaxRange" operation="base_set" value="100" tags="9mmGun"/>
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="100" tags="9mmGun"/>
+		<passive_effect name="RoundsPerMinute" operation="base_set" value="70"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="60"/>
+		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>
+
+		<passive_effect name="WeaponHandling" operation="base_set" value=".83"/> 
+
+		<passive_effect name="DegradationMax" operation="base_set" value="300,650" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="0"/>
+	</effect_group>
+</item>
+
+<item name="TurretGuardSniperRifle">
+    <property name="CreativeMode" value="None"/>
+	<property name="Tags" value="weapon,9mmGun,ranged,gun"/>
+	<property name="DisplayType" value="rangedGun"/>
+	<property name="HoldType" value="77"/>
+	<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Sharp Shooter/sharpShooterGunPrefab.prefab"/>
+	<property name="Material" value="MRifleParts"/> <property name="Weight" value="6"/>
+	<property name="SoundJammed" value="weapon_jam"/>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="TintColor" value="252,215,5"/>
+	<property name="Candrop" value="false"/>
+	<property name="EconomicValue" value="15"/>
+	<property name="ShowQuality" value="true"/>
+
+	<property class="Action0">
+		<property name="Class" value="Ranged"/>
+		<property name="Delay" value=".5"/> <!-- obsolete if rounds per minute exists -->
+		<property name="Magazine_items" value="ammo762mmBulletGuard"/>
+		<property name="Infinite_ammo" value="true"/>
+		<property name="Reload_time" value="2.5"/>
+		<property name="Sound_start" value="sharpshooter_fire"/>
+		<property name="Sound_loop" value="sharpshooter_fire"/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value="dryfire"/>
+		<property name="Particles_muzzle_fire" value="gunfire_sniper"/>
+		<property name="Particles_muzzle_fire_fpv" value="gunfire_sniper_fpv"/>
+		<requirement name="CVarCompare" cvar="_underwater" operation="LT" value=".98"/>
+	</property>
+
+	<effect_group name="TurretGuardSniperRifle">
+		<passive_effect name="MaxRange" operation="base_set" value="100" tags="9mmGun"/>
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="100" tags="9mmGun"/>
+		<passive_effect name="RoundsPerMinute" operation="base_set" value="70"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="60"/>
+		<passive_effect name="ReloadSpeedMultiplier" operation="base_set" value="1"/>
+		<passive_effect name="SpreadDegreesVertical" operation="base_set" value="6"/>
+		<passive_effect name="SpreadDegreesHorizontal" operation="base_set" value="6"/>
+
+		<passive_effect name="WeaponHandling" operation="base_set" value=".83"/> 
+       <triggered_effect trigger="onSelfDamagedOther" action="AddBuff" target="other" buff="buffShocked">
+					<requirement name="RandomRoll" seed_type="Random" min_max="0,100" operation="LTE" value="10" />
+				</triggered_effect>
+		<passive_effect name="DegradationMax" operation="base_set" value="300,650" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="0"/>
+	</effect_group>
+</item>
+
+<item name="TurretGuardCompoundBow">
+ <property name="CreativeMode" value="None"/>
+	<property name="Tags" value="weapon,ranged,9mmGun,TurretGuardCompoundBow"/>
+	<property name="DisplayType" value="rangedBow"/>
+	<property name="HoldType" value="53"/>
+	<property name="Meshfile" value="#Other/Items?Weapons/Ranged/Bows/CompoundBow/CompoundBowPrefab.prefab"/>
+	<property name="Material" value="MBowCrossbowParts"/> <property name="Weight" value="6"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="TintColor" value="252,215,5"/>
+	<property name="Candrop" value="false"/>
+	<property name="EconomicValue" value="1"/>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="ShowQuality" value="true"/>
+	<property class="Action0">
+		<property name="Class" value="Ranged"/>
+		<!-- Catapult might not be the best name for it but it can also be used for a slingshot -->
+		<property name="Magazine_items" value="ammo762mmBulletGuard"/>
+		<property name="Infinite_ammo" value="true"/>
+		<property name="Sound_start" value="bow3_fire"/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value="dryfire"/>
+		<property name="Sound_reload" value="bow_unquiver"/>
+		<property name="Sound_draw" value="bow3_draw"/>
+		<property name="Sound_cancel" value="bow_fire_cancel"/>
+		<property name="Particles_muzzle_fire" value="nozzleflashuzi"/>
+		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
+	</property>
+
+	<effect_group name="TurretGuardCompoundBow">
+		<passive_effect name="MaxRange" operation="base_set" value="100" tags="9mmGun"/>
+		<passive_effect name="DamageFalloffRange" operation="base_set" value="90" tags="9mmGun"/>		
+		<passive_effect name="RoundsPerMinute" operation="base_set" value="40"/>
+		<passive_effect name="BurstRoundCount" operation="base_set" value="1"/>
+		<passive_effect name="MagazineSize" operation="base_set" value="1"/>
+		<passive_effect name="DegradationMax" operation="base_set" value="120,250" tier="1,6"/>
+		<passive_effect name="DegradationPerUse" operation="base_set" value="0"/>
+	</effect_group>	
+</item>		
+
+	</append>
+</configs>

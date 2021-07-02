@@ -1,0 +1,8 @@
+<configs>
+    <!-- If you want to change the unread books icon, here is how to do it -->
+    <!-- <set xpath="/items/item[@name='schematicMaster']/property[@name='ItemTypeIcon']/@value">add</set> -->
+    <set xpath="/items/item[@name='schematicMaster']/property[@name='AltItemTypeIcon']/@value">check</set>
+    <insertAfter xpath="/items/item[@name='schematicMaster']/property[@name='AltItemTypeIcon']">
+        <property name="AltItemTypeIconColor" value="128,256,128,128" />
+    </insertAfter>
+</configs>

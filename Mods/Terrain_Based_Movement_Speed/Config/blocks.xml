@@ -1,0 +1,47 @@
+<configs>
+<!-- Change Movement speed based on terrain -->
+<!--Sand -->
+	<append xpath="/blocks/block[@name='terrSand']">
+		<property name="MovementFactor" value=".8"/>
+	</append>
+<!--Snow -->
+	<append xpath="/blocks/block[@name='terrSnow']">
+		<property name="MovementFactor" value=".8"/>
+	</append>
+<!--Bedrock -->
+	<append xpath="/blocks/block[@name='terrBedrock']">
+		<property name="MovementFactor" value="1.5"/>
+	</append>
+<!--Desert .9-->
+	<append xpath="/blocks/block[@name='terrDesertGround']">
+		<property name="MovementFactor" value=".9"/>
+	</append>
+<!--Asphalt 1.35-->
+	<append xpath="/blocks/block[@name='terrAsphalt']">
+		<property name="MovementFactor" value="1.35"/>
+	</append>
+<!--Gravel -->
+	<append xpath="/blocks/block[@name='terrGravel']">
+		<property name="MovementFactor" value="1.15"/>
+	</append>
+<!--Ice-->
+	<append xpath="/blocks/block[@name='terrIce']"><!--Ice-->
+		<property name="MovementFactor" value=".75"/>
+	</append>
+<!--Burnt Forest -->
+	<append xpath="/blocks/block[@name='terrBurntForestGround']">
+		<property name="MovementFactor" value=".95"/>
+	</append>
+<!--Destroyed Stone -->
+	<append xpath="/blocks/block[@name='terrDestroyedStone']">
+		<property name="MovementFactor" value=".92"/>
+	</append>
+<!--Concrete -->
+	<append xpath="/blocks/block[@name='terrConcrete']">
+		<property name="MovementFactor" value="1.25"/>
+	</append>
+<!--Sidewalk 
+	<append xpath="/blocks/block[@name='terrSidewalk']">
+		<property name="MovementFactor" value="1.2"/>
+	</append>-->
+</configs>
