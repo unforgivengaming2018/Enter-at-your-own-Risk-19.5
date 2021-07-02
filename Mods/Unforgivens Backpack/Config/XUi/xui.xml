@@ -1,0 +1,13 @@
+<!-- - - - - - - - - - - -
+#########################
+##### H7SB Backpacks ####
+### 7 Days to Die Mod ###
+#########################
+######## Eihwaz #########
+#### CC BY-NC-ND-SA #####
+#########################
+- - - - - - - - - - - -->
+<configs>
+	<set xpath="/xui/ruleset[@name='default']/@scale">1.20</set>
+	<set xpath="/xui/ruleset[@name='default']/@stackpanel_scale">1.00</set>
+</configs>

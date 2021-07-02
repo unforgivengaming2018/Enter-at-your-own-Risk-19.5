@@ -1,0 +1,108 @@
+<!-- - - - - - - - - - - -
+#########################
+##### SEOR Backpack ####
+### 7 Days to Die A19.0 B180 ###
+#########################
+######## Unforgivne774 #########
+#### DEV Branch a19.0 B180#####
+#########################
+- - - - - - - - - - - -->
+<config>
+<!-- Backpacks -->
+<append xpath="/blocks">
+<block name="backpackT1block">
+	<property name="CustomIcon" value="cntBackpack01"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="DescriptionKey" value="createH7SB_Backpacks"/>
+	<property name="Tags" value="backpackBlock"/>
+	<property name="Group" value="Clothing"/>
+
+	<property name="Material" value="Mcloth"/>
+	<property name="Path" value="solid"/>
+	<property name="MaxDamage" value="25"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#Entities/LootContainers?backpack02Prefab.prefab"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property class="RepairItems"><property name="resourceCloth" value="1"/></property>
+	<property name="CanPickup" value="true" param1="backpackT1"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="FuelValue" value="6"/>
+	<property name="SellableToTrader" value="false"/>
+	<drop event="Destroy" name="resourceCloth" count="1,4"/>
+</block>
+<block name="backpackT2block">
+	<property name="CustomIcon" value="cntBackpack03"/>
+	<property name="CustomIconTint" value="FF7F50"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="DescriptionKey" value="createH7SB_Backpacks"/>
+	<property name="Tags" value="backpackBlock"/>
+	<property name="Group" value="Clothing"/>
+
+	<property name="Material" value="Mcloth"/>
+	<property name="Path" value="solid"/>
+	<property name="MaxDamage" value="50"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#Entities/LootContainers?backpack01Prefab.prefab"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property class="RepairItems"><property name="resourceCloth" value="3"/></property>
+	<property name="CanPickup" value="true" param1="backpackT2"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="FuelValue" value="6"/>
+	<property name="SellableToTrader" value="false"/>
+	<drop event="Destroy" name="resourceCloth" count="3,6"/>
+</block>
+<block name="backpackT2V2block">
+	<property name="CustomIcon" value="cntBackpack03"/>
+	<property name="DescriptionKey" value="createH7SB_Backpacks"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="Tags" value="backpackBlock"/>
+	<property name="Group" value="Clothing"/>
+
+	<property name="Material" value="Mcloth"/>
+	<property name="Path" value="solid"/>
+	<property name="MaxDamage" value="50"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#Entities/LootContainers?backpack03Prefab.prefab"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property class="RepairItems"><property name="resourceCloth" value="3"/></property>
+	<property name="CanPickup" value="true" param1="backpackT2V2"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="FuelValue" value="6"/>
+	<property name="SellableToTrader" value="false"/>
+	<drop event="Destroy" name="resourceCloth" count="3,6"/>
+</block>
+<block name="backpackT3block">
+	<property name="CustomIcon" value="cntWeaponsBagLarge"/>
+	<property name="CreativeMode" value="Dev"/>
+	<property name="DescriptionKey" value="createH7SB_Backpacks"/>
+	<property name="Tags" value="backpackBlock"/>
+	<property name="Group" value="Clothing"/>
+
+	<property name="Material" value="MmilitaryFiber"/>
+	<property name="Path" value="solid"/>
+	<property name="MaxDamage" value="100"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="#Entities/LootContainers?weapon_bags_largePrefab.prefab"/>
+	<property name="ModelOffset" value="0,0.5,0.19"/>
+	<property name="Place" value="TowardsPlacer"/>
+	<property name="StabilitySupport" value="false"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
+	<property class="RepairItems"><property name="resourceMilitaryFiber" value="1"/></property>
+	<property name="CanPickup" value="true" param1="backpackT3"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="FuelValue" value="6"/>
+	<property name="SellableToTrader" value="false"/>
+	<drop event="Destroy" name="resourceCloth" count="3,6"/>
+</block>
+</append>
+</config>

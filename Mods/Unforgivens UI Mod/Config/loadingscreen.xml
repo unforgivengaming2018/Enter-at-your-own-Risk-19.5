@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+
+
+  <set xpath="/doc/backgrounds/tex[1]/@file">@modfolder:Textures/loadingscreen01.png</set>
+  <set xpath="/doc/backgrounds/tex[2]/@file">@modfolder:Textures/loadingscreen02.png</set>
+  <set xpath="/doc/backgrounds/tex[3]/@file">@modfolder:Textures/loadingscreen03.png</set>
+  <set xpath="/doc/backgrounds/tex[4]/@file">@modfolder:Textures/loadingscreen04.png</set>
+  <set xpath="/doc/backgrounds/tex[4]/@file">@modfolder:Textures/loadingscreen05.png</set>
+  <set xpath="/doc/backgrounds/tex[4]/@file">@modfolder:Textures/loadingscreen06.png</set>
+  <set xpath="/doc/backgrounds/tex[4]/@file">@modfolder:Textures/loadingscreen07.png</set>
+  <set xpath="/doc/backgrounds/tex[4]/@file">@modfolder:Textures/loadingscreen08.png</set>
+  
+
+  <append xpath="/doc/backgrounds">
+    <tex file="@modfolder:Textures/loadingscreen01.png" />
+    <tex file="@modfolder:Textures/loadingscreen02.png" />
+	<tex file="@modfolder:Textures/loadingscreen03.png" />
+	<tex file="@modfolder:Textures/loadingscreen04.png" />
+	<tex file="@modfolder:Textures/loadingscreen05.png" />
+	<tex file="@modfolder:Textures/loadingscreen06.png" />
+	<tex file="@modfolder:Textures/loadingscreen07.png" />
+	<tex file="@modfolder:Textures/loadingscreen08.png" />
+  </append>
+
+</doc>

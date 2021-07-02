@@ -1,0 +1,14 @@
+<!-- - - - - - - - - - - -
+#########################
+##### SEOR Backpack ####
+### 7 Days to Die A19.0 B180 ###
+#########################
+######## Unforgivne774 #########
+#### DEV Branch a19.0 B180#####
+#########################
+- - - - - - - - - - - -->
+<configs>
+<!--ByUnforgiven774-->
+<set xpath="/styles/style[@name='itemStack']/style_entry[@name='width']/@value">50</set>
+<set xpath="/styles/style[@name='itemStack']/style_entry[@name='height']/@value">50</set>	
+</configs>

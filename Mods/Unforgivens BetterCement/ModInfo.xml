@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+  <ModInfo>
+    <Name value="Unforgivens BetterCement" />
+    <Description value="Create 'Cement Mix' directly in the cement mixer" />
+    <Author value="Unforgiven774" />
+    <Version value="19.0.1.B180" compat="A19" />
+  </ModInfo>
+</xml>

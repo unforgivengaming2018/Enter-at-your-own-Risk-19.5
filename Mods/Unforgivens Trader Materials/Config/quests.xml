@@ -1,0 +1,1399 @@
+<UnforgivensTraderMaterialTrade>
+<!-- This adds The ability to trade the access amount of materials that you have that aren't needed in for blocks as a quest from traders -->
+
+	<!-- 	materialTrades
+	tier1_construct
+	tier2_construct
+	tier3_construct
+	tier4_construct
+	tier5_construct	
+	-->
+	<append xpath="/quests">
+		<!-- 		Materials -->
+		<quest id="quest_MaterialTrader1_Cobblestone">
+			<property name="name_key" value="quest_MaterialTrader1_Cobblestone" />
+			<property name="subtitle_key" value="quest_MaterialTrader1_Cobblestone_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader1_Cobblestone_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader1_Cobblestone_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_materials_Cobblestone"/>
+			<property name="group_name" value="material_trade_Cobblestone" />
+			<property name="difficulty" value="veryeasy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>
+
+			<objective type="Fetch" id="resourceClayLump" value="100" phase="1" />
+			<objective type="Fetch" id="resourceRockSmall" value="100" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="resourceCobblestones" value="25" />
+		</quest>
+		<quest id="quest_MaterialTrader2_Cobblestone">
+			<property name="name_key" value="quest_MaterialTrader2_Cobblestone" />
+			<property name="subtitle_key" value="quest_MaterialTrader2_Cobblestone_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader2_Cobblestone_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader2_Cobblestone_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_materials_Cobblestone"/>
+			<property name="group_name" value="material_trade_Cobblestone" />
+			<property name="difficulty" value="veryeasy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>
+
+			<objective type="Fetch" id="resourceClayLump" value="400" phase="1" />
+			<objective type="Fetch" id="resourceRockSmall" value="400" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="resourceCobblestones" value="100" />
+		</quest>
+		<quest id="quest_MaterialTrader3_Cobblestone">
+			<property name="name_key" value="quest_MaterialTrader3_Cobblestone" />
+			<property name="subtitle_key" value="quest_MaterialTrader3_Cobblestone_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader3_Cobblestone_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader3_Cobblestone_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_materials_Cobblestone"/>
+			<property name="group_name" value="material_trade_Cobblestone" />
+			<property name="difficulty" value="veryeasy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>
+
+			<objective type="Fetch" id="resourceClayLump" value="2000" phase="1" />
+			<objective type="Fetch" id="resourceRockSmall" value="2000" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="resourceCobblestones" value="500" />
+		</quest>		
+		<quest id="quest_MaterialTrader4_Cobblestone">
+			<property name="name_key" value="quest_MaterialTrader4_Cobblestone" />
+			<property name="subtitle_key" value="quest_MaterialTrader4_Cobblestone_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader4_Cobblestone_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader4_Cobblestone_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_materials_Cobblestone"/>
+			<property name="group_name" value="material_trade_Cobblestone" />
+			<property name="difficulty" value="veryeasy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>
+
+			<objective type="Fetch" id="resourceClayLump" value="4000" phase="1" />
+			<objective type="Fetch" id="resourceRockSmall" value="4000" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="resourceCobblestones" value="1000" />
+		</quest>	
+
+		<quest id="quest_MaterialTrader1_ConcreteMix">
+			<property name="name_key" value="quest_MaterialTrader1_ConcreteMix" />
+			<property name="subtitle_key" value="quest_MaterialTrader1_ConcreteMix_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader1_ConcreteMix_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader1_ConcreteMix_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_materials_ConcreteMix"/>
+			<property name="group_name" value="material_trade_ConcreteMix" />
+			<property name="difficulty" value="easy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>
+
+			<objective type="Fetch" id="resourceCrushedSand" value="25" phase="1" />
+			<objective type="Fetch" id="resourceRockSmall" value="50" phase="1" />
+			<objective type="Fetch" id="resourceCement" value="25" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="resourceConcreteMix" value="25" />
+		</quest>			
+		<quest id="quest_MaterialTrader2_ConcreteMix">
+			<property name="name_key" value="quest_MaterialTrader2_ConcreteMix" />
+			<property name="subtitle_key" value="quest_MaterialTrader2_ConcreteMix_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader2_ConcreteMix_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader2_ConcreteMix_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_materials_ConcreteMix"/>
+			<property name="group_name" value="material_trade_ConcreteMix" />
+			<property name="difficulty" value="easy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>
+
+			<objective type="Fetch" id="resourceCrushedSand" value="100" phase="1" />
+			<objective type="Fetch" id="resourceRockSmall" value="200" phase="1" />
+			<objective type="Fetch" id="resourceCement" value="100" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="resourceConcreteMix" value="100" />
+		</quest>	
+		<quest id="quest_MaterialTrader3_ConcreteMix">
+			<property name="name_key" value="quest_MaterialTrader3_ConcreteMix" />
+			<property name="subtitle_key" value="quest_MaterialTrader3_ConcreteMix_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader3_ConcreteMix_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader3_ConcreteMix_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_materials_ConcreteMix"/>
+			<property name="group_name" value="material_trade_ConcreteMix" />
+			<property name="difficulty" value="easy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>
+
+			<objective type="Fetch" id="resourceCrushedSand" value="500" phase="1" />
+			<objective type="Fetch" id="resourceRockSmall" value="1000" phase="1" />
+			<objective type="Fetch" id="resourceCement" value="500" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="resourceConcreteMix" value="500" />
+		</quest>		
+		<quest id="quest_MaterialTrader4_ConcreteMix">
+			<property name="name_key" value="quest_MaterialTrader4_ConcreteMix" />
+			<property name="subtitle_key" value="quest_MaterialTrader4_ConcreteMix_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader4_ConcreteMix_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader4_ConcreteMix_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_materials_ConcreteMix"/>
+			<property name="group_name" value="material_trade_ConcreteMix" />
+			<property name="difficulty" value="easy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>
+
+			<objective type="Fetch" id="resourceCrushedSand" value="1000" phase="1" />
+			<objective type="Fetch" id="resourceRockSmall" value="2000" phase="1" />
+			<objective type="Fetch" id="resourceCement" value="1000" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="resourceConcreteMix" value="1000" />
+		</quest>		
+
+		<quest id="quest_MaterialTrader1_Cement">
+			<property name="name_key" value="quest_MaterialTrader1_CementCement 25" />
+			<property name="subtitle_key" value="quest_MaterialTrader1_Cement_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader1_Cement_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader1_Cement_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_materials_Cement"/>
+			<property name="group_name" value="material_trade_Cement" />
+			<property name="difficulty" value="easy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>
+
+			<objective type="Fetch" id="resourceRockSmall" value="125" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="resourceCement" value="25" />
+		</quest>		
+		<quest id="quest_MaterialTrader2_Cement">
+			<property name="name_key" value="quest_MaterialTrader2_Cement" />
+			<property name="subtitle_key" value="quest_MaterialTrader2_Cement_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader2_Cement_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader2_Cement_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_materials_Cement"/>
+			<property name="group_name" value="material_trade_Cement" />
+			<property name="difficulty" value="easy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>
+
+			<objective type="Fetch" id="resourceRockSmall" value="500" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="resourceCement" value="100" />
+		</quest>
+		<quest id="quest_MaterialTrader3_Cement">
+			<property name="name_key" value="quest_MaterialTrader3_Cement" />
+			<property name="subtitle_key" value="quest_MaterialTrader3_Cement_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader3_Cement_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader3_Cement_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_materials_Cement"/>
+			<property name="group_name" value="material_trade_Cement" />
+			<property name="difficulty" value="easy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>
+
+			<objective type="Fetch" id="resourceRockSmall" value="2500" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="resourceCement" value="500" />
+		</quest>
+		<quest id="quest_MaterialTrader4_Cement">
+			<property name="name_key" value="quest_MaterialTrader4_Cement" />
+			<property name="subtitle_key" value="quest_MaterialTrader4_Cement_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader4_Cement_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader4_Cement_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_materials_Cement"/>
+			<property name="group_name" value="material_trade_Cement" />
+			<property name="difficulty" value="easy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>
+
+			<objective type="Fetch" id="resourceRockSmall" value="5000" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="resourceCement" value="1000" />
+		</quest>
+
+		<quest id="quest_MaterialTrader1_resourceForgedIron">
+			<property name="name_key" value="quest_MaterialTrader1_resourceForgedIron" />
+			<property name="subtitle_key" value="quest_MaterialTrader1_resourceForgedIron_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader1_resourceForgedIron_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader1_resourceForgedIron_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_materials_resourceForgedIron"/>
+			<property name="group_name" value="material_trade_ForgedIron" />
+			<property name="difficulty" value="veryeasy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>
+
+			<objective type="Fetch" id="resourceScrapIron" value="250" phase="1" />
+			<objective type="Fetch" id="resourceClayLump" value="125" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="resourceForgedIron" value="25" />
+		</quest>		
+		<quest id="quest_MaterialTrader2_resourceForgedIron">
+			<property name="name_key" value="quest_MaterialTrader2_resourceForgedIron" />
+			<property name="subtitle_key" value="quest_MaterialTrader2_resourceForgedIron_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader2_resourceForgedIron_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader2_resourceForgedIron_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_materials_resourceForgedIron"/>
+			<property name="group_name" value="material_trade_ForgedIron" />
+			<property name="difficulty" value="veryeasy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>
+
+			<objective type="Fetch" id="resourceScrapIron" value="1000" phase="1" />
+			<objective type="Fetch" id="resourceClayLump" value="500" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="resourceForgedIron" value="100" />
+		</quest>		
+		<quest id="quest_MaterialTrader3_resourceForgedIron">
+			<property name="name_key" value="quest_MaterialTrader3_resourceForgedIron" />
+			<property name="subtitle_key" value="quest_MaterialTrader3_resourceForgedIron_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader3_resourceForgedIron_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader3_resourceForgedIron_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_materials_resourceForgedIron"/>
+			<property name="group_name" value="material_trade_ForgedIron" />
+			<property name="difficulty" value="veryeasy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>
+
+			<objective type="Fetch" id="resourceScrapIron" value="5000" phase="1" />
+			<objective type="Fetch" id="resourceClayLump" value="2500" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="resourceForgedIron" value="500" />
+		</quest>		
+		<quest id="quest_MaterialTrader4_resourceForgedIron">
+			<property name="name_key" value="quest_MaterialTrader4_resourceForgedIron" />
+			<property name="subtitle_key" value="quest_MaterialTrader4_resourceForgedIron_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader4_resourceForgedIron_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader4_resourceForgedIron_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_materials_resourceForgedIron"/>
+			<property name="group_name" value="material_trade_ForgedIron" />
+			<property name="difficulty" value="veryeasy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>
+
+			<objective type="Fetch" id="resourceScrapIron" value="10000" phase="1" />
+			<objective type="Fetch" id="resourceClayLump" value="5000" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="resourceForgedIron" value="1000" />
+		</quest>		
+
+		<quest id="quest_MaterialTrader1_resourceForgedSteel">
+			<property name="name_key" value="quest_MaterialTrader1_resourceForgedSteel" />
+			<property name="subtitle_key" value="quest_MaterialTrader1_resourceForgedSteel_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader1_resourceForgedSteel_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader1_resourceForgedSteel_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_materials_resourceForgedSteel"/>
+			<property name="group_name" value="material_trade_ForgedSteel" />
+			<property name="difficulty" value="veryeasy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>
+
+			<objective type="Fetch" id="resourceScrapIron" value="500" phase="1" />
+			<objective type="Fetch" id="resourceClayLump" value="250" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="resourceForgedSteel" value="25" />
+		</quest>
+		<quest id="quest_MaterialTrader2_resourceForgedSteel">
+			<property name="name_key" value="quest_MaterialTrader2_resourceForgedSteel" />
+			<property name="subtitle_key" value="quest_MaterialTrader2_resourceForgedSteel_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader2_resourceForgedSteel_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader2_resourceForgedSteel_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_materials_resourceForgedSteel"/>
+			<property name="group_name" value="material_trade_ForgedSteel" />
+			<property name="difficulty" value="veryeasy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>
+
+			<objective type="Fetch" id="resourceScrapIron" value="2000" phase="1" />
+			<objective type="Fetch" id="resourceClayLump" value="1000" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="resourceForgedSteel" value="100" />
+		</quest>
+		<quest id="quest_MaterialTrader3_resourceForgedSteel">
+			<property name="name_key" value="quest_MaterialTrader3_resourceForgedSteel" />
+			<property name="subtitle_key" value="quest_MaterialTrader3_resourceForgedSteel_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader3_resourceForgedSteel_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader3_resourceForgedSteel_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_materials_resourceForgedSteel"/>
+			<property name="group_name" value="material_trade_ForgedSteel" />
+			<property name="difficulty" value="veryeasy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>
+
+			<objective type="Fetch" id="resourceScrapIron" value="10000" phase="1" />
+			<objective type="Fetch" id="resourceClayLump" value="5000" phase="1" />		
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="resourceForgedSteel" value="500" />
+		</quest>	
+		<quest id="quest_MaterialTrader4_resourceForgedSteel">
+			<property name="name_key" value="quest_MaterialTrader4_resourceForgedSteel" />
+			<property name="subtitle_key" value="quest_MaterialTrader4_resourceForgedSteel_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader4_resourceForgedSteel_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader4_resourceForgedSteel_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_materials_resourceForgedSteel"/>
+			<property name="group_name" value="material_trade_ForgedSteel" />
+			<property name="difficulty" value="veryeasy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>
+			
+			<objective type="Fetch" id="resourceScrapIron" value="20000" phase="1" />
+			<objective type="Fetch" id="resourceClayLump" value="10000" phase="1" />		
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="resourceForgedSteel" value="1000" />
+		</quest>	
+
+		<!-- 		Blocks -->
+		<quest id="quest_MaterialTrader1_FlagstoneBlock">
+			<property name="name_key" value="quest_MaterialTrader1_FlagstoneBlock" />
+			<property name="subtitle_key" value="quest_MaterialTrader1_FlagstoneBlock_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader1_FlagstoneBlock_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader1_FlagstoneBlock_description" />
+			<property name="group_name" value="material_trade_Flagstone" />
+			<property name="difficulty" value="veryeasy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>
+			
+			<objective type="Fetch" id="resourceCobblestones" value="100" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="flagstoneBlockVariantHelper" value="25" />
+		</quest>
+		<quest id="quest_MaterialTrader2_FlagstoneBlock">
+			<property name="name_key" value="quest_MaterialTrader2_FlagstoneBlock" />
+			<property name="subtitle_key" value="quest_MaterialTrader2_FlagstoneBlock_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader2_FlagstoneBlock_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader2_FlagstoneBlock_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_blocks_FlagstoneBlock"/>
+			<property name="group_name" value="material_trade_Flagstone" />
+			<property name="difficulty" value="veryeasy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>
+			
+			<objective type="Fetch" id="resourceCobblestones" value="400" phase="1" />	
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="flagstoneBlockVariantHelper" value="100" />
+		</quest>
+		<quest id="quest_MaterialTrader3_FlagstoneBlock">
+			<property name="name_key" value="quest_MaterialTrader3_FlagstoneBlock" />
+			<property name="subtitle_key" value="quest_MaterialTrader3_FlagstoneBlock_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader3_FlagstoneBlock_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader3_FlagstoneBlock_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_blocks_FlagstoneBlock"/>
+			<property name="group_name" value="material_trade_Flagstone" />
+			<property name="difficulty" value="veryeasy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>
+			
+			<objective type="Fetch" id="resourceCobblestones" value="2000" phase="1" />		
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="flagstoneBlockVariantHelper" value="500" />
+		</quest>
+		<quest id="quest_MaterialTrader4_FlagstoneBlock">
+			<property name="name_key" value="quest_MaterialTrader4_FlagstoneBlock" />
+			<property name="subtitle_key" value="quest_MaterialTrader4_FlagstoneBlock_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader4_FlagstoneBlock_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader4_FlagstoneBlock_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_blocks_FlagstoneBlock"/>
+			<property name="group_name" value="material_trade_Flagstone" />
+			<property name="difficulty" value="veryeasy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>
+			
+			<objective type="Fetch" id="resourceCobblestones" value="4000" phase="1" />	
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="flagstoneBlockVariantHelper" value="1000" />
+		</quest>
+
+		<quest id="quest_MaterialTrader1_rebarFrameBlock">
+			<property name="name_key" value="quest_MaterialTrader1_rebarFrameBlock" />
+			<property name="subtitle_key" value="quest_MaterialTrader1_rebarFrameBlock_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader1_rebarFrameBlock_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader1_rebarFrameBlock_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_blocks_rebarFrameBlock"/>
+			<property name="group_name" value="material_trade_Rebar" />
+			<property name="difficulty" value="easy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>
+			
+			<objective type="Fetch" id="resourceClayLump" value="25" phase="1" />
+			<objective type="Fetch" id="resourceScrapIron" value="125" phase="1" />		
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="rebarFrameBlockVariantHelper" value="25" />
+		</quest>
+		<quest id="quest_MaterialTrader2_rebarFrameBlock">
+			<property name="name_key" value="quest_MaterialTrader1_rebarFrameBlock" />
+			<property name="subtitle_key" value="quest_MaterialTrader2_rebarFrameBlock_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader2_rebarFrameBlock_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader2_rebarFrameBlock_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_blocks_rebarFrameBlock"/>
+			<property name="group_name" value="material_trade_Rebar" />
+			<property name="difficulty" value="easy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>	
+			
+			<objective type="Fetch" id="resourceClayLump" value="100" phase="1" />
+			<objective type="Fetch" id="resourceScrapIron" value="500" phase="1" />		
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="rebarFrameBlockVariantHelper" value="100" />
+		</quest>		
+		<quest id="quest_MaterialTrader3_rebarFrameBlock">
+			<property name="name_key" value="quest_MaterialTrader3_rebarFrameBlock" />
+			<property name="subtitle_key" value="quest_MaterialTrader3_rebarFrameBlock_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader3_rebarFrameBlock_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader3_rebarFrameBlock_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_blocks_rebarFrameBlock"/>
+			<property name="group_name" value="material_trade_Rebar" />
+			<property name="difficulty" value="easy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>
+			
+			<objective type="Fetch" id="resourceClayLump" value="500" phase="1" />
+			<objective type="Fetch" id="resourceScrapIron" value="2500" phase="1" />		
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="rebarFrameBlockVariantHelper" value="500" />
+		</quest>		
+		<quest id="quest_MaterialTrader4_rebarFrameBlock">
+			<property name="name_key" value="quest_MaterialTrader4_rebarFrameBlock" />
+			<property name="subtitle_key" value="quest_MaterialTrader4_rebarFrameBlock_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader4_rebarFrameBlock_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader4_rebarFrameBlock_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_blocks_rebarFrameBlock"/>
+			<property name="group_name" value="material_trade_Rebar" />
+			<property name="difficulty" value="easy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>
+			
+			<objective type="Fetch" id="resourceClayLump" value="1000" phase="1" />
+			<objective type="Fetch" id="resourceScrapIron" value="5000" phase="1" />		
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="rebarFrameBlockVariantHelper" value="1000" />
+		</quest>
+
+		<!-- 		Bars -->
+		<!-- 		Wood Bars -->
+		<quest id="quest_MaterialTrader1_woodBars">
+			<property name="name_key" value="quest_MaterialTrader1_woodBars" />
+			<property name="subtitle_key" value="quest_MaterialTrader1_woodBars_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader1_woodBars_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader1_woodBars_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_blocks_woodBars"/>
+			<property name="group_name" value="material_trade_Bars" />
+			<property name="difficulty" value="easy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>
+			
+			<objective type="Fetch" id="resourceWood" value="150" phase="1" />	
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="woodBars" value="25" />
+		</quest>
+		<quest id="quest_MaterialTrader2_woodBars">
+			<property name="name_key" value="quest_MaterialTrader1_woodBars" />
+			<property name="subtitle_key" value="quest_MaterialTrader2_woodBars_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader2_woodBars_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader2_woodBars_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_blocks_woodBars"/>
+			<property name="group_name" value="material_trade_Bars" />
+			<property name="difficulty" value="easy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>	
+			
+			<objective type="Fetch" id="resourceWood" value="600" phase="1" />	
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="woodBars" value="100" />
+		</quest>		
+		<quest id="quest_MaterialTrader3_woodBars">
+			<property name="name_key" value="quest_MaterialTrader3_woodBars" />
+			<property name="subtitle_key" value="quest_MaterialTrader3_woodBars_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader3_woodBars_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader3_woodBars_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_blocks_woodBars"/>
+			<property name="group_name" value="material_trade_Bars" />
+			<property name="difficulty" value="easy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>
+			
+			<objective type="Fetch" id="resourceWood" value="3000" phase="1" />	
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="woodBars" value="500" />
+		</quest>		
+		<quest id="quest_MaterialTrader4_woodBars">
+			<property name="name_key" value="quest_MaterialTrader4_woodBars" />
+			<property name="subtitle_key" value="quest_MaterialTrader4_woodBars_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader4_woodBars_subtitle" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader4_woodBars_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_blocks_woodBars"/>
+			<property name="group_name" value="material_trade_Bars" />
+			<property name="difficulty" value="easy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>
+			
+			<objective type="Fetch" id="resourceWood" value="6000" phase="1" />	
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="woodBars" value="1000" />
+		</quest>
+		<!-- 		Wood Bars Centered -->
+		<quest id="quest_MaterialTrader1_woodBarsCentered">
+			<property name="name_key" value="quest_MaterialTrader1_woodBarsCentered" />
+			<property name="subtitle_key" value="quest_MaterialTrader1_woodBarsCentered_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader1_woodBarsCentered_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader1_woodBarsCentered_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_blocks_woodBarsCentered"/>
+			<property name="group_name" value="material_trade_Bars" />
+			<property name="difficulty" value="easy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>
+			
+			<objective type="Fetch" id="resourceWood" value="150" phase="1" />	
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="woodBarsCentered" value="25" />
+		</quest>
+		<quest id="quest_MaterialTrader2_woodBarsCentered">
+			<property name="name_key" value="quest_MaterialTrader1_woodBarsCentered" />
+			<property name="subtitle_key" value="quest_MaterialTrader2_woodBarsCentered_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader2_woodBarsCentered_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader2_woodBarsCentered_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_blocks_woodBarsCentered"/>
+			<property name="group_name" value="material_trade_Bars" />
+			<property name="difficulty" value="easy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>	
+			
+			<objective type="Fetch" id="resourceWood" value="600" phase="1" />	
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="woodBarsCentered" value="100" />
+		</quest>		
+		<quest id="quest_MaterialTrader3_woodBarsCentered">
+			<property name="name_key" value="quest_MaterialTrader3_woodBarsCentered" />
+			<property name="subtitle_key" value="quest_MaterialTrader3_woodBarsCentered_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader3_woodBarsCentered_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader3_woodBarsCentered_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_blocks_woodBarsCentered"/>
+			<property name="group_name" value="material_trade_Bars" />
+			<property name="difficulty" value="easy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>
+			
+			<objective type="Fetch" id="resourceWood" value="3000" phase="1" />	
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="woodBarsCentered" value="500" />
+		</quest>		
+		<quest id="quest_MaterialTrader4_woodBarsCentered">
+			<property name="name_key" value="quest_MaterialTrader4_woodBarsCentered" />
+			<property name="subtitle_key" value="quest_MaterialTrader4_woodBarsCentered_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader4_woodBarsCentered_subtitle" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader4_woodBarsCentered_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_blocks_woodBarsCentered"/>
+			<property name="group_name" value="material_trade_Bars" />
+			<property name="difficulty" value="easy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>
+			
+			<objective type="Fetch" id="resourceWood" value="6000" phase="1" />	
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="woodBarsCentered" value="1000" />
+		</quest>
+		<!-- 		Iron Bars -->
+		<quest id="quest_MaterialTrader1_ironBars">
+			<property name="name_key" value="quest_MaterialTrader1_ironBars" />
+			<property name="subtitle_key" value="quest_MaterialTrader1_ironBars_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader1_ironBars_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader1_ironBars_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_blocks_ironBars"/>
+			<property name="group_name" value="material_trade_Bars" />
+			<property name="difficulty" value="easy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>
+			
+			<objective type="Fetch" id="resourceScrapIron" value="2500" phase="1" />
+			<objective type="Fetch" id="resourceClayLump" value="500" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="ironBars" value="25" />
+		</quest>
+		<quest id="quest_MaterialTrader2_ironBars">
+			<property name="name_key" value="quest_MaterialTrader1_ironBars" />
+			<property name="subtitle_key" value="quest_MaterialTrader2_ironBars_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader2_ironBars_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader2_ironBars_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_blocks_ironBars"/>
+			<property name="group_name" value="material_trade_Bars" />
+			<property name="difficulty" value="easy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>	
+			
+			<objective type="Fetch" id="resourceScrapIron" value="10000" phase="1" />
+			<objective type="Fetch" id="resourceClayLump" value="2000" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="ironBars" value="100" />
+		</quest>		
+		<quest id="quest_MaterialTrader3_ironBars">
+			<property name="name_key" value="quest_MaterialTrader3_ironBars" />
+			<property name="subtitle_key" value="quest_MaterialTrader3_ironBars_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader3_ironBars_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader3_ironBars_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_blocks_ironBars"/>
+			<property name="group_name" value="material_trade_Bars" />
+			<property name="difficulty" value="easy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>
+			
+			<objective type="Fetch" id="resourceScrapIron" value="50000" phase="1" />
+			<objective type="Fetch" id="resourceClayLump" value="10000" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="ironBars" value="500" />
+		</quest>		
+		<quest id="quest_MaterialTrader4_ironBars">
+			<property name="name_key" value="quest_MaterialTrader4_ironBars" />
+			<property name="subtitle_key" value="quest_MaterialTrader4_ironBars_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader4_ironBars_subtitle" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader4_ironBars_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_blocks_ironBars"/>
+			<property name="group_name" value="material_trade_Bars" />
+			<property name="difficulty" value="easy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>
+			
+			<objective type="Fetch" id="resourceScrapIron" value="100000" phase="1" />
+			<objective type="Fetch" id="resourceClayLump" value="20000" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="ironBars" value="1000" />
+		</quest>
+		<!-- 		Iron Bars Centered -->
+		<quest id="quest_MaterialTrader1_ironBarsCentered">
+			<property name="name_key" value="quest_MaterialTrader1_ironBarsCentered" />
+			<property name="subtitle_key" value="quest_MaterialTrader1_ironBarsCentered_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader1_ironBarsCentered_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader1_ironBarsCentered_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_blocks_ironBarsCentered"/>
+			<property name="group_name" value="material_trade_Bars" />
+			<property name="difficulty" value="easy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>
+			
+			<objective type="Fetch" id="resourceScrapIron" value="2500" phase="1" />	
+			<objective type="Fetch" id="resourceClayLump" value="500" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="ironBarsCentered" value="25" />
+		</quest>
+		<quest id="quest_MaterialTrader2_ironBarsCentered">
+			<property name="name_key" value="quest_MaterialTrader1_ironBarsCentered" />
+			<property name="subtitle_key" value="quest_MaterialTrader2_ironBarsCentered_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader2_ironBarsCentered_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader2_ironBarsCentered_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_blocks_ironBarsCentered"/>
+			<property name="group_name" value="material_trade_Bars" />
+			<property name="difficulty" value="easy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>	
+			
+			<objective type="Fetch" id="resourceScrapIron" value="10000" phase="1" />
+			<objective type="Fetch" id="resourceClayLump" value="2000" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="ironBarsCentered" value="100" />
+		</quest>		
+		<quest id="quest_MaterialTrader3_ironBarsCentered">
+			<property name="name_key" value="quest_MaterialTrader3_ironBarsCentered" />
+			<property name="subtitle_key" value="quest_MaterialTrader3_ironBarsCentered_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader3_ironBarsCentered_description" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader3_ironBarsCentered_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_blocks_ironBarsCentered"/>
+			<property name="group_name" value="material_trade_Bars" />
+			<property name="difficulty" value="easy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>
+			
+			<objective type="Fetch" id="resourceScrapIron" value="50000" phase="1" />
+			<objective type="Fetch" id="resourceClayLump" value="10000" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="ironBarsCentered" value="500" />
+		</quest>		
+		<quest id="quest_MaterialTrader4_ironBarsCentered">
+			<property name="name_key" value="quest_MaterialTrader4_ironBarsCentered" />
+			<property name="subtitle_key" value="quest_MaterialTrader4_ironBarsCentered_subtitle" />
+			<property name="description_key" value="quest_MaterialTrader4_ironBarsCentered_subtitle" />
+			<property name="icon" value="ui_game_symbol_map_house" />
+			<property name="repeatable" value="true" />
+			<property name="category_key" value="treasure" />
+			<property name="offer_key" value="quest_MaterialTrader4_ironBarsCentered_description" />
+			<property name="statement_key" value="trade_materials_statement"/>
+			<property name="response_key" value="trade_blocks_ironBarsCentered"/>
+			<property name="group_name" value="material_trade_Bars" />
+			<property name="difficulty" value="easy" />
+			<property name="completiontype" value="TurnIn" />
+			<property name="completion_key" value="quest_MaterialTrader_completion"/>
+			
+			<objective type="Fetch" id="resourceScrapIron" value="100000" phase="1" />
+			<objective type="Fetch" id="resourceClayLump" value="20000" phase="1" />
+
+			<objective type="ReturnToNPC">
+				<property name="phase" value="2" />
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+			<objective type="InteractWithNPC">
+				<property name="phase" value="2"/>
+				<property name="nav_object" value="return_to_trader" />
+			</objective>
+
+			<reward type="Exp" value="100" />
+			<reward type="Item" id="casinoCoin" value="100" />
+			<reward type="Item" id="ironBarsCentered" value="1000" />
+		</quest>
+		
+		
+		
+	</append>
+
+</UnforgivensTraderMaterialTrade>

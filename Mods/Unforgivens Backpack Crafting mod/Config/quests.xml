@@ -1,0 +1,28 @@
+<Config>
+<!--This Quest is for enter at your own risk Applies to Basic survival quest 2 None of the other basic quests were changed In this mod -->
+  <set xpath="/quests/quest[@id='quest_BasicSurvival2']">
+    <property name="group_name_key" value="quest_BasicSurvival"/>
+    <property name="name_key" value="quest_BasicSurvival2"/>
+    <property name="subtitle" value="Craft Your Backpack"/>
+    <property name="subtitle_key" value="quest_BasicSurvival2_subtitle"/>
+    <property name="description_key" value="quest_BasicSurvival2_description"/>
+    <property name="icon" value="ui_game_symbol_hammer"/>
+    <property name="category_key" value="quest"/>
+    <property name="offer_key" value="quest_BasicSurvival_offer"/>
+    <property name="shareable" value="false"/>
+ 
+    <objective type="FetchKeep" id="resourceCloth" value="8" phase="1"/>
+    <objective type="FetchKeep" id="resourceYuccaFibers" value="6" phase="1"/>
+    <objective type="FetchKeep" id="resourceDuctTape" value="1" phase="1"/>
+    <objective type="Craft">
+        <property name="phase" value="2"/>
+        <property name="item" value="backpackT1"/>
+        <property name="count" value="1" />
+    </objective>
+        
+    <reward type="Quest" id="quest_BasicSurvival3"/>
+</set>
+ 
+  <!--This changes After bedroll quest to Backpack crafting quest and removes the stone axe Crafting -->
+  <set xpath="//quest[@id='quest_BasicSurvival1']/reward[@type='Quest']" name="id">quest_BackpackCrafting"</set>
+ </Config>

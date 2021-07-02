@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<items>
+<!-- This makes the Tier 3 Items have up to 6 slots Depending on tier -->
+<setattribute xpath="//item[contains(@name,'T3')]/effect_group/passive_effect[@name='ModSlots']" name="value">0,0,1,2,3,4</setattribute>
+
+<insertAfter xpath="//item[contains(@name,'T3')]/effect_group/passive_effect[@name='ModSlots']">
+    <passive_effect name="ModSlots" operation="base_add" value="0,2"/>
+</insertAfter>
+
+</items>

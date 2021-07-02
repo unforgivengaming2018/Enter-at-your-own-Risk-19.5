@@ -1,0 +1,5 @@
+<blocks>
+<append xpath="/blocks/block [@name='terrOreIron']">
+    <drop event="Harvest" name="resourceScrapBrass" prob="1.07"  count="50" tag="artOfMiningLuckyStrikeHarvest" />
+</append>
+</blocks>

@@ -1,0 +1,18 @@
+<SEOR>
+<append xpath="//item[@name='meleeHandZombie01']/effect_group[1]">
+    <triggered_effect trigger="onSelfAttackedOther" operation="AddBuff" buff="buffInjuryKnockdown01" target="other">
+        <requirement name="HasBuff" buff="buffLaceration" target="other" />
+		<requirement name="RandomRoll" seed_type="Random" min_max="50,100" operation="LTE" value="60" />
+		<requirement name="HasBuff" buff="buffLegBroken" target="other" />
+		<requirement name="RandomRoll" seed_type="Random" min_max="50,100" operation="LTE" value="60" />
+		<requirement name="HasBuff" buff="buffInfectionCatch" target="other" />
+		<requirement name="RandomRoll" seed_type="Random" min_max="50,100" operation="LTE" value="60" />
+		<requirement name="HasBuff" buff="buffInjuryConcussion" target="other"/>
+		<requirement name="RandomRoll" seed_type="Random" min_max="50,100" operation="LTE" value="60" />
+		<requirement name="HasBuff" buff="buffAbrasionCatch" target="other" />
+		<requirement name="RandomRoll" seed_type="Random" min_max="50,100" operation="LTE" value="60" />
+        <requirement name="HasBuff" buff="buffArmBroken" target="other"/>
+		<requirement name="RandomRoll" seed_type="Random" min_max="50,100" operation="LTE" value="60" />
+    </triggered_effect>
+</append>
+</SEOR>

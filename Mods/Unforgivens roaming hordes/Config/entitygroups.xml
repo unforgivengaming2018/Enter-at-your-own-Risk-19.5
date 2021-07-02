@@ -1,0 +1,38 @@
+<SEOR>
+    <!-- This adds roaming hordes To Early game By day 5 -->
+    <append xpath="/entitygroups/entitygroup[(starts-with(@name, 'wanderingHordeStageGS') or starts-with(@name,'BMHordeStageGS') or starts-with(@name, 'scoutHordeStageGS')) and position() > 13]">   
+        <entity name="animalZombieBear" prob="2.25" count="10"/>
+        <entity name="animalBear" prob="2.25" count="5"/>
+        <entity name="animalBossGrace" prob="1" count="5"/>
+        <entity name="animalSnake" prob="2.25" count="5"/>
+        <entity name="animalWolf" prob="2.25" count="5"/>
+        <entity name="animalMountainLion" prob="2.25" count="5"/>
+        <entity name="animalDragonWolfRad" prob="1.24" count="5"/>
+        <entity name="animalMaxFoxRad" prob="1.25" count="5"/>
+        <entity name="animalHornet" prob="1.2" count="15"/>
+        <entity name="animalKingBones" prob="1.2" count="15"/>
+        <entity name="animalQueenSosa" prob="1.2" count="15"/>
+    </append>
+    <append xpath="/entitygroups/entitygroup[(starts-with(@name, 'wanderingHordeStageGS1') or starts-with(@name,'BMHordeStageGS') or starts-with(@name, 'scoutHordeStageGS')) and position() > 51]">
+        <entity name="zombieWightFeral" prob="1" count="15"/>
+        <entity name="zombieDemolitionBM" prob="1.23" count="20"/>
+        <entity name="zombieFemaleFatRadiated" prob="1.14" count="10"/>
+        <entity name="animalZombieBear" prob="2.25" count="10"/>
+        <entity name="animalBear" prob="2.25" count="25"/>
+        <entity name="animalBossGrace" prob="1" count="25"/>
+        <entity name="animalSnake" prob="2.25" count="25"/>
+        <entity name="animalWolf" prob="2.25" count="25"/>
+        <entity name="animalMountainLion" prob="2.25" count="15"/>
+        <entity name="animalBossCommanche" prob="2.25" count="15"/>
+        <entity name="animalYogiBearRad" prob="2.25" count="10"/>
+        <entity name="animalDragonWolfRad" prob="1.24" count="15"/>
+        <entity name="animalMaxFoxRad" prob="1.25" count="5"/>
+        <entity name="zombieBehemothRadiated" prob="1.2" count="10"/>
+        <entity name="zombieBehemoth" prob="1.2" count="24"/>
+        <entity name="animalHornet" prob="1.2" count="15"/>
+        <entity name="animalKingBones" prob="1.2" count="15"/>
+        <entity name="animalQueenSosa" prob="1.2" count="15"/>
+		<entity name="animalSnakeRad" prob="1.2" count="20"/>
+    </append>
+	
+</SEOR>

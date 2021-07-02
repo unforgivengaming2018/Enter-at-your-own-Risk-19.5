@@ -1,0 +1,4 @@
+<recipes>
+<setattribute xpath="//recipe[@name='resourceConcreteMix']" name="craft_time">2</setattribute>
+
+</recipes>

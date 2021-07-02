@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Unforgivens T3 Item slot mod" />
+		<Description value="Allows Tier 3 items to have 6 slots based on tier." />
+		<Author value="Unforgivne774, oocia"/>
+		<Version value="19.0" />
+		<Website value="" />
+	</ModInfo>
+</xml>

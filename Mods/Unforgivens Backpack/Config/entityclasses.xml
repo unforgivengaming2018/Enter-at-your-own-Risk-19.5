@@ -1,0 +1,14 @@
+<!-- - - - - - - - - - - -
+#########################
+##### SEOR Backpack ####
+### 7 Days to Die A19.0 B180 ###
+#########################
+######## Unforgivne774 #########
+#### DEV Branch a19.0 B180#####
+#########################
+- - - - - - - - - - - -->
+<config>
+<append xpath="/entity_classes/entity_class[@name='playerMale']">
+	<effect_group><passive_effect name="CarryCapacity" operation="base_set" value="0"/></effect_group>
+</append>
+</config>

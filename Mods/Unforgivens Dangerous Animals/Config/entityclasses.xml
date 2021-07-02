@@ -1,0 +1,697 @@
+<SEOR>
+   <append xpath="/entity_classes">
+   
+   <entity_class name="animalQueenSosa" extends="animalZombieDog">
+			<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/zombiedog_radiated.mat"/>
+			<property name="Class" value="EntityZombieCop"/>
+			<property name="EntityType" value="Zombie"/>
+			<!-- Dog Go Boom! -->
+			<property name="Explosion.ParticleIndex" value="8"/>
+			<property name="Explosion.RadiusBlocks" value="10"/>
+			<property name="Explosion.RadiusEntities" value="6"/>
+			<property name="Explosion.BlockDamage" value="1500"/>
+			<property name="Explosion.EntityDamage" value="1500"/>
+			<property name="Explosion.DamageBonus.earth" value="1500"/>
+			<!-- Radiated zombie decap rules -->
+			<property name="HeadDismemberBaseChance" value="-.15"/>
+			<property name="HeadDismemberBonusChance" value="0.08"/>
+			<property name="HeadDismemberThreshold" value="0.38"/>
+			<property name="LowerLegDismemberThreshold" value="0.325"/>
+			<property name="LowerLegDismemberBaseChance" value="-.15"/>
+			<property name="LowerLegDismemberBonusChance" value="0.9"/>
+			<property name="UpperLegDismemberThreshold" value="0.325"/>
+			<property name="UpperLegDismemberBaseChance" value="-.15"/>
+			<property name="UpperLegDismemberBonusChance" value="0.9"/>
+			<property name="LowerArmDismemberThreshold" value="0.255"/>
+			<property name="LowerArmDismemberBaseChance" value="-.15"/>
+			<property name="LowerArmDismemberBonusChance" value="0.9"/>
+			<property name="UpperArmDismemberThreshold" value="0.255"/>
+			<property name="UpperArmDismemberBaseChance" value="-.15"/>
+			<property name="UpperArmDismemberBonusChance" value="0.9"/>
+			<property name="LegCrawlerThreshold" value="0"/>
+			<property name="LegCrippleThreshold" value="0.01"/>
+			<property name="KnockdownProneDamageThreshold" value="0.45"/>
+			<property name="KnockdownProneStunDuration" value="4,6"/>
+			<property name="KnockdownProneRefillRate" value="0.045,0.045"/>
+			<property name="KnockdownKneelDamageThreshold" value="0.38"/>
+			<property name="KnockdownKneelStunDuration" value="5,6"/>
+			<property name="KnockdownKneelRefillRate" value="0.045,0.045"/>
+			<property name="LegsExplosionDamageMultiplier" value=".85"/>
+			<property name="ArmsExplosionDamageMultiplier" value=".85"/>
+			<property name="HeadExplosionDamageMultiplier" value=".85"/>
+			<property name="ChestExplosionDamageMultiplier" value=".85"/>
+			<property name="SizeScale" value=".5"/>
+			<property name="HandItem" value="meleeHandAnimalZombieDog"/>
+			<property name="ExperienceGain" value="2500"/> <!-- XP grunt radiated -->
+			
+			<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="4"/> <!-- animalZombieDog -->
+			<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="4"/>
+			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="1"/>
+			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="15"/>
+			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
+			<drop event="Harvest" name="foodRottingFlesh" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="2500"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				
+				<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"/>
+			</effect_group>
+		</entity_class>
+		<entity_class name="animalKingBones" extends="animalZombieDog">
+			<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/zombiedog_radiated.mat"/>
+			<property name="Class" value="EntityZombieCop"/>
+			<property name="EntityType" value="Zombie"/>
+			<!-- Dog Go Boom! -->
+			<property name="Explosion.ParticleIndex" value="8"/>
+			<property name="Explosion.RadiusBlocks" value="10"/>
+			<property name="Explosion.RadiusEntities" value="6"/>
+			<property name="Explosion.BlockDamage" value="1500"/>
+			<property name="Explosion.EntityDamage" value="1500"/>
+			<property name="Explosion.DamageBonus.earth" value="1500"/>
+			<!-- Radiated zombie decap rules -->
+			<property name="HeadDismemberBaseChance" value="-.15"/>
+			<property name="HeadDismemberBonusChance" value="0.08"/>
+			<property name="HeadDismemberThreshold" value="0.38"/>
+			<property name="LowerLegDismemberThreshold" value="0.325"/>
+			<property name="LowerLegDismemberBaseChance" value="-.15"/>
+			<property name="LowerLegDismemberBonusChance" value="0.9"/>
+			<property name="UpperLegDismemberThreshold" value="0.325"/>
+			<property name="UpperLegDismemberBaseChance" value="-.15"/>
+			<property name="UpperLegDismemberBonusChance" value="0.9"/>
+			<property name="LowerArmDismemberThreshold" value="0.255"/>
+			<property name="LowerArmDismemberBaseChance" value="-.15"/>
+			<property name="LowerArmDismemberBonusChance" value="0.9"/>
+			<property name="UpperArmDismemberThreshold" value="0.255"/>
+			<property name="UpperArmDismemberBaseChance" value="-.15"/>
+			<property name="UpperArmDismemberBonusChance" value="0.9"/>
+			<property name="LegCrawlerThreshold" value="0"/>
+			<property name="LegCrippleThreshold" value="0.01"/>
+			<property name="KnockdownProneDamageThreshold" value="0.45"/>
+			<property name="KnockdownProneStunDuration" value="4,6"/>
+			<property name="KnockdownProneRefillRate" value="0.045,0.045"/>
+			<property name="KnockdownKneelDamageThreshold" value="0.38"/>
+			<property name="KnockdownKneelStunDuration" value="5,6"/>
+			<property name="KnockdownKneelRefillRate" value="0.045,0.045"/>
+			<property name="LegsExplosionDamageMultiplier" value=".85"/>
+			<property name="ArmsExplosionDamageMultiplier" value=".85"/>
+			<property name="HeadExplosionDamageMultiplier" value=".85"/>
+			<property name="ChestExplosionDamageMultiplier" value=".85"/>
+			<property name="SizeScale" value="1"/>
+			<property name="HandItem" value="meleeHandAnimalZombieDog"/>
+			<property name="ExperienceGain" value="2500"/> <!-- XP grunt radiated -->
+			
+			<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="4"/> <!-- animalZombieDog -->
+			<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="4"/>
+			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="1"/>
+			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="15"/>
+			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
+			<drop event="Harvest" name="foodRottingFlesh" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="2500"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				
+				<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"/>
+			</effect_group>
+		</entity_class>
+		
+          <entity_class name="animalBossCommanche" extends="animalZombieDog">
+			<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/zombiedog_radiated.mat"/>
+			<property name="Class" value="EntityZombieCop"/>
+			<property name="EntityType" value="Zombie"/>
+			<!-- Dog Go Boom! -->
+			<property name="Explosion.ParticleIndex" value="8"/>
+			<property name="Explosion.RadiusBlocks" value="10"/>
+			<property name="Explosion.RadiusEntities" value="6"/>
+			<property name="Explosion.BlockDamage" value="1500"/>
+			<property name="Explosion.EntityDamage" value="1500"/>
+			<property name="Explosion.DamageBonus.earth" value="1500"/>
+			<!-- Radiated zombie decap rules -->
+			<property name="HeadDismemberBaseChance" value="-.15"/>
+			<property name="HeadDismemberBonusChance" value="0.08"/>
+			<property name="HeadDismemberThreshold" value="0.38"/>
+			<property name="LowerLegDismemberThreshold" value="0.325"/>
+			<property name="LowerLegDismemberBaseChance" value="-.15"/>
+			<property name="LowerLegDismemberBonusChance" value="0.9"/>
+			<property name="UpperLegDismemberThreshold" value="0.325"/>
+			<property name="UpperLegDismemberBaseChance" value="-.15"/>
+			<property name="UpperLegDismemberBonusChance" value="0.9"/>
+			<property name="LowerArmDismemberThreshold" value="0.255"/>
+			<property name="LowerArmDismemberBaseChance" value="-.15"/>
+			<property name="LowerArmDismemberBonusChance" value="0.9"/>
+			<property name="UpperArmDismemberThreshold" value="0.255"/>
+			<property name="UpperArmDismemberBaseChance" value="-.15"/>
+			<property name="UpperArmDismemberBonusChance" value="0.9"/>
+			<property name="LegCrawlerThreshold" value="0"/>
+			<property name="LegCrippleThreshold" value="0.01"/>
+			<property name="KnockdownProneDamageThreshold" value="0.45"/>
+			<property name="KnockdownProneStunDuration" value="4,6"/>
+			<property name="KnockdownProneRefillRate" value="0.045,0.045"/>
+			<property name="KnockdownKneelDamageThreshold" value="0.38"/>
+			<property name="KnockdownKneelStunDuration" value="5,6"/>
+			<property name="KnockdownKneelRefillRate" value="0.045,0.045"/>
+			<property name="LegsExplosionDamageMultiplier" value=".85"/>
+			<property name="ArmsExplosionDamageMultiplier" value=".85"/>
+			<property name="HeadExplosionDamageMultiplier" value=".85"/>
+			<property name="ChestExplosionDamageMultiplier" value=".85"/>
+			<property name="SizeScale" value="2"/>
+			<property name="HandItem" value="meleeHandAnimalZombieDog"/>
+			<property name="ExperienceGain" value="2500"/> <!-- XP grunt radiated -->
+			
+			<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="4"/> <!-- animalZombieDog -->
+			<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="4"/>
+			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="1"/>
+			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="15"/>
+			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
+			<drop event="Harvest" name="foodRottingFlesh" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="2500"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				
+				<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="animalCommancheBM" extends="animalZombieDog">
+			<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/zombiedog_radiated.mat"/>
+			<property name="Class" value="EntityZombieCop"/>
+			<property name="EntityType" value="Zombie"/>
+			<!-- Dog Go Boom! -->
+			<property name="Explosion.ParticleIndex" value="8"/>
+			<property name="Explosion.RadiusBlocks" value="5"/>
+			<property name="Explosion.RadiusEntities" value="6"/>
+			<property name="Explosion.BlockDamage" value="1500"/>
+			<property name="Explosion.EntityDamage" value="1500"/>
+			<property name="Explosion.DamageBonus.earth" value="500"/>
+			<!-- Radiated zombie decap rules -->
+			<property name="HeadDismemberBaseChance" value="1.15"/>
+			<property name="HeadDismemberBonusChance" value="0.08"/>
+			<property name="HeadDismemberThreshold" value="0.38"/>
+			<property name="LowerLegDismemberThreshold" value="0.325"/>
+			<property name="LowerLegDismemberBaseChance" value="-.15"/>
+			<property name="LowerLegDismemberBonusChance" value="0.9"/>
+			<property name="UpperLegDismemberThreshold" value="0.325"/>
+			<property name="UpperLegDismemberBaseChance" value="-.15"/>
+			<property name="UpperLegDismemberBonusChance" value="0.9"/>
+			<property name="LowerArmDismemberThreshold" value="0.255"/>
+			<property name="LowerArmDismemberBaseChance" value="-.15"/>
+			<property name="LowerArmDismemberBonusChance" value="0.9"/>
+			<property name="UpperArmDismemberThreshold" value="0.255"/>
+			<property name="UpperArmDismemberBaseChance" value="-.15"/>
+			<property name="UpperArmDismemberBonusChance" value="0.9"/>
+			<property name="LegCrawlerThreshold" value="0"/>
+			<property name="LegCrippleThreshold" value="0.01"/>
+			<property name="KnockdownProneDamageThreshold" value="0.45"/>
+			<property name="KnockdownProneStunDuration" value="4,6"/>
+			<property name="KnockdownProneRefillRate" value="0.045,0.045"/>
+			<property name="KnockdownKneelDamageThreshold" value="0.38"/>
+			<property name="KnockdownKneelStunDuration" value="5,6"/>
+			<property name="KnockdownKneelRefillRate" value="0.045,0.045"/>
+			<property name="LegsExplosionDamageMultiplier" value=".85"/>
+			<property name="ArmsExplosionDamageMultiplier" value=".85"/>
+			<property name="HeadExplosionDamageMultiplier" value=".85"/>
+			<property name="ChestExplosionDamageMultiplier" value=".85"/>
+			<property name="HandItem" value="meleeHandAnimalZombieDog"/>
+			<property name="ExperienceGain" value="3000"/> <!-- XP grunt radiated -->
+			<property name="SizeScale" value="2"/>
+			<drop event="Harvest" name="foodRawMeat" count="0" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="4"/> <!-- animalZombieDog -->
+			<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="4"/>
+			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="1"/>
+			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="15"/>
+			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
+			<drop event="Harvest" name="foodRottingFlesh" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="2400"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				
+				<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="animalYogiBearRad" extends="animalBear">
+			<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/zombiedog_radiated.mat"/>
+			<property name="Class" value="EntityZombieCop"/>
+			<property name="EntityType" value="Zombie"/>
+			<!-- Amimal Go Boom! -->
+			<property name="Explosion.ParticleIndex" value="8"/>
+			<property name="Explosion.RadiusBlocks" value="5"/>
+			<property name="Explosion.RadiusEntities" value="6"/>
+			<property name="Explosion.BlockDamage" value="2500"/>
+			<property name="Explosion.EntityDamage" value="1500"/>
+			<property name="Explosion.DamageBonus.earth" value="0"/>
+			<!-- Radiated zombie decap rules -->
+			<property name="HeadDismemberBaseChance" value="-.15"/>
+			<property name="HeadDismemberBonusChance" value="0.08"/>
+			<property name="HeadDismemberThreshold" value="0.38"/>
+			<property name="LowerLegDismemberThreshold" value="0.325"/>
+			<property name="LowerLegDismemberBaseChance" value="-.15"/>
+			<property name="LowerLegDismemberBonusChance" value="0.9"/>
+			<property name="UpperLegDismemberThreshold" value="0.325"/>
+			<property name="UpperLegDismemberBaseChance" value="-.15"/>
+			<property name="UpperLegDismemberBonusChance" value="0.9"/>
+			<property name="LowerArmDismemberThreshold" value="0.255"/>
+			<property name="LowerArmDismemberBaseChance" value="-.15"/>
+			<property name="LowerArmDismemberBonusChance" value="0.9"/>
+			<property name="UpperArmDismemberThreshold" value="0.255"/>
+			<property name="UpperArmDismemberBaseChance" value="-.15"/>
+			<property name="UpperArmDismemberBonusChance" value="0.9"/>
+			<property name="LegCrawlerThreshold" value="0"/>
+			<property name="LegCrippleThreshold" value="0.01"/>
+			<property name="KnockdownProneDamageThreshold" value="0.45"/>
+			<property name="KnockdownProneStunDuration" value="4,6"/>
+			<property name="KnockdownProneRefillRate" value="0.045,0.045"/>
+			<property name="KnockdownKneelDamageThreshold" value="0.38"/>
+			<property name="KnockdownKneelStunDuration" value="5,6"/>
+			<property name="KnockdownKneelRefillRate" value="0.045,0.045"/>
+			<property name="LegsExplosionDamageMultiplier" value=".85"/>
+			<property name="ArmsExplosionDamageMultiplier" value=".85"/>
+			<property name="HeadExplosionDamageMultiplier" value=".85"/>
+			<property name="ChestExplosionDamageMultiplier" value=".85"/>
+			<property name="HandItem" value="meleeHandAnimalZombieBear"/>
+			<property name="ExperienceGain" value="2900"/> <!-- XP grunt radiated -->
+			<drop event="Harvest" name="foodRawMeat" count="10" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="4"/> <!-- animalZombieDog -->
+			<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="4"/>
+			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="1"/>
+			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="15"/>
+			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
+			<drop event="Harvest" name="foodRottingFlesh" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="2400"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				
+				<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="animalYogiBearRadBM" extends="animalBear">
+			<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/zombiedog_radiated.mat"/>
+			<property name="Class" value="EntityZombieCop"/>
+			<property name="EntityType" value="Zombie"/>
+			<!-- Amimal Go Boom! -->
+			<property name="Explosion.ParticleIndex" value="8"/>
+			<property name="Explosion.RadiusBlocks" value="5"/>
+			<property name="Explosion.RadiusEntities" value="6"/>
+			<property name="Explosion.BlockDamage" value="2500"/>
+			<property name="Explosion.EntityDamage" value="1500"/>
+			<property name="Explosion.DamageBonus.earth" value="0"/>
+			<!-- Radiated zombie decap rules -->
+			<property name="HeadDismemberBaseChance" value="-.15"/>
+			<property name="HeadDismemberBonusChance" value="0.08"/>
+			<property name="HeadDismemberThreshold" value="0.38"/>
+			<property name="LowerLegDismemberThreshold" value="0.325"/>
+			<property name="LowerLegDismemberBaseChance" value="-.15"/>
+			<property name="LowerLegDismemberBonusChance" value="0.9"/>
+			<property name="UpperLegDismemberThreshold" value="0.325"/>
+			<property name="UpperLegDismemberBaseChance" value="-.15"/>
+			<property name="UpperLegDismemberBonusChance" value="0.9"/>
+			<property name="LowerArmDismemberThreshold" value="0.255"/>
+			<property name="LowerArmDismemberBaseChance" value="-.15"/>
+			<property name="LowerArmDismemberBonusChance" value="0.9"/>
+			<property name="UpperArmDismemberThreshold" value="0.255"/>
+			<property name="UpperArmDismemberBaseChance" value="-.15"/>
+			<property name="UpperArmDismemberBonusChance" value="0.9"/>
+			<property name="LegCrawlerThreshold" value="0"/>
+			<property name="LegCrippleThreshold" value="0.01"/>
+			<property name="KnockdownProneDamageThreshold" value="0.45"/>
+			<property name="KnockdownProneStunDuration" value="4,6"/>
+			<property name="KnockdownProneRefillRate" value="0.045,0.045"/>
+			<property name="KnockdownKneelDamageThreshold" value="0.38"/>
+			<property name="KnockdownKneelStunDuration" value="5,6"/>
+			<property name="KnockdownKneelRefillRate" value="0.045,0.045"/>
+			<property name="LegsExplosionDamageMultiplier" value=".85"/>
+			<property name="ArmsExplosionDamageMultiplier" value=".85"/>
+			<property name="HeadExplosionDamageMultiplier" value=".85"/>
+			<property name="ChestExplosionDamageMultiplier" value=".85"/>
+			<property name="HandItem" value="meleeHandAnimalZombieBear"/>
+			<property name="ExperienceGain" value="2900"/> <!-- XP grunt radiated -->
+		    <drop event="Harvest" name="foodRawMeat" count="10" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="4"/> <!-- animalZombieDog -->
+			<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="4"/>
+			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="1"/>
+			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="15"/>
+			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
+			<drop event="Harvest" name="foodRottingFlesh" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="2400"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				
+				<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="animalDragonWolfRadBM" extends="animalWolf">
+			<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/zombiedog_radiated.mat"/>
+			<property name="Class" value="EntityZombieCop"/>
+			<property name="EntityType" value="Zombie"/>
+			<!-- Amimal Go Boom! -->
+			<property name="Explosion.ParticleIndex" value="8"/>
+			<property name="Explosion.RadiusBlocks" value="5"/>
+			<property name="Explosion.RadiusEntities" value="6"/>
+			<property name="Explosion.BlockDamage" value="2500"/>
+			<property name="Explosion.EntityDamage" value="1500"/>
+			<property name="Explosion.DamageBonus.earth" value="0"/>
+			<!-- Radiated zombie decap rules -->
+			<property name="HeadDismemberBaseChance" value="-.15"/>
+			<property name="HeadDismemberBonusChance" value="0.08"/>
+			<property name="HeadDismemberThreshold" value="0.38"/>
+			<property name="LowerLegDismemberThreshold" value="0.325"/>
+			<property name="LowerLegDismemberBaseChance" value="-.15"/>
+			<property name="LowerLegDismemberBonusChance" value="0.9"/>
+			<property name="UpperLegDismemberThreshold" value="0.325"/>
+			<property name="UpperLegDismemberBaseChance" value="-.15"/>
+			<property name="UpperLegDismemberBonusChance" value="0.9"/>
+			<property name="LowerArmDismemberThreshold" value="0.255"/>
+			<property name="LowerArmDismemberBaseChance" value="-.15"/>
+			<property name="LowerArmDismemberBonusChance" value="0.9"/>
+			<property name="UpperArmDismemberThreshold" value="0.255"/>
+			<property name="UpperArmDismemberBaseChance" value="-.15"/>
+			<property name="UpperArmDismemberBonusChance" value="0.9"/>
+			<property name="LegCrawlerThreshold" value="0"/>
+			<property name="LegCrippleThreshold" value="0.01"/>
+			<property name="KnockdownProneDamageThreshold" value="0.45"/>
+			<property name="KnockdownProneStunDuration" value="4,6"/>
+			<property name="KnockdownProneRefillRate" value="0.045,0.045"/>
+			<property name="KnockdownKneelDamageThreshold" value="0.38"/>
+			<property name="KnockdownKneelStunDuration" value="5,6"/>
+			<property name="KnockdownKneelRefillRate" value="0.045,0.045"/>
+			<property name="LegsExplosionDamageMultiplier" value=".85"/>
+			<property name="ArmsExplosionDamageMultiplier" value=".85"/>
+			<property name="HeadExplosionDamageMultiplier" value=".85"/>
+			<property name="ChestExplosionDamageMultiplier" value=".85"/>
+			<property name="HandItem" value="meleeHandAnimalWolf"/>
+			<property name="ExperienceGain" value="2900"/> <!-- XP grunt radiated -->
+			<drop event="Harvest" name="foodRawMeat" count="10" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="4"/> <!-- animalZombieDog -->
+			<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="4"/>
+			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="1"/>
+			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="15"/>
+			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
+			<drop event="Harvest" name="foodRottingFlesh" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="2400"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				
+				<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="animalDragonWolfRad" extends="animalWolf">
+			<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/zombiedog_radiated.mat"/>
+			<property name="Class" value="EntityZombieCop"/>
+			<property name="EntityType" value="Zombie"/>
+			<!-- Amimal Go Boom! -->
+			<property name="Explosion.ParticleIndex" value="8"/>
+			<property name="Explosion.RadiusBlocks" value="5"/>
+			<property name="Explosion.RadiusEntities" value="6"/>
+			<property name="Explosion.BlockDamage" value="2500"/>
+			<property name="Explosion.EntityDamage" value="1500"/>
+			<property name="Explosion.DamageBonus.earth" value="0"/>
+			<!-- Radiated zombie decap rules -->
+			<property name="HeadDismemberBaseChance" value="-.15"/>
+			<property name="HeadDismemberBonusChance" value="0.08"/>
+			<property name="HeadDismemberThreshold" value="0.38"/>
+			<property name="LowerLegDismemberThreshold" value="0.325"/>
+			<property name="LowerLegDismemberBaseChance" value="-.15"/>
+			<property name="LowerLegDismemberBonusChance" value="0.9"/>
+			<property name="UpperLegDismemberThreshold" value="0.325"/>
+			<property name="UpperLegDismemberBaseChance" value="-.15"/>
+			<property name="UpperLegDismemberBonusChance" value="0.9"/>
+			<property name="LowerArmDismemberThreshold" value="0.255"/>
+			<property name="LowerArmDismemberBaseChance" value="-.15"/>
+			<property name="LowerArmDismemberBonusChance" value="0.9"/>
+			<property name="UpperArmDismemberThreshold" value="0.255"/>
+			<property name="UpperArmDismemberBaseChance" value="-.15"/>
+			<property name="UpperArmDismemberBonusChance" value="0.9"/>
+			<property name="LegCrawlerThreshold" value="0"/>
+			<property name="LegCrippleThreshold" value="0.01"/>
+			<property name="KnockdownProneDamageThreshold" value="0.45"/>
+			<property name="KnockdownProneStunDuration" value="4,6"/>
+			<property name="KnockdownProneRefillRate" value="0.045,0.045"/>
+			<property name="KnockdownKneelDamageThreshold" value="0.38"/>
+			<property name="KnockdownKneelStunDuration" value="5,6"/>
+			<property name="KnockdownKneelRefillRate" value="0.045,0.045"/>
+			<property name="LegsExplosionDamageMultiplier" value=".85"/>
+			<property name="ArmsExplosionDamageMultiplier" value=".85"/>
+			<property name="HeadExplosionDamageMultiplier" value=".85"/>
+			<property name="ChestExplosionDamageMultiplier" value=".85"/>
+			<property name="HandItem" value="meleeHandAnimalWolf"/>
+			<property name="ExperienceGain" value="2900"/> <!-- XP grunt radiated -->
+			
+			<drop event="Harvest" name="foodRawMeat" count="10" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="4"/> <!-- animalZombieDog -->
+			<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="4"/>
+			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="1"/>
+			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="15"/>
+			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
+			<drop event="Harvest" name="foodRottingFlesh" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="2400"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				
+				<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="animalMaxFoxRad" extends="animalCoyote">
+			<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/zombiedog_radiated.mat"/>
+			<property name="Class" value="EntityZombieCop"/>
+			<property name="EntityType" value="Zombie"/>
+			<!-- Amimal Go Boom! -->
+			<property name="Explosion.ParticleIndex" value="8"/>
+			<property name="Explosion.RadiusBlocks" value="5"/>
+			<property name="Explosion.RadiusEntities" value="6"/>
+			<property name="Explosion.BlockDamage" value="2500"/>
+			<property name="Explosion.EntityDamage" value="1500"/>
+			<property name="Explosion.DamageBonus.earth" value="0"/>
+			<!-- Radiated zombie decap rules -->
+			<property name="HeadDismemberBaseChance" value="-.15"/>
+			<property name="HeadDismemberBonusChance" value="0.08"/>
+			<property name="HeadDismemberThreshold" value="0.38"/>
+			<property name="LowerLegDismemberThreshold" value="0.325"/>
+			<property name="LowerLegDismemberBaseChance" value="-.15"/>
+			<property name="LowerLegDismemberBonusChance" value="0.9"/>
+			<property name="UpperLegDismemberThreshold" value="0.325"/>
+			<property name="UpperLegDismemberBaseChance" value="-.15"/>
+			<property name="UpperLegDismemberBonusChance" value="0.9"/>
+			<property name="LowerArmDismemberThreshold" value="0.255"/>
+			<property name="LowerArmDismemberBaseChance" value="-.15"/>
+			<property name="LowerArmDismemberBonusChance" value="0.9"/>
+			<property name="UpperArmDismemberThreshold" value="0.255"/>
+			<property name="UpperArmDismemberBaseChance" value="-.15"/>
+			<property name="UpperArmDismemberBonusChance" value="0.9"/>
+			<property name="LegCrawlerThreshold" value="0"/>
+			<property name="LegCrippleThreshold" value="0.01"/>
+			<property name="KnockdownProneDamageThreshold" value="0.45"/>
+			<property name="KnockdownProneStunDuration" value="4,6"/>
+			<property name="KnockdownProneRefillRate" value="0.045,0.045"/>
+			<property name="KnockdownKneelDamageThreshold" value="0.38"/>
+			<property name="KnockdownKneelStunDuration" value="5,6"/>
+			<property name="KnockdownKneelRefillRate" value="0.045,0.045"/>
+			<property name="LegsExplosionDamageMultiplier" value=".85"/>
+			<property name="ArmsExplosionDamageMultiplier" value=".85"/>
+			<property name="HeadExplosionDamageMultiplier" value=".85"/>
+			<property name="ChestExplosionDamageMultiplier" value=".85"/>
+			<property name="HandItem" value="meleeHandAnimalCoyote"/>
+			<property name="ExperienceGain" value="2900"/> <!-- XP grunt radiated -->
+			
+			<drop event="Harvest" name="foodRawMeat" count="10" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="4"/> <!-- animalZombieDog -->
+			<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="4"/>
+			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="1"/>
+			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="15"/>
+			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
+			<drop event="Harvest" name="foodRottingFlesh" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="2400"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				
+				<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="animalMaxFoxRadBM" extends="animalCoyote">
+			<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/zombiedog_radiated.mat"/>
+			<property name="Class" value="EntityZombieCop"/>
+			<property name="EntityType" value="Zombie"/>
+			<!-- Amimal Go Boom! -->
+			<property name="Explosion.ParticleIndex" value="8"/>
+			<property name="Explosion.RadiusBlocks" value="5"/>
+			<property name="Explosion.RadiusEntities" value="6"/>
+			<property name="Explosion.BlockDamage" value="2500"/>
+			<property name="Explosion.EntityDamage" value="1500"/>
+			<property name="Explosion.DamageBonus.earth" value="0"/>
+			<!-- Radiated zombie decap rules -->
+			<property name="HeadDismemberBaseChance" value="-.15"/>
+			<property name="HeadDismemberBonusChance" value="0.08"/>
+			<property name="HeadDismemberThreshold" value="0.38"/>
+			<property name="LowerLegDismemberThreshold" value="0.325"/>
+			<property name="LowerLegDismemberBaseChance" value="-.15"/>
+			<property name="LowerLegDismemberBonusChance" value="0.9"/>
+			<property name="UpperLegDismemberThreshold" value="0.325"/>
+			<property name="UpperLegDismemberBaseChance" value="-.15"/>
+			<property name="UpperLegDismemberBonusChance" value="0.9"/>
+			<property name="LowerArmDismemberThreshold" value="0.255"/>
+			<property name="LowerArmDismemberBaseChance" value="-.15"/>
+			<property name="LowerArmDismemberBonusChance" value="0.9"/>
+			<property name="UpperArmDismemberThreshold" value="0.255"/>
+			<property name="UpperArmDismemberBaseChance" value="-.15"/>
+			<property name="UpperArmDismemberBonusChance" value="0.9"/>
+			<property name="LegCrawlerThreshold" value="0"/>
+			<property name="LegCrippleThreshold" value="0.01"/>
+			<property name="KnockdownProneDamageThreshold" value="0.45"/>
+			<property name="KnockdownProneStunDuration" value="4,6"/>
+			<property name="KnockdownProneRefillRate" value="0.045,0.045"/>
+			<property name="KnockdownKneelDamageThreshold" value="0.38"/>
+			<property name="KnockdownKneelStunDuration" value="5,6"/>
+			<property name="KnockdownKneelRefillRate" value="0.045,0.045"/>
+			<property name="LegsExplosionDamageMultiplier" value=".85"/>
+			<property name="ArmsExplosionDamageMultiplier" value=".85"/>
+			<property name="HeadExplosionDamageMultiplier" value=".85"/>
+			<property name="ChestExplosionDamageMultiplier" value=".85"/>
+			<property name="HandItem" value="meleeHandAnimalCoyote"/>
+			<property name="ExperienceGain" value="2900"/> <!-- XP grunt radiated -->
+			
+			<drop event="Harvest" name="foodRawMeat" count="10" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="4"/> <!-- animalZombieDog -->
+			<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="4"/>
+			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="1"/>
+			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="15"/>
+			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
+			<drop event="Harvest" name="foodRottingFlesh" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="2400"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				
+				<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"/>
+			</effect_group>
+		</entity_class>
+		
+		<entity_class name="animalSnakeRad" extends="animalSnake">
+<property name="ReplaceMaterial0" value="#Entities/Zombies?Zombies/Materials/zombiedog_radiated.mat"/>
+			<property name="Class" value="EntityZombieCop"/>
+			<property name="EntityType" value="Zombie"/>
+			<!-- Amimal Go Boom! -->
+			<property name="Explosion.ParticleIndex" value="8"/>
+			<property name="Explosion.RadiusBlocks" value="5"/>
+			<property name="Explosion.RadiusEntities" value="6"/>
+			<property name="Explosion.BlockDamage" value="2500"/>
+			<property name="Explosion.EntityDamage" value="1500"/>
+			<property name="Explosion.DamageBonus.earth" value="0"/>
+			<!-- Radiated zombie decap rules -->
+			<property name="HeadDismemberBaseChance" value="-.15"/>
+			<property name="HeadDismemberBonusChance" value="0.08"/>
+			<property name="HeadDismemberThreshold" value="0.38"/>
+			<property name="LowerLegDismemberThreshold" value="0.325"/>
+			<property name="LowerLegDismemberBaseChance" value="-.15"/>
+			<property name="LowerLegDismemberBonusChance" value="0.9"/>
+			<property name="UpperLegDismemberThreshold" value="0.325"/>
+			<property name="UpperLegDismemberBaseChance" value="-.15"/>
+			<property name="UpperLegDismemberBonusChance" value="0.9"/>
+			<property name="LowerArmDismemberThreshold" value="0.255"/>
+			<property name="LowerArmDismemberBaseChance" value="-.15"/>
+			<property name="LowerArmDismemberBonusChance" value="0.9"/>
+			<property name="UpperArmDismemberThreshold" value="0.255"/>
+			<property name="UpperArmDismemberBaseChance" value="-.15"/>
+			<property name="UpperArmDismemberBonusChance" value="0.9"/>
+			<property name="LegCrawlerThreshold" value="0"/>
+			<property name="LegCrippleThreshold" value="0.01"/>
+			<property name="KnockdownProneDamageThreshold" value="0.45"/>
+			<property name="KnockdownProneStunDuration" value="4,6"/>
+			<property name="KnockdownProneRefillRate" value="0.045,0.045"/>
+			<property name="KnockdownKneelDamageThreshold" value="0.38"/>
+			<property name="KnockdownKneelStunDuration" value="5,6"/>
+			<property name="KnockdownKneelRefillRate" value="0.045,0.045"/>
+			<property name="LegsExplosionDamageMultiplier" value=".85"/>
+			<property name="ArmsExplosionDamageMultiplier" value=".85"/>
+			<property name="HeadExplosionDamageMultiplier" value=".85"/>
+			<property name="ChestExplosionDamageMultiplier" value=".85"/>
+			<property name="HandItem" value="meleeHandAnimalSnake"/>
+			<property name="ExperienceGain" value="2900"/> <!-- XP grunt radiated -->
+			<property name="SizeScale" value="2"/>
+			<drop event="Harvest" name="foodRawMeat" count="10" tool_category="Butcher"/>
+			<drop event="Harvest" name="foodRottingFlesh" tag="butcherHarvest" count="4"/> <!-- animalZombieDog -->
+			<drop event="Harvest" name="resourceLeather" tag="butcherHarvest" count="4"/>
+			<drop event="Harvest" name="resourceAnimalFat" tag="butcherHarvest" count="1"/>
+			<drop event="Harvest" name="resourceBone" tag="butcherHarvest" count="15"/>
+			<drop event="Harvest" name="resourceBone" tag="allToolsHarvest" count="5"/>
+			<drop event="Harvest" name="foodRottingFlesh" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Harvest" name="resourceLeather" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			<drop event="Harvest" name="resourceBone" count="1" tag="WasteTreasuresCompleteHarvest"/>
+			
+			<effect_group name="Base Effects">
+				<passive_effect name="HealthMax" operation="base_set" value="2400"/>
+				<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
+				<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
+				<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+				
+				<passive_effect name="BuffResistance" operation="base_set" value="5" tags="buffFatiguedTrigger,buffArmSprainedCHTrigger,buffLegSprainedCHTrigger,buffLaceration,buffInfectionCatch,buffAbrasionCatch,buffInjuryStunned01CHTrigger,buffInjuryBleedingTwo"/>
+			</effect_group>
+		</entity_class>
+		</append>
+
+</SEOR>

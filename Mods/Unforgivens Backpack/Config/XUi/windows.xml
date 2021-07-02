@@ -1,0 +1,22 @@
+<!-- - - - - - - - - - - -
+#########################
+##### H7SB Backpacks ####
+### 7 Days to Die Mod ###
+#########################
+######## Eihwaz #########
+#### CC BY-NC-ND-SA #####
+#########################
+- - - - - - - - - - - -->
+<configs>
+<!-- Inventar (inventory) -->
+<!--byDonovan-->
+<set xpath="/windows/window[@name='windowBackpack']/@width">473</set>
+<set xpath="/windows/window[@name='windowBackpack']/@height">316</set>
+<set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/@height">370</set>
+<set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/sprite[@name='backgroundMain']/@width">673</set>
+<set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/sprite[@name='backgroundMain']/@height">403</set>
+<set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@rows">6</set>
+<set xpath="/windows/window[@name='windowBackpack']/panel[@name='content']/grid[@name='inventory']/@cols">9</set>
+<set xpath="/windows/window[@name='windowCraftingQueue']/rect/@pos">10,0</set>
+<set xpath="/windows/window[@name='windowCraftingQueue']/rect/grid/@cols">5</set>
+</configs>

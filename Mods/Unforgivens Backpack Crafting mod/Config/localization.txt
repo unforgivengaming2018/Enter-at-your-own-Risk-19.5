@@ -1,0 +1,5 @@
+Key,english,
+tutorialTipQuest01,"Dear Friends,\n\nWelcome to Survive enter at your own risk This mod can be your friend or your worst Enemy\n\n There's been a few changes to the Survival quests As you will see once you've started them. Enclosed is a short guide to help you survive. If you complete it, You might not get your ass kicked by the things that are lurking in the distance .\n\nGood luck in the Apocalypse, -Unforgiven",
+quest_BasicSurvival2,Craft A Backpack
+quest_BasicSurvival2_subtitle,Craft A Backpack
+quest_BasicSurvival2_description,Craft A Backpack

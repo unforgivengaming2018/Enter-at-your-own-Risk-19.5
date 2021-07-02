@@ -1,0 +1,22 @@
+<!-- - - - - - - - - - - -
+#########################
+##### SEOR Backpack ####
+### 7 Days to Die A19.0 B180 ###
+#########################
+######## Unforgivne774 #########
+#### DEV Branch a19.0 B180#####
+#########################
+- - - - - - - - - - - -->
+<config>
+<!-- Pocket Mod Fix -->
+<remove xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT0']/item[@name='modArmorStoragePocketSchematic']" />
+<remove xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT1']/item[@name='modArmorDoubleStoragePocketSchematic']" />
+<remove xpath="/lootcontainers/lootgroup[@name='schematicsModsAndGeneralT2']/item[@name='modArmorTripleStoragePocketSchematic']" />
+<remove xpath="/lootcontainers/lootgroup[@name='modArmorT1']/item[@name='modArmorStoragePocket']" />
+<remove xpath="/lootcontainers/lootgroup[@name='modArmorT2']/item[@name='modArmorDoubleStoragePocket']" />
+<remove xpath="/lootcontainers/lootgroup[@name='modArmorT3']/item[@name='modArmorTripleStoragePocket']" />
+
+<!-- Backpack -->
+<set xpath="/lootcontainers/lootcontainer[@id='2']/@size">8,10</set>
+<append xpath="lootcontainers/lootgroup[@name='perkBooks']"><item name="bookBackpack" prob=".1"/></append>
+</config>

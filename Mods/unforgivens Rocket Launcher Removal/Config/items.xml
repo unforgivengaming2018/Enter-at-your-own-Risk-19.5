@@ -1,0 +1,8 @@
+<!-- Modlet Made by Unforgiven774 -->
+<!-- This Modlet removes The rocket launcher from being Shot but you can still loot it and find it in the trader ect -->
+<config>
+   <remove xpath="/items/item[@name='gunExplosivesT3RocketLauncher']/property[@class='Action0']"/>
+   <!-- Removes The ability to light Dynomite  and make it explode -->
+	<remove xpath="/items/item[@name='thrownDynamite']/property[@class='Action0']"/>
+   <remove xpath="/items/item[@name='thrownDynamite']/property[@class='Action1']"/>
+</config>

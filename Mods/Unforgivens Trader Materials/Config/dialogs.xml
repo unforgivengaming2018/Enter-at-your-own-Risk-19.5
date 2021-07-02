@@ -1,0 +1,184 @@
+<UnforgivensTraderMaterialTrade>
+<!-- This adds dialog to the traders for material Trading -->
+<!-- 	materialTrades
+Setting up Trader to handle material trade quests where players can turn in materials for other materials and resources.
+	25_materials
+		quest_MaterialTrader1_Cobblestone
+		quest_MaterialTrader1_ConcreteMix
+		quest_MaterialTrader1_Cement
+		quest_MaterialTrader1_resourceForgedIron
+		quest_MaterialTrader1_resourceForgedSteel
+	100_materials
+		quest_MaterialTrader2_Cobblestone
+		quest_MaterialTrader2_ConcreteMix
+		quest_MaterialTrader2_Cement
+		quest_MaterialTrader2_resourceForgedIron
+		quest_MaterialTrader2_resourceForgedSteel
+	500_materials
+		quest_MaterialTrader3_Cobblestone
+		quest_MaterialTrader3_ConcreteMix
+		quest_MaterialTrader3_Cement
+		quest_MaterialTrader3_resourceForgedIron
+		quest_MaterialTrader3_resourceForgedSteel
+	1000_materials
+		quest_MaterialTrader4_Cobblestone
+		quest_MaterialTrader4_ConcreteMix
+		quest_MaterialTrader4_Cement
+		quest_MaterialTrader4_resourceForgedIron
+		quest_MaterialTrader4_resourceForgedSteel
+	25_blocks
+	100_blocks
+	500_blocks
+	1000_blocks
+		flagstone
+		wetconcrete
+		rebar
+-->
+	<insertAfter xpath="/dialogs/dialog[@id='trader']/statement[@id='start']/response_entry[@id='jobshave']">
+		<response_entry id="materialTrades" />
+	</insertAfter>
+	
+	<!-- Statements -->
+	<insertAfter xpath="/dialogs/dialog[@id='trader']/statement[@id='currentjobs']">
+		<!--	Want to trade materials for other materials or resources, or blocks?	-->
+		<statement id="materialTrades" text="dialog_trader_statement_materialTrades" >
+			<response_entry id="trade_blocks" />
+			<response_entry id="trade_materials" />
+			<response_entry id="trade_bars" />
+			<response_entry id="nevermind" />
+		</statement>
+		<!--	How many blocks you want?	-->
+		<statement id="trade_blocks" text="dialog_trader_statement_trade_blocks" >
+			<response_entry id="25_blocks" />
+			<response_entry id="100_blocks" />
+			<response_entry id="500_blocks" />
+			<response_entry id="1000_blocks" />
+			<response_entry id="nevermind" />
+		</statement>
+		<!--	How many materials you want?	-->
+		<statement id="trade_materials" text="dialog_trader_statement_trade_materials" >
+			<response_entry id="25_materials" />
+			<response_entry id="100_materials" />
+			<response_entry id="500_materials" />
+			<response_entry id="1000_materials" />
+			<response_entry id="nevermind" />
+		</statement>
+		<!--	How many bars you want?	-->
+		<statement id="trade_bars" text="dialog_trader_statement_trade_bars" >
+			<response_entry id="25_bars" />
+			<response_entry id="100_bars" />
+			<response_entry id="500_bars" />
+			<response_entry id="1000_bars" />
+			<response_entry id="nevermind" />
+		</statement>
+		<!--	Which type of block?	-->
+		<!--	Which type of material?	-->
+		<!--	Which type of bar?	-->
+		<!-- 25 -->
+		<statement id="25_blocks" text="dialog_trader_statement_type_blocks" nextstatementid="start" >
+			<quest_entry id="quest_MaterialTrader1_FlagstoneBlock"  />
+			<quest_entry id="quest_MaterialTrader1_rebarFrameBlock"  />
+			<response_entry id="nevermind" />
+		</statement>
+		<statement id="25_materials" text="dialog_trader_statement_type_materials" nextstatementid="start" >
+			<quest_entry id="quest_MaterialTrader1_Cobblestone" />
+			<quest_entry id="quest_MaterialTrader1_ConcreteMix" />
+			<quest_entry id="quest_MaterialTrader1_Cement" />
+			<quest_entry id="quest_MaterialTrader1_resourceForgedIron" />
+			<quest_entry id="quest_MaterialTrader1_resourceForgedSteel" />
+			<response_entry id="nevermind" />
+		</statement>
+		<statement id="25_bars" text="dialog_trader_statement_type_bars" nextstatementid="start" >
+			<quest_entry id="quest_MaterialTrader1_woodBars" />
+			<quest_entry id="quest_MaterialTrader1_woodBarsCentered" />
+			<quest_entry id="quest_MaterialTrader1_ironBars" />
+			<quest_entry id="quest_MaterialTrader1_ironBarsCentered" />
+			<response_entry id="nevermind" />
+		</statement>
+		<!-- 100 -->
+		<statement id="100_blocks" text="dialog_trader_statement_type_blocks" nextstatementid="start" >
+			<quest_entry id="quest_MaterialTrader2_FlagstoneBlock" />
+			<quest_entry id="quest_MaterialTrader2_rebarFrameBlock" />
+			<response_entry id="nevermind" />
+		</statement>
+		<statement id="100_materials" text="dialog_trader_statement_type_materials" nextstatementid="start" >
+			<quest_entry id="quest_MaterialTrader2_Cobblestone" />
+			<quest_entry id="quest_MaterialTrader2_ConcreteMix" />
+			<quest_entry id="quest_MaterialTrader2_Cement" />
+			<quest_entry id="quest_MaterialTrader2_resourceForgedIron" />
+			<quest_entry id="quest_MaterialTrader2_resourceForgedSteel" />
+			<response_entry id="nevermind" />
+		</statement>
+		<statement id="100_bars" text="dialog_trader_statement_type_bars" nextstatementid="start" >
+			<quest_entry id="quest_MaterialTrader2_woodBars" />
+			<quest_entry id="quest_MaterialTrader2_woodBarsCentered" />
+			<quest_entry id="quest_MaterialTrader2_ironBars" />
+			<quest_entry id="quest_MaterialTrader2_ironBarsCentered" />
+			<response_entry id="nevermind" />
+		</statement>
+		<!-- 500 -->
+		<statement id="500_blocks" text="dialog_trader_statement_type_blocks" nextstatementid="start" >
+			<quest_entry id="quest_MaterialTrader3_FlagstoneBlock" />
+			<quest_entry id="quest_MaterialTrader3_rebarFrameBlock" />
+			<response_entry id="nevermind" />
+		</statement>
+		<statement id="500_materials" text="dialog_trader_statement_type_materials" nextstatementid="start" >
+			<quest_entry id="quest_MaterialTrader3_Cobblestone" />
+			<quest_entry id="quest_MaterialTrader3_ConcreteMix" />
+			<quest_entry id="quest_MaterialTrader3_Cement" />
+			<quest_entry id="quest_MaterialTrader3_resourceForgedIron" />
+			<quest_entry id="quest_MaterialTrader3_resourceForgedSteel" />
+			<response_entry id="nevermind" />
+		</statement>
+		<statement id="500_bars" text="dialog_trader_statement_type_bars" nextstatementid="start" >
+			<quest_entry id="quest_MaterialTrader3_woodBars" />
+			<quest_entry id="quest_MaterialTrader3_woodBarsCentered" />
+			<quest_entry id="quest_MaterialTrader3_ironBars" />
+			<quest_entry id="quest_MaterialTrader3_ironBarsCentered" />
+			<response_entry id="nevermind" />
+		</statement>
+		<!-- 1000 -->
+		<statement id="1000_blocks" text="dialog_trader_statement_type_blocks" nextstatementid="start" >
+			<quest_entry id="quest_MaterialTrader4_FlagstoneBlock" />
+			<quest_entry id="quest_MaterialTrader4_rebarFrameBlock" />
+			<response_entry id="nevermind" />
+		</statement>
+		<statement id="1000_materials" text="dialog_trader_statement_type_materials" nextstatementid="start" >
+			<quest_entry id="quest_MaterialTrader4_Cobblestone" />
+			<quest_entry id="quest_MaterialTrader4_ConcreteMix" />
+			<quest_entry id="quest_MaterialTrader4_Cement" />
+			<quest_entry id="quest_MaterialTrader4_resourceForgedIron" />
+			<quest_entry id="quest_MaterialTrader4_resourceForgedSteel" />
+			<response_entry id="nevermind" />
+		</statement>
+		<statement id="1000_bars" text="dialog_trader_statement_type_bars" nextstatementid="start" >
+			<quest_entry id="quest_MaterialTrader4_woodBars" />
+			<quest_entry id="quest_MaterialTrader4_woodBarsCentered" />
+			<quest_entry id="quest_MaterialTrader4_ironBars" />
+			<quest_entry id="quest_MaterialTrader4_ironBarsCentered" />
+			<response_entry id="nevermind" />
+		</statement>
+	</insertAfter>
+
+	<!-- Responses -->
+	<insertAfter xpath="/dialogs/dialog[@id='trader']/response[@id='specialjobshave']">
+		<response id="materialTrades" text="dialog_trader_response_materialTrades" nextstatementid="materialTrades" />
+		<response id="trade_blocks" text="dialog_trader_response_trade_blocks" nextstatementid="trade_blocks" />
+		<response id="trade_materials" text="dialog_trader_response_trade_materials" nextstatementid="trade_materials" />
+		<response id="trade_bars" text="dialog_trader_response_trade_bars" nextstatementid="trade_bars" />
+		<response id="25_blocks" text="dialog_trader_response_25_blocks" nextstatementid="25_blocks" />
+		<response id="100_blocks" text="dialog_trader_response_100_blocks" nextstatementid="100_blocks" />
+		<response id="500_blocks" text="dialog_trader_response_500_blocks" nextstatementid="500_blocks" />
+		<response id="1000_blocks" text="dialog_trader_response_1000_blocks" nextstatementid="1000_blocks" />
+		<response id="25_materials" text="dialog_trader_response_25_materials" nextstatementid="25_materials" />
+		<response id="100_materials" text="dialog_trader_response_100_materials" nextstatementid="100_materials" />
+		<response id="500_materials" text="dialog_trader_response_500_materials" nextstatementid="500_materials" />
+		<response id="1000_materials" text="dialog_trader_response_1000_materials" nextstatementid="1000_materials" />
+		<response id="25_bars" text="dialog_trader_response_25_bars" nextstatementid="25_bars" />
+		<response id="100_bars" text="dialog_trader_response_100_bars" nextstatementid="100_bars" />
+		<response id="500_bars" text="dialog_trader_response_500_bars" nextstatementid="500_bars" />
+		<response id="1000_bars" text="dialog_trader_response_1000_bars" nextstatementid="1000_bars" />
+	</insertAfter>
+	
+	
+</UnforgivensTraderMaterialTrade>

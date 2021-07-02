@@ -1,0 +1,17 @@
+<!-- - - - - - - - - - - -
+#########################
+##### SEOR Backpack ####
+### 7 Days to Die A19.0 B180 ###
+#########################
+######## Unforgivne774 #########
+#### DEV Branch a19.0 B180#####
+#########################
+- - - - - - - - - - - -->
+<config>
+<set xpath="/progression/perks/perk[@name='perkNeedleAndThreadPockets']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@tags">modClothingCargoStoragePocket,backpackT2</set>
+<set xpath="/progression/perks/perk[@name='perkNeedleAndThreadComplete']/effect_group/passive_effect[@name='RecipeTagUnlocked']/@tags">apparelArmyPants,apparelArmyShirt,modClothingCargo2StoragePocket,backpackT3</set>
+
+<set xpath="progression/perks/perk[@name='perkPackMule']/effect_group/passive_effect[@name='CarryCapacity']/@value">5,10,15,25,30</set>
+<set xpath="progression/perks/perk[@name='perkFiremansAlmanacComplete']/effect_group/passive_effect[@name='CarryCapacity']/@value">70</set>
+<set xpath="progression/perks/perk[@name='perkNightStalkerThiefAdrenaline']/effect_group/passive_effect[@name='CarryCapacity']/@value">60</set>
+</config>

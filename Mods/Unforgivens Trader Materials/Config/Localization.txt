@@ -1,0 +1,169 @@
+Key,English
+DIALOGS
+STATEMENTS
+dialog_trader_statement_materialTrades,"Want to trade materials for other materials or resources, or blocks?"
+dialog_trader_statement_trade_blocks,How many blocks you want?
+dialog_trader_statement_trade_materials,How many materials you want?
+dialog_trader_statement_trade_bars,How many bars you want?
+dialog_trader_statement_type_blocks,Which type of block?
+dialog_trader_statement_type_materials,Which type of material?
+dialog_trader_statement_type_bars,Which type of bars?
+RESPONSES
+dialog_trader_response_materialTrades,Material Trading
+dialog_trader_response_trade_blocks,I want blocks.
+dialog_trader_response_trade_materials,I want materials.
+dialog_trader_response_trade_bars,I want bars.
+dialog_trader_response_25_blocks,I want 25 blocks.
+dialog_trader_response_100_blocks,I want 100 blocks.
+dialog_trader_response_500_blocks,I want 500 blocks.
+dialog_trader_response_1000_blocks,I want 1000 blocks.
+dialog_trader_response_25_materials,I want 25 materials.
+dialog_trader_response_100_materials,I want 100 materials.
+dialog_trader_response_500_materials,I want 500 materials.
+dialog_trader_response_1000_materials,I want 1000 materials.
+dialog_trader_response_25_bars,I want 25 bars.
+dialog_trader_response_100_bars,I want 100 bars.
+dialog_trader_response_500_bars,I want 500 bars.
+dialog_trader_response_1000_bars,I want 1000 bars.
+QUESTS
+trade_materials_Cobblestone,Cobblestone
+trade_materials_ConcreteMix,Concrete Mix
+trade_materials_Cement,Cement
+trade_materials_resourceForgedIron,Forged Iron
+trade_materials_resourceForgedSteel,Forged Steel
+trade_blocks_FlagstoneBlock,Flagstone Block
+trade_blocks_rebarFrameBlock,Rebar Frame Block
+trade_materials_statement,Get the materials and we can make the trade.
+quest_MaterialTrader_completion,Looks about right. You're sure capable. Here are the goods.
+quest_MaterialTrader1_Cobblestone,25 Cobblestone
+quest_MaterialTrader1_Cobblestone_subtitle,Collect 100 Clay and 100 Stone
+quest_MaterialTrader1_Cobblestone_description,Trade 100 clay and 100 small stones for 25 cobblestones.
+quest_MaterialTrader2_Cobblestone,100 Cobblestone
+quest_MaterialTrader2_Cobblestone_subtitle,Collect 400 Clay and 400 Stone
+quest_MaterialTrader2_Cobblestone_description,Trade 400 clay and 400 small stones for 100 cobblestones.
+quest_MaterialTrader3_Cobblestone,500 Cobblestone
+quest_MaterialTrader3_Cobblestone_subtitle,Collect 2000 Clay and 2000 Stone
+quest_MaterialTrader3_Cobblestone_description,Trade 2000 clay and 2000 small stones for 500 cobblestones.
+quest_MaterialTrader4_Cobblestone,1000 Cobblestone
+quest_MaterialTrader4_Cobblestone_subtitle,Collect 4000 Clay and 4000 Stone
+quest_MaterialTrader4_Cobblestone_description,Trade 4000 clay and 4000 small stones for 1000 cobblestones.
+quest_MaterialTrader1_ConcreteMix,25 Concrete Mix
+quest_MaterialTrader1_ConcreteMix_subtitle,Collect 25 crushed sand 25 cement and 50 small stones
+quest_MaterialTrader1_ConcreteMix_description,Trade 25 crushed sand 25 cement and 50 small stones for 25 concrete mix.
+quest_MaterialTrader2_ConcreteMix,100 Concrete Mix
+quest_MaterialTrader2_ConcreteMix_subtitle,Collect 100 crushed sand 100 cement and 200 small stones
+quest_MaterialTrader2_ConcreteMix_description,Trade 100 crushed sand 100 cement and 200 small stones for 100 concrete mix.
+quest_MaterialTrader3_ConcreteMix,500 Concrete Mix
+quest_MaterialTrader3_ConcreteMix_subtitle,Collect 500 crushed sand 500 cement and 1000 small stones
+quest_MaterialTrader3_ConcreteMix_description,Trade 500 crushed sand 500 cement and 1000 small stones for 500 concrete mix.
+quest_MaterialTrader4_ConcreteMix,1000 Concrete Mix
+quest_MaterialTrader4_ConcreteMix_subtitle,Collect 1000 crushed sand 1000 cement and 2000 small stones
+quest_MaterialTrader4_ConcreteMix_description,Trade 1000 crushed sand 1000 cement and 2000 small stones for 1000 concrete mix.
+quest_MaterialTrader1_Cement,25 Cement
+quest_MaterialTrader1_Cement_subtitle,Collect  125 small stones
+quest_MaterialTrader1_Cement_description,Trade 125 small stones for 25 cement.
+quest_MaterialTrader2_Cement,100 Cement
+quest_MaterialTrader2_Cement_subtitle,Collect  500 small stones
+quest_MaterialTrader2_Cement_description,Trade 500 small stones for 100 cement.
+quest_MaterialTrader3_Cement,500 Cement
+quest_MaterialTrader3_Cement_subtitle,Collect  500 small stones
+quest_MaterialTrader3_Cement_description,Trade 2500 small stones for 500 cement.
+quest_MaterialTrader4_Cement,1000 Cement
+quest_MaterialTrader4_Cement_subtitle,Collect  5000 small stones
+quest_MaterialTrader4_Cement_description,Trade 5000 small stones for 1000 cement.
+quest_MaterialTrader1_resourceForgedIron,25 Forged Iron
+quest_MaterialTrader1_resourceForgedIron_subtitle,Collect 250 Scrap Iron and 125 Clay
+quest_MaterialTrader1_resourceForgedIron_description,Collect 250 Scrap Iron and 125 Clay to trade for 25 Forged Iron.
+quest_MaterialTrader2_resourceForgedIron,100 Forged Iron
+quest_MaterialTrader2_resourceForgedIron_subtitle,Collect 1000 Scrap Iron and 500 Clay
+quest_MaterialTrader2_resourceForgedIron_description,Collect 1000 Scrap Iron and 500 Clay to trade for 100 Forged Iron
+quest_MaterialTrader3_resourceForgedIron,500 Forged Iron
+quest_MaterialTrader3_resourceForgedIron_subtitle,Collect 5000 Scrap Iron and 2500 Clay
+quest_MaterialTrader3_resourceForgedIron_description,Collect 5000 Scrap Iron and 2500 Clay to trade for 500 Forged Iron
+quest_MaterialTrader4_resourceForgedIron,1000 Forged Iron
+quest_MaterialTrader4_resourceForgedIron_subtitle,Collect 10000 Scrap Iron and 5000 Clay
+quest_MaterialTrader4_resourceForgedIron_description,Collect 10000 Scrap Iron and 5000 Clay to trade for 1000 Forged Iron
+quest_MaterialTrader1_resourceForgedSteel,25 Forged Iron
+quest_MaterialTrader1_resourceForgedSteel_subtitle,Collect 500 Scrap Iron and 250 Clay
+quest_MaterialTrader1_resourceForgedSteel_description,Collect 500 Scrap Iron and 250 Clay to trade for 25 Forged Steel.
+quest_MaterialTrader2_resourceForgedSteel,100 Forged Steel
+quest_MaterialTrader2_resourceForgedSteel_subtitle,Collect 2000 Scrap Iron and 1000 Clay
+quest_MaterialTrader2_resourceForgedSteel_description,Collect 2000 Scrap Iron and 1000 Clay to trade for 100 Forged Steel
+quest_MaterialTrader3_resourceForgedSteel,500 Forged Steel
+quest_MaterialTrader3_resourceForgedSteel_subtitle,Collect 10000 Scrap Iron and 5000 Clay
+quest_MaterialTrader3_resourceForgedSteel_description,Collect 10000 Scrap Iron and 5000 Clay to trade for 500 Forged Steel
+quest_MaterialTrader4_resourceForgedSteel,1000 Forged Steel
+quest_MaterialTrader4_resourceForgedSteel_subtitle,Collect 20000 Scrap Iron and 10000 Clay
+quest_MaterialTrader4_resourceForgedSteel_description,Collect 20000 Scrap Iron and 10000 Clay to trade for 1000 Forged Steel
+quest_MaterialTrader1_FlagstoneBlock,25 Flagstone Block
+quest_MaterialTrader1_FlagstoneBlock_subtitle,Collect 100 Cobblestones
+quest_MaterialTrader1_FlagstoneBlock_description,Trade 100 Cobblestones for 25 Flagstone Blocks.
+quest_MaterialTrader2_FlagstoneBlock,100 Flagstone Block
+quest_MaterialTrader2_FlagstoneBlock_subtitle,Collect 400 Cobblestones
+quest_MaterialTrader2_FlagstoneBlock_description,Trade 400 Cobblestones for 100 Flagstone Blocks.
+quest_MaterialTrader3_FlagstoneBlock,500 Flagstone Block
+quest_MaterialTrader3_FlagstoneBlock_subtitle,Collect 2000 Cobblestones
+quest_MaterialTrader3_FlagstoneBlock_description,Trade 2000 Cobblestones for 500 Flagstone Blocks.
+quest_MaterialTrader4_FlagstoneBlock,1000 Flagstone Block
+quest_MaterialTrader4_FlagstoneBlock_subtitle,Collect 4000 Cobblestones
+quest_MaterialTrader4_FlagstoneBlock_description,Trade 4000 Cobblestones for 1000 Flagstone Blocks.
+quest_MaterialTrader1_rebarFrameBlock,25 Rebar Frame Block
+quest_MaterialTrader1_rebarFrameBlock_subtitle,Collect  25 small stones and 125 scrap iron.
+quest_MaterialTrader1_rebarFrameBlock_description,Trade 25 small stones and 125 scrap iron for 25 rebar frame block.
+quest_MaterialTrader2_rebarFrameBlock,100 Rebar Frame Block
+quest_MaterialTrader2_rebarFrameBlock_subtitle,Collect  100 small stones and 500 scrap iron.
+quest_MaterialTrader2_rebarFrameBlock_description,Trade 100 small stones and 500 scrap iron for 100 rebar frame block.
+quest_MaterialTrader3_rebarFrameBlock,500 Rebar Frame Block
+quest_MaterialTrader3_rebarFrameBlock_subtitle,Collect  500 small stones and 2500 scrap iron.
+quest_MaterialTrader3_rebarFrameBlock_description,Trade 500 small stones and 2500 scrap iron for 500 rebar frame block.
+quest_MaterialTrader4_rebarFrameBlock,1000 Rebar Frame Block
+quest_MaterialTrader4_rebarFrameBlock_subtitle,Collect  1000 small stones and 5000 scrap iron.
+quest_MaterialTrader4_rebarFrameBlock_description,Trade 1000 small stones and 5000 scrap iron for 1000 rebar frame block.
+quest_MaterialTrader1_woodBarsCentered,25 Wood Bars Centered
+quest_MaterialTrader1_woodBarsCentered_subtitle,Collect 150 wood.
+quest_MaterialTrader1_woodBarsCentered_description,Trade 150 wood for 25 Wood Bars.
+quest_MaterialTrader2_woodBarsCentered,100 Wood Bars Centered
+quest_MaterialTrader2_woodBarsCentered_subtitle,Collect 600 wood.
+quest_MaterialTrader2_woodBarsCentered_description,Trade 600 wood for 100 Wood Bars.
+quest_MaterialTrader3_woodBarsCentered,500 Wood Bars Centered
+quest_MaterialTrader3_woodBarsCentered_subtitle,Collect 3000 wood.
+quest_MaterialTrader3_woodBarsCentered_description,Trade 3000 wood for 500 Wood Bars.
+quest_MaterialTrader4_woodBarsCentered,1000 Wood Bars Centered
+quest_MaterialTrader4_woodBarsCentered_subtitle,Collect  6000 wood.
+quest_MaterialTrader4_woodBarsCentered_description,Trade 6000 wood for 1000 Wood Bars.
+quest_MaterialTrader1_woodBars,25 Wood Bars
+quest_MaterialTrader1_woodBars_subtitle,Collect 150 wood.
+quest_MaterialTrader1_woodBars_description,Trade 150 wood for 25 Wood Bars.
+quest_MaterialTrader2_woodBars,100 Wood Bars
+quest_MaterialTrader2_woodBars_subtitle,Collect 600 wood.
+quest_MaterialTrader2_woodBars_description,Trade 600 wood for 100 Wood Bars.
+quest_MaterialTrader3_woodBars,500 Wood Bars
+quest_MaterialTrader3_woodBars_subtitle,Collect 3000 wood.
+quest_MaterialTrader3_woodBars_description,Trade 3000 wood for 500 Wood Bars.
+quest_MaterialTrader4_woodBars,1000 Wood Bars
+quest_MaterialTrader4_woodBars_subtitle,Collect  6000 wood.
+quest_MaterialTrader4_woodBars_description,Trade 6000 wood for 1000 Wood Bars.
+quest_MaterialTrader1_ironBarsCentered,25 Iron Bars Centered
+quest_MaterialTrader1_ironBarsCentered_subtitle,Collect 2500 Scrap Iron and 250 Clay .
+quest_MaterialTrader1_ironBarsCentered_description,Trade 2500 Scrap Iron and 250 Clay for 25 Iron Bars.
+quest_MaterialTrader2_ironBarsCentered,100 Iron Bars Centered
+quest_MaterialTrader2_ironBarsCentered_subtitle,Collect 10000 Scrap Iron and 2000 Clay.
+quest_MaterialTrader2_ironBarsCentered_description,Trade 10000 Scrap Iron and 2000 Clay for 100 Iron Bars.
+quest_MaterialTrader3_ironBarsCentered,500 Iron Bars Centered
+quest_MaterialTrader3_ironBarsCentered_subtitle,Collect 50000 Scrap Iron and 10000 Clay.
+quest_MaterialTrader3_ironBarsCentered_description,Trade 50000 Scrap Iron and 10000 Clay for 500 Iron Bars.
+quest_MaterialTrader4_ironBarsCentered,1000 Iron Bars Centered
+quest_MaterialTrader4_ironBarsCentered_subtitle,Collect  100000 Scrap Iron and 20000 Clay.
+quest_MaterialTrader4_ironBarsCentered_description,Trade 100000 Scrap Iron and 20000 Clay for 1000 Iron Bars.
+quest_MaterialTrader1_ironBars,25 Iron Bars
+quest_MaterialTrader1_ironBars_subtitle,Collect 2500 Scrap Iron and 250 Clay .
+quest_MaterialTrader1_ironBars_description,Trade 2500 Scrap Iron and 250 Clay for 25 Iron Bars.
+quest_MaterialTrader2_ironBars,100 Iron Bars
+quest_MaterialTrader2_ironBars_subtitle,Collect 10000 Scrap Iron and 2000 Clay.
+quest_MaterialTrader2_ironBars_description,Trade 10000 Scrap Iron and 2000 Clay for 100 Iron Bars.
+quest_MaterialTrader3_ironBars,500 Iron Bars
+quest_MaterialTrader3_ironBars_subtitle,Collect 50000 Scrap Iron and 10000 Clay.
+quest_MaterialTrader3_ironBars_description,Trade 50000 Scrap Iron and 10000 Clay for 500 Iron Bars.
+quest_MaterialTrader4_ironBars,1000 Iron Bars
+quest_MaterialTrader4_ironBars_subtitle,Collect  100000 Scrap Iron and 20000 Clay.
+quest_MaterialTrader4_ironBars_description,Trade 100000 Scrap Iron and 20000 Clay for 1000 Iron Bars.

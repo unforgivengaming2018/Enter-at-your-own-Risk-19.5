@@ -1,0 +1,19 @@
+<configs>
+
+
+
+<!--	 h0tr0d  Compass -->
+
+		<setattribute xpath="/xui/ruleset[@name='default']/window_group[@name='compass']/window[@name='windowCompass']" name="anchor">CenterTop</setattribute>
+
+
+
+
+<!--	h0tr0d Temperature & Elevation Display -->
+
+		<append xpath="/xui/ruleset[@name='default']/window_group[@name='compass']">
+			<window name="h0tr0d_environment" anchor="LeftTop" />
+		</append>
+		
+		
+</configs>

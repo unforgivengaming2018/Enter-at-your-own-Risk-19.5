@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<config>
+
+<!-- This makes Recipes Cheaper Then the vanilla game to prevent headaches when it comes to food That contains Raw Meat -->
+<setattribute xpath="recipes/recipe/ingredient[@name='foodRawMeat']" name="count">1</setattribute>
+<setattribute xpath="recipes/recipe/ingredient[@name='foodRottingFlesh']" name="count">1</setattribute>
+<setattribute xpath="recipes/recipe/ingredient[@name='resourceForgedSteel']" name="count">1</setattribute>
+<setattribute xpath="recipes/recipe/ingredient[@name='resourceForgedIron']" name="count">1</setattribute>
+<setattribute xpath="recipes/recipe/ingredient[@name='unit_clay']" name="count">1</setattribute>
+<setattribute xpath="recipes/recipe/ingredient[@name='unit_glass']" name="count">5</setattribute>
+<setattribute xpath="recipes/recipe/ingredient[@name='unit_iron']" name="count">1</setattribute>
+<setattribute xpath="recipes/recipe/ingredient[@name='foodEgg']" name="count">1</setattribute>
+<setattribute xpath="recipes/recipe/ingredient[@name='foodCropBlueberries']" name="count">1</setattribute>
+<setattribute xpath="recipes/recipe/ingredient[@name='drinkCanEmpty']" name="count">1</setattribute>
+<setattribute xpath="recipes/recipe/ingredient[@name='resourceClayLump']" name="count">5</setattribute>
+<setattribute xpath="recipes/recipe/ingredient[@name='resourceRockSmall']" name="count">1</setattribute>
+<setattribute xpath="recipes/recipe/ingredient[@name='resourceBone']" name="count">1</setattribute>
+<setattribute xpath="recipes/recipe/ingredient[@name='drinkJarRiverWater']" name="count">1</setattribute>
+<setattribute xpath="recipes/recipe/ingredient[@name='resourceElectricParts']" name="count">5</setattribute>
+<setattribute xpath="recipes/recipe/ingredient[@name='resourceGlue']" name="count">1</setattribute>
+<setattribute xpath="recipes/recipe/ingredient[@name='resourceMechanicalParts']" name="count">5</setattribute>
+<setattribute xpath="recipes/recipe/ingredient[@name='resourceWood']" name="count">1</setattribute>
+<setattribute xpath="recipes/recipe/ingredient[@name='resourceNail']" name="count">1</setattribute>
+<setattribute xpath="recipes/recipe/ingredient[@name='resourceCobblestones']" name="count">1</setattribute>
+
+
+
+
+
+
+</config>

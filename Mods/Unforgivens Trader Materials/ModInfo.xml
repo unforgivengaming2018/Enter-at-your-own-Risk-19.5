@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="DrsA19TraderMaterialTrade" />
+		<Description value="Adding material trade quests to the Trader." />
+		<Author value="Drconfused" />
+		<Version value="a19-Dr001" />
+		<Website value="" />
+	</ModInfo>
+</xml>
