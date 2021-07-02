@@ -1,0 +1,26 @@
+<configs>
+	
+	<!-- Aviator Goggles -->
+  <set xpath="/items/item[@name='apparelAviatorGoggles']/effect_group/passive_effect[@name='LootGamestage']/@value">3,3</set>
+	
+	<append xpath="/items/item[@name='apparelAviatorGoggles']/effect_group"> 
+		<passive_effect name="AttributeLevel" tags="attFortitude" operation="base_add" value="1"/>
+		<passive_effect name="PlayerExpGain" operation="perc_add" value=".1"/>
+		<display_value name="dPlayerExpGain" value=".1"/>
+	</append>
+	
+	<!-- Ski Goggles -->
+	<append xpath="/items/item[@name='apparelSkiGoggles']/effect_group"> 
+		<passive_effect name="LootGamestage" operation="base_add" value="1,2"/>
+		<passive_effect name="PlayerExpGain" operation="perc_add" value=".1"/>
+		<display_value name="dPlayerExpGain" value=".1"/>
+	</append>
+	
+	<!-- Shades -->
+	<append xpath="/items/item[@name='apparelShades']/effect_group"> 
+		<passive_effect name="LootGamestage" operation="base_add" value="1,2"/>
+		<passive_effect name="PlayerExpGain" operation="perc_add" value=".1"/>
+		<display_value name="dPlayerExpGain" value=".1"/>
+	</append>
+	
+</configs>

@@ -1,0 +1,11 @@
+<config>
+
+  <remove xpath="/blocks/block[starts-with(@name, 'treeCactus')]/drop[@name='foodCropYuccaFruit']" />
+
+  <append xpath="/blocks/block[@name='treeCactus01']">
+    <drop event="Harvest" name="drinkJarRiverWater" count="1" tag="oreWoodHarvest"/>
+  </append>  
+
+  
+
+</config>

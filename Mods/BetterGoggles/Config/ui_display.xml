@@ -1,0 +1,16 @@
+<BetterGoggles>
+<append xpath="/ui_display_info/item_display/item_display_info[@display_type='clothingSkiGoggles']">
+			<display_entry name="LootGamestage" title_key="statLootGamestage" display_leading_plus="true"/>
+			<display_entry name="dPlayerExpGain" title_key="statShowPlayerExpGain" display_type="Percent" display_leading_plus="true"/>
+</append>
+
+<append xpath="/ui_display_info/item_display/item_display_info[@display_type='clothingShades']">
+			<display_entry name="LootGamestage" title_key="statLootGamestage" display_leading_plus="true"/>
+			<display_entry name="dPlayerExpGain" title_key="statShowPlayerExpGain" display_type="Percent" display_leading_plus="true"/>
+</append>
+
+<append xpath="/ui_display_info/item_display/item_display_info[@display_type='clothingAviatorGoggles']">
+			<display_entry name="AttributeLevel" tags="attFortitude" title_key="statShowFortitude" display_leading_plus="true"/>
+			<display_entry name="dPlayerExpGain" title_key="statShowPlayerExpGain" display_type="Percent" display_leading_plus="true"/>
+</append>
+</BetterGoggles>
