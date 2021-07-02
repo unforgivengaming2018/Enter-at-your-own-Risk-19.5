@@ -1,0 +1,56 @@
+Key,Source,Context,Changes,English
+cooked_foodCanBeef,items,Food,New,Cooked Beef Rations
+
+cooked_foodCanBeefDesc,items,Food,New,Madmax would be drooling! Bonappetite
+
+cooked_foodCanChicken,items,Food,New,Cooked Chicken Rations
+
+cooked_foodCanChickenDesc,items,Food,New,Is that a whole chicken in a can?
+
+cooked_foodCanLamb,items,Food,New,Cooked Lamb Rations
+
+cooked_foodCanLambDesc,items,Food,New,Mary had a little nomnomnom
+
+cooked_foodCanCatfood,items,Food,New,Cooked Cat Food
+
+cooked_foodCanCatfoodDesc,items,Food,New,You're not sure if its for a cat or a cat.
+
+cooked_foodCanDogfood,items,Food,New,Cooked Dog Food
+
+cooked_foodCanDogfoodDesc,items,Food,New,Wait are the beef rations dog food?
+
+cooked_foodCanChili,items,Food,New,Can of Cooked Chili
+
+cooked_foodCanChiliDesc,items,Food,New,Its gonna be windy!
+
+cooked_foodCanTuna,items,Food,New,Cooked Tuna
+
+cooked_foodCanTunaDesc,items,Food,New,Do fish become zombies? Dolphins too?
+
+cooked_foodCanHam,items,Food,New,Can of Cooked Sham
+
+cooked_foodCanHamDesc,items,Food,New,So went the story till there was a twist in the tale
+
+cooked_foodCanPasta,items,Food,New,Cooked Pasta
+
+cooked_foodCanPastaDesc,items,Food,New,Pasta pray for me please
+
+cooked_foodCanSalmon,items,Food,New,Cooked Salmon
+
+cooked_foodCanSalmonDesc,items,Food,New,Doesn't taste as funny as clownfish.
+
+cooked_foodCanMiso,items,Food,New,Cooked Miso
+
+cooked_foodCanMisoDesc,items,Food,New,Did I just drink soy sauce tea?
+
+cooked_foodCanPeas,items,Food,New,Cooked Peas
+
+cooked_foodCanPeasDesc,items,Food,New,Hey, you want a peas of me?
+
+cooked_foodCanSoup,items,Food,New,Cooked Chicken Soup
+
+cooked_foodCanSoupDesc,items,Food,New,Why did the zombie cross the road? Cause it wanted to eat the chicken!
+
+cooked_foodCanStock,items,Food,New,Cooked Can of Stock
+
+cooked_foodCanStockDesc,items,Food,New,MMMM chicken tea

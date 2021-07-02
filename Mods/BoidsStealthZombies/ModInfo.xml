@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Boid's Stealth Zombies" />
+		<Description value="Removes zombies and sleepers from compass display e.g. during quests."/>
+		<Author value="Boid" />
+		<Version value="1.0" />
+		<Website value="http://7daystodie.com" />
+	</ModInfo>
+</xml>

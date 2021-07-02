@@ -1,0 +1,67 @@
+<Drs_CookedCannedFood>
+<append xpath="/recipes">
+	<recipe name="cooked_foodCanBeef" count="1" craft_area="campfire" craft_tool="toolCookingGrill" >
+		<ingredient name="foodCanBeef" count="1"/>
+	</recipe>
+	
+	<recipe name="cooked_foodCanChicken" count="1" craft_area="campfire" craft_tool="toolCookingGrill" >
+		<ingredient name="foodCanChicken" count="1"/>		
+	</recipe>
+
+	<recipe name="cooked_foodCanLamb" count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="10">
+		<ingredient name="foodCanLamb" count="1"/>		
+	</recipe>
+
+	<recipe name="cooked_foodCanCatfood" count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="10">
+		<ingredient name="foodCanCatfood" count="1"/>		
+	</recipe>
+
+	<recipe name="cooked_foodCanDogfood" count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="10">
+		<ingredient name="foodCanDogfood" count="1"/>		
+	</recipe>
+
+	<recipe name="cooked_foodCanChili" count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="10">
+		<ingredient name="foodCanChili" count="1"/>
+		
+	</recipe>
+
+	<recipe name="cooked_foodCanTuna" count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="10">
+		<ingredient name="foodCanTuna" count="1"/>		
+	</recipe>
+
+	<recipe name="cooked_foodCanHam" count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="10">
+		<ingredient name="foodCanSham" count="1"/>		
+	</recipe>
+
+	<recipe name="cooked_foodCanPasta" count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="10">
+		<ingredient name="foodCanPasta" count="1"/>		
+	</recipe>
+
+	<recipe name="cooked_foodCanSalmon" count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="10">
+		<ingredient name="foodCanSalmon" count="1"/>		
+	</recipe>
+
+	<recipe name="cooked_foodCanMiso" count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="10">
+		<ingredient name="foodCanMiso" count="1"/>		
+	</recipe>
+
+	<recipe name="cooked_foodCanPeas" count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="10">
+		<ingredient name="foodCanPeas" count="1"/>		
+	</recipe>
+
+	<recipe name="cooked_foodCanSoup" count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="10">
+		<ingredient name="foodCanSoup" count="1"/>		
+	</recipe>
+
+	<recipe name="cooked_foodCanStock" count="1" craft_area="campfire" craft_tool="toolCookingPot" craft_time="10">
+		<ingredient name="foodCanStock" count="1"/>
+	</recipe>
+
+    <recipe craft_tool="toolCookingPot" craft_area="campfire" count="1" name="foodCanDogfood" craft_time="15">
+        <ingredient count="2" name="foodCornMeal"/>
+        <ingredient count="1" name="foodRottingFlesh"/>
+        <ingredient count="1" name="foodCharredMeat"/>
+    </recipe>
+
+</append>
+</Drs_CookedCannedFood>

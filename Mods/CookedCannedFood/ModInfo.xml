@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="CookedCannedFood" />
+		<Description value="All canned food can be cooked at campfire with grill to make it better, except pears, just cause." />
+		<Author value="Drconfused edited by GodRaiZer" />
+		<Version value="1" />
+		<Website value="some wonderful spot on the interwebs" />
+	</ModInfo>
+</xml>

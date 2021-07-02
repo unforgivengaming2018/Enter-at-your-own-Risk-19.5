@@ -1,0 +1,67 @@
+<Doughs>
+  <!--
+  ########## Looting items ##########
+  # Low percentage for stuff you should be crafting!
+  -->
+
+  <append xpath="/lootcontainers/lootgroup[@name='coldfood']">
+    <item name="doughsDrinkBottomShelfRedWine" count="1,2" prob="0.1"/>
+    <item name="doughsFoodRawSweetBread" count="1,2" prob="0.1"/>
+    <item name="doughsFoodButter" count="1,2" prob="0.08"/>
+    <item name="doughsFoodCheese" count="1,2" prob="0.08"/>
+  </append>
+  <append xpath="/lootcontainers/lootgroup[@name='beverages']"> <!-- COLD DRINKS -->
+    <item name="doughsDrinkBottomShelfRedWine" count="1,2" prob="0.1"/>
+    <item name="doughsDrinkRawMilk" count="1,2" prob="0.05"/>
+  </append>
+  <append xpath="/lootcontainers/lootgroup[@name='drinks']"> <!-- WARM DRINKS -->
+    <item name="doughsDrinkBottomShelfRedWine" count="1,2" prob="0.1"/>
+  </append>
+  <!-- TODO?
+  <append xpath="/lootcontainers/lootgroup[@name='cannedfood']">
+    <item name="doughsthrownGrenadeSteel" count="1,2" prob="0.2"/>
+  </append>
+  -->
+  <append xpath="/lootcontainers/lootgroup[@name='cupboard']">
+    <item name="doughsFoodFlour" count="1,2" prob="0.05"/>
+    <item name="doughsFoodBouillonCube" count="1,2" prob="0.05"/>
+    <item name="doughsFoodCreamOfTartar" count="1,2" prob="0.05"/>
+    <item name="doughsFoodCookingOil" count="1,2" prob="0.05"/>
+    <item name="doughsFoodHardTack" count="1,2" prob="0.08"/>
+    <item name="doughsFoodBeefJerky" count="1,2" prob="0.08"/>
+    <item name="doughsFoodTurkishDelight" count="1,2" prob="0.05"/>
+    <item name="doughsDrinkBottomShelfRedWine" count="1,2" prob="0.1"/>
+    <item name="doughsFoodCheese" count="1,2" prob="0.08"/>
+  </append>
+
+  <append xpath="/lootcontainers/lootgroup[@name='perkBooks']"> <!-- All books -->
+    <item name="doughsFoodBasicExtractingSchematic"/>
+    <item name="doughsSeedToastingSchematic"/>
+    <item name="doughsDrinkMilkProcessingSchematic"/>
+    <item name="doughsFoodBreadSchematic"/>
+  </append>
+
+  <append xpath="/lootcontainers/lootgroup[@name='farmingCookingRecipesT0']"> <!-- All food -->
+    <item name="doughsSeedFlouringSchematic"/>
+    <item name="doughsFoodPemmicanSchematic"/>
+    <item name="doughsFoodPopCornSchematic" prob=".8"/>
+    <item name="doughsDrinkSweetNutMilkSchematic"/>
+    <item name="doughsFoodButterOfTheGodsSchematic" prob=".8"/>
+    <item name="doughsFoodBoneMarrowSchematic"/>
+  </append>
+  <append xpath="/lootcontainers/lootgroup[@name='farmingCookingRecipesT1']"> <!-- All food -->
+    <item name="doughsFoodCheeseSchematic"/>
+    <item name="doughsFoodIceCreamSchematic" prob=".6"/>
+    <item name="doughsFoodButterSchematic"/>
+    <item name="doughsFoodBoiledSweetBreadSchematic"/>
+  </append>
+  <append xpath="/lootcontainers/lootgroup[@name='farmingCookingRecipesT2']"> <!-- All food -->
+    <item name="doughsFoodEggSouffleSchematic" prob=".6"/>
+    <item name="doughsFoodSweetCornBlueberryMuffinSchematic"/>
+    <item name="doughsFoodPotatoesDauphinoiseSchematic"/>
+    <item name="doughsFoodCroqueMonsieurSchematic" prob=".6"/>
+    <item name="doughsFoodBoeufBourguignonSchematic"/>
+    <item name="doughsFoodTurkishDelightSchematic"/>
+  </append>
+
+</Doughs>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<configs>
+	<remove xpath="//nav_object_class[@name='clear_sleeper' or @name='sleeper_volume' or @name='zombie']/compass_settings" />
+</configs>

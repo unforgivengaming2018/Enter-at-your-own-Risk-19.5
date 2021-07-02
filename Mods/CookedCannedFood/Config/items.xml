@@ -1,0 +1,189 @@
+<Drs_CookedCannedFood>
+<!-- What food items are going to be tweaked here? This is bachelor skill crap that needs to happen, like serious bachelor chef skills. The zombie apocolypse I am sure crapped all over the conventional nuclear family home and requires everyone to have a basic knowledge of how to cook a can at a campfire or stove -->
+
+<append xpath="/items">
+
+<set xpath="/items/item[@name='foodCanDogfood']/property[@name='EconomicValue']/@value">40</set>
+
+<!-- Canned Bachelor Magic! -->
+<item name="cooked_foodCanBeef">
+	<property name="CustomIcon" value="cooked_foodCanBeef"/>
+	<property name="DescriptionKey" value="cooked_foodCanBeefDesc"/>
+	<property name="HoldType" value="31"/>
+	<property name="DisplayType" value="food"/>
+	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="Material" value="Mmetal"/>
+	<property name="Weight" value="5"/>
+	<property name="EconomicValue" value="60"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property class="Action0">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Sound_start" value="player_eating"/>
+		<property name="Create_item" value="drinkCanEmpty"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="17"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="8"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+	</effect_group>
+</item>
+
+<item name="cooked_foodCanChicken">
+	<property name="CustomIcon" value="cooked_foodCanChicken"/>
+	<property name="DescriptionKey" value="cooked_foodCanChickenDesc"/>
+	<property name="Extends" value="foodCanBeef"/>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="17"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="8"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+	</effect_group>
+</item>
+
+<item name="cooked_foodCanLamb">
+	<property name="CustomIcon" value="cooked_foodCanLamb"/>
+	<property name="DescriptionKey" value="cooked_foodCanLambDesc"/>
+	<property name="Extends" value="foodCanBeef"/>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="17"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="8"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+	</effect_group>
+</item>
+
+<item name="cooked_foodCanCatfood">
+	<property name="CustomIcon" value="cooked_foodCanCatfood"/>
+	<property name="DescriptionKey" value="cooked_foodCanCatfoodDesc"/>
+	<property name="Extends" value="foodCanBeef"/>
+	<property name="EconomicValue" value="20"/>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="7"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="3"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+	</effect_group>
+</item>
+
+<item name="cooked_foodCanDogfood">
+	<property name="CustomIcon" value="cooked_foodCanDogfood"/>
+	<property name="DescriptionKey" value="cooked_foodCanDogfoodDesc"/>
+	<property name="Extends" value="foodCanBeef"/>
+	<property name="EconomicValue" value="40"/>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="12"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="6"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+	</effect_group>
+</item>
+
+<item name="cooked_foodCanChili">
+	<property name="CustomIcon" value="cooked_foodCanChili"/>
+	<property name="DescriptionKey" value="cooked_foodCanChiliDesc"/>
+	<property name="Extends" value="foodCanBeef"/>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="17"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="8"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>	
+	</effect_group>
+</item>
+
+<item name="cooked_foodCanTuna">
+	<property name="CustomIcon" value="cooked_foodCanTuna"/>
+	<property name="DescriptionKey" value="cooked_foodCanTunaDesc"/>
+	<property name="Extends" value="foodCanBeef"/>
+	<property name="EconomicValue" value="20"/>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="7"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="3"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+	</effect_group>
+</item>
+
+<item name="cooked_foodCanHam">
+	<property name="CustomIcon" value="cooked_foodCanHam"/>
+	<property name="DescriptionKey" value="cooked_foodCanHamDesc"/>
+	<property name="Extends" value="foodCanBeef"/>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="17"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="8"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>	
+	</effect_group>
+</item>
+
+<item name="cooked_foodCanPasta">
+	<property name="CustomIcon" value="cooked_foodCanPasta"/>
+	<property name="DescriptionKey" value="cooked_foodCanPastaDesc"/>
+	<property name="Extends" value="foodCanBeef"/>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="17"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="8"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>
+	</effect_group>
+</item>
+
+<item name="cooked_foodCanSalmon">
+	<property name="CustomIcon" value="cooked_foodCanSalmon"/>
+	<property name="DescriptionKey" value="cooked_foodCanSalmonDesc"/>
+	<property name="Extends" value="foodCanBeef"/>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="17"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="8"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>				
+	</effect_group>
+</item>
+
+<item name="cooked_foodCanMiso">
+	<property name="CustomIcon" value="cooked_foodCanMiso"/>
+	<property name="DescriptionKey" value="cooked_foodCanMisoDesc"/>
+	<property name="Extends" value="foodCanBeef"/>
+	<property name="DisplayType" value="foodWater"/>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="9"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="7"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>				
+	</effect_group>
+</item>
+
+<item name="cooked_foodCanPeas">
+	<property name="CustomIcon" value="cooked_foodCanPeas"/>
+	<property name="DescriptionKey" value="cooked_foodCanPeasDesc"/>
+	<property name="Extends" value="foodCanMiso"/>
+	<property name="EconomicValue" value="20"/>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="4"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="12"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="6"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>				
+	</effect_group>
+</item>
+
+<item name="cooked_foodCanSoup">
+	<property name="CustomIcon" value="cooked_foodCanSoup"/>
+	<property name="DescriptionKey" value="cooked_foodCanSoupDesc"/>
+	<property name="Extends" value="foodCanMiso"/>
+	<property name="EconomicValue" value="40"/>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="9"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="7"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>		
+	</effect_group>
+</item>
+
+<item name="cooked_foodCanStock">
+	<property name="CustomIcon" value="cooked_foodCanStock"/>
+	<property name="DescriptionKey" value="cooked_foodCanStockDesc"/>
+	<property name="Extends" value="foodCanMiso"/>
+	<property name="EconomicValue" value="40"/>
+	<effect_group tiered="false">
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$waterAmountAdd" operation="add" value="9"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="$foodAmountAdd" operation="add" value="7"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="ModifyCVar" cvar="foodHealthAmount" operation="add" value="2"/>
+		<triggered_effect trigger="onSelfPrimaryActionEnd" action="AddBuff" target="self" buff="buffProcessConsumables"/>		
+	</effect_group>
+</item>
+</append>
+</Drs_CookedCannedFood>
