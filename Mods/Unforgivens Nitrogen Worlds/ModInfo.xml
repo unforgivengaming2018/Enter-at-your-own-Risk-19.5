@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+  <ModInfo>
+    <Name value="Unforgivens Nitrogen Worlds" />
+    <Description value="Worlds you can use in Single Player or Dedicated servers" />
+    <Author value="Unforgiven774" />
+    <Version value="19.0.2" compat="A19" />
+  </ModInfo>
+</xml>
