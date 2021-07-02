@@ -1,0 +1,5 @@
+<FirearmsExpansion4>
+
+<append xpath="/progression/perks/perk[@name='perkElectrocutioner']/effect_group"><passive_effect name="RecipeTagUnlocked" operation="base_set" level="5" value="1" tags="Railgun"/></append>
+
+</FirearmsExpansion4>

@@ -1,0 +1,143 @@
+Key,Source,Context,English,German
+h7sb_stTip_title,desc,main,H7SB [F4A460]Storage[-] Mod,H7SB [F4A460]Storage[-] Mod
+h7sb_stTip,desc,main,"[F4A460]╔[-] Storage System \n[F4A460]╠[-] 77xUnsecured / 11xSecured \n[F4A460]╚[-] Unsecured chests or similar usually have a larger inventory than lockable ones. Apart from the wooden chest, all unsecured boxes are made as a wooden or iron furniture block and selected via the menu (R). Barrels, pallets, etc. are bulk storage facilities and have the largest inventory. Secured boxes are more robust and their capacity increases with the quality. \n\n[F4A460]╔[-] New Furniture \n[F4A460]╚[-] More than 12 new furniture to decorate your home. \n\n[F4A460]╔[-] Pushable Carts \n[F4A460]╠[-] Shopping cart, Tilt Truck \n[F4A460]╚[-] Place (RMB) the cart and press the E key to push it. Hold down the E button for a long time to open or pick up the inventory like a vehicle. \n\nThe inventory size of all fast vehicles has been reduced. \n\n[F4A460]www.eihwaz.de[-] // [ff0000]I need help with localization![-]","[F4A460]╔[-] Lagerungssystem \n[F4A460]╠[-] 77xUngesicherte / 11xGesicherte \n[F4A460]╚[-] Ungesicherte Kisten oä verfügen idR über ein größeres Inventar als verschließbare. Abgesehen von der Holztruhe werden alle ungesicherten Kisten als hölzerner bzw eiserner Möbelblock hergestellt und über das Menü (R) ausgewählt. Fässer, Paletten oä sind Massenlager und verfügen über das größte Inventar. Gesicherte Kisten sind robuster und ihr Fassungsvermögen nimmt mit steigender Qualität zu. \n\n[F4A460]╔[-] Neue Möbel \n[F4A460]╚[-] Mehr als 12 neue Möbel zum dekorieren der Wohnung. \n\n[F4A460]╔[-] Schiebbare Karren \n[F4A460]╠[-] Einkaufswagen, Kippkarre \n[F4A460]╚[-] Platziere (RMB) die Karre und drücke die E-Taste um sie zu schieben. Halte lange die E-Taste gedrückt um wie bei einem Fahrzeug das Inventar zu öffnen oder sie aufzuheben. \n\nDie Inventargröße aller schnellen Fahrzeuge wurde verringert. \n\n[F4A460]www.eihwaz.de[-]"
+
+h7sb_stItems,desc,items,"Place the cart (RMB) and then press the E button to push it. By holding down the E button, you can open the inventory or pick it up again. Has a passenger seat.","Platziere die Karre (RMB) und drücke anschließend die E-Taste um sie zu schieben. Durch langes drücken der E-Taste kann man das Inventar öffnen oder sie wieder aufheben. Verfügt über einen Beifahrersitz."
+
+h7sb_einkaufswagen,items,vehicle,Shopping Cart,Einkaufswagen
+h7sb_kippkarre,items,vehicle,Tilt Truck,Kippkarre
+
+h7sb_metallMöbel,blocks,helper,Metal Furniture,Metallmöbel
+h7sb_holzMöbel,blocks,helper,Wooden Furniture,Holzmöbel
+h7sb_holzkisteOffen,blocks,block,Wooden Chest,Holztruhe
+h7sb_holzkiste,blocks,block,Wooden Chest,Holztruhe
+h7sb_holzkisteOffen1,blocks,block,Fancier Wooden Chest,Edle Holztruhe
+h7sb_holzkiste1,blocks,block,Noble Wooden Chest,Edle Holztruhe
+h7sb_eisenkisteOffen,blocks,block,Iron Chest,Eisentruhe
+h7sb_eisenkiste,blocks,block,Iron Chest,Eisentruhe
+h7sb_eisenkisteOffen1,blocks,block,Reinforced Iron Chest,Verstärkte Eisentruhe
+h7sb_eisenkiste1,blocks,block,Reinforced Iron Chest,Verstärkte Eisentruhe
+h7sb_stahlkisteOffen,blocks,block,Steel Chest,Stahltruhe
+h7sb_stahlkiste,blocks,block,Steel Chest,Stahltruhe
+h7sb_werkzeugkisteOffen,blocks,block,Tool Box,Werkzeugkiste
+h7sb_werkzeugkiste,blocks,block,Tool Box,Werkzeugkiste
+h7sb_werkzeugkisteOffen1,blocks,block,Tool Cabinet,Werkzeugschrank
+h7sb_werkzeugkiste1,blocks,block,Tool Cabinet,Werkzeugschrank
+h7sb_kasseOffen,blocks,block,Cash Register,Kasse
+h7sb_kasse,blocks,block,Cash Register,Kasse
+h7sb_wandtresorOffen,blocks,block,Wall Safe,Wandtresor
+h7sb_wandtresor,blocks,block,Wall Safe,Wandtresor
+h7sb_tresorOffen,blocks,block,Safe,Tresor
+h7sb_tresor,blocks,block,Safe,Tresor
+h7sb_eisenschreibtischOffen,blocks,block,Desk,Schreibtisch
+h7sb_eisenschreibtisch,blocks,block,Iron Desk,Schreibtisch
+h7sb_briefkastenOffen,blocks,block,Mailbox,Briefkasten
+h7sb_briefkasten,blocks,block,Mailbox,Briefkasten
+h7sb_briefkastenOffen1,blocks,block,Mailbox,Briefkasten
+h7sb_briefkasten1,blocks,block,Mailbox,Briefkasten
+h7sb_briefkastenOffen2,blocks,block,Mailbox,Briefkasten
+h7sb_briefkasten2,blocks,block,Mailbox,Briefkasten
+h7sb_briefkastenOffen3,blocks,block,Mailbox,Briefkasten
+h7sb_briefkasten3,blocks,block,Mailbox,Briefkasten
+h7sb_briefkastenHelfer,blocks,block,Mailboxes,Briefkästen
+
+h7sb_wasserspender,blocks,block,Water Dispenser,Wasserspender
+h7sb_kühlfach,blocks,block,Cooling Compartment,Kühlfach
+h7sb_kühlbox,blocks,block,Cooling Box,Kühlbox
+h7sb_kühlschrank,blocks,block,Stainless Steel Refrigerator,Edelstahl Kühlschrank
+h7sb_kühlschrank1,blocks,block,Retro Refrigerator,Retro Kühlschrank
+h7sb_spind,blocks,block,Locker,Spind
+h7sb_spind1,blocks,block,Locker,Spind
+h7sb_spind2,blocks,block,Locker,Spind
+h7sb_spind3,blocks,block,Locker,Spind
+h7sb_spind4,blocks,block,Locker,Spind
+h7sb_papierkorb,blocks,block,Bin,Papierkorb
+h7sb_mülleimer,blocks,block,Garbage Can,Mülleimer
+h7sb_mülleimer1,blocks,block,Garbage Can,Mülleimer
+h7sb_mülleimer2,blocks,block,Fancier Garbage Can,Schicker Mülleimer
+h7sb_kleiderhaken,blocks,block,Coat Hooks,Kleiderhaken
+h7sb_kleiderhaken1,blocks,block,Coat Hooks,Kleiderhaken
+h7sb_kleiderständer,blocks,block,Clothes Rack,Kleiderständer
+h7sb_kleiderständer1,blocks,block,Clothes Rack,Kleiderständer
+h7sb_kleiderständer2,blocks,block,Clothes Rack,Kleiderständer
+h7sb_eisenfassUnten,blocks,block,Barrels (green),Fässer (grün)
+h7sb_eisenfassOben,blocks,block,Barrels (green),Fässer (grün)
+h7sb_eisenfassUnten1,blocks,block,Barrels (red),Fässer (rot)
+h7sb_eisenfassOben1,blocks,block,Barrels (red),Fässer (rot)
+h7sb_eisenfassUnten2,blocks,block,Barrels (brown),Fässer (braun)
+h7sb_eisenfassOben2,blocks,block,Barrels (brown),Fässer (braun)
+h7sb_eisenfassUnten3,blocks,block,Barrels (blue),Fässer (blau)
+h7sb_eisenfassOben3,blocks,block,Barrels (blue),Fässer (blau)
+h7sb_eisenfassUnten4,blocks,block,Barrels (yellow),Fässer (gelb)
+h7sb_eisenfassOben4,blocks,block,Barrels (yellow),Fässer (gelb)
+h7sb_ofen,blocks,block,Fancier Oven,Schicker Herd
+h7sb_ofen1,blocks,block,Oven,Herd
+h7sb_waschmaschine,blocks,block,Washing Machine,Waschmaschine
+h7sb_abfallpresse,blocks,block,Waste Press,Abfallpresse
+h7sb_eisentischRund,blocks,block,Round Iron Table,Runder Eisentisch
+h7sb_eisentischRund1,blocks,block,Round Iron Table,Runder Eisentisch
+h7sb_badewanne,blocks,block,Bathtub,Badewanne
+
+h7sb_lagerkiste,blocks,block,Storage Box,Lagerkiste
+h7sb_lagerkiste1,blocks,block,Storage Box,Lagerkiste
+h7sb_lagerkiste2,blocks,block,Storage Box,Lagerkiste
+h7sb_lagerkiste3,blocks,block,Storage Box,Lagerkiste
+h7sb_lagerkiste4,blocks,block,Storage Box,Lagerkiste
+h7sb_lagerkiste5,blocks,block,Storage Box,Lagerkiste
+h7sb_lagerkiste6,blocks,block,Storage Box,Lagerkiste
+h7sb_lagerkiste7,blocks,block,Storage Box,Lagerkiste
+h7sb_lagerkiste8,blocks,block,Storage Box,Lagerkiste
+h7sb_schrankRot,blocks,block,Wall Cupboard,Hängeschrank
+h7sb_schrankRot1,blocks,block,Wall Cupboard,Hängeschrank
+h7sb_schrankRot2,blocks,block,Wall Cupboard,Hängeschrank
+h7sb_schrankRot3,blocks,block,Base Cabinet,Unterschrank
+h7sb_spüleRot,blocks,block,Scullery,Spüle
+h7sb_thekeRot,blocks,block,Counter,Theke
+h7sb_schrankSchwarz,blocks,block,Wall Cupboard,Hängeschrank
+h7sb_schrankSchwarz1,blocks,block,Wall Cupboard,Hängeschrank
+h7sb_schrankSchwarz2,blocks,block,Wall Cupboard,Hängeschrank
+h7sb_schrankSchwarz3,blocks,block,Base Cabinet,Unterschrank
+h7sb_spüleSchwarz,blocks,block,Scullery,Spüle
+h7sb_schrankSchwarz4,blocks,block,Counter,Unterschrank
+h7sb_schrankBraun,blocks,block,Wall Cupboard,Hängeschrank
+h7sb_schrankBraun1,blocks,block,Wall Cupboard,Hängeschrank
+h7sb_schrankBraun2,blocks,block,Wall Cupboard,Hängeschrank
+h7sb_schrankBraun3,blocks,block,Base Cabinet,Unterschrank
+h7sb_spüleBraun,blocks,block,Scullery,Spüle
+h7sb_thekeBraun,blocks,block,Counter,Theke
+h7sb_holzstapel,blocks,block,Warehouse Stack (Wood),Lager Stapel (Holz)
+h7sb_holzstapel1,blocks,block,Warehouse Stack (Wood),Lager Stapel (Holz)
+h7sb_kistenstapel,blocks,block,Warehouse Stack (Carton),Lager Stapel (Karton)
+h7sb_kistenstapel1,blocks,block,Warehouse Stack (Carton),Lager Stapel (Karton)
+h7sb_steinstapel,blocks,block,Warehouse Stack (Stone),Lager Stapel (Stein)
+h7sb_steinstapel1,blocks,block,Warehouse Stack (Stone),Lager Stapel (Stein)
+h7sb_abgedecktstapel,blocks,block,Warehouse Stack,Lager Stapel
+h7sb_kommode,blocks,block,Dresser,Kommode
+h7sb_weinfass,blocks,block,Wine Barrel,Weinfass
+h7sb_weinfass1,blocks,block,Wine Barrel,Weinfass
+h7sb_weinfass2,blocks,block,Wine Barrel,Weinfass
+h7sb_pillenschrank,blocks,block,Pill Cabinet,Pillenschrank
+h7sb_medizinschrank,blocks,block,Medicine Cabinet,Medizinschrank
+h7sb_medizinschrank1,blocks,block,Mirror Cabinet,Spiegelschrank
+h7sb_bücherregal,blocks,block,Bookshelf,Bücherregal
+h7sb_bücherregal1,blocks,block,Bookshelf,Bücherregal
+h7sb_bücherregal2,blocks,block,Bookshelf,Bücherregal
+h7sb_bücherregal3,blocks,block,Bookshelf,Bücherregal
+h7sb_bücherregal4,blocks,block,Bookshelf,Bücherregal
+h7sb_fenterläden,blocks,block,Shutters,Fensterläden
+h7sb_fenterrahmenSchmal,blocks,block,Window Frame (Narrow),Fensterrahmen (schmal)
+h7sb_fenterrahmenSchmal1,blocks,block,Window Frame (Narrow),Fensterrahmen (schmal)
+h7sb_fenterrahmenSchmal2,blocks,block,Window Frame (Narrow),Fensterrahmen (schmal)
+h7sb_holztisch,blocks,block,Side Table,Beistelltisch
+h7sb_holztisch1,blocks,block,Side Table,Beistelltisch
+h7sb_holztisch2,blocks,block,Wooden Table (Dynamic),Holztisch (Dynamisch)
+h7sb_holztisch3,blocks,block,Wooden Table,Holztisch
+h7sb_holztisch4,blocks,block,Desk,Pult
+h7sb_holztisch5,blocks,block,Camping Table,Bierzeltgarnitur
+h7sb_holzstuhl,blocks,block,Wooden Chair,Holzstuhl
+h7sb_alterstuhl,blocks,block,Old Chair,Alter Stuhl
+h7sb_pbank,blocks,block,Park Bench,Parkbank
+h7sb_pbank1,blocks,block,Park Bench,Parkbank
+h7sb_ventilatorklein,blocks,block,Ventilation,Lüftung
+h7sb_hundehütte,blocks,block,Dog House,Hundehütte
+h7sb_holzrad,blocks,block,Wooden Wheel,Holzrad

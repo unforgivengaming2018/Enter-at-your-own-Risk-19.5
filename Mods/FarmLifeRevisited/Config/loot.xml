@@ -1,0 +1,147 @@
+<config>
+
+<append xpath="/lootcontainers" >
+<!-- Chicken Eggs -->
+	<lootcontainer id="701" count="1" size="3,4" sound_open="forge_open" sound_close="forge_close" destroy_on_close="true" loot_quality_template="qualPlus1Template" >
+		<item name="foodEgg" count="1,2" />
+	</lootcontainer>
+	<lootcontainer id="702" count="1" size="3,4" sound_open="forge_open" sound_close="forge_close" destroy_on_close="true" loot_quality_template="qualPlus1Template" >
+		<item name="Milking Cow" count="1" prob=".5" />
+		<item name="foodRottingFlesh" count="1" prob=".5" /> 
+	</lootcontainer>
+		<lootcontainer id="703" count="1" size="3,4" sound_open="forge_open" sound_close="forge_close" destroy_on_close="true" loot_quality_template="qualPlus1Template" >
+		<item name="Raw Milk" count="4,8" />
+	</lootcontainer>
+	<lootcontainer id="704" count="1" size="3,4" sound_open="forge_open" sound_close="forge_close" destroy_on_close="true" loot_quality_template="qualPlus1Template" >
+		<item name="Egg Laying Baby Chick" count="1" prob=".5" />
+		<item name="foodRottingFlesh" count="1" prob=".5" /> 
+	</lootcontainer>
+	<lootcontainer id="705" count="8" size="4,4" sound_open="forge_open" sound_close="forge_close" destroy_on_close="true" loot_quality_template="qualPlus1Template" >
+		<item name="Raw Beef" count="5,20" />
+		<item name="resourceLeather" count="3,6" /> 
+		<item name="resourceAnimalFat" count="1,2"  /> 
+		<item name="resourceBone" count="1,2"  /> 
+	</lootcontainer>
+	<lootcontainer id="706" count="6" size="4,4" sound_open="forge_open" sound_close="forge_close" destroy_on_close="true" loot_quality_template="qualPlus1Template" >
+		<item name="Raw Pork" count="5,20" />
+		<item name="resourceAnimalFat" count="1,2"  /> 
+		<item name="resourceBone" count="1,2"  /> 
+	</lootcontainer>
+	<lootcontainer id="707" count="1" size="3,4" sound_open="forge_open" sound_close="forge_close" destroy_on_close="true" loot_quality_template="qualPlus1Template" >
+		<item name="Pig" count="1" prob=".5" />
+		<item name="foodRottingFlesh" count="1" prob=".5" /> 
+	</lootcontainer>
+	<lootcontainer id="708" count="1" size="3,4" sound_open="forge_open" sound_close="forge_close" destroy_on_close="true" loot_quality_template="qualPlus1Template" >
+		<item name="Brown Cow" count="1" prob=".5" />
+		<item name="foodRottingFlesh" count="1" prob=".5" /> 
+	</lootcontainer>
+	<lootcontainer id="709" count="1" size="3,4" sound_open="forge_open" sound_close="forge_close" destroy_on_close="true" loot_quality_template="qualPlus1Template" >
+		<item name="Grey Chicken" count="1" prob=".5" />
+		<item name="foodRottingFlesh" count="1" prob=".5" /> 
+	</lootcontainer>
+	<lootcontainer id="710" count="6" size="3,4" sound_open="forge_open" sound_close="forge_close" destroy_on_close="true" loot_quality_template="qualPlus1Template" >
+		<item name="Raw Chicken" count="10,25"  />
+		<item name="resourceAnimalFat" count="1,2"  /> 
+		<item name="resourceBone" count="1,2"  /> 
+	</lootcontainer>
+		
+	<lootcontainer id="711" count="1" size="3,4" sound_open="forge_open" sound_close="forge_close" destroy_on_close="true" loot_quality_template="qualPlus1Template" >
+		<item name="GuardTurretStuner" count="1" prob=".021"/>
+		<item name="TurretGuardSim" count="1" prob=".021"/>
+		<item name="GuardTurretLizzy" count="1" prob=".021"/>
+		<item name="GuardTurretDre" count="1" prob=".021"/>
+		<item name="GuardTurretFox" count="1" prob=".021"/>		
+		<item name="GuardTurretBandit" count="1" prob=".021"/>	
+		<item name="GuardTurretBanditFoxy" count="1" prob=".021"/>	
+		<item name="TurretGuardLeader" count="1" prob=".021"/>	
+		<item name="TurretGuardCompoundBowMan" count="1" prob=".021"/>	
+		<item name="foodRottingFlesh" count="5" prob=".8"/>
+	</lootcontainer>
+	<lootcontainer id="712" count="1" size="3,4" sound_open="forge_open" sound_close="forge_close" destroy_on_close="true" loot_quality_template="qualPlus1Template" >
+		<item name="PetPig" count="1" prob=".021" />
+		<item name="PetBoar" count="1" prob=".021"/>
+		<item name="PetRabbit" count="1" prob=".021"/>
+		<item name="PetStag" count="1" prob=".021"/>
+		<item name="PetChicken" count="1" prob=".021"/>
+		<item name="PetBear" count="1" prob=".021"/>
+		<item name="PetWolf" count="1" prob=".021"/>
+		<item name="PetCoyote" count="1" prob=".021"/>
+		<item name="PetDoe" count="1" prob=".021"/>
+		<item name="foodRottingFlesh" count="5" prob=".8"/>
+     </lootcontainer>
+	<lootcontainer id="713" count="1" size="3,4" sound_open="forge_open" sound_close="forge_close" destroy_on_close="true" loot_quality_template="qualPlus1Template" >
+		<item name="GuardHellBear" count="1" prob=".04" />
+		<item name="GuardHellBoar" count="1" prob=".04"/>
+		<item name="GuardHellWolf" count="1" prob=".04"/>
+		<item name="GuardHellLion" count="1" prob=".04"/>
+		<item name="GuardRabbit" count="1" prob=".04"/>
+		<item name="foodRottingFlesh" count="5" prob=".8"/>
+     </lootcontainer>
+</append>
+
+    <append xpath="/lootcontainers/lootgroup[@name='cupboard']">
+        <item name="Old Salt" prob="0.05"/>
+		<item name="Basic Cryogenic Material" prob="0.05"/>
+		<item name="Intermediate Cryogenic Material" prob="0.04"/>
+		<item name="Advanced Cryogenic Material" prob="0.03"/>		
+	</append>
+    <append xpath="/lootcontainers/lootgroup[@name='cannedfood']">
+        <item name="Old Salt"/>
+    </append>
+    <append xpath="/lootcontainers/lootgroup[@name='seeds']">
+       <!-- CROPS -->
+		<item name="Broccoli Seed"/>
+		<item name="BrusselsSprouts Seed"/>
+		<item name="Cabbage Seed"/>
+		<item name="Carrot Seed"/>
+		<item name="Celery Seed"/>
+		<item name="Cucumber Seed"/>
+		<item name="Flax Seed"/>
+		<item name="Herb Seed"/>
+		<item name="IcebergLettuce Seed"/>
+		<item name="Jalapeno Seed"/>		
+		<item name="Marijuana Seed"/>
+		<item name="Onion Seed"/>
+		<item name="Pineapple Seed"/>
+		<item name="Raspberry Seed"/>
+		<item name="Rice Seed"/>
+		<item name="Romaine Seed"/>
+		<item name="Spice Seed"/>
+		<item name="Spinach Seed"/>
+		<item name="Squash Seed"/>
+		<item name="Strawberry Seed"/>
+		<item name="SugarCane Seed"/>
+		<item name="Sunflower Seed"/>
+		<item name="Tomato Seed"/>
+		<item name="VineyardGrape Seed"/>
+		<item name="Wheat Seed"/>
+		<!-- TREES -->
+		<item name="Banana Seed"/>
+		<item name="Cherry Seed"/>
+		<item name="Coconut Seed"/>
+		<item name="Nut Tree Seed"/>
+		<item name="Orange Seed"/>
+		<item name="Pear Seed"/>
+		<item name="Red Apple Seed"/>
+		<item name="Sugar Maple Seed"/>
+		<item name="Walnut Seed"/>
+		<item name="White Oak Seed"/>
+    </append>
+
+<!--  Fridge -->
+	<append xpath="/lootcontainers/lootcontainer[@id='20']">	
+        <item name="Old Salt" prob="0.05"/>
+		<item name="Basic Cryogenic Material" prob="0.05"/>
+		<item name="Intermediate Cryogenic Material" prob="0.04"/>
+		<item name="Advanced Cryogenic Material" prob="0.03"/>		
+
+	</append>
+<!-- Cupboard -->
+	<append xpath="/lootcontainers/lootcontainer[@id='17']">	
+		<item name="Old Salt" count="1" prob=".1"/>	
+		<item name="Basic Cryogenic Material" prob="0.05"/>
+		<item name="Intermediate Cryogenic Material" prob="0.04"/>
+		<item name="Advanced Cryogenic Material" prob="0.03"/>
+	</append>
+
+</config>	

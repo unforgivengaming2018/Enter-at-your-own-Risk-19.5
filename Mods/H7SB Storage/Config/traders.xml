@@ -1,0 +1,19 @@
+<!-- - - - - - - - - - - -
+#########################
+###### H7SB Storage #####
+### 7 Days to Die Mod ###
+#########################
+####### Eihwaz © ########
+##### NO REUPLAOD! ######
+#### CC BY-NC-ND-SA #####
+#########################
+- - - - - - - - - - - -->
+<eihwaz.de>
+<remove xpath="/traders/trader_item_groups/trader_item_group[@name='decorativeBlocks']/item[@name='cntMunitionsBox']" />
+<remove xpath="/traders/trader_item_groups/trader_item_group[@name='decorativeBlocks']/item[@name='cntCashRegister']" />
+<remove xpath="/traders/trader_item_groups/trader_item_group[@name='decorativeBlocks']/item[@name='cntCoolerClosed']" />
+<remove xpath="/traders/trader_item_groups/trader_item_group[@name='decorativeBlocks']/item[@name='cntWaterCoolerFull']" />
+<remove xpath="/traders/trader_item_groups/trader_item_group[@name='decorativeBlocks']/item[@name='cntCabinetOldSink']" />
+<remove xpath="/traders/trader_item_groups/trader_item_group[@name='decorativeBlocks']/item[@name='cntGraniteSink']" />
+<remove xpath="/traders/trader_item_groups/trader_item_group[@name='decorativeBlocks']/item[@name='cntLockersShortClosed']" />
+</eihwaz.de>

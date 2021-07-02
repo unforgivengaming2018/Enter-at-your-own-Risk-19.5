@@ -1,0 +1,61 @@
+<config>
+	<set xpath="/progression/level/@max_level">350</set>
+	<append xpath="/progression/attributes">
+		<attribute name="FarmLife" name_key="Farm Life" desc_key="Unlock Items and Bonus Perks!." icon="ui_game_symbol_farm_life" min_level="1" max_level="1">
+			<effect_group>
+			<passive_effect name="PlayerExpGain" operation="perc_add" value="0.00" level="1"/>
+		<!--	<passive_effect name="PlayerExpGain" operation="perc_add" value="0.00" level="2"/>
+			<passive_effect name="PlayerExpGain" operation="perc_add" value="0.00" level="3"/>
+			<passive_effect name="PlayerExpGain" operation="perc_add" value="0.00" level="4"/>
+			<passive_effect name="PlayerExpGain" operation="perc_add" value="0.00" level="5"/>
+			<passive_effect name="PlayerExpGain" operation="perc_add" value="0.00" level="6"/>
+			<passive_effect name="PlayerExpGain" operation="perc_add" value="0.00" level="7"/>
+			<passive_effect name="PlayerExpGain" operation="perc_add" value="0.00" level="8"/>
+			<passive_effect name="PlayerExpGain" operation="perc_add" value="0.00" level="9"/>
+			<passive_effect name="PlayerExpGain" operation="perc_add" value="0.00" level="10"/>		-->	
+			<effect_description level="1" desc_base="Nothing to See Here!." />
+	<!--		<effect_description level="2" desc_base="Nothing to See Here!." />
+			<effect_description level="3" desc_base="Nothing to See Here!." />
+			<effect_description level="4" desc_base="Nothing to See Here!." />
+			<effect_description level="5" desc_base="Nothing to See Here!." />
+			<effect_description level="6" desc_base="Nothing to See Here!." />
+			<effect_description level="7" desc_base="Nothing to See Here!." />
+			<effect_description level="8" desc_base="Nothing to See Here!." />
+			<effect_description level="9" desc_base="Nothing to See Here!." />
+			<effect_description level="10" desc_base="Nothing to See Here!." /> -->
+			</effect_group>
+		</attribute>
+	
+	</append>
+
+	<append xpath="/progression/perks">
+
+<perk name="Cloning" parent="FarmLife" name_key="Cloning" desc_key="Sterility is common these days. In order to keep life going Cloning has become the answer!" icon="ui_game_symbol_farm_life">	
+     	<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attIntellect"  operation="GTE" value="2" desc_key="Intellect Level 2"/></level_requirements>
+		<effect_group>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="Cloning Station,Random Pet Cloning Chamber"/>
+		<effect_description level="1" desc_base="Beginner Cloning " long_desc_key="Unlocks Access to the Cloning Station and Random Pet Cloning Chambers. Requires Intellect Level 2"/>		
+		</effect_group>	
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attIntellect"  operation="GTE" value="4" desc_key="Intellect Level 4"/></level_requirements>
+		<effect_group>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="2" value="1" tags="Advanced Random Pet Cloning Chamber,Pig Cloning Chamber,Random Turret Guard Cloning Chamber,Advanced Random Turret Guard Cloning Chamber,Brown Cow Cloning Chamber,Advanced Brown Cow Cloning Chamber,Milking Cow Cloning Chamber,Egg Laying Chicken Cloning Chamber,Random Animal Guard Cloning Chamber,Advanced Random Animal Guard Cloning Chamber"/>
+		<effect_description level="2" desc_base="Intermediate Cloning " long_desc_key="Unlocks Access to the Specific Animal Cloning Chambers and Advanced Cloning Chambers. Requires Intellect Level 4"/>		
+		</effect_group>	
+</perk>
+<perk name="Planting and Growing" parent="FarmLife" name_key="Planting and Growing" desc_key="Good food its tough to find. You have to be able to grow your own!" icon="ui_game_symbol_farm_life">	
+     	<level_requirements level="1"><requirement name="ProgressionLevel" progression_name="attFortitude"  operation="GTE" value="2" desc_key="Fortitude Level 2"/></level_requirements>
+		<effect_group>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="1" value="1" tags="Banana Seed,Broccoli Seed,BrusselsSprouts Seed,Cabbage Seed,Carrot Seed,Celery Seed,Cherry Seed,Coconut Seed,Cucumber Seed,Flax Seed,Herb Seed,IcebergLettuce Seed,Jalapeno Seed,Marijuana Seed,Nut Tree Seed,Onion Seed,Orange Seed,Pear Seed,Pineapple Seed,Raspberry Seed,Red Apple Seed,Rice Seed,Romaine Seed,Spice Seed,Spinach Seed,Squash Seed,Strawberry Seed,SugarCane Seed,Sugar Maple Seed,Sunflower Seed (Plantable),Tomato Seed,VineyardGrape Seed,Walnut Seed,Wheat Seed,White Oak Seed"/>
+		<effect_description level="1" desc_base="Seeds Seeds and More Seeds!" long_desc_key="Unlocks Access to All Seeds! Requires Fortitude Level 2"/>		
+		</effect_group>	
+		<level_requirements level="2"><requirement name="ProgressionLevel" progression_name="attFortitude"  operation="GTE" value="4" desc_key="Fortitude Level 4"/></level_requirements>
+		<effect_group>
+		<passive_effect name="RecipeTagUnlocked" operation="base_set" level="2" value="1" tags="Farm Crop Plot,Scythe"/>
+		<passive_effect name="HarvestCount" operation="perc_add" level="2" value="1" tags="cropHarvest,wildCropsHarvest"/>
+		<effect_description level="2" desc_base="Better Farming!" long_desc_key="Farm Crop Plot! Only 1 Rotten Flesh Required! Harvest More Crops! Unlocks the Scythe! Requires Fortitude Level 4"/>		
+		</effect_group>	
+	
+</perk>
+ </append>
+</config>
+	

@@ -1,0 +1,80 @@
+Key,Source,Context,Changes,English
+perkFarmLifeDesc,progression,perk For,,,[D4AF37]Farm Life
+perkFarmLifeName,progression,perk For,,[D4AF37]Farm Life,"Farm Life is tedious, but rewarding."
+
+buffIllFoodPoisoning01Desc,buffs,Buff,,,You feel sick to your stomach.
+buffIllFoodPoisoning01Name,buffs,Buff,,,Food Poisoning
+statFoodPoisoningRisk,ui_display,Item stat,,Food Poisoning
+
+perkFarmLifeRank1Desc,progression,Perk,New,Green Thumb
+perkFarmLifeRank1LongDesc,progression,Perk,New,"Requires Fortitude Level 01 [-] \nType: [c7b992]Farm Life Skill[-] [FF684F](Living off the Land has it's advantages, time to grow some crops.)[-]\nLevel: [c7b992]1[-]\nUnlocks: [c7b992]Farm Life Workstations, Seeds, Trees and Animals."
+perkFarmLifeRank2Desc,progression,Perk,New,Tiller
+perkFarmLifeRank2LongDesc,progression,Perk,New,"Requires Fortitude Level 03 [-] \nType: [c7b992]Farm Life Skill[-] [FF684F](You've learned some tricks along the way. Putting them to practical use saves on resources.)[-]\nLevel: [c7b992]2[-]\nUnlocks: [c7b992]Farm Crop Plot."
+perkFarmLifeRank3Desc,progression,Perk,New,Rancher
+perkFarmLifeRank3LongDesc,progression,Perk,New,"Requires Fortitude Level 05 [-] \nType: [c7b992]Farm Life Skill[-] [FF684F](Long days on the farm have taught time management skills.)[-]\nLevel: [c7b992]3[-]\nUnlocks: [c7b992] Planters, Animal Breeding, Reduced crafting time."
+perkFarmLifeRank4Desc,progression,Perk,New,Chef NoTell
+perkFarmLifeRank4LongDesc,progression,Perk,New,"Requires Fortitude Level 07 [-] \nType: [c7b992]Farm Life Skill[-] [FF684F](Big city chefs have nothing on you.)[-]\nLevel: [c7b992]4[-]\nUnlocks: [c7b992]Master Crop Plots and Advanced Farm Life recipes."
+perkFarmLifeRank5Desc,progression,Perk,New,Farm Life Master
+perkFarmLifeRank5LongDesc,progression,Perk,New,"Requires Fortitude Level 08 [-] \nType: [c7b992]Farm Life Skill[-] [FF684F](You are a Farm Life Master. Lets feed the World.)[-]\nLevel: [c7b992]5[-]\nUnlocks: [c7b992]Garden Hoe."
+
+FLFarmTableDesc,blocks,Block,New,"Type: [c7b992] Workstation[-] [FF684F](Workbench required to craft.)[-]\nMaterial: [c7b992]-[-]\nUnlocked by: [c7b992]Farm Life[-]\n\nFarm Table."
+FLCowIncubatorDesc,blocks,Block,New, "Type: [c7b992]Farm Life Cow Incubator[-] [FF684F](Used to Breed Milk Producing Cows.)[-]\nMaterial: [c7b992]-[-]\nUnlocked by: [c7b992]Farm Life[-]."
+
+
+PasteurizerDesc,items,Item,New, "Type: [c7b992] Worstation Tool \nThe Pasteurizer is usde in the Brew Station to process Raw Milk into nice fresh Milk!
+
+
+
+RawMilkDesc,items,Item,New, "Type: [c7b992] Raw Food \nRaw Milk is not edible but can be used to make Milk at the Brewing Station!"
+RawPorkDesc,items,Item,New, "Type: [c7b992] Raw Food \nRaw Pork is edible but has a 30% chance of Food Poisoning. It is not ready to be cooked. Use it at the Butchers Table to make Raw Bacon, Raw Ham, Raw Pork Ribs, Raw Sausage Links or Raw Pork Loin. "
+RawBeefDesc,items,Item,New, "Type: [c7b992] Raw Food \nRaw Beef is edible but has a 30% chance of Food Poisoning. It is not ready to be cooked. Use it at the Butchers Table to make Raw Ground Beef, Raw Steak, or Raw Kobe Beef. "
+RawChickenDesc,items,Item,New, "Type: [c7b992] Raw Food \nRaw Chicken is edible but has a 30% chance of Food Poisoning. It is not ready to be cooked. Use it at the Butchers Table to make Raw Chicken Breast or Raw Legs and Wings. "
+RawGroundBeefDesc,items,Item,New, "Type: [c7b992] Raw Food \nRaw Ground Beef is edible but has a 30% chance of Food Poisoning. Use it as an ingredient in many tasty recipes. "
+RawSteakDesc,items,Item,New, "Type: [c7b992] Raw Food \nRaw Steak is edible but has a 30% chance of Food Poisoning. Use it as an ingredient in many tasty recipes. "
+RawKobeBeefDesc,items,Item,New, "Type: [c7b992] Raw Food \nRaw Kobe Beef is edible but has a 30% chance of Food Poisoning. Use it as an ingredient in many tasty recipes. Recipes with Kobe Beef are more filling and give stronger buffs! "
+RawSausageDesc,items,Item,New, "Type: [c7b992] Raw Food \nRaw Sausage is edible but has a 30% chance of Food Poisoning. Use it as an ingredient in many tasty recipes. "
+RawHamDesc,items,Item,New, "Type: [c7b992] Raw Food \nRaw Ham is edible but has a 30% chance of Food Poisoning. Use it as an ingredient in many tasty recipes. "
+RawBaconDesc,items,Item,New, "Type: [c7b992] Raw Food \nRaw Bacon is edible but has a 30% chance of Food Poisoning. Use it as an ingredient in many tasty recipes. BACON! What else do you need? "
+RawChickenBreastDesc,items,Item,New, "Type: [c7b992] Raw Food \nRaw Chicken Breast is edible but has a 30% chance of Food Poisoning. Use it as an ingredient in many tasty recipes.  Mmmm Brestesses!"
+RawLegsWingsDesc,items,Item,New, "Type: [c7b992] Raw Food \nRaw Chicken Legs and Wings are edible but have a 30% chance of Food Poisoning. Use them as an ingredient in many tasty recipes.  Mmmm Hot Wings!"
+RawPorkRibsDesc,items,Item,New, "Type: [c7b992] Raw Food \nRaw Pork Ribs are edible but have a 30% chance of Food Poisoning. Use them as an ingredient in many tasty recipes.  Mmmm Ribbies!"
+RawPorkLoinDesc,items,Item,New, "Type: [c7b992] Raw Food \nRaw Pork Loin is edible but has a 30% chance of Food Poisoning. Use it as an ingredient in many tasty recipes. "
+
+FlourDesc,items,Item,New, "Type: [c7b992] Food \nMilk! It does the body good! /n Not much on its own but use it in recipes to make other ingredient and tasty food. "
+SugarDesc,items,Item,New, "Type: [c7b992] Food \nIt's Sugar! Do I really need to explain it?  It's an Ingredient!"
+OldSaltDesc,items,Item,New, "Type: [c7b992] Food \nIt's Salt! Do I really need to explain it?  It's an Ingredient!/nCan not be crafted, must be found! Check in the kitchen!"
+DoughDesc,items,Item,New, "Type: [c7b992] Food \nDough.... a Dear! It's an Ingredient! "
+BreadDesc,items,Item,New, "Type: [c7b992] Food \nBread....sure you can eat it but its better in a recipe. "
+CheeseDesc,items,Item,New, "Type: [c7b992] Food \n "
+CreamDesc,items,Item,New, "Type: [c7b992] Food \n "
+CreamCheeseDesc,items,Item,New, "Type: [c7b992] Food \n "
+FamousSauceDesc,items,Item,New, "Type: [c7b992] Food \nGrandma's Famous Sauce...It is the secret ingredient in many recipes!"
+
+
+
+ApplePieDesc,items,Item,New, "Type: [c7b992] Dessert/Snack [-]\nBuff: [c7b992]American Pie - Increases Light Armor by 1 for 120 seconds!"
+BBQPorkRibsDesc,items,Item,New, "Type: [c7b992] Meal [-]\nBuff: [c7b992]Southern Favorite - Increases Run Speed by 12% for 120 seconds!"
+BeefChiliDesc,items,Item,New, "Type: [c7b992] Meal [-]\nBuff: [c7b992]Beefy - Increases Burning Flaming Arrow resistance by 13%!"
+SpaghettieMeatballsDesc,items,Item,New, "Type: [c7b992] Meal [-]\nBuff: [c7b992]This aint got no buff yet!"
+FruitSaladDesc,items,Item,New, "Type: [c7b992] Dessert/Snack [-]\nBuff: [c7b992]One With Nature - +20% Block damage, +20% Combat Speed , +25% harvest amount bonus, -25% Damage Resistance for 3 Minutes. /nYUMMY YUMMY! Lets make fruit salad today!"
+GrilledSteakDesc,items,Item,New, "Type: [c7b992] Meal [-]\nBuff: [c7b992]All Natural - +9 Carry, +10% Harvest Amount, +10% Block Damage, +10% Combat Speed, -10% Damage Resistance for 3 Minutes."
+HotWingsDesc,items,Item,New, "Type: [c7b992] Meal [-]\nBuff:[c7b992]Hot Wings - WOW THATS HOT! 200% Run Speed, +20 Health, +50% Stamina Cost, -Heat Resistance, +Cold Resistance for 30 Seconds!"
+
+CloningStationDesc,items,item,New, "Type: [c7b992] WorkStation [-]\nCloning Station - Used to Craft Humans, Animals and to work with DNA!"
+
+
+
+
+q_farmlife_response_key,,Quest,Quest Info,A Farm Table is  teh first thing you require to start your Farm Life. Everything come from the Farm Table. From the Farm Table you can Purchase quest with Quest Tokens, Craft Seeds for planting, Craft farming tools and all of Farm Life workstations. Are you ready to start your Farm Life? ,,,,,
+q_farmlife_statement_key,,Quest,Quest Info,Your starting yor Farm Life,,,,,
+q_farmlife_completion_key,,Quest,Quest Info,You have Started your Farm Life! Congrats!,,,,,
+TheFarmLifeDesc,items,Item,New,"Type: [c7b992] Quest [-]\nStart your Farm Life Quest! After Completeing you will be able to craft more quests on your Farm Table Using Quest Tokens."
+q_Cloning_response_key,,Quest,Quest Info,Would you like to learn how to Clone?,,,,,
+q_Cloning_statement_key,,Quest,Quest Info,Craft a Cloning Station,,,,,
+q_Cloning_completion_key,,Quest,Quest Info,Now that you have Cloning station take these rewards to complete you next quest and craft a Cloning Station!,,,,,
+q_Cloning2_response_key,,Quest,Quest Info,Would you like to Clone some Pets?,,,,,
+q_Cloning2_statement_key,,Quest,Quest Info,Craft a Random Pet Cloning Station,,,,,
+q_Cloning2_completion_key,,Quest,Quest Info,Did you get a Pet or just some rotten flesh? Now complete you next quest adn try to clone a human!,,,,,
+q_Seeds1_response_key,,Quest,Quest Info,,,,,,
+q_Seeds1_statement_key,,Quest,Quest Info,,,,,,
+q_Seeds1_completion_key,,Quest,Quest Info,"Don't know why I am giving you this reward. That had to be the easiest task ever! Here is another Quest to help you along your way. You are going to have to craft some seeds and plant them! ",,,,,

@@ -1,0 +1,998 @@
+<configs>
+    <append xpath="/recipes">
+	
+	
+		<recipe name="Quest - Cloning 1" count="1" craft_time="30" craft_area="Farm Table" tags="Quest">
+			<ingredient name="QuestToken" count="1"/>
+		</recipe>
+		<recipe name="Quest - Seeds Seeds Seeds!" count="1" craft_time="30" craft_area="Farm Table" tags="Quest">
+			<ingredient name="QuestToken" count="1"/>
+		</recipe>
+		
+	
+<!-- Workstations -->
+
+		<recipe name="Farm Table" count="1" craft_time="90" >
+			<ingredient name="toolBeaker" count="1"/>
+			<ingredient name="burningBarrelPlayer" count="1"/>
+			<ingredient name="toolCookingPot" count="3"/>
+			<ingredient name="resourceMetalPipe" count="15"/>
+			<ingredient name="resourceWood" count="40"/>
+		</recipe>
+		<recipe name="Cloning Station" count="1" craft_time="90" craft_area="Farm Table" tags="learnable,Cloning">
+			<ingredient name="resourceForgedIron" count="25"/>
+			<ingredient name="resourceRockSmall" count="250"/>
+			<ingredient name="resourceWood" count="50"/>
+		</recipe>		
+		<recipe name="Butcher Table" count="1" craft_time="90" craft_area="Farm Table">
+			<ingredient name="resourceForgedIron" count="25"/>
+			<ingredient name="resourceRockSmall" count="250"/>
+			<ingredient name="resourceWood" count="50"/>
+		</recipe>
+        <recipe name="Brew Station" count="1" craft_time="90"  craft_area="Farm Table">
+            <ingredient name="resourceForgedIron" count="20"/>
+            <ingredient name="resourceMechanicalParts" count="10"/>
+            <ingredient name="resourceScrapPolymers" count="10"/>
+        </recipe>
+		<recipe name="Smokers" count="1" craft_time="90"  craft_area="Farm Table">
+            <ingredient name="resourceForgedIron" count="20"/>
+            <ingredient name="resourceMechanicalParts" count="10"/>
+            <ingredient name="resourceScrapPolymers" count="10"/>
+        </recipe>
+		<recipe name="Dairy Churn" count="1" craft_time="90" craft_area="Farm Table">
+			<ingredient name="resourceForgedIron" count="25"/>			
+			<ingredient name="resourceWood" count="50"/>
+		</recipe>
+        <recipe name="Ovens" count="1" craft_time="90"  craft_area="Farm Table">
+            <ingredient name="resourceForgedIron" count="20"/>
+            <ingredient name="resourceMechanicalParts" count="10"/>
+            <ingredient name="resourceScrapPolymers" count="10"/>
+        </recipe>
+		<recipe name="KitchNaid" count="1" craft_time="90"  craft_area="Farm Table">
+            <ingredient name="resourceForgedIron" count="20"/>
+            <ingredient name="resourceMechanicalParts" count="10"/>
+            <ingredient name="resourceScrapPolymers" count="10"/>
+        </recipe>
+		<recipe name="Grills" count="1" craft_time="90" craft_area="Farm Table">
+			<ingredient name="resourceScrapIron" count="250"/>
+			<ingredient name="resourceWood" count="200"/>
+		</recipe>
+
+		
+<!-- Workstation Tools -->
+
+		<recipe name="AnimalBreedingKit" count="1" craft_time="20" craft_area="Farm Table">
+			<ingredient name="drugSteroids" count="1"/>			
+			<ingredient name="medicalBloodBag" count="1"/>
+			<ingredient name="resourceScrapPolymers" count="10"/>
+		</recipe>
+		<recipe name="Aged Barrel" count="1" craft_time="30" craft_area="Farm Table">
+            <ingredient name="Oak Barrel" count="1"/>
+            <ingredient name="drinkJarGrainAlcohol" count="10"/>
+        </recipe>		
+		<recipe name="Baking Sheet" count="1" craft_time="10" material_based="true" craft_area="Farm Table">
+            <ingredient name="unit_iron" count="100"/>
+            <ingredient name="unit_clay" count="10"/>
+        </recipe>
+		<recipe name="Barrel Roaster" count="1" craft_time="30"  craft_area="Farm Table">
+            <ingredient name="resourceForgedIron" count="20"/>
+            <ingredient name="resourceScrapIron" count="100"/>
+        </recipe>
+		<recipe name="Boiler" count="1" craft_time="10" material_based="true" craft_area="Farm Table">
+            <ingredient name="unit_iron" count="1000"/>
+            <ingredient name="unit_clay" count="100"/>
+        </recipe>
+		<recipe name="Bottle Capper" count="1" craft_time="30"  craft_area="Farm Table">
+            <ingredient name="resourceForgedIron" count="20"/>
+            <ingredient name="resourceMechanicalParts" count="10"/>
+        </recipe>
+		<recipe name="Carboy" count="1" craft_time="10" material_based="true" craft_area="Farm Table">
+            <ingredient name="unit_glass" count="500"/>
+            <ingredient name="unit_clay" count="100"/>
+        </recipe>
+		<recipe name="Cast Iron Skillet" count="1" craft_time="10" material_based="true" craft_area="Farm Table">
+            <ingredient name="unit_iron" count="100"/>
+            <ingredient name="unit_clay" count="10"/>
+        </recipe>
+		<recipe name="Ceramic Dutch Oven" count="1" craft_time="10" material_based="true" craft_area="Farm Table">
+            <ingredient name="unit_glass" count="1000"/>
+            <ingredient name="unit_clay" count="100"/>
+        </recipe>
+		<recipe name="Charred Barrel" count="1" craft_time="30" craft_area="Brew Cooker" craft_tool="Farm Table">
+            <ingredient name="Oak Barrel" count="1"/>
+        </recipe>
+
+		<recipe name="Clay Pot" count="1" craft_time="10" material_based="true" craft_area="Farm Table">
+            <ingredient name="unit_clay" count="1000"/>
+        </recipe>
+		<recipe name="DNAExtractor" count="1" craft_time="30" craft_area="Farm Table" tags="learnable,Cloning">
+            <ingredient name="resourceForgedIron" count="4"/>
+            <ingredient name="resourceMechanicalParts" count="4"/>
+            <ingredient name="resourceScrapPolymers" count="4"/>
+        </recipe>			
+		<recipe name="Dough Hook" count="1" craft_time="10" material_based="true" craft_area="Farm Table">
+            <ingredient name="unit_iron" count="25"/>
+            <ingredient name="unit_clay" count="5"/>
+        </recipe>
+		<recipe name="Floor Corker" count="1" craft_time="30"  craft_area="Farm Table">
+            <ingredient name="resourceForgedIron" count="20"/>
+            <ingredient name="resourceMechanicalParts" count="10"/>
+        </recipe>
+
+		<recipe name="Food Processor" count="1" craft_time="30"  craft_area="Farm Table">
+            <ingredient name="resourceScrapPolymers" count="100"/>
+            <ingredient name="resourceMechanicalParts" count="10"/>
+            <ingredient name="resourceForgedSteel" count="10"/>
+        </recipe>
+		<recipe name="Seed Processor" count="1" craft_time="30"  craft_area="Farm Table">
+            <ingredient name="resourceScrapPolymers" count="100"/>
+            <ingredient name="resourceMechanicalParts" count="10"/>
+            <ingredient name="resourceScrapIron" count="100"/>
+        </recipe>
+		<recipe name="Grain Miller" count="1" craft_time="30" craft_area="Farm Table">
+            <ingredient name="resourceForgedIron" count="4"/>
+            <ingredient name="resourceMechanicalParts" count="4"/>
+            <ingredient name="resourceScrapPolymers" count="4"/>
+        </recipe>
+		<recipe name="Ice Cream Bowl" count="1" craft_time="10" material_based="true" craft_area="Farm Table">
+            <ingredient name="unit_iron" count="100"/>
+            <ingredient name="unit_clay" count="10"/>
+        </recipe>
+
+		<recipe name="Malting Trays" count="1" craft_time="10" material_based="true" craft_area="Farm Table">
+            <ingredient name="unit_iron" count="1000"/>
+            <ingredient name="unit_clay" count="100"/>
+        </recipe>
+
+		<recipe name="Meat Grinder" count="1" craft_time="30" craft_area="Farm Table">
+            <ingredient name="resourceForgedIron" count="4"/>
+            <ingredient name="resourceMechanicalParts" count="4"/>
+            <ingredient name="resourceScrapPolymers" count="4"/>
+        </recipe>
+		<recipe name="Juicer" count="1" craft_time="30" craft_area="Farm Table">
+            <ingredient name="resourceForgedIron" count="4"/>
+            <ingredient name="resourceMechanicalParts" count="4"/>
+            <ingredient name="resourceScrapPolymers" count="4"/>
+        </recipe>
+        <recipe name="Meat Hanger" count="1" craft_time="10" material_based="true" craft_area="Farm Table">
+            <ingredient name="unit_iron" count="500"/>
+            <ingredient name="unit_clay" count="50"/>
+        </recipe>
+
+		<recipe name="Mixing Bowl" count="1" craft_time="10" material_based="true" craft_area="Farm Table">
+            <ingredient name="unit_iron" count="1000"/>
+            <ingredient name="unit_clay" count="100"/>
+        </recipe>
+        <recipe name="Mixing Cask" count="1" craft_time="30" craft_area="Farm Table">
+            <ingredient name="resourceForgedIron" count="10"/>
+            <ingredient name="White Oak Plank" count="20"/>
+        </recipe>
+		<recipe name="Oak Barrel" count="1" craft_time="30" craft_area="Farm Table">
+            <ingredient name="White Oak Plank" count="10"/>
+            <ingredient name="resourceForgedIron" count="10"/>
+        </recipe>
+
+		<recipe name="Pizza Blade" count="1" craft_time="10" material_based="true" craft_area="Farm Table">
+            <ingredient name="unit_iron" count="1000"/>
+            <ingredient name="unit_clay" count="100"/>
+        </recipe>
+        <recipe name="Pizza Cutter" count="1" craft_time="30" craft_area="Farm Table">
+            <ingredient name="Pizza Handle" count="1"/>
+            <ingredient name="Pizza Blade" count="1"/>
+        </recipe>
+        <recipe name="Pizza Handle" count="1" craft_time="30" craft_area="Farm Table"> 
+            <ingredient name="Maple Wood Plank" count="5"/>
+        </recipe>
+        <recipe name="Pizza Stone" count="1" craft_time="10" material_based="true" craft_area="Farm Table">
+            <ingredient name="unit_clay" count="500"/>
+            <ingredient name="unit_glass" count="50"/>
+        </recipe>
+		<recipe name="PyreX Bakeware" count="1" craft_time="10" material_based="true" craft_area="Farm Table">
+            <ingredient name="unit_glass" count="1000"/>
+            <ingredient name="unit_clay" count="100"/>
+        </recipe>
+
+		<recipe name="Smoker Mat" count="1" craft_time="10" material_based="true" craft_area="Farm Table">
+            <ingredient name="unit_iron" count="100"/>
+            <ingredient name="unit_clay" count="10"/>
+        </recipe>
+		<recipe name="Spatula" count="1" craft_time="10" material_based="true" craft_area="Farm Table">
+            <ingredient name="unit_iron" count="25"/>
+            <ingredient name="unit_clay" count="5"/>
+        </recipe>
+		<recipe name="Spirits Vat" count="1" craft_time="30" craft_area="Farm Table">
+            <ingredient name="resourceForgedIron" count="20"/>
+            <ingredient name="resourceMechanicalParts" count="10"/>
+        </recipe>
+		<recipe name="Steeping Tun" count="1" craft_time="10" material_based="true" craft_area="Farm Table">
+            <ingredient name="unit_iron" count="1000"/>
+            <ingredient name="unit_clay" count="100"/>
+        </recipe>
+		<recipe name="Still" count="1" craft_time="10" material_based="true" craft_area="Farm Table">
+            <ingredient name="unit_brass" count="500"/>
+            <ingredient name="unit_clay" count="100"/>
+        </recipe>
+		<recipe name="Tongs" count="1" craft_time="10" material_based="true" craft_area="Farm Table" >
+            <ingredient name="unit_iron" count="25"/>
+            <ingredient name="unit_clay" count="5"/>
+        </recipe>
+		<recipe name="Turkey Rack" count="1" craft_time="10" material_based="true" craft_area="Farm Table" >
+            <ingredient name="unit_iron" count="1000"/>
+            <ingredient name="unit_clay" count="100"/>
+        </recipe>		
+		<recipe name="Veggie Attachment" count="1" craft_time="30" craft_area="Farm Table">
+            <ingredient name="resourceForgedIron" count="4"/>
+            <ingredient name="resourceMechanicalParts" count="4"/>
+            <ingredient name="resourceScrapPolymers" count="4"/>
+        </recipe>
+		<recipe name="Wine Filter" count="1" craft_time="30" craft_area="Farm Table">
+            <ingredient name="resourceScrapPolymers" count="100"/>
+            <ingredient name="resourceMechanicalParts" count="10"/>
+        </recipe>
+        <recipe name="Wine Tank" count="1" craft_time="30" craft_area="Farm Table">
+            <ingredient name="resourceForgedIron" count="20"/>
+        </recipe>
+        <recipe name="Wok" count="1" craft_time="10" material_based="true" craft_area="Farm Table" >
+            <ingredient name="unit_iron" count="1000"/>
+            <ingredient name="unit_clay" count="100"/>
+        </recipe>
+
+<!-- CloningChambers -->
+
+		<recipe name="Animal DNA" count="2" craft_time="20" craft_area="Cloning Station" craft_tool="DNAExtractor" tags="learnable,Cloning">
+			<ingredient name="foodRawMeat" count="20"/>			
+			<ingredient name="toolBeaker" count="1"/>	
+		</recipe>
+		
+		<recipe name="Random Pet Cloning Chamber" count="1" craft_time="20" craft_area="Cloning Station" craft_tool="AnimalBreedingKit" tags="learnable,Cloning">
+			<ingredient name="Basic Cryogenic Material" count="1"/>			
+			<ingredient name="Animal DNA" count="1"/>	
+			<ingredient name="drugSteroids" count="1"/>			
+			<ingredient name="medicalBloodBag" count="1"/>
+			<ingredient name="resourceScrapPolymers" count="10"/>
+		</recipe>
+		<recipe name="Advanced Random Pet Cloning Chamber" count="1" craft_time="20" craft_area="Cloning Station" craft_tool="AnimalBreedingKit" tags="learnable,Cloning">
+			<ingredient name="Random Pet Cloning Chamber" count="10"/>			
+			<ingredient name="resourceGoldNugget" count="50"/>	
+		</recipe>
+	
+		<recipe name="Pig Cloning Chamber" count="1" craft_time="20" craft_area="Cloning Station" craft_tool="AnimalBreedingKit" tags="learnable,Cloning">
+			<ingredient name="Intermediate Cryogenic Material" count="1"/>			
+			<ingredient name="Animal DNA" count="1"/>	
+			<ingredient name="drugSteroids" count="1"/>			
+			<ingredient name="medicalBloodBag" count="1"/>
+			<ingredient name="resourceScrapPolymers" count="10"/>
+		</recipe>
+		<recipe name="Random Turret Guard Cloning Chamber" count="1" craft_time="20" craft_area="Cloning Station" craft_tool="AnimalBreedingKit" tags="learnable,Cloning">
+			<ingredient name="Intermediate Cryogenic Material" count="1"/>			
+			<ingredient name="Animal DNA" count="1"/>	
+			<ingredient name="drugSteroids" count="1"/>			
+			<ingredient name="medicalBloodBag" count="1"/>
+			<ingredient name="resourceScrapPolymers" count="10"/>
+		</recipe>
+		<recipe name="Advanced Random Turret Guard Cloning Chamber" count="1" craft_time="20" craft_area="Cloning Station" craft_tool="AnimalBreedingKit" tags="learnable,Cloning">
+			<ingredient name="Random Turret Guard Cloning Chamber" count="10"/>			
+			<ingredient name="resourceGoldNugget" count="50"/>	
+		</recipe>
+		<recipe name="Brown Cow Cloning Chamber" count="1" craft_time="20" craft_area="Cloning Station" craft_tool="AnimalBreedingKit" tags="learnable,Cloning">
+			<ingredient name="Intermediate Cryogenic Material" count="1"/>			
+			<ingredient name="Animal DNA" count="1"/>	
+			<ingredient name="drugSteroids" count="1"/>			
+			<ingredient name="medicalBloodBag" count="1"/>
+			<ingredient name="resourceScrapPolymers" count="10"/>
+		</recipe>
+		<recipe name="Advanced Brown Cow Cloning Chamber" count="1" craft_time="20" craft_area="Cloning Station" craft_tool="AnimalBreedingKit" tags="learnable,Cloning">
+			<ingredient name="Brown Cow Cloning Chamber" count="10"/>			
+			<ingredient name="resourceGoldNugget" count="50"/>	
+		</recipe>
+			<recipe name="Milking Cow Cloning Chamber" count="1" craft_time="20" craft_area="Cloning Station" craft_tool="AnimalBreedingKit" tags="learnable,Cloning">
+			<ingredient name="Advanced Cryogenic Material" count="1"/>			
+			<ingredient name="Animal DNA" count="1"/>	
+			<ingredient name="drugSteroids" count="1"/>			
+			<ingredient name="medicalBloodBag" count="1"/>
+			<ingredient name="resourceScrapPolymers" count="10"/>
+		</recipe>
+		
+		<recipe name="Egg Laying Chicken Cloning Chamber" count="1" craft_time="20" craft_area="Cloning Station" craft_tool="AnimalBreedingKit" tags="learnable,Cloning">
+			<ingredient name="Advanced Cryogenic Material" count="1"/>			
+			<ingredient name="Animal DNA" count="1"/>	
+			<ingredient name="drugSteroids" count="1"/>			
+			<ingredient name="medicalBloodBag" count="1"/>
+			<ingredient name="resourceScrapPolymers" count="10"/>
+		</recipe>
+		<recipe name="Random Animal Guard Cloning Chamber" count="1" craft_time="20" craft_area="Cloning Station" craft_tool="AnimalBreedingKit" tags="learnable,Cloning">
+			<ingredient name="Intermediate Cryogenic Material" count="1"/>			
+			<ingredient name="Animal DNA" count="1"/>	
+			<ingredient name="drugSteroids" count="1"/>			
+			<ingredient name="medicalBloodBag" count="1"/>
+			<ingredient name="resourceScrapPolymers" count="10"/>
+		</recipe>
+		<recipe name="Advanced Random Animal Guard Cloning Chamber" count="1" craft_time="20" craft_area="Cloning Station" craft_tool="AnimalBreedingKit" tags="learnable,Cloning">
+			<ingredient name="Random Animal Guard Cloning Chamber" count="10"/>			
+			<ingredient name="resourceGoldNugget" count="50"/>	
+		</recipe>
+<!-- Raw Meats -->
+
+		<recipe name="Raw Ground Beef" count="1" craft_time="15" craft_area="Butchers Table" craft_tool="Meat Grinder" >
+			<ingredient name="Raw Beef" count="10"/>
+		</recipe>	
+		<recipe name="Raw Steak" count="1" craft_time="20" craft_area="Butcher Table">
+			<ingredient name="Raw Beef" count="25"/>
+		</recipe>		
+		<recipe name="Raw Kobe Beef" count="1" craft_time="30" craft_area="Butcher Table">
+			<ingredient name="Raw Beef" count="100"/>
+		</recipe>		
+		<recipe name="Raw Sausage Link" count="1" craft_time="10" craft_area="Butcher Table">
+			<ingredient name="Raw Pork" count="1"/>
+			<ingredient name="Herbs" count="5"/>
+			<ingredient name="Spices" count="5"/>
+		</recipe>		
+		<recipe name="Raw Ham" count="1" craft_time="30" craft_area="Butcher Table">
+			<ingredient name="Raw Pork" count="25"/>
+		</recipe>		
+		<recipe name="Raw Bacon" count="1" craft_time="5" craft_area="Butcher Table">
+			<ingredient name="Raw Pork" count="10"/>
+		</recipe>		
+		<recipe name="Raw Chicken Breast" count="1" craft_time="5" craft_area="Butcher Table">
+			<ingredient name="Raw Chicken" count="1"/>
+		</recipe>		
+		<recipe name="Raw Chicken Legs and Wings" count="1" craft_time="10" craft_area="Butcher Table">
+			<ingredient name="Raw Chicken" count="5"/>
+		</recipe>			
+		<recipe name="Raw Pork Ribs" count="1" craft_time="10" craft_area="Butcher Table">
+			<ingredient name="Raw Pork" count="5"/>
+		</recipe>
+		<recipe name="Raw Pork Loin" count="1" craft_time="10" craft_area="Butcher Table">
+			<ingredient name="Raw Pork" count="5"/>
+		</recipe>
+
+<!-- Processed Foods -->
+        <recipe name="Butter" count="10" craft_time="30" craft_area="Dairy Churn">
+            <ingredient name="Raw Milk" count="1"/>
+            <ingredient name="Old Salt" count="1"/>
+		</recipe>
+		<recipe name="Milk" count="1" craft_time="10" craft_area="Brew Station" craft_tool="Pasteurizer">
+			<ingredient name="Raw Milk" count="1"/>
+		</recipe>
+		<recipe name="Flour" count="1" craft_time="5" craft_area="KitchNaid" craft_tool="Grain Miller">
+			<ingredient name="Wheat" count="2"/>
+		</recipe>
+		<recipe name="Flour" count="1" craft_time="5" craft_area="KitchNaid" craft_tool="Grain Miller">
+			<ingredient name="foodCropCorn" count="2"/>
+		</recipe>
+		<recipe name="Sugar" count="1" craft_time="5" craft_area="KitchNaid" craft_tool="Grain Miller">
+			<ingredient name="Sugarcane Stalk" count="2"/>
+		</recipe>		
+		<recipe name="Dough" count="1" craft_time="15" craft_area="KitchNaid" craft_tool="Dough Hook">
+			<ingredient name="Flour" count="3"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+			<ingredient name="foodEgg" count="1"/>
+			<ingredient name="Milk" count="1"/>
+		</recipe>	
+
+		<recipe name="Cream" count="1" craft_time="15" craft_area="Dairy Churn">
+			<ingredient name="Milk" count="3"/>
+			<ingredient name="Sugar" count="5"/>
+		</recipe>
+		<recipe name="Cheese" count="1" craft_time="60" craft_area="Dairy Churn">
+			<ingredient name="Milk" count="3"/>
+			<ingredient name="Old Salt" count="5"/>
+		</recipe>
+		<recipe name="Cream Cheese" count="1" craft_time="15" craft_area="Dairy Churn">
+			<ingredient name="Cream" count="1"/>
+			<ingredient name="Cheese" count="1"/>
+		</recipe>
+		<recipe name="Bread" count="1" craft_time="60" craft_area="Gas Oven">
+			<ingredient name="Dough" count="1"/>
+			<ingredient name="Butter" count="1"/>
+		</recipe>	
+		<recipe name="Bagel" count="1" craft_time="60" craft_area="Gas Oven" craft_tool="toolCookingPot">
+			<ingredient name="Dough" count="1"/>
+			<ingredient name="drinkJarRiverWater" count="1"/>
+		</recipe>	
+		<recipe name="Raw Pasta" count="1" craft_time="15" craft_area="KitchNaid" craft_tool="Pasta Helper">
+			<ingredient name="Dough" count="1"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+		<recipe name="BBQ Sauce" count="1" craft_time="15" craft_area="KitchNaid" craft_tool="Mixing Bowl">
+			<ingredient name="Tomato" count="5"/>
+			<ingredient name="Herbs" count="5"/>
+			<ingredient name="Spices" count="5"/>
+			<ingredient name="Sugar" count="5"/>
+			<ingredient name="drinkJarBoiledWater" count="1"/>
+		</recipe>
+		<recipe name="Raw Veggie Mix" count="1" craft_time="15" craft_area="KitchNaid" craft_tool="Mixing Bowl">
+			<ingredient name="Tomato" count="1"/>
+			<ingredient name="Onion" count="1"/>
+			<ingredient name="Celery" count="1"/>
+			<ingredient name="Carrot" count="1"/>
+		</recipe>
+		<recipe name="Raw Veggie Mix" count="1" craft_time="15" craft_area="KitchNaid" craft_tool="Mixing Bowl">
+			<ingredient name="foodCropPumpkin" count="1"/>
+			<ingredient name="foodCropMushrooms" count="1"/>
+			<ingredient name="foodCropCorn" count="1"/>
+			<ingredient name="Cucumber" count="1"/>
+		</recipe>
+		
+		<recipe name="Raw Veggie Mix" count="1" craft_time="15" craft_area="KitchNaid" craft_tool="Mixing Bowl">
+			<ingredient name="Romaine" count="1"/>
+			<ingredient name="Spinach" count="1"/>
+			<ingredient name="Squash" count="1"/>
+			<ingredient name="Broccoli" count="1"/>
+		</recipe>		
+		<recipe name="GrandMa's Famous Sauce" count="60" craft_time="1" craft_area="Gas Oven">
+			<ingredient name="Tomato" count="5"/>
+			<ingredient name="Herbs" count="1"/>
+			<ingredient name="Raw Ground Beef" count="1"/>
+			<ingredient name="Raw Sausage Link" count="1"/>
+		</recipe>
+		<recipe name="White Rice" count="1" craft_time="120" craft_area="Gas Oven" craft_tool="toolCookingPot">
+			<ingredient name="Rice" count="3"/>
+			<ingredient name="drinkJarRiverWater" count="1"/>
+		</recipe>
+<!-- MEALS -->
+        <recipe name="BBQ Pork Ribs" count="10" craft_time="30" craft_area="Grill" craft_tool="Tongs">
+            <ingredient name="Raw Pork Ribs" count="1"/>
+            <ingredient name="BBQ Sauce" count="2"/>
+        </recipe>
+        <recipe name="Beef Chili" count="20" craft_time="30" craft_area="Grill" craft_tool="Ceramic Dutch Oven">
+            <ingredient name="Raw Veggie Mix" count="5"/>
+            <ingredient name="Raw Ground Beef" count="2"/>
+            <ingredient name="Spices" count="2"/>
+            <ingredient name="Cheese" count="2"/>
+		</recipe>
+        <recipe name="Spaghetti and a Meata Balls" craft_time="30" craft_area="Gas Oven" craft_tool="toolCookingPot">
+            <ingredient name="Raw Pasta" count="5"/>
+            <ingredient name="Raw Ground Beef" count="2"/>
+            <ingredient name="GrandMa's Famous Sauce" count="2"/>
+            <ingredient name="Cheese" count="2"/>
+		</recipe>
+		<recipe name="Grilled Steak" count="1" craft_time="30" craft_area="Grill" craft_tool="toolCookingGrill">
+			<ingredient name="Raw Steak" count="1"/>
+			<ingredient name="Butter" count="1"/>
+		</recipe>	
+		<recipe name="Spicy Hot Wings" count="1" craft_time="15" craft_area="Grill" craft_tool="toolCookingGrill">
+			<ingredient name="Raw Chicken Legs and Wings" count="1"/>
+			<ingredient name="foodHoney" count="1"/>
+			<ingredient name="Herbs" count="1"/>
+			<ingredient name="Spices" count="1"/>
+		</recipe>	
+		<recipe name="Fresh Honey Glazed Ham" count="1" craft_time="120" craft_area="Smoker">
+			<ingredient name="Raw Ham" count="1"/>
+			<ingredient name="foodHoney" count="1"/>
+			<ingredient name="Butter" count="1"/>
+		</recipe>		
+		<recipe name="Fresh Smoked Sausage" count="1" craft_time="15" craft_area="Smoker" craft_tool="toolCookingGrill">
+			<ingredient name="Raw Sausage Link" count="1"/>
+		</recipe>		
+			<recipe name="Fresh Kobe Beef" count="1" craft_time="180" craft_area="Gas Oven">
+			<ingredient name="Raw Kobe Beef" count="1"/>
+		</recipe>		
+		<recipe name="Fresh BBQ Chicken Legs" count="1" craft_time="30" craft_area="Grill" craft_tool="toolCookingGrill">
+			<ingredient name="Raw Chicken Legs and Wings" count="1"/>
+            <ingredient name="BBQ Sauce" count="2"/>
+			<ingredient name="Herbs" count="1"/>w
+			<ingredient name="Spices" count="1"/>
+		</recipe>	
+		<recipe name="Fresh Baked Chicken Breast" count="1" craft_time="60" craft_area="Gas Oven">
+			<ingredient name="Raw Chicken Breast" count="1"/>
+			<ingredient name="Herbs" count="1"/>
+			<ingredient name="Tomato" count="1"/>
+			<ingredient name="foodCropPotato" count="1"/>
+			<ingredient name="Iceberg Lettuce" count="1"/>
+		</recipe>		
+		<recipe name="Fresh Bacon Meatloaf" count="1" craft_time="60" craft_area="Gas Oven">
+			<ingredient name="Raw Bacon" count="1"/>
+			<ingredient name="foodEgg" count="1"/>
+			<ingredient name="Herbs" count="1"/>
+			<ingredient name="Raw Ground Beef" count="2"/>
+			<ingredient name="Butter" count="1"/>
+		</recipe>		
+		<recipe name="Fresh Cheese Burger" count="1" craft_time="30" craft_area="Grill" craft_tool="toolCookingGrill">
+			<ingredient name="Raw Ground Beef" count="1"/>
+			<ingredient name="Cheese" count="1"/>
+			<ingredient name="Bread" count="1"/>
+			<ingredient name="Tomato" count="1"/>
+			<ingredient name="Iceberg Lettuce" count="1"/>
+		</recipe>	
+		<recipe name="Breakfast Sausage Sandwich" count="1" craft_time="30" craft_area="Gas Oven" craft_tool="toolCookingGrill">
+			<ingredient name="Raw Sausage Link" count="1"/>
+			<ingredient name="foodEgg" count="1"/>
+			<ingredient name="Bagel" count="1"/>
+			<ingredient name="Cheese" count="1"/>
+			<ingredient name="Butter" count="1"/>
+		</recipe>		
+		<recipe name="Breakfast Bacon Sandwich" count="1" craft_time="30" craft_area="Gas Oven" craft_tool="toolCookingGrill">
+			<ingredient name="Raw Bacon" count="1"/>
+			<ingredient name="foodEgg" count="1"/>
+			<ingredient name="Bagel" count="1"/>
+			<ingredient name="Cheese" count="1"/>
+			<ingredient name="Butter" count="1"/>
+		</recipe>	
+		<recipe name="Bagel and Cream Cheese" count="1" craft_time="10">
+			<ingredient name="Bagel" count="1"/>
+			<ingredient name="Cream Cheese" count="1"/>
+		</recipe>	
+		<recipe name="Pizza" count="1" craft_time="25" craft_area="Pizza Oven" craft_tool="Pizza Stone">
+			<ingredient name="Dough" count="1"/>
+			<ingredient name="GrandMa's Famous Sauce" count="1"/>
+			<ingredient name="Raw Sausage Link" count="1"/>
+			<ingredient name="Cheese" count="1"/>
+		</recipe>	
+		<recipe name="Fried Rice" count="1" craft_time="180" craft_area="Gas Oven">
+			<ingredient name="White Rice" count="3"/>
+			<ingredient name="Raw Chicken Breast" count="1"/>
+			<ingredient name="Raw Kobe Beef" count="1"/>
+			<ingredient name="Herbs" count="1"/>
+			<ingredient name="foodCropCorn" count="1"/>
+		</recipe>			
+        <recipe name="Pancake" count="1" craft_time="30" craft_area="KitchNaid" craft_tool="Mixing Bowl">
+            <ingredient name="Flour" count="3"/>
+            <ingredient name="Old Salt" count="1"/>
+            <ingredient name="Sugar" count="1"/>
+            <ingredient name="Milk" count="1"/>
+            <ingredient name="foodEgg" count="1"/>
+        </recipe>		
+		
+        <recipe name="Fruit Pancakes" count="1" craft_time="30" craft_area="Gas Oven">
+            <ingredient name="Pancake" count="3"/>
+            <ingredient name="foodCropBlueberries" count="3"/>
+            <ingredient name="Strawberry" count="3"/>
+            <ingredient name="Raspberry" count="3"/>
+            <ingredient name="Butter" count="3"/>
+        </recipe> 		
+        <recipe name="Full Stack 'o Pancakes" count="1" craft_time="30" craft_area="Gas Oven">
+            <ingredient name="Pancake" count="5"/>
+            <ingredient name="Butter" count="5"/>
+            <ingredient name="Sugar" count="5"/>
+        </recipe>		
+		
+<!--Desserts/Snacks -->
+		 <recipe name="Apple Pie" count="1" craft_time="30" craft_area="Gas Oven">
+            <ingredient name="Red Apples" count="6"/>
+            <ingredient name="Flour" count="2"/>
+            <ingredient name="foodEgg" count="1"/>
+            <ingredient name="Butter" count="1"/>
+
+        </recipe>
+
+		<recipe name="Fruit Salad" count="1" craft_time="180">
+			<ingredient name="Vineyard Grapes" count="1"/>
+			<ingredient name="Strawberry" count="1"/>
+			<ingredient name="Red Apples" count="1"/>
+			<ingredient name="foodCropBlueberries" count="1"/>
+			<ingredient name="Pineapple" count="1"/>
+		</recipe>
+		<recipe name="Fruit Salad" count="1" craft_time="180">
+			<ingredient name="Orange" count="1"/>
+			<ingredient name="Cherry" count="1"/>
+			<ingredient name="Banana" count="1"/>
+			<ingredient name="Pear" count="1"/>
+			<ingredient name="Raspberry" count="1"/>
+		</recipe>
+		<recipe name="Fruit Salad" count="1" craft_time="180">
+			<ingredient name="Pineapple" count="1"/>
+			<ingredient name="Cherry" count="1"/>
+			<ingredient name="foodCropBlueberries" count="1"/>
+			<ingredient name="foodCropYuccaFruit" count="1"/>
+			<ingredient name="resourceCropSnowberryPlant" count="1"/>
+		</recipe>
+		<recipe name="Dried Fruit" count="1" craft_time="120" craft_area="Gas Oven">
+			<ingredient name="Vineyard Grapes" count="1"/>
+			<ingredient name="Strawberry" count="1"/>
+			<ingredient name="Red Apples" count="1"/>
+			<ingredient name="foodCropBlueberries" count="1"/>
+		</recipe>		
+		<recipe name="Trail Mix" count="1" craft_time="120">
+			<ingredient name="Dried Fruit" count="1"/>
+			<ingredient name="Nuts" count="1"/>
+			<ingredient name="Sunflower Seed" count="1"/>
+		</recipe>			
+
+<!-- Beverages -->
+		<recipe name="Orange Juice" count="1" craft_time="30" craft_area="Brew Station" craft_tool="Juicer" >
+            <ingredient name="Orange" count="5"/>
+            <ingredient name="drinkJarEmpty" count="1"/>
+        </recipe>
+
+
+
+<!-- Misc -->
+
+		<recipe name="resourcePaper" count="1" craft_time="30" craft_area="KitchNaid" craft_tool="Grain Miller">
+			<ingredient name="Hemp" count="2"/>
+		</recipe>
+
+<!-- Seeds -->
+
+	
+		<recipe name="Banana Seed" count="1" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Banana" count="2"/>
+        </recipe>		
+        <recipe name="Broccoli Seed" count="1" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Broccoli" count="2"/>
+        </recipe>
+        <recipe name="BrusselsSprouts Seed" count="1" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Brussels Sprouts" count="2"/>
+        </recipe>
+        <recipe name="Cabbage Seed" count="1" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Cabbage" count="2"/>
+        </recipe>
+        <recipe name="Carrot Seed" count="1" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Carrot" count="2"/>
+        </recipe>
+        <recipe name="Celery Seed" count="1" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Celery" count="2"/>
+        </recipe>
+		<recipe name="Cherry Seed" count="1" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Cherry" count="2"/>
+        </recipe>		
+		<recipe name="Coconut Seed" count="1" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Coconut" count="2"/>
+        </recipe>		
+        <recipe name="Cucumber Seed" count="1" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Cucumber" count="2"/>
+        </recipe>
+ 		<recipe name="Flax Seed" count="1" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Flax Fiber" count="2"/>
+		</recipe>
+ 		<recipe name="Herb Seed" count="1" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Herbs" count="2"/>
+		</recipe>
+		<recipe name="IcebergLettuce Seed" count="1" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Iceberg Lettuce" count="2"/>
+		</recipe>
+		<recipe name="Jalapeno Seed" count="1" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Jalapeno Pepper" count="2"/>
+		</recipe>		
+ 		<recipe name="Marijuana Seed" count="1" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Hemp" count="2"/>
+		</recipe>
+		<recipe name="Nut Tree Seed" count="1" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Nuts" count="2"/>
+        </recipe>		
+
+        <recipe name="Onion Seed" count="1" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Onion" count="2"/>
+        </recipe>
+		<recipe name="Orange Seed" count="1" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Orange" count="2"/>
+        </recipe>		
+ 
+		<recipe name="Pear Seed" count="1" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Pear" count="2"/>
+        </recipe>
+		<recipe name="Pineapple Seed" count="1" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Pineapple" count="2"/>
+        </recipe>
+       
+        <recipe name="Raspberry Seed" count="1" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Raspberry" count="2"/>
+        </recipe>		
+		<recipe name="Red Apple Seed" count="1" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Red Apples" count="2"/>
+        </recipe>		
+        <recipe name="Rice Seed" count="1" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Rice" count="2"/>
+        </recipe>
+        <recipe name="Romaine Seed" count="1" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Romaine" count="2"/>
+        </recipe>
+
+		<recipe name="Spice Seed" count="1" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Spices" count="2"/>
+		</recipe>		
+        <recipe name="Spinach Seed" count="1" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Spinach" count="2"/>
+        </recipe>
+        <recipe name="Squash Seed" count="1" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Squash" count="2"/>
+        </recipe>
+        <recipe name="Strawberry Seed" count="1" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Strawberry" count="2"/>
+        </recipe>
+        <recipe name="SugarCane Seed" count="1" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Sugarcane Stalk" count="2"/>
+        </recipe>
+		<recipe name="Sugar Maple Seed" count="1" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Maple Wood Plank" count="2"/>
+        </recipe>		
+		<recipe name="Sunflower Seed (Plantable)" count="1" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Sunflower Seed" count="2"/>
+		</recipe>	
+	
+        <recipe name="Tomato Seed" count="1" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Tomato" count="2"/>
+        </recipe>
+		<recipe name="VineyardGrape Seed" count="1" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Vineyard Grapes" count="2"/>
+		</recipe>
+		<recipe name="Walnut Seed" count="1" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Walnut" count="2"/>
+		</recipe>		
+        <recipe name="Wheat Seed" count="1" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Wheat" count="2"/>
+        </recipe>
+		<recipe name="White Oak Seed" count="1" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="White Oak Plank" count="2"/>
+		</recipe>		
+		
+		<!--Seed Packs -->
+	
+		<recipe name="Banana Seed" count="4" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing" >
+            <ingredient name="Seed Pack" count="1"/>
+        </recipe>		
+
+        <recipe name="Broccoli Seed" count="4" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Seed Pack" count="1"/>
+        </recipe>
+        <recipe name="BrusselsSprouts Seed" count="4" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Seed Pack" count="1"/>
+        </recipe>
+        <recipe name="Cabbage Seed" count="4" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Seed Pack" count="1"/>
+        </recipe>
+        <recipe name="Carrot Seed" count="4" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Seed Pack" count="1"/>
+        </recipe>
+        <recipe name="Celery Seed" count="4" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Seed Pack" count="1"/>
+        </recipe>
+		<recipe name="Cherry Seed" count="4" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Seed Pack" count="1"/>
+        </recipe>		
+
+		<recipe name="Coconut Seed" count="4" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Seed Pack" count="1"/>
+        </recipe>		
+        <recipe name="Cucumber Seed" count="4" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Seed Pack" count="1"/>
+        </recipe>
+ 
+		<recipe name="Flax Seed" count="4" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Seed Pack" count="1"/>
+		</recipe>
+  
+		<recipe name="Herb Seed" count="4" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Seed Pack" count="1"/>
+		</recipe>
+		<recipe name="IcebergLettuce Seed" count="4" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Seed Pack" count="1"/>
+		</recipe>
+		<recipe name="Jalapeno Seed" count="4" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Seed Pack" count="1"/>
+		</recipe>		
+	
+		<recipe name="Marijuana Seed" count="4" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Seed Pack" count="1"/>
+		</recipe>
+
+		<recipe name="Nut Tree Seed" count="4" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Seed Pack" count="1"/>
+        </recipe>		
+ 		
+        <recipe name="Onion Seed" count="4" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Seed Pack" count="1"/>
+        </recipe>
+		<recipe name="Orange Seed" count="4" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Seed Pack" count="1"/>
+        </recipe>		
+ 
+		<recipe name="Pear Seed" count="4" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Seed Pack" count="1"/>
+        </recipe>
+		<recipe name="Pineapple Seed" count="4" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Seed Pack" count="1"/>
+        </recipe>
+     
+        <recipe name="Raspberry Seed" count="4" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Seed Pack" count="1"/>
+        </recipe>		
+		<recipe name="Red Apple Seed" count="4" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Seed Pack" count="1"/>
+        </recipe>		
+        <recipe name="Rice Seed" count="4" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Seed Pack" count="1"/>
+        </recipe>
+        <recipe name="Romaine Seed" count="4" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Seed Pack" count="1"/>
+        </recipe>
+
+		<recipe name="Spice Seed" count="4" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Seed Pack" count="1"/>
+		</recipe>		
+        <recipe name="Spinach Seed" count="4" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Seed Pack" count="1"/>
+        </recipe>
+        <recipe name="Squash Seed" count="4" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Seed Pack" count="1"/>
+        </recipe>
+        <recipe name="Strawberry Seed" count="4" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Seed Pack" count="1"/>
+        </recipe>
+        <recipe name="SugarCane Seed" count="4" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Seed Pack" count="1"/>
+        </recipe>
+		<recipe name="Sugar Maple Seed" count="4" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Seed Pack" count="1"/>
+        </recipe>		
+		<recipe name="Sunflower Seed (Plantable)" count="4" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Seed Pack" count="1"/>
+		</recipe>	
+
+        <recipe name="Tomato Seed" count="4" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Seed Pack" count="1"/>
+        </recipe>
+		<recipe name="VineyardGrape Seed" count="4" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Seed Pack" count="1"/>
+		</recipe>
+		<recipe name="Walnut Seed" count="4" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Seed Pack" count="1"/>
+		</recipe>		
+        <recipe name="Wheat Seed" count="4" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+            <ingredient name="Seed Pack" count="1"/>
+        </recipe>
+		<recipe name="White Oak Seed" count="4" craft_time="4" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Seed Pack" count="1"/>
+		</recipe>
+		
+<!--Seed Packs -->
+
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Banana Seed" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Broccoli Seed" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="BrusselsSprouts Seed" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Cabbage Seed" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Carrot Seed" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Celery Seed" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Cherry Seed" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Coconut Seed" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Cucumber Seed" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Flax Seed" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Herb Seed" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="IcebergLettuce Seed" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Jalapeno Seed" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Marijuana Seed" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Nut Tree Seed" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Onion Seed" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Orange Seed" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Pear Seed" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Pineapple Seed" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Raspberry Seed" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Red Apple Seed" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Rice Seed" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Romaine Seed" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Spice Seed" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Spinach Seed" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Squash Seed" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Strawberry Seed" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="SugarCane Seed" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Sugar Maple Seed" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Sunflower Seed (Plantable)" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Tomato Seed" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="VineyardGrape Seed" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Walnut Seed" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="Wheat Seed" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="White Oak Seed" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="plantedMushroom1" count="10"/>
+		</recipe>				
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="plantedYucca1" count="10"/>
+		</recipe>		
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="plantedCotton1" count="10"/>
+		</recipe>		
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="plantedCoffee1" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="plantedGoldenrod1" count="10"/>
+		</recipe>
+			<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="plantedAloe1" count="10"/>
+		</recipe>
+			<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="plantedBlueberry1" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="plantedPotato1" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="plantedChrysanthemum1" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="plantedCorn1" count="10"/>
+		</recipe>
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="plantedHop1" count="10"/>
+		</recipe>	
+		<recipe name="Seed Pack" count="1" craft_time="1" craft_area="Farm Table" craft_tool="Seed Processor" tags="Planting and Growing">
+			<ingredient name="plantedPumpkin1" count="10"/>
+		</recipe>		
+
+
+
+
+        <recipe name="Farm Crop Plot" count="1" craft_time="15" craft_area="Farm Table" tags="Planting and Growing">
+			<ingredient name="resourceWood" count="10"/>
+			<ingredient name="foodRottingFlesh" count="1"/>
+			<ingredient name="resourcePotassiumNitratePowder" count="5"/>
+			<ingredient name="resourceClayLump" count="10"/>
+		</recipe>		
+		<recipe name="Scythe" count="1" craft_time="15" craft_area="Farm Table" tags="Planting and Growing">
+			<ingredient name="resourceForgedIron" count="16"/>
+            <ingredient name="resourceWood" count="10"/>
+		</recipe>
+				
+		    </append>
+</configs>

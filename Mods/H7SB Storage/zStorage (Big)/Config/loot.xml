@@ -1,0 +1,52 @@
+<!-- - - - - - - - - - - -
+#########################
+###### H7SB Storage #####
+### 7 Days to Die Mod ###
+#########################
+####### Eihwaz © ########
+##### NO REUPLAOD! ######
+#### CC BY-NC-ND-SA #####
+#########################
+- - - - - - - - - - - -->
+<eihwaz.de>
+<set xpath="/lootcontainers/lootcontainer[@id='76']/@size">9,1</set>
+<set xpath="/lootcontainers/lootcontainer[@id='77']/@size">9,3</set>
+<set xpath="/lootcontainers/lootcontainer[@id='78']/@size">9,4</set>
+<set xpath="/lootcontainers/lootcontainer[@id='79']/@size">9,9</set>
+<set xpath="/lootcontainers/lootcontainer[@id='80']/@size">9,5</set>
+
+<set xpath="/lootcontainers/lootcontainer[@id='251']/@size">9,4</set>
+<set xpath="/lootcontainers/lootcontainer[@id='252']/@size">9,9</set>
+
+<set xpath="/lootcontainers/lootcontainer[@id='255']/@size">8,6</set>
+<set xpath="/lootcontainers/lootcontainer[@id='256']/@size">8,6</set>
+<set xpath="/lootcontainers/lootcontainer[@id='257']/@size">8,7</set>
+<set xpath="/lootcontainers/lootcontainer[@id='258']/@size">8,7</set>
+<set xpath="/lootcontainers/lootcontainer[@id='259']/@size">8,8</set>
+<set xpath="/lootcontainers/lootcontainer[@id='260']/@size">8,6</set>
+<set xpath="/lootcontainers/lootcontainer[@id='261']/@size">8,6</set>
+<set xpath="/lootcontainers/lootcontainer[@id='262']/@size">8,6</set>
+<set xpath="/lootcontainers/lootcontainer[@id='263']/@size">8,6</set>
+<set xpath="/lootcontainers/lootcontainer[@id='264']/@size">8,6</set>
+<set xpath="/lootcontainers/lootcontainer[@id='265']/@size">8,6</set>
+<set xpath="/lootcontainers/lootcontainer[@id='266']/@size">8,6</set>
+
+<set xpath="/lootcontainers/lootcontainer[@id='267']/@size">8,8</set>
+<set xpath="/lootcontainers/lootcontainer[@id='268']/@size">8,8</set>
+<set xpath="/lootcontainers/lootcontainer[@id='269']/@size">8,8</set>
+<set xpath="/lootcontainers/lootcontainer[@id='270']/@size">8,8</set>
+<set xpath="/lootcontainers/lootcontainer[@id='271']/@size">8,8</set>
+<set xpath="/lootcontainers/lootcontainer[@id='272']/@size">8,8</set>
+<set xpath="/lootcontainers/lootcontainer[@id='273']/@size">8,8</set>
+<set xpath="/lootcontainers/lootcontainer[@id='274']/@size">8,8</set>
+<set xpath="/lootcontainers/lootcontainer[@id='275']/@size">8,8</set>
+<set xpath="/lootcontainers/lootcontainer[@id='276']/@size">8,8</set>
+<set xpath="/lootcontainers/lootcontainer[@id='277']/@size">8,8</set>
+<set xpath="/lootcontainers/lootcontainer[@id='278']/@size">8,8</set>
+<set xpath="/lootcontainers/lootcontainer[@id='279']/@size">8,8</set>
+<set xpath="/lootcontainers/lootcontainer[@id='280']/@size">8,8</set>
+<set xpath="/lootcontainers/lootcontainer[@id='281']/@size">8,8</set>
+<set xpath="/lootcontainers/lootcontainer[@id='282']/@size">8,8</set>
+<set xpath="/lootcontainers/lootcontainer[@id='283']/@size">8,8</set>
+<set xpath="/lootcontainers/lootcontainer[@id='284']/@size">8,8</set>
+</eihwaz.de>

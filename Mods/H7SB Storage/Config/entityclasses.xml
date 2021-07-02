@@ -1,0 +1,43 @@
+<!-- - - - - - - - - - - -
+#########################
+###### H7SB Storage #####
+### 7 Days to Die Mod ###
+#########################
+####### Eihwaz © ########
+##### NO REUPLAOD! ######
+#### CC BY-NC-ND-SA #####
+#########################
+- - - - - - - - - - - -->
+<eihwaz.de>
+<append xpath="/entity_classes">
+	<entity_class name="h7sb_einkaufswagen">
+		<property name="Tags" value="vehicle,einkaufswagen"/>
+		<property name="Class" value="EntityVJeep"/>
+		<property name="Parent" value="Cars"/>
+		<property name="Prefab" value="#Entities/Vehicles?jeep_Prefab.prefab"/>
+		<property name="SizeScale" value="0.25"/>
+		<property name="ModelType" value="Standard"/>
+		<property name="SurfaceCategory" value="metal"/>
+		<property name="IgnoreTrigger" value="true"/>
+		<property name="LootListAlive" value="251"/>
+		<property name="IsEnemyEntity" value="false"/>
+		<property name="Explosion.ParticleIndex" value="0"/>
+		<property name="Explosion.RadiusBlocks" value="0"/>
+		<property name="Explosion.RadiusEntities" value="0"/>
+		<property name="Explosion.BlockDamage" value="0"/>
+		<property name="Explosion.EntityDamage" value="0"/>
+		<property name="RotateToGround" value="true"/>
+		<property name="Faction" value="none"/>
+		<property name="NavObject" value="einkaufswagen" />
+		<property name="Buffs" value="storageVisualDebug"/>
+	</entity_class>
+</append>
+
+<append xpath="/entity_classes">
+	<entity_class name="h7sb_kippkarre" extends="h7sb_einkaufswagen">
+		<property name="Tags" value="vehicle,kippkarre"/>
+		<property name="SizeScale" value="0.3"/>
+		<property name="LootListAlive" value="252"/>
+	</entity_class>
+</append>
+</eihwaz.de>

@@ -1,0 +1,4 @@
+- Added PizzaOven, Pizza willnow be crafted here.
+- Added multiple Gas Oven Models. you now Craft "Ovens" and use shape chooser to select which one you want
+- Webber Grill and Wood Grill are now Crafted by crafting "Grills", Choice of Model available from Shape Chooser
+Cold Smoker and Rustic Smoker now Crafted as "Smokers", Choice of Medel from Shape Chooser

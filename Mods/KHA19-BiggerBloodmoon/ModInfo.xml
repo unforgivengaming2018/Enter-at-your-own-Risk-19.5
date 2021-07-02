@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+    <ModInfo>
+        <Name value="Khaine's Larger Bloodmoon Mod" />
+        <Description value="This modlet adds new zombies with limited AI and increases bloodmoon size. This should allow for better FPS and more fun." />
+        <Author value="KhaineGB" />
+        <Version value="1.0.0" />
+    </ModInfo>
+</xml>

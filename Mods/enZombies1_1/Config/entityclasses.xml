@@ -1,0 +1,3552 @@
+<ErrorNull>
+
+
+<append xpath="/entity_classes">
+
+	<!-- TEMPLATES -->
+	
+	<entity_class name="EN_Zombie_Template" extends="zombieTemplateMale">
+		<property name="Mesh" value="#Entities/Zombies?Zombies/zombie01Ragdoll.prefab"/>
+		<property name="Prefab" value="NPC" />
+		<property name="Class" value="EntityZombie" />
+		<property name="Parent" value="Enemies" />
+		<property name="IsEnemyEntity" value="true" />
+		<property name="DismemberMultiplierHead" value="0.25"/>
+		<property name="DismemberMultiplierArms" value="0.25"/>
+		<property name="DismemberMultiplierLegs" value="0.25"/>
+		<property name="ModelType" value="ZombieUMA" />
+		<property name="RootMotion" value="true" />
+		<property name="HasRagdoll" value="true" />
+		<property name="PhysicsBody" value="zombieUMA" />
+		<property name="HasDeathAnim" value="false" />
+		<property name="SizeScale" value="1.00"/>
+		<property name="EntityType" value="Zombie" />
+	</entity_class>
+	
+<entity_class name="EN_Zombie_Template_Spider" extends="EN_Zombie_Template">
+		<property name="WalkType" value="8"/>
+		<property name="Mass" value="150"/>
+		<property name="DismemberMultiplierHead" value="0"/>
+		<property name="DismemberMultiplierArms" value="0"/>
+		<property name="DismemberMultiplierLegs" value="0"/>
+		<property name="LegCrawlerThreshold" value="0"/>
+		<property name="LegCrippleThreshold" value="0"/>
+		<property name="KnockdownProneDamageThreshold" value="0"/>
+		<property name="KnockdownKneelDamageThreshold" value="0"/>
+		<property name="AINoiseSeekDist" value="3"/>
+		<property name="AIPathCostScale" value=".6, 1"/>
+		<property name="AITask-1" value="Leap"/>
+		<property name="AITask-2" value="BreakBlock"/>
+		<property name="AITask-3" value="DestroyArea"/>
+		<property name="AITask-4" value="Territorial"/>
+		<property name="AITask-5" value="ApproachDistraction"/>
+		<property name="AITask-6" value="ApproachAndAttackTarget" data="class=EntityNPC,0,EntityEnemyAnimal,0,EntityPlayer,0"/>
+		<property name="AITask-7" value="ApproachSpot"/>
+		<property name="AITask-8" value="Look"/>
+		<property name="AITask-9" value="Wander"/>
+		<property name="AITask-10" value=""/>
+		<property name="SoundRandom" value="Enemies/Spider_Zombie/spiderroam"/>
+		<property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert"/>
+		<property name="SoundAttack" value="Enemies/Spider_Zombie/spiderattack"/>
+		<property name="SoundDeath" value="Enemies/Spider_Zombie/spiderdeath"/>
+		<property name="SoundHurt" value="Enemies/Spider_Zombie/spiderpain"/>
+		<property name="SoundSense" value="Enemies/Spider_Zombie/spidersense"/>
+	</entity_class>
+	
+	<entity_class name="EN_Zombie_Template_Male" extends="EN_Zombie_Template">
+		<property name="HandItem" value="enHandZombieMale" />
+		<property name="SoundRandom" value="Enemies/Base_Zombie_Male/zombiemaleroam"/>
+		<property name="SoundAlert" value="Enemies/Base_Zombie_Male/zombiemalealert"/>
+		<property name="SoundSense" value="Enemies/Base_Zombie_Male/zombiemalesense"/>
+		<property name="SoundHurt" value="Enemies/Base_Zombie_Male/zombiemalepain"/>
+		<property name="SoundDeath" value="Enemies/Base_Zombie_Male/zombiemaledeath"/>
+		<property name="SoundAttack" value="Enemies/Base_Zombie_Male/zombiemaleattack"/>
+	</entity_class>
+	
+	<entity_class name="EN_Zombie_Template_Female" extends="EN_Zombie_Template">
+		<property name="HandItem" value="enHandZombieFemale" />
+		<property name="SoundRandom" value="Enemies/Base_Zombie_Female2/zombiefemale2roam"/>
+		<property name="SoundAlert" value="Enemies/Base_Zombie_Female2/zombiefemale2alert"/>
+		<property name="SoundSense" value="Enemies/Base_Zombie_Female2/zombiefemale2sense"/>
+		<property name="SoundHurt" value="Enemies/Base_Zombie_Female2/zombiefemale2pain"/>
+		<property name="SoundDeath" value="Enemies/Base_Zombie_Female2/zombiefemale2death"/>
+		<property name="SoundAttack" value="Enemies/Base_Zombie_Female2/zombiefemale2attack"/>
+		<property name="Mass" value="400"/>
+		<property name="Weight" value="70"/>
+	</entity_class>
+			
+			
+			
+			
+			
+			
+			
+			
+	<!-- ********************  TEST ZOMBIES  ************************ -->
+	
+	<entity_class name="enTestBlack" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_testBlack" />
+		<property name="WalkType" value="5"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="150"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enTestRed" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_testRed" />
+		<property name="WalkType" value="5"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="150"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enTestGreen" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_testGreen" />
+		<property name="WalkType" value="5"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="150"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enTestBlue" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_testBlue" />
+		<property name="WalkType" value="5"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="150"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enTestPurple" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_testPurple" />
+		<property name="WalkType" value="5"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="150"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enTestYellow" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_testYellow" />
+		<property name="WalkType" value="5"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="150"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enTestCyan" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_testCyan" />
+		<property name="WalkType" value="5"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="150"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	
+	
+	<!-- ******************** EN ZOMBIES  ************************ -->
+	
+	<entity_class name="enBiker1" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_biker1" />
+		<property name="WalkType" value="2"/>
+		<property name="PainResistPerHit" value=".75"/>
+		<property name="HandItem" value="meleeHandZombieStrong"/>
+		<property name="ExperienceGain" value="750"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="280"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enBiker1Feral" extends="enBiker1">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_biker1Feral" />
+		<property name="HandItem" value="meleeHandZombieStrongFeral"/>
+		<property name="ExperienceGain" value="1200"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="532"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
+			<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enBiker1Crawler" extends="enBiker1">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_biker1Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawlerStrong"/>
+		<property name="ExperienceGain" value="495"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="185"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
+			<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enBiker1Radiated" extends="enBiker1Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_biker1Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1500"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="1010"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
+			<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enBiker2" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_biker2" />
+		<property name="WalkType" value="1"/>
+		<property name="PainResistPerHit" value=".75"/>
+		<property name="HandItem" value="meleeHandZombieStrong"/>
+		<property name="ExperienceGain" value="750"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="280"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enBiker2Feral" extends="enBiker2">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_biker2Feral" />
+		<property name="HandItem" value="meleeHandZombieStrongFeral"/>
+		<property name="ExperienceGain" value="1200"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="532"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
+			<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enBiker2Crawler" extends="enBiker2">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_biker2Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawlerStrong"/>
+		<property name="ExperienceGain" value="495"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="185"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
+			<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enBiker2Radiated" extends="enBiker2Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_biker2Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1500"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="1010"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/> <!-- Zombie HP scale -->
+			<passive_effect name="PhysicalDamageResist" operation="base_set" value="20"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="9"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enBurntFemale1" extends="EN_Zombie_Template_Female">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_burntFemale1" />
+		<property name="WalkType" value="5"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="125"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enBurntFemale1Feral" extends="enBurntFemale1">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_burntFemale1Feral" />
+		<property name="ExperienceGain" value="750"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="237"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enBurntFemale1Crawler" extends="enBurntFemale1">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_burntFemale1Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="273"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="83"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enBurntFemale1Radiated" extends="enBurntFemale1Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_burntFemale1Radiated" />
+		<property name="ExperienceGain" value="1200"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="451"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enBurntFemale2" extends="EN_Zombie_Template_Female">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_burntFemale2" />
+		<property name="WalkType" value="7"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="125"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+		<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam"/>
+		<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert"/>
+		<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack"/>
+		<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalepain"/>
+		<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath"/>
+		<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense"/>
+	</entity_class>
+	
+	<entity_class name="enBurntFemale2Feral" extends="EN_Zombie_Template_Female">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_burntFemale2Feral" />
+		<property name="ExperienceGain" value="750"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="237"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enBurntFemale2Crawler" extends="enBurntFemale2">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_burntFemale2Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="273"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="83"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enBurntFemale2Radiated" extends="enBurntFemale2Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_burntFemale2Radiated" />
+		<property name="ExperienceGain" value="1200"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="451"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enBurntMale1" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_burntMale1" />
+		<property name="WalkType" value="7"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="150"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+		<property name="SoundRandom" value="Enemies/Burnt_Zombie/zombieburntroam"/>
+		<property name="SoundAlert" value="Enemies/Burnt_Zombie/zombieburntalert"/>
+		<property name="SoundAttack" value="Enemies/Burnt_Zombie/zombieburntattack"/>
+		<property name="SoundHurt" value="Enemies/Burnt_Zombie/zombieburntpain"/>
+		<property name="SoundDeath" value="Enemies/Burnt_Zombie/zombieburntdeath"/>
+		<property name="SoundSense" value="Enemies/Burnt_Zombie/zombieburntsense"/>
+		<property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep"/>
+	</entity_class>
+	
+	<entity_class name="enBurntMale1Feral" extends="enBurntMale1">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_burntMale1Feral" />
+		<property name="ExperienceGain" value="750"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="285"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enBurntMale1Crawler" extends="enBurntMale1">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_burntMale1Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="273"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="99"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enBurntMale1Radiated" extends="enBurntMale1Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_burntMale1Radiated" />
+		<property name="ExperienceGain" value="1200"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="541"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enBurntMale2" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_burntMale2" />
+		<property name="WalkType" value="5"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="150"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+		<property name="SoundRandom" value="crawler_roam"/>
+		<property name="SoundAlert" value="crawler_alert"/>
+		<property name="SoundSense" value="crawler_sense"/>
+		<property name="SoundHurt" value="crawler_pain"/>
+		<property name="SoundDeath" value="crawler_death"/>
+		<property name="SoundAttack" value="crawler_attack"/>
+		<property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep"/>
+	</entity_class>
+	
+	<entity_class name="enBurntMale2Feral" extends="enBurntMale2">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_burntMale2Feral" />
+		<property name="ExperienceGain" value="750"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="285"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enBurntMale2Crawler" extends="enBurntMale2">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_burntMale2Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="273"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="99"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enBurntMale2Radiated" extends="enBurntMale2Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_burntMale2Radiated" />
+		<property name="ExperienceGain" value="1200"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="541"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enBusinessman1" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_businessman1" />
+		<property name="WalkType" value="3"/>
+		<property name="ExperienceGain" value="386"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="140"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+		<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
+		<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
+		<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
+		<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
+		<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
+		<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
+	</entity_class>
+	
+	<entity_class name="enBusinessman1Feral" extends="enBusinessman1">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_businessman1Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieFeral"/>
+		<property name="ExperienceGain" value="700"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="266"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enBusinessman1Crawler" extends="enBusinessman1">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_businessman1Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="255"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="92"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enBusinessman1Radiated" extends="enBusinessman1Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_businessman1Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1120"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="505"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.5"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enBusinessman2" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_businessman2" />
+		<property name="WalkType" value="5"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="150"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enBusinessman2Feral" extends="enBusinessman2">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_businessman2Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieFeral"/>
+		<property name="ExperienceGain" value="750"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="285"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enBusinessman2Crawler" extends="enBusinessman2">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_businessman2Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="273"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="99"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enBusinessman2Radiated" extends="enBusinessman2Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_businessman2Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1200"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="541"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.5"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enBusinessman3" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_businessman3" />
+		<property name="ExperienceGain" value="441"/>
+		<property name="WalkType" value="7"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="160"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enBusinessman3Feral" extends="enBusinessman3">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_businessman3Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieFeral"/>
+		<property name="ExperienceGain" value="800"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="304"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enBusinessman3Crawler" extends="enBusinessman3">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_businessman3Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="291"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="106"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enBusinessman3Radiated" extends="enBusinessman3Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_businessman3Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1280"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="577"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.5"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enDesertCowboy1" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_desertCowboy1" />
+		<property name="WalkType" value="2"/>
+		<property name="HandItem" value="meleeHandZombieTall"/>
+		<property name="ExperienceGain" value="468"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="170"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enDesertCowboy1Feral" extends="enDesertCowboy1">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_desertCowboy1Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieTallFeral"/>
+		<property name="ExperienceGain" value="850"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="323"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enDesertCowboy1Crawler" extends="enDesertCowboy1">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_desertCowboy1Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawlerStrong"/>
+		<property name="ExperienceGain" value="309"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="112"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enDesertCowboy1Radiated" extends="enDesertCowboy1Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_desertCowboy1Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1360"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="613"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="6.0"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+<entity_class name="enDesertCowboy2" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_desertCowboy2" />
+		<property name="WalkType" value="3"/>
+		<property name="HandItem" value="meleeHandZombieTall"/>
+		<property name="ExperienceGain" value="440"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="160"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+		<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
+		<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
+		<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
+		<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
+		<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
+		<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
+	</entity_class>
+	
+	<entity_class name="enDesertCowboy2Feral" extends="enDesertCowboy2">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_desertCowboy2Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieTallFeral"/>
+		<property name="ExperienceGain" value="800"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="304"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enDesertCowboy2Crawler" extends="enDesertCowboy2">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_desertCowboy2Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawlerStrong"/>
+		<property name="ExperienceGain" value="290"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="106"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enDesertCowboy2Radiated" extends="enDesertCowboy2Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_desertCowboy2Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1280"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="577"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="6.0"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enDesertCowgirl1" extends="EN_Zombie_Template_Female">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_desertCowgirl1" />
+		<property name="WalkType" value="3"/>
+		<property name="ExperienceGain" value="446"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="135"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enDesertCowgirl1Feral" extends="enDesertCowgirl1">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_desertCowgirl1Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieFeral"/>
+		<property name="ExperienceGain" value="810"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="256"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enDesertCowgirl1Crawler" extends="enDesertCowgirl1">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_desertCowgirl1Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="294"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="89"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enDesertCowgirl1Radiated" extends="enDesertCowgirl1Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_desertCowgirl1Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1296"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="487"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.0"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enDesertFemale1" extends="EN_Zombie_Template_Female">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_desertFemale1" />
+		<property name="WalkType" value="3"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="125"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+		<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam"/>
+		<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert"/>
+		<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack"/>
+		<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalepain"/>
+		<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath"/>
+		<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense"/>
+	</entity_class>
+	
+	<entity_class name="enDesertFemale1Feral" extends="enDesertFemale1">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_desertFemale1Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieFeral"/>
+		<property name="ExperienceGain" value="750"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="237"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enDesertFemale1Crawler" extends="enDesertFemale1">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_desertFemale1Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="273"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="83"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enDesertFemale1Radiated" extends="enDesertFemale1Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_desertFemale1Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1200"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="451"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.0"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enDesertFemale2" extends="EN_Zombie_Template_Female">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_desertFemale2" />
+		<property name="WalkType" value="5"/>
+		<property name="ExperienceGain" value="446"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="135"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enDesertFemale2Feral" extends="enDesertFemale2">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_desertFemale2Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieFeral"/>
+		<property name="ExperienceGain" value="810"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="256"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enDesertFemale2Crawler" extends="enDesertFemale2">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_desertFemale2Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="294"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="89"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enDesertFemale2Radiated" extends="enDesertFemale2Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_desertFemale2Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1296"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="487"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.0"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enDesertMale1" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_desertMale1" />
+		<property name="WalkType" value="6"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="150"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+		<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
+		<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
+		<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
+		<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
+		<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
+		<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
+	</entity_class>
+	
+	<entity_class name="enDesertMale1Feral" extends="enDesertMale1">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_desertMale1Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieFeral"/>
+		<property name="ExperienceGain" value="750"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="285"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enDesertMale1Crawler" extends="enDesertMale1">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_desertMale1Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="273"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="99"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enDesertMale1Radiated" extends="enDesertMale1Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_desertMale1Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1200"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="541"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.5"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enDesertMale2" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_desertMale2" />
+		<property name="WalkType" value="7"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="150"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enDesertMale2Feral" extends="enDesertMale2">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_desertMale2Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieFeral"/>
+		<property name="ExperienceGain" value="750"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="285"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enDesertMale2Crawler" extends="enDesertMale2">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_desertMale2Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="273"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="99"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enDesertMale2Radiated" extends="enDesertMale2Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_desertMale2Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1200"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="541"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.5"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enDesertMale3" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_desertMale3" />
+		<property name="WalkType" value="6"/>
+		<property name="ExperienceGain" value="385"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="140"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+		<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
+		<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
+		<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
+		<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
+		<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
+		<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
+	</entity_class>
+	
+	<entity_class name="enDesertMale3Feral" extends="enDesertMale3">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_desertMale3Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieFeral"/>
+		<property name="ExperienceGain" value="700"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="266"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enDesertMale3Crawler" extends="enDesertMale3">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_desertMale3Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="254"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="92"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enDesertMale3Radiated" extends="enDesertMale3Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_desertMale3Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1117"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="504"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.5"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enDesertSpider" extends="EN_Zombie_Template_Spider">
+		<property name="Tags" value="entity,zombie,umazombie" />
+		<property name="Archetype" value="en_DesertSpider" />
+		<property name="MoveSpeed" value="0.08"/>
+		<property name="MoveSpeedAggro" value="0.2, 1.35"/>
+		<property name="MoveSpeedPanic" value="1.2"/>
+		<property name="SwimSpeed" value="1.3"/>
+		<property name="SwimStrokeRate" value="1.5,1.7"/>
+		<property name="CanClimbVertical" value="true"/>
+		<property name="JumpMaxDistance" value="7, 9"/>
+		<property name="ExperienceGain" value="413"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="150"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>		
+	</entity_class>
+	
+	<entity_class name="enDesertSpiderFeral" extends="enDesertSpider">
+		<property name="Tags" value="entity,zombie,umazombie,feral" />
+		<property name="Archetype" value="en_DesertSpiderFeral" />
+		<property name="HandItem" value="meleeHandZombie02Feral"/>
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="MoveSpeedAggro" value="0.5, 1.35"/>
+		<property name="JumpMaxDistance" value="11, 13"/>
+		<property name="ExperienceGain" value="750"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="285"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>		
+	</entity_class>
+	
+	<entity_class name="enDesertSpiderRadiated" extends="enDesertSpiderFeral">
+		<property name="Tags" value="entity,zombie,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_DesertSpiderRadiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1200"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="541"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect event="onSelfFirstSpawn" action="AddBuff" buff="zombieRadiatedBuff40"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="5"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>		
+	</entity_class>
+	
+	<entity_class name="enFarmerMale1" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_farmerMale1" />
+		<property name="WalkType" value="7"/>
+		<property name="ExperienceGain" value="1"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="150"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+		<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
+		<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
+		<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
+		<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
+		<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
+		<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
+	</entity_class>
+	
+	<entity_class name="enFarmerMale1Feral" extends="enFarmerMale1">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_farmerMale1Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieFeral"/>
+		<property name="ExperienceGain" value="750"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="285"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enFarmerMale1Crawler" extends="enFarmerMale1">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_farmerMale1Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="273"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="99"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enFarmerMale1Radiated" extends="enFarmerMale1Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_farmerMale1Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1200"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="541"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.5"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enFarmerMale2" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_farmerMale2" />
+		<property name="WalkType" value="5"/>
+		<property name="ExperienceGain" value="441"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="160"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enFarmerMale2Feral" extends="enFarmerMale2">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_farmerMale2Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieFeral"/>
+		<property name="ExperienceGain" value="800"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="304"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enFarmerMale2Crawler" extends="enFarmerMale2">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_farmerMale2Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="291"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="106"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enFarmerMale2Radiated" extends="enFarmerMale2Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_farmerMale2Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1280"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="577"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.5"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enFootballMale1" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_footballMale1" />
+		<property name="WalkType" value="6"/>
+		<property name="HandItem" value="meleeHandZombieFootballPlayer"/>
+		<property name="Mass" value="220"/>
+		<property name="MoveSpeed" value="0.75"/>
+		<property name="MoveSpeedAggro" value=".6, 1.3"/>
+		<property name="ExperienceGain" value="810"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="270"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enFootballMale1Feral" extends="enFootballMale1">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_footballMale1Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieFootballPlayerFeral"/>
+		<property name="ExperienceGain" value="1157"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="513"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enFootballMale1Crawler" extends="enFootballMale1">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_footballMale1Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="535"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="178"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enFootballMale1Radiated" extends="enFootballMale1Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_footballMale1Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1447"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="974"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="6.0"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enFootballMale2" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_footballMale2" />
+		<property name="WalkType" value="6"/>
+		<property name="HandItem" value="meleeHandZombieFootballPlayer"/>
+		<property name="Mass" value="220"/>
+		<property name="MoveSpeed" value="0.75"/>
+		<property name="MoveSpeedAggro" value=".6, 1.3"/>
+		<property name="ExperienceGain" value="780"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="260"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+		<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
+		<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
+		<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
+		<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
+		<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
+		<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
+	</entity_class>
+			
+	<entity_class name="enFootballMale2Feral" extends="enFootballMale2">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_footballMale2Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieFootballPlayerFeral"/>
+		<property name="ExperienceGain" value="1114"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="494"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enFootballMale2Crawler" extends="enFootballMale2">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_footballMale2Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="515"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="172"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enFootballMale2Radiated" extends="enFootballMale2Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_footballMale2Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1393"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="938"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="6.0"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+			
+	<entity_class name="enForestFemale1" extends="EN_Zombie_Template_Female">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_forestFemale1" />
+		<property name="WalkType" value="3"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="125"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enForestFemale1Feral" extends="enForestFemale1">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_forestFemale1Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="MoveSpeedAggro" value=".5, 1.35"/>
+		<property name="HandItem" value="meleeHandZombieFeral"/>
+		<property name="ExperienceGain" value="750"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="237"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enForestFemale1Crawler" extends="enForestFemale1">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_forestFemale1Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="273"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="83"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enForestFemale1Radiated" extends="enForestFemale1Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_forestFemale1Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1200"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="451"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.0"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enForestFemale2" extends="EN_Zombie_Template_Female">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_forestFemale2" />
+		<property name="WalkType" value="5"/>
+		<property name="ExperienceGain" value="446"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="135"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enForestFemale2Feral" extends="enForestFemale2">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_forestFemale2Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="MoveSpeedAggro" value=".5, 1.35"/>
+		<property name="HandItem" value="meleeHandZombieFeral"/>
+		<property name="ExperienceGain" value="810"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="256"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enForestFemale2Crawler" extends="enForestFemale2">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_forestFemale2Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="294"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="89"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enForestFemale2Radiated" extends="enForestFemale2Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_forestFemale2Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1296"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="487"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.0"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+			
+	<entity_class name="enForestFemale3" extends="EN_Zombie_Template_Female">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_forestFemale3" />
+		<property name="WalkType" value="7"/>
+		<property name="ExperienceGain" value="396"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="120"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+		<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam"/>
+		<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert"/>
+		<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack"/>
+		<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalepain"/>
+		<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath"/>
+		<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense"/>
+	</entity_class>
+	
+	<entity_class name="enForestFemale3Crawler" extends="enForestFemale3">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_forestFemale3Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="ExperienceGain" value="261"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="79"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enForestFemale3Feral" extends="enForestFemale3">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_forestFemale3Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="ExperienceGain" value="722"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="228"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enForestFemale3Radiated" extends="enForestFemale3Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_forestFemale3Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1155"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="434"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.0"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enForestMale1" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_forestMale1" />
+		<property name="WalkType" value="6"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="150"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+		<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
+		<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
+		<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
+		<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
+		<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
+		<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
+	</entity_class>
+	
+	<entity_class name="enForestMale1Feral" extends="enForestMale1">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_forestMale1Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieFeral"/>
+		<property name="ExperienceGain" value="750"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="285"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enForestMale1Crawler" extends="enForestMale1">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_forestMale1Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="273"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="99"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enForestMale1Radiated" extends="enForestMale1Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_forestMale1Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1200"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="541"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.5"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enForestMale2" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_forestMale2" />
+		<property name="WalkType" value="2"/>
+		<property name="ExperienceGain" value="441"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="160"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enForestMale2Feral" extends="enForestMale2">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_forestMale2Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieFeral"/>
+		<property name="ExperienceGain" value="800"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="304"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enForestMale2Crawler" extends="enForestMale2">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_forestMale2Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="291"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="106"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enForestMale2Radiated" extends="enForestMale2Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_forestMale2Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1280"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="577"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.5"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enForestMale3" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_forestMale3" />
+		<property name="WalkType" value="1"/>
+		<property name="MoveSpeedAggro" value="0.6, 1.3"/>
+		<property name="ExperienceGain" value="468"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="170"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enForestMale3Feral" extends="enForestMale3">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_forestMale3Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieFeral"/>
+		<property name="ExperienceGain" value="850"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="323"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enForestMale3Crawler" extends="enForestMale3">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_forestMale3Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="309"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="112"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enForestMale3Radiated" extends="enForestMale3Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_forestMale3Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1280"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="577"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.5"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enForestMale4" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_forestMale4" />
+		<property name="WalkType" value="3"/>
+		<property name="ExperienceGain" value="385"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="140"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+		<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
+		<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
+		<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
+		<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
+		<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
+		<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
+	</entity_class>
+	
+	<entity_class name="enForestMale4Crawler" extends="enForestMale4">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_forestMale4Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="ExperienceGain" value="254"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="92"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enForestMale4Feral" extends="enForestMale4">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_forestMale4Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="ExperienceGain" value="700"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="266"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enForestMale4Radiated" extends="enForestMale4Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_forestMale4Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1118"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="504"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.5"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enForestMaleCamo" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_forestMaleCamo" />
+		<property name="WalkType" value="8"/>
+		<property name="MoveSpeed" value="0.1"/>
+		<property name="MoveSpeedAggro" value="0.8, 1.25"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="150"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+		<property name="SoundRandom" value="Enemies/Feral_Zombie/zombieferalroam"/>
+		<property name="SoundAlert" value="Enemies/Feral_Zombie/zombieferalalert"/>
+		<property name="SoundAttack" value="Enemies/Feral_Zombie/zombieferalattack"/>
+		<property name="SoundHurt" value="Enemies/Feral_Zombie/zombieferalpain"/>
+		<property name="SoundDeath" value="Enemies/Feral_Zombie/zombieferaldeath"/>
+		<property name="SoundSense" value="Enemies/Feral_Zombie/zombieferalsense"/>
+	</entity_class>
+	
+	<entity_class name="enForestMaleCamoFeral" extends="enForestMaleCamo">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_forestMaleCamoFeral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieFeral"/>
+		<property name="ExperienceGain" value="750"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="285"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enForestMaleCamoCrawler" extends="enForestMaleCamo">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_forestMaleCamoFeral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="273"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="99"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enForestMaleCamoRadiated" extends="enForestMaleCamoFeral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_forestMaleCamoRadiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1200"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="541"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.5"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enForestSpider" extends="EN_Zombie_Template_Spider">
+		<property name="Tags" value="entity,zombie,umazombie" />
+		<property name="Archetype" value="en_forestSpider" />
+		<property name="MoveSpeed" value="0.08"/>
+		<property name="MoveSpeedAggro" value="0.2, 1.35"/>
+		<property name="MoveSpeedPanic" value="1.2"/>
+		<property name="SwimSpeed" value="1.3"/>
+		<property name="SwimStrokeRate" value="1.5,1.7"/>
+		<property name="CanClimbVertical" value="true"/>
+		<property name="JumpMaxDistance" value="7, 9"/>
+		<property name="ExperienceGain" value="413"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="150"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>		
+	</entity_class>
+	
+	<entity_class name="enForestSpiderFeral" extends="enForestSpider">
+		<property name="Tags" value="entity,zombie,umazombie,feral" />
+		<property name="Archetype" value="en_forestSpiderFeral" />
+		<property name="HandItem" value="meleeHandZombie02Feral"/>
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="MoveSpeedAggro" value="0.5, 1.35"/>
+		<property name="JumpMaxDistance" value="11, 13"/>
+		<property name="ExperienceGain" value="750"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="285"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>		
+	</entity_class>
+	
+	<entity_class name="enForestSpiderRadiated" extends="enForestSpiderFeral">
+		<property name="Tags" value="entity,zombie,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_forestSpiderRadiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1200"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="541"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect event="onSelfFirstSpawn" action="AddBuff" buff="zombieRadiatedBuff40"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="5"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>		
+	</entity_class>
+	
+	<entity_class name="enHazmatFemale1" extends="EN_Zombie_Template_Female">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_hazmatFemale1" />
+		<property name="WalkType" value="6"/>
+		<property name="HandItem" value="meleeHandZombieHazMat"/>
+		<property name="ExperienceGain" value="430"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="130"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enHazmatFemale1Crawler" extends="enHazmatFemale1">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_hazmatFemale1Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="meleeHandZombieHazMat"/>
+		<property name="ExperienceGain" value="284"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="86"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enHazmatFemale1Feral" extends="enHazmatFemale1">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_hazmatFemale1Feral" />
+		<property name="HandItem" value="meleeHandZombieHazMat"/>
+		<property name="ExperienceGain" value="778"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="246"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enHazmatFemale1Radiated" extends="enHazmatFemale1Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_hazmatFemale1Radiated" />
+		<property name="HandItem" value="meleeHandZombieHazMat"/>
+		<property name="ExperienceGain" value="1245"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="468"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enHazmatFemale2" extends="EN_Zombie_Template_Female">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_hazmatFemale2" />
+		<property name="WalkType" value="3"/>
+		<property name="HandItem" value="meleeHandZombieHazMat"/>
+		<property name="ExperienceGain" value="413"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="125"/>
+		</effect_group>
+		<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam"/>
+		<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert"/>
+		<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack"/>
+		<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalepain"/>
+		<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath"/>
+		<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense"/>
+	</entity_class>
+	
+	<entity_class name="enHazmatFemale2Crawler" extends="enHazmatFemale2">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_hazmatFemale2Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="meleeHandZombieHazMat"/>
+		<property name="ExperienceGain" value="273"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="83"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enHazmatFemale2Feral" extends="enHazmatFemale2">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_hazmatFemale2Feral" />
+		<property name="HandItem" value="meleeHandZombieHazMat"/>
+		<property name="ExperienceGain" value="750"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="237"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enHazmatFemale2Radiated" extends="enHazmatFemale2Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_hazmatFemale2Radiated" />
+		<property name="HandItem" value="meleeHandZombieHazMat"/>
+		<property name="ExperienceGain" value="1200"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="451"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enHazmatMale1" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_hazmatMale1" />
+		<property name="WalkType" value="7"/>
+		<property name="HandItem" value="meleeHandZombieHazMat"/>
+		<property name="ExperienceGain" value="385"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="140"/>
+		</effect_group>
+		<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
+		<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
+		<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
+		<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
+		<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
+		<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
+	</entity_class>
+	
+	<entity_class name="enHazmatMale1Feral" extends="enHazmatMale1">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_hazmatMale1Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieHazMatFeral"/>
+		<property name="ExperienceGain" value="700"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="266"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enHazmatMale1Crawler" extends="enHazmatMale1">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_hazmatMale1Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="254"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="92"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enHazmatMale1Radiated" extends="enHazmatMale1Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_hazmatMale1Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1120"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="505"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.5"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enHazmatMale2" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_hazmatMale2" />
+		<property name="WalkType" value="5"/>
+		<property name="HandItem" value="meleeHandZombieHazMat"/>
+		<property name="ExperienceGain" value="441"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="160"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enHazmatMale2Feral" extends="enHazmatMale2">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_hazmatMale2Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieHazMatFeral"/>
+		<property name="ExperienceGain" value="800"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="304"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enHazmatMale2Crawler" extends="enHazmatMale2">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_hazmatMale2Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="291"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="106"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enHazmatMale2Radiated" extends="enHazmatMale2Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_hazmatMale2Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1280"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="577"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.5"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enHazmatMale3" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_hazmatMale3" />
+		<property name="WalkType" value="3"/>
+		<property name="HandItem" value="meleeHandZombieHazMat"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="150"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enHazmatMale3Feral" extends="enHazmatMale3">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_hazmatMale3Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieHazMatFeral"/>
+		<property name="ExperienceGain" value="750"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="285"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enHazmatMale3Crawler" extends="enHazmatMale3">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_hazmatMale3Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="273"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="99"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enHazmatMale3Radiated" extends="enHazmatMale3Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_hazmatMale3Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1200"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="541"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.5"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enJoggerFemale1" extends="EN_Zombie_Template_Female">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_joggerFemale1" />
+		<property name="WalkType" value="7"/>
+		<property name="MoveSpeedAggro" value="0.7, 1.25"/>
+		<property name="ExperienceGain" value="446"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="135"/>
+		</effect_group>
+		<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam"/>
+		<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert"/>
+		<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack"/>
+		<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalepain"/>
+		<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath"/>
+		<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense"/>
+	</entity_class>
+	
+	<entity_class name="enJoggerFemale1Feral" extends="enJoggerFemale1">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_joggerFemale1Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieFeral"/>
+		<property name="ExperienceGain" value="810"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="256"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enJoggerFemale1Crawler" extends="enJoggerFemale1">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_joggerFemale1Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="294"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="89"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enJoggerFemale1Radiated" extends="enJoggerFemale1Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_joggerFemale1Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1296"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="478"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.0"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enJoggerFemale2" extends="EN_Zombie_Template_Female">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_joggerFemale2" />
+		<property name="WalkType" value="3"/>
+		<property name="MoveSpeedAggro" value="0.6, 1.25"/>
+		<property name="ExperienceGain" value="446"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="135"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enJoggerFemale2Feral" extends="enJoggerFemale2">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_joggerFemale2Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieFeral"/>
+		<property name="ExperienceGain" value="810"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="256"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enJoggerFemale2Crawler" extends="enJoggerFemale2">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_joggerFemale2Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="294"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="89"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enJoggerFemale2Radiated" extends="enJoggerFemale2Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_joggerFemale2Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1296"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="487"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.0"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enJoggerFemale3" extends="EN_Zombie_Template_Female">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_joggerFemale3" />
+		<property name="WalkType" value="5"/>
+		<property name="MoveSpeedAggro" value="0.9, 1.25"/>
+		<property name="ExperienceGain" value="446"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="135"/>
+		</effect_group>
+		<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam"/>
+		<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert"/>
+		<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack"/>
+		<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalepain"/>
+		<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath"/>
+		<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense"/>
+	</entity_class>
+	
+	<entity_class name="enJoggerFemale3Feral" extends="enJoggerFemale3">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_joggerFemale3Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieFeral"/>
+		<property name="ExperienceGain" value="810"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="256"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enJoggerFemale3Crawler" extends="enJoggerFemale3">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_joggerFemale3Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="294"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="89"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enJoggerFemale3Radiated" extends="enJoggerFemale3">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_joggerFemale3Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1296"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="487"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.0"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enJoggerFemale4" extends="EN_Zombie_Template_Female">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_joggerFemale4" />
+		<property name="WalkType" value="3"/>
+		<property name="MoveSpeedAggro" value="0.7, 1.25"/>
+		<property name="ExperienceGain" value="446"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="135"/>
+		</effect_group>
+		<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam"/>
+		<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert"/>
+		<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack"/>
+		<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalepain"/>
+		<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath"/>
+		<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense"/>
+	</entity_class>
+	
+	<entity_class name="enJoggerFemale4Feral" extends="enJoggerFemale4">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_joggerFemale4Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieFeral"/>
+		<property name="ExperienceGain" value="810"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="256"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enJoggerFemale4Crawler" extends="enJoggerFemale4">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_joggerFemale4Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="294"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="89"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enJoggerFemale4Radiated" extends="enJoggerFemale4Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_joggerFemale4Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1245"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="468"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.0"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enJoggerFemale5" extends="EN_Zombie_Template_Female">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_joggerFemale5" />
+		<property name="WalkType" value="7"/>
+		<property name="MoveSpeedAggro" value="0.8, 1.25"/>
+		<property name="ExperienceGain" value="446"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="135"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enJoggerFemale5Feral" extends="enJoggerFemale5">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_joggerFemale5Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieFeral"/>
+		<property name="ExperienceGain" value="810"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="256"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enJoggerFemale5Crawler" extends="enJoggerFemale5">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_joggerFemale5Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="294"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="89"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enJoggerFemale5Radiated" extends="enJoggerFemale5Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_joggerFemale5Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1296"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="487"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.0"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enLumberjack1" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_lumberjack1" />
+		<property name="WalkType" value="3"/>
+		<property name="HandItem" value="meleeHandZombieLumberjack"/>
+		<property name="ExperienceGain" value="700"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="280"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+		<property name="SoundRandom" value="Enemies/Snow_Zombie_Male/zombiemalesnowroam"/>
+		<property name="SoundAlert" value="Enemies/Snow_Zombie_Male/zombiemalesnowalert"/>
+		<property name="SoundAttack" value="Enemies/Snow_Zombie_Male/zombiemalesnowattack"/>
+		<property name="SoundHurt" value="Enemies/Snow_Zombie_Male/zombiemalesnowpain"/>
+		<property name="SoundDeath" value="Enemies/Snow_Zombie_Male/zombiemalesnowdeath"/>
+		<property name="SoundSense" value="Enemies/Snow_Zombie_Male/zombiemalesnowsense"/>
+		<property name="SoundFootstepModifier" value="Enemies/Snow_Zombie_Male/zombiesnowfootstep"/>
+	</entity_class>
+	
+	<entity_class name="enLumberjack1Feral" extends="enLumberjack1">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_lumberjack1Feral" />
+		<property name="HandItem" value="meleeHandZombieLumberjackFeral"/>
+		<property name="ExperienceGain" value="1100"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="530"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enLumberjack1Crawler" extends="enLumberjack1">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_lumberjack1Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawlerStrong"/>
+		<property name="ExperienceGain" value="462"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="185"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enLumberjack1Radiated" extends="enLumberjack1Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_lumberjack1Radiated" />
+		<property name="ExperienceGain" value="1350"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="950"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enLumberjack2" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_lumberjack2" />
+		<property name="WalkType" value="7"/>
+		<property name="MoveSpeedAggro" value="0.7, 1.25"/>
+		<property name="HandItem" value="meleeHandZombieLumberjack"/>
+		<property name="ExperienceGain" value="650"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="260"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+		<property name="SoundRandom" value="Enemies/Feral_Zombie/zombieferalroam"/>
+		<property name="SoundAlert" value="Enemies/Feral_Zombie/zombieferalalert"/>
+		<property name="SoundAttack" value="Enemies/Feral_Zombie/zombieferalattack"/>
+		<property name="SoundHurt" value="Enemies/Feral_Zombie/zombieferalpain"/>
+		<property name="SoundDeath" value="Enemies/Feral_Zombie/zombieferaldeath"/>
+		<property name="SoundSense" value="Enemies/Feral_Zombie/zombieferalsense"/>
+		<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombiesnowfootstep"/>
+	</entity_class>
+	
+	<entity_class name="enLumberjack2Feral" extends="enLumberjack2">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_lumberjack2Feral" />
+		<property name="HandItem" value="meleeHandZombieLumberjackFeral"/>
+		<property name="ExperienceGain" value="980"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="500"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enLumberjack2Crawler" extends="enLumberjack2">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_lumberjack2Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawlerStrong"/>
+		<property name="ExperienceGain" value="429"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="172"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enLumberjack2Radiated" extends="enLumberjack2Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_lumberjack2Radiated" />
+		<property name="ExperienceGain" value="1250"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="910"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enSnowFemale1" extends="EN_Zombie_Template_Female">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_snowFemale1" />
+		<property name="WalkType" value="3"/>
+		<property name="ExperienceGain" value="452"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="169"/>
+		</effect_group>
+		<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam"/>
+		<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert"/>
+		<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack"/>
+		<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalepain"/>
+		<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath"/>
+		<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense"/>
+	</entity_class>
+	
+	<entity_class name="enSnowFemale1Feral" extends="enSnowFemale1">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_snowFemale1Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieFeral"/>
+		<property name="ExperienceGain" value="845"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="320"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enSnowFemale1Crawler" extends="enSnowFemale1">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_snowFemale1Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="298"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="112"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enSnowFemale1Radiated" extends="enSnowFemale1Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_snowFemale1Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1307"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="608"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.0"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enSnowFemale2" extends="EN_Zombie_Template_Female">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_snowFemale2" />
+		<property name="WalkType" value="5"/>
+		<property name="ExperienceGain" value="468"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="176"/>
+		</effect_group>
+	</entity_class>	
+	
+	<entity_class name="enSnowFemale2Feral" extends="enSnowFemale2">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_snowFemale2Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieFeral"/>
+		<property name="ExperienceGain" value="851"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="333"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>	
+	
+	<entity_class name="enSnowFemale2Crawler" extends="enSnowFemale2">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_snowFemale2Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="309"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="116"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>	
+	
+	<entity_class name="enSnowFemale2Radiated" extends="enSnowFemale2Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_snowFemale2Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1361"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="633"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.0"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>	
+	
+	<entity_class name="enSnowMale1" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_snowMale1" />
+		<property name="WalkType" value="6"/>
+		<property name="ExperienceGain" value="485"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="208"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enSnowMale1Feral" extends="enSnowMale1">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_snowMale1Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieFeral"/>
+		<property name="ExperienceGain" value="880"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="395"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enSnowMale1Crawler" extends="enSnowMale1">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_snowMale1Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="320"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="137"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enSnowMale1Radiated" extends="enSnowMale1Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_snowMale1Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1408"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="750"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.5"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enSnowMale2" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_snowMale2" />
+		<property name="WalkType" value="2"/>
+		<property name="ExperienceGain" value="470"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="202"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+		<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
+		<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
+		<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
+		<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
+		<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
+		<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
+	</entity_class>
+	
+	<entity_class name="enSnowMale2Feral" extends="enSnowMale2">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_snowMale2Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieFeral"/>
+		<property name="ExperienceGain" value="851"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="382"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enSnowMale2Crawler" extends="enSnowMale2">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_snowMale2Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="310"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="133"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enSnowMale2Radiated" extends="enSnowMale2Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_snowMale2Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1362"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="725"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.5"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enSnowMale3" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_snowMale3" />
+		<property name="WalkType" value="1"/>
+		<property name="MoveSpeedAggro" value="0.6, 1.3"/>
+		<property name="ExperienceGain" value="515"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="221"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enSnowMale3Feral" extends="enSnowMale3">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_snowMale3Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieFeral"/>
+		<property name="ExperienceGain" value="935"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="420"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enSnowMale3Crawler" extends="enSnowMale3">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_snowMale3Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="340"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="146"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enSnowMale3Radiated" extends="enSnowMale3Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_snowMale3Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1496"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="797"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.5"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enSnowMaleCamo" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_snowMaleCamo" />
+		<property name="WalkType" value="8"/>
+		<property name="MoveSpeed" value="0.1"/>
+		<property name="MoveSpeedAggro" value="0.8, 1.25"/>
+		<property name="ExperienceGain" value="454"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="195"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+		<property name="SoundRandom" value="Enemies/Feral_Zombie/zombieferalroam"/>
+		<property name="SoundAlert" value="Enemies/Feral_Zombie/zombieferalalert"/>
+		<property name="SoundAttack" value="Enemies/Feral_Zombie/zombieferalattack"/>
+		<property name="SoundHurt" value="Enemies/Feral_Zombie/zombieferalpain"/>
+		<property name="SoundDeath" value="Enemies/Feral_Zombie/zombieferaldeath"/>
+		<property name="SoundSense" value="Enemies/Feral_Zombie/zombieferalsense"/>
+	</entity_class>
+	
+	<entity_class name="enSnowMaleCamoFeral" extends="enSnowMaleCamo">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_snowMaleCamoFeral" />
+		<property name="MoveSpeed" value="0.1"/>
+		<property name="MoveSpeedAggro" value="0.8, 1.25"/>
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieFeral"/>
+		<property name="ExperienceGain" value="825"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="371"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enSnowMaleCamoCrawler" extends="enSnowMaleCamo">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_snowMaleCamoFeral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="300"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="128"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enSnowMaleCamoRadiated" extends="enSnowMaleCamoFeral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_snowMaleCamoRadiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1320"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="703"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.5"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enSnowSpider" extends="EN_Zombie_Template_Spider">
+		<property name="Tags" value="entity,zombie,umazombie" />
+		<property name="Archetype" value="en_snowSpider" />
+		<property name="MoveSpeed" value="0.06"/>
+		<property name="MoveSpeedAggro" value="0.1, 1.25"/>
+		<property name="MoveSpeedPanic" value="1.1"/>
+		<property name="SwimSpeed" value="1.4"/>
+		<property name="SwimStrokeRate" value="1.4,1.6"/>
+		<property name="CanClimbVertical" value="true"/>
+		<property name="JumpMaxDistance" value="6, 8"/>
+		<property name="ExperienceGain" value="485"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="208"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>		
+	</entity_class>
+	
+	<entity_class name="enSnowSpiderFeral" extends="enSnowSpider">
+		<property name="Tags" value="entity,zombie,umazombie,feral" />
+		<property name="Archetype" value="en_snowSpiderFeral" />
+		<property name="HandItem" value="meleeHandZombie02Feral"/>
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="MoveSpeedAggro" value="0.4, 1.25"/>
+		<property name="JumpMaxDistance" value="9, 11"/>
+		<property name="ExperienceGain" value="880"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="395"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>		
+	</entity_class>
+	
+	<entity_class name="enSnowSpiderRadiated" extends="enSnowSpiderFeral">
+		<property name="Tags" value="entity,zombie,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_snowSpiderRadiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1408"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="750"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect event="onSelfFirstSpawn" action="AddBuff" buff="zombieRadiatedBuff40"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="5"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>		
+	</entity_class>
+	
+	<entity_class name="enSoldierMale1" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_soldierMale1" />
+		<property name="WalkType" value="2"/>
+		<property name="HandItem" value="meleeHandZombieWorker"/>
+		<property name="ExperienceGain" value="800"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="160"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enSoldierMale1Feral" extends="enSoldierMale1">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_soldierMale1Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieWorkerFeral"/>
+		<property name="ExperienceGain" value="1280"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="304"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enSoldierMale1Crawler" extends="enSoldierMale1">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_soldierMale1Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="528"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="107"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enSoldierMale1Radiated" extends="enSoldierMale1Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_soldierMale1Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1600"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="577"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="5.0"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enSoldierMale2" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_soldierMale2" />
+		<property name="WalkType" value="3"/>
+		<property name="HandItem" value="meleeHandZombieWorker"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="150"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
+		</effect_group>
+		<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
+		<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
+		<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
+		<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
+		<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
+		<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
+	</entity_class>
+	
+	<entity_class name="enSoldierMale2Feral" extends="enSoldierMale2">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_soldierMale2Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieWorkerFeral"/>
+		<property name="ExperienceGain" value="1200"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="285"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enSoldierMale2Crawler" extends="enSoldierMale2">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_soldierMale2Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="273"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="99"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enSoldierMale2Radiated" extends="enSoldierMale2Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_soldierMale2Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1500"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="541"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="5.0"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			<passive_effect name="PhysicalDamageResist" operation="base_set" value="50"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enStripper1" extends="EN_Zombie_Template_Female">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_stripper1" />
+		<property name="WalkType" value="7"/>
+		<property name="MoveSpeedAggro" value="0.5, 1.25"/>
+		<property name="HandItem" value="meleeHandZombieStripper"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="125"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+		<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam"/>
+		<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert"/>
+		<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack"/>
+		<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalepain"/>
+		<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath"/>
+		<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense"/>
+	</entity_class>
+	
+	<entity_class name="enStripper1Feral" extends="enStripper1">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_stripper1Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="MoveSpeedAggro" value=".5, 1.35"/>
+		<property name="HandItem" value="meleeHandZombieStripperFeral"/>
+		<property name="ExperienceGain" value="750"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="237"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enStripper1Crawler" extends="enStripper1">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_stripper1Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="273"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="83"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enStripper1Radiated" extends="enStripper1Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_stripper1Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1200"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="451"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.0"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enStripper2" extends="EN_Zombie_Template_Female">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_stripper2" />
+		<property name="WalkType" value="3"/>
+		<property name="MoveSpeedAggro" value="0.3, 1.25"/>
+		<property name="HandItem" value="meleeHandZombieStripper"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="125"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enStripper2Feral" extends="enStripper2">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_stripper2Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="MoveSpeedAggro" value=".5, 1.35"/>
+		<property name="HandItem" value="meleeHandZombieStripperFeral"/>
+		<property name="ExperienceGain" value="750"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="237"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enStripper2Crawler" extends="enStripper2">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_stripper2Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="273"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="83"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enStripper2Radiated" extends="enStripper2Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_stripper2Radiated"/>
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1200"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="451"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.0"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enStripper3" extends="EN_Zombie_Template_Female">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_stripper3" />
+		<property name="WalkType" value="5"/>
+		<property name="MoveSpeedAggro" value="0.5, 1.25"/>
+		<property name="HandItem" value="meleeHandZombieStripper"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="125"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enStripper3Feral" extends="enStripper3">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_stripper3Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="MoveSpeedAggro" value=".5, 1.35"/>
+		<property name="HandItem" value="meleeHandZombieStripperFeral"/>
+		<property name="ExperienceGain" value="750"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="237"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enStripper3Crawler" extends="enStripper3">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_stripper3Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="273"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="83"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enStripper3Radiated" extends="enStripper3Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_stripper3Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1200"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="451"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.0"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enStripper4" extends="EN_Zombie_Template_Female">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_stripper4" />
+		<property name="WalkType" value="7"/>
+		<property name="MoveSpeedAggro" value="0.3, 1.25"/>
+		<property name="HandItem" value="meleeHandZombieStripper"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="125"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+		<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam"/>
+		<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert"/>
+		<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack"/>
+		<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalepain"/>
+		<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath"/>
+		<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense"/>
+	</entity_class>
+	
+	<entity_class name="enStripper4Feral" extends="enStripper4">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_stripper4Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="MoveSpeedAggro" value=".5, 1.35"/>
+		<property name="HandItem" value="meleeHandZombieStripperFeral"/>
+		<property name="ExperienceGain" value="750"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="237"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enStripper4Crawler" extends="enStripper4">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_stripper4Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="273"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="83"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enStripper4Radiated" extends="enStripper4Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_stripper4Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1200"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="451"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.0"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enUtility1" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_utility1" />
+		<property name="WalkType" value="5"/>
+		<property name="HandItem" value="meleeHandZombieWorker"/>
+		<property name="ExperienceGain" value="441"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="160"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enUtility1Feral" extends="enUtility1">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_utility1Feral"/>
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieWorkerFeral"/>
+		<property name="ExperienceGain" value="800"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="304"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enUtility1Crawler" extends="enUtility1">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_utility1Feral"/>
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="291"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="106"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enUtility1Radiated" extends="enUtility1Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_utility1Radiated"/>
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1280"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="577"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.5"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enUtility2" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_utility2" />
+		<property name="WalkType" value="7"/>
+		<property name="HandItem" value="meleeHandZombieWorker"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="150"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+		<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
+		<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
+		<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
+		<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
+		<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
+		<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
+	</entity_class>
+	
+	<entity_class name="enUtility2Feral" extends="enUtility2">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_utility2Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieWorkerFeral"/>
+		<property name="ExperienceGain" value="750"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="285"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enUtility2Crawler" extends="enUtility2">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_utility2Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="273"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="99"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enUtility2Radiated" extends="enUtility2Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_utility2Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1200"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="541"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.5"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enWastelandFemale1" extends="EN_Zombie_Template_Female">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_wastelandFemale1" />
+		<property name="WalkType" value="3"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="125"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+
+	<entity_class name="enWastelandFemale1Feral" extends="enWastelandFemale1">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_wastelandFemale1Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="MoveSpeedAggro" value=".5, 1.35"/>
+		<property name="HandItem" value="meleeHandZombieFeral"/>
+		<property name="ExperienceGain" value="750"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="237"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enWastelandFemale1Crawler" extends="enWastelandFemale1">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_wastelandFemale1Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="273"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="83"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enWastelandFemale1Radiated" extends="enWastelandFemale1Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_wastelandFemale1Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1200"/>
+		<effect_group name="Base Effects">
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.0"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+			<passive_effect name="HealthMax" operation="base_set" value="451"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enWastelandFemale2" extends="EN_Zombie_Template_Female">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_wastelandFemale2" />
+		<property name="WalkType" value="7"/>
+		<property name="ExperienceGain" value="446"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="135"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enWastelandFemale2Feral" extends="enWastelandFemale2">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_wastelandFemale2Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="MoveSpeedAggro" value=".5, 1.35"/>
+		<property name="HandItem" value="meleeHandZombieFeral"/>
+		<property name="ExperienceGain" value="810"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="256"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enWastelandFemale2Crawler" extends="enWastelandFemale2">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_wastelandFemale2Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="294"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="89"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enWastelandFemale2Radiated" extends="enWastelandFemale2Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_wastelandFemale2Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1295"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="487"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.0"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enWastelandFemale3" extends="EN_Zombie_Template_Female">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_wastelandFemale3" />
+		<property name="WalkType" value="5"/>
+		<property name="ExperienceGain" value="430"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="130"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+		<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam"/>
+		<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert"/>
+		<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack"/>
+		<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalepain"/>
+		<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath"/>
+		<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense"/>
+	</entity_class>
+	
+	<entity_class name="enWastelandFemale3Crawler" extends="enWastelandFemale3">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_wastelandFemale3Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="ExperienceGain" value="284"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="86"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enWastelandFemale3Feral" extends="enWastelandFemale3">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_wastelandFemale3Feral" />
+		<property name="ExperienceGain" value="778"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="246"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enWastelandFemale3Radiated" extends="enWastelandFemale3Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_wastelandFemale3Radiated" />
+		<property name="ExperienceGain" value="1245"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="468"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.0"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enWastelandFemaleCrazy" extends="EN_Zombie_Template_Female">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_wastelandFemaleCrazy" />
+		<property name="WalkType" value="6"/>
+		<property name="MoveSpeed" value="0.1"/>
+		<property name="MoveSpeedAggro" value="0.7, 1.25"/>
+		<property name="ExperienceGain" value="396"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="120"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>	
+	
+	<entity_class name="enWastelandFemaleCrazyCrawler" extends="enWastelandFemaleCrazy">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_wastelandFemaleCrazyFeral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="261"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="79"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enWastelandFemaleCrazyFeral" extends="enWastelandFemaleCrazy">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_wastelandFemaleCrazyFeral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="MoveSpeedAggro" value=".5, 1.35"/>
+		<property name="HandItem" value="meleeHandZombieFeral"/>
+		<property name="ExperienceGain" value="722"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="228"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>	
+	
+	<entity_class name="enWastelandFemaleCrazyRadiated" extends="enWastelandFemaleCrazyFeral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_wastelandFemaleCrazyRadiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1155"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="434"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.0"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>	
+	
+	<entity_class name="enWastelandMale1" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_wastelandMale1" />
+		<property name="WalkType" value="3"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="150"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+		<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
+		<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
+		<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
+		<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
+		<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
+		<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
+	</entity_class>
+	
+	<entity_class name="enWastelandMale1Feral" extends="enWastelandMale1">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_wastelandMale1Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieFeral"/>
+		<property name="ExperienceGain" value="750"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="285"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enWastelandMale1Crawler" extends="enWastelandMale1">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_wastelandMale1Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="273"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="99"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enWastelandMale1Radiated" extends="enWastelandMale1Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_wastelandMale1Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1200"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="541"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.5"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enWastelandMale2" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_wastelandMale2" />
+		<property name="WalkType" value="2"/>
+		<property name="ExperienceGain" value="441"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="160"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enWastelandMale2Feral" extends="enWastelandMale2">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_wastelandMale2Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieFeral"/>
+		<property name="ExperienceGain" value="800"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="304"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enWastelandMale2Crawler" extends="enWastelandMale2">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_wastelandMale2Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="291"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="106"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enWastelandMale2Radiated" extends="enWastelandMale2Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_wastelandMale2Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1280"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="577"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.5"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enWastelandMale3" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_wastelandMale3" />
+		<property name="WalkType" value="7"/>
+		<property name="ExperienceGain" value="399"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="145"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enWastelandMale3Feral" extends="enWastelandMale3">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_wastelandMale3Feral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="ExperienceGain" value="726"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="276"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enWastelandMale3Crawler" extends="enWastelandMale3">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_wastelandMale3Feral" />
+		<property name="WalkType" value="4"/>
+		<property name="ExperienceGain" value="263"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="96"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enWastelandMale3Radiated" extends="enWastelandMale3Feral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_wastelandMale3Radiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1162"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="524"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.5"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enWastelandMaleCrazy" extends="EN_Zombie_Template_Male">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_wastelandMaleCrazy" />
+		<property name="WalkType" value="6"/>
+		<property name="MoveSpeed" value="0.1"/>
+		<property name="MoveSpeedAggro" value="0.7, 1.25"/>
+		<property name="ExperienceGain" value="385"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="140"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+		<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
+		<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
+		<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
+		<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
+		<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
+		<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
+	</entity_class>
+	
+	<entity_class name="enWastelandMaleCrazyFeral" extends="enWastelandMaleCrazy">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral" />
+		<property name="Archetype" value="en_wastelandMaleCrazyFeral" />
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="HandItem" value="meleeHandZombieFeral"/>
+		<property name="ExperienceGain" value="700"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="266"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+
+	<entity_class name="enWastelandMaleCrazyCrawler" extends="enWastelandMaleCrazy">
+		<property name="Tags" value="entity,zombie,walker,umazombie" />
+		<property name="Archetype" value="en_wastelandMaleCrazyFeral" />
+		<property name="WalkType" value="4"/>
+		<property name="HandItem" value="enHandZombieCrawler"/>
+		<property name="ExperienceGain" value="254"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="92"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enWastelandMaleCrazyRadiated" extends="enWastelandMaleCrazyFeral">
+		<property name="Tags" value="entity,zombie,walker,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_wastelandMaleCrazyRadiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="ExperienceGain" value="1120"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="505"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="4.5"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>
+	</entity_class>
+	
+	<entity_class name="enWastelandSpider" extends="EN_Zombie_Template_Spider">
+		<property name="Tags" value="entity,zombie,umazombie" />
+		<property name="Archetype" value="en_wastelandSpider" />
+		<property name="MoveSpeed" value="0.10"/>
+		<property name="MoveSpeedAggro" value="0.3, 1.45"/>
+		<property name="MoveSpeedPanic" value="1.3"/>
+		<property name="SwimSpeed" value="1.4"/>
+		<property name="SwimStrokeRate" value="1.6,1.8"/>
+		<property name="CanClimbVertical" value="true"/>
+		<property name="JumpMaxDistance" value="8, 10"/>
+		<property name="ExperienceGain" value="441"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="160"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>		
+	</entity_class>
+	
+	<entity_class name="enWastelandSpiderFeral" extends="enWastelandSpider">
+		<property name="Tags" value="entity,zombie,umazombie,feral" />
+		<property name="Archetype" value="en_wastelandSpiderFeral" />
+		<property name="HandItem" value="meleeHandZombie02Feral"/>
+		<property name="PainResistPerHit" value=".7"/>
+		<property name="MoveSpeedAggro" value=".6, 1.45"/>
+		<property name="JumpMaxDistance" value="12, 14"/>		
+		<property name="ExperienceGain" value="800"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="304"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+		</effect_group>		
+	</entity_class>
+	
+	<entity_class name="enWastelandSpiderRadiated" extends="enWastelandSpiderFeral">
+		<property name="Tags" value="entity,zombie,umazombie,feral,radiated" />
+		<property name="Archetype" value="en_wastelandSpiderRadiated" />
+		<property name="PainResistPerHit" value=".9"/>
+		<property name="JumpMaxDistance" value="12, 14"/>		
+		<property name="ExperienceGain" value="1280"/>
+		<effect_group name="Base Effects">
+			<passive_effect name="HealthMax" operation="base_set" value="277"/>
+			<passive_effect name="HealthMax" operation="perc_set" value="1"/>
+			<triggered_effect event="onSelfFirstSpawn" action="AddBuff" buff="zombieRadiatedBuff40"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="ModifyCVar" target="self" cvar="RadiatedRegenAmount" operation="set" value="5"/>
+			<triggered_effect trigger="onOtherDamagedSelf" action="AddBuff" target="self" buff="buffRadiatedRegen"/>
+		</effect_group>		
+	</entity_class>
+	
+	
+	
+</append>
+
+</ErrorNull>

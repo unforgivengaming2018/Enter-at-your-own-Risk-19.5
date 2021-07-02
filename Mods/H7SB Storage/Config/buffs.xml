@@ -1,0 +1,13 @@
+<!-- - - - - - - - - - - -
+#########################
+###### H7SB Storage #####
+### 7 Days to Die Mod ###
+#########################
+####### Eihwaz © ########
+##### NO REUPLAOD! ######
+#### CC BY-NC-ND-SA #####
+#########################
+- - - - - - - - - - - -->
+<eihwaz.de>
+<append xpath="/buffs"><buff name="storageVisualDebug" hidden="true"><stack_type value="ignore"/><duration value="0.1"/><effect_group><triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="einkaufswagenBuff"><requirement name="EntityTagCompare" tags="einkaufswagen"/><requirement name="NotHasBuff" buff="einkaufswagenBuff"/></triggered_effect><triggered_effect trigger="onSelfBuffStart" action="AddBuff" buff="kippkarreBuff"><requirement name="EntityTagCompare" tags="kippkarre"/><requirement name="NotHasBuff" buff="kippkarreBuff"/></triggered_effect></effect_group></buff></append><append xpath="/buffs"><buff name="einkaufswagenBuff" hidden="true"><stack_type value="replace"/><duration value="9"/>	<effect_group name="eihwaz.de"><triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false"  transform_path="car_mesh"/><triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false"  transform_path="Origin/headlight"/><triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Entities/LootContainers?shopping_cartPrefab.prefab" local_offset="0,2,0.9" local_rotation="0,180,0" parent_transform="Origin"/><triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="storageVisualDebug"/></effect_group></buff></append><append xpath="/buffs"><buff name="kippkarreBuff" hidden="true"><stack_type value="replace"/><duration value="9"/><effect_group name="eih waz.de"><triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false"  transform_path="car_mesh"/><triggered_effect trigger="onSelfBuffStart" action="SetTransformActive" active="false"  transform_path="Origin/headlight"/><triggered_effect trigger="onSelfBuffStart" action="AttachPrefabToEntity" prefab="#Entities/LootContainers?tiltTruckFullPrefab.prefab" local_offset="0,1.61,1.85" local_rotation="0,180,0" parent_transform="Origin"/><triggered_effect trigger="onSelfBuffFinish" action="AddBuff" buff="storageVisualDebug"/></effect_group></buff></append>
+</eihwaz.de>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<xml>
+		<ModInfo>
+			<Name value="Zombie Stutter Stop Modlet"/>
+			<Description value="Forces the game to load most vanilla zombie models before the player spawns in."/>
+			<Author value="Khaine"/>
+			<Version value="1.0"/>
+			<Website value=""/>
+		</ModInfo>
+	</xml>

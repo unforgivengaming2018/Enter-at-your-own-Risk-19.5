@@ -1,0 +1,73 @@
+<!-- - - - - - - - - - - -
+#########################
+###### H7SB Storage #####
+### 7 Days to Die Mod ###
+#########################
+####### Eihwaz © ########
+##### NO REUPLAOD! ######
+#### CC BY-NC-ND-SA #####
+#########################
+- - - - - - - - - - - -->
+<eihwaz.de>
+<!-- Vehicle Fix -->
+<!--bicycle-->
+<set xpath="/lootcontainers/lootcontainer[@id='76']/@size">3,1</set>
+<!--minibike-->
+<set xpath="/lootcontainers/lootcontainer[@id='77']/@size">5,1</set>
+<!--motorcycle-->
+<set xpath="/lootcontainers/lootcontainer[@id='78']/@size">5,2</set>
+<!--4x4Truck-->
+<set xpath="/lootcontainers/lootcontainer[@id='79']/@size">5,5</set>
+<!--gyrocopter-->
+<set xpath="/lootcontainers/lootcontainer[@id='80']/@size">5,1</set>
+
+<!-- New Storage Size -->
+<remove xpath="/lootcontainers/lootgroup[@name='decorativeBlocks']/item[@name='cntWoodFurnitureBlockVariantHelper']" />
+<remove xpath="/lootcontainers/lootgroup[@name='decorativeBlocks']/item[@name='metalFurnitureBlockVariantHelper']" />
+<remove xpath="/lootcontainers/lootgroup[@name='decorativeBlocks']/item[@name='cntMunitionsBox']" />
+<remove xpath="/lootcontainers/lootgroup[@name='decorativeBlocks']/item[@name='cntCashRegister']" />
+<remove xpath="/lootcontainers/lootgroup[@name='decorativeBlocks']/item[@name='cntCoolerClosed']" />
+<remove xpath="/lootcontainers/lootgroup[@name='decorativeBlocks']/item[@name='cntWaterCoolerFull']" />
+<remove xpath="/lootcontainers/lootgroup[@name='decorativeBlocks']/item[@name='cntCabinetOldSink']" />
+<remove xpath="/lootcontainers/lootgroup[@name='decorativeBlocks']/item[@name='cntGraniteSink']" />
+<remove xpath="/lootcontainers/lootgroup[@name='decorativeBlocks']/item[@name='cntTrash_can01']" />
+<remove xpath="/lootcontainers/lootgroup[@name='decorativeBlocks']/item[@name='cntBin']" />
+
+<append xpath="/lootcontainers">
+<lootcontainer id="251" count="0" size="6,4" sound_open="UseActions/open_shopping_cart" sound_close="UseActions/close_shopping_cart" loot_quality_template="qualBaseTemplate"></lootcontainer>
+<lootcontainer id="252" count="0" size="6,8" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate"></lootcontainer>
+<!--255 more vehicle-->
+<lootcontainer id="255" count="0" size="6,2" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate"><item name="cobweb" count="1,2"/></lootcontainer>
+<lootcontainer id="256" count="0" size="6,1" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate"><item name="cobweb" count="1,2"/></lootcontainer>
+<lootcontainer id="257" count="0" size="6,2" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" loot_quality_template="qualBaseTemplate"><item name="cobweb" count="1,2"/></lootcontainer>
+<lootcontainer id="258" count="0" size="6,3" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" loot_quality_template="qualBaseTemplate"><item name="cobweb" count="1,2"/></lootcontainer>
+<lootcontainer id="259" count="0" size="6,4" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" loot_quality_template="qualBaseTemplate"><item name="cobweb" count="1,2"/></lootcontainer>
+<lootcontainer id="260" count="0" size="6,1" sound_open="UseActions/open_toolbox " sound_close="UseActions/close_toolbox" loot_quality_template="qualBaseTemplate"><item name="cobweb" count="1,2"/></lootcontainer>
+<lootcontainer id="261" count="0" size="6,2" sound_open="UseActions/open_toolchest" sound_close="UseActions/close_toolchest" loot_quality_template="qualBaseTemplate"><item name="cobweb" count="1,2"/></lootcontainer>
+<lootcontainer id="262" count="0" size="6,1" sound_open="UseActions/open_cash_register" sound_close="UseActions/close_cash_register" loot_quality_template="qualBaseTemplate"><item name="cobweb" count="1,2"/></lootcontainer>
+<lootcontainer id="263" count="0" size="6,1" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" loot_quality_template="qualBaseTemplate"><item name="cobweb" count="1,2"/></lootcontainer>
+<lootcontainer id="264" count="0" size="6,2" sound_open="UseActions/open_safe" sound_close="UseActions/close_safe" loot_quality_template="qualBaseTemplate"><item name="cobweb" count="1,2"/></lootcontainer>
+<lootcontainer id="265" count="0" size="6,1" sound_open="UseActions/open_file_cabinet" sound_close="UseActions/close_file_cabinet" loot_quality_template="qualBaseTemplate"><item name="cobweb" count="1,2"/></lootcontainer>
+<lootcontainer id="266" count="0" size="6,1" sound_open="UseActions/open_mailbox" sound_close="UseActions/close_mailbox" loot_quality_template="qualBaseTemplate"><item name="cobweb" count="1,2"/></lootcontainer>
+
+<lootcontainer id="267" count="0" size="6,2" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" loot_quality_template="qualBaseTemplate"><item name="cobweb" count="1,2"/></lootcontainer>
+<lootcontainer id="268" count="0" size="6,5" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" loot_quality_template="qualBaseTemplate"><item name="cobweb" count="1,2"/></lootcontainer>
+<lootcontainer id="269" count="0" size="8,8" sound_open="UseActions/open_cooler" sound_close="UseActions/close_cooler" loot_quality_template="qualBaseTemplate"><item name="cobweb" count="1,2"/></lootcontainer>
+<lootcontainer id="270" count="0" size="6,5" sound_open="UseActions/open_locker" sound_close="UseActions/close_locker" loot_quality_template="qualBaseTemplate"><item name="cobweb" count="1,2"/></lootcontainer>
+<lootcontainer id="271" count="0" size="6,2" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="qualBaseTemplate"><item name="cobweb" count="1,2"/></lootcontainer>
+<lootcontainer id="272" count="0" size="6,2" sound_open="UseActions/open_trashcan" sound_close="UseActions/close_trashcan" loot_quality_template="qualBaseTemplate"><item name="cobweb" count="1,2"/></lootcontainer>
+<lootcontainer id="273" count="0" size="8,8" sound_open="UseActions/open_shopping_cart" sound_close="UseActions/close_shopping_cart" loot_quality_template="qualBaseTemplate"><item name="cobweb" count="1,2"/></lootcontainer>
+<lootcontainer id="274" count="0" size="8,8" sound_open="UseActions/open_trashcan" sound_close="UseActions/close_trashcan" loot_quality_template="qualBaseTemplate"><item name="cobweb" count="1,2"/></lootcontainer>
+<lootcontainer id="275" count="0" size="6,2" sound_open="UseActions/open_mailbox" sound_close="UseActions/close_mailbox" loot_quality_template="qualBaseTemplate"><item name="cobweb" count="1,2"/></lootcontainer>
+<lootcontainer id="276" count="0" size="6,2" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" loot_quality_template="qualBaseTemplate"><item name="cobweb" count="1,2"/></lootcontainer>
+<lootcontainer id="277" count="0" size="8,8" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="qualBaseTemplate"><item name="cobweb" count="1,2"/></lootcontainer>
+<lootcontainer id="278" count="0" size="6,5" sound_open="UseActions/open_cupboard" sound_close="UseActions/close_cupboard" loot_quality_template="qualBaseTemplate"><item name="cobweb" count="1,2"/></lootcontainer>
+<lootcontainer id="279" count="0" size="8,8" sound_open="UseActions/open_garbage" sound_close="silencefiller" loot_quality_template="qualBaseTemplate"><item name="cobweb" count="1,2"/></lootcontainer>
+<lootcontainer id="280" count="0" size="6,5" sound_open="UseActions/open_drawer" sound_close="UseActions/close_drawer" loot_quality_template="qualBaseTemplate"><item name="cobweb" count="1,2"/></lootcontainer>
+<lootcontainer id="281" count="0" size="8,8" sound_open="UseActions/open_drawer" sound_close="silencefiller" loot_quality_template="qualBaseTemplate"><item name="cobweb" count="1,2"/></lootcontainer>
+<lootcontainer id="282" count="0" size="6,5" sound_open="UseActions/open_pill_case" sound_close="UseActions/close_pill_case" loot_quality_template="qualBaseTemplate"><item name="cobweb" count="1,2"/></lootcontainer>
+<lootcontainer id="283" count="0" size="6,5" sound_open="UseActions/open_mailbox" sound_close="UseActions/close_mailbox" loot_quality_template="qualBaseTemplate"><item name="cobweb" count="1,2"/></lootcontainer>
+<lootcontainer id="284" count="0" size="6,5" sound_open="UseActions/open_drawer" sound_close="silencefiller" loot_quality_template="qualBaseTemplate"><item name="cobweb" count="1,2"/></lootcontainer>
+<!--290 more storage-->
+</append>
+</eihwaz.de>

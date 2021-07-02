@@ -1,0 +1,262 @@
+<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+<!--REMOVE this line ''''<item group="weapon_name"/>'''' to remove a weapon from the loot-->
+<!--XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-->
+
+
+
+<FirearmsExpansion4>
+
+<insertAfter xpath="/lootcontainers/lootprobtemplates/lootprobtemplate[@name='ProbT3']">
+	<lootprobtemplate name="ProbT4">
+		<loot level="0,119" prob="0"/>
+		<loot level="120,167" prob="0.0125"/>
+		<loot level="168,191" prob="0.025"/>
+		<loot level="192,215" prob="0.05"/>
+		<loot level="216,239" prob="0.1"/>
+		<loot level="240,335" prob="0.25"/>
+		<loot level="336,479" prob="0.5"/>
+		<loot level="480,999999" prob="0.75"/>
+	</lootprobtemplate>
+</insertAfter>
+
+
+
+
+
+<insertBefore xpath="/lootcontainers/lootgroup[@name='groupQuestChallenge']">
+
+
+<lootgroup name="HK USP" count="all" loot_quality_template="QLTemplateT2">
+	<item name="HK USP"/>
+	<item name="ammo9mmBulletBall" count="7,20"/>
+</lootgroup>
+<lootgroup name="Glock40" count="all" loot_quality_template="QLTemplateT2">
+	<item name="Glock40"/>
+	<item name="ammo9mmBulletBall" count="7,20"/>
+</lootgroup>
+<lootgroup name="Colt1911" count="all" loot_quality_template="QLTemplateT1">
+	<item name="Colt1911"/>
+	<item name="ammo9mmBulletBall" count="6,15"/>
+</lootgroup>
+<lootgroup name="P226" count="all" loot_quality_template="QLTemplateT1">
+	<item name="P226"/>
+	<item name="ammo9mmBulletBall" count="8,17"/>
+</lootgroup>
+<lootgroup name="Colt38" count="all" loot_quality_template="QLTemplateT0">
+	<item name="Colt38"/>
+	<item name="ammo9mmBulletBall" count="4,11"/>
+</lootgroup>
+<lootgroup name="Beretta NANO" count="all" loot_quality_template="QLTemplateT0">
+	<item name="Beretta NANO"/>
+	<item name="ammo9mmBulletBall" count="7,15"/>
+</lootgroup>
+
+
+
+<lootgroup name="KRISS Vector" count="all" loot_quality_template="QLTemplateT2">
+	<item name="KRISS Vector"/>
+	<item name="ammo9mmBulletBall" count="15,40"/>
+</lootgroup>
+<lootgroup name="Mac10" count="all" loot_quality_template="QLTemplateT1">
+	<item name="Mac10"/>
+	<item name="ammo9mmBulletBall" count="15,40"/>
+</lootgroup>
+<lootgroup name="VZ61 Skorpion" count="all" loot_quality_template="QLTemplateT0">
+	<item name="VZ61 Skorpion"/>
+	<item name="ammo9mmBulletBall" count="10,30"/>
+</lootgroup>
+
+
+
+<lootgroup name="KSG12" count="all" loot_quality_template="QLTemplateT3">
+	<item name="KSG12"/>
+	<item name="ammoShotgunShell" count="8,20"/>
+</lootgroup>
+<lootgroup name="SPAS12" count="all" loot_quality_template="QLTemplateT2">
+	<item name="SPAS12"/>
+	<item name="ammoShotgunShell" count="5,12"/>
+</lootgroup>
+<lootgroup name="Winchester" count="all" loot_quality_template="QLTemplateT1">
+	<item name="Winchester"/>
+	<item name="ammoShotgunShell" count="3,8"/>
+</lootgroup>
+
+
+
+<lootgroup name="SCAR" count="all" loot_quality_template="QLTemplateT2">
+	<item name="SCAR"/>
+	<item name="ammo762mmBulletBall" count="12,27"/>
+</lootgroup>
+<lootgroup name="ARX160" count="all" loot_quality_template="QLTemplateT2">
+	<item name="ARX160"/>
+	<item name="ammo762mmBulletBall" count="15,35"/>
+</lootgroup>
+<lootgroup name="M4A1" count="all" loot_quality_template="QLTemplateT2">
+	<item name="M4A1"/>
+	<item name="ammo762mmBulletBall" count="15,35"/>
+</lootgroup>
+<lootgroup name="FNFAL" count="all" loot_quality_template="QLTemplateT1">
+	<item name="FNFAL"/>
+	<item name="ammo762mmBulletBall" count="12,27"/>
+</lootgroup>
+<lootgroup name="M16" count="all" loot_quality_template="QLTemplateT1">
+	<item name="M16"/>
+	<item name="ammo762mmBulletBall" count="12,27"/>
+</lootgroup>
+<lootgroup name="ACWR" count="all" loot_quality_template="QLTemplateT1">
+	<item name="ACWR"/>
+	<item name="ammo762mmBulletBall" count="12,27"/>
+</lootgroup>
+<lootgroup name="M240" count="all" loot_quality_template="QLTemplateT3">
+	<item name="M240"/>
+	<item name="ammo762mmBulletBall" count="50,100"/>
+</lootgroup>
+
+
+
+<lootgroup name="JNG90" count="all" loot_quality_template="QLTemplateT2">
+	<item name="JNG90"/>
+	<item name="ammo762mmBulletBall" count="3,8"/>
+</lootgroup>
+<lootgroup name="M98" count="all" loot_quality_template="QLTemplateT3">
+	<item name="M98"/>
+	<item name="ammo762mmBulletBall" count="3,8"/>
+</lootgroup>
+<lootgroup name="M1garand" count="all" loot_quality_template="QLTemplateT1">
+	<item name="M1garand"/>
+	<item name="ammo762mmBulletBall" count="5,13"/>
+</lootgroup>
+<lootgroup name="SR25" count="all" loot_quality_template="QLTemplateT2">
+	<item name="SR25"/>
+	<item name="ammo762mmBulletBall" count="6,15"/>
+</lootgroup>
+
+
+
+<lootgroup name="Chaingun" count="all" loot_quality_template="QLTemplateT3">
+	<item name="Chaingun"/>
+	<item name="ammo762mmBulletBall" count="100,150"/>
+</lootgroup>
+<lootgroup name="Thompson" count="all" loot_quality_template="QLTemplateT3">
+	<item name="Thompson"/>
+	<item name="ammo9mmBulletBall" count="25,60"/>
+</lootgroup>
+<lootgroup name="AA12" count="all" loot_quality_template="QLTemplateT3">
+	<item name="AA12"/>
+	<item name="ammoShotgunShell" count="16,40"/>
+</lootgroup>
+<lootgroup name="M82 Barrett" count="all" loot_quality_template="QLTemplateT3">
+	<item name="M82 Barrett"/>
+	<item name="modGunScopeLarge"/>
+	<item name="ammo50BMGBulletBall" count="3,8"/>
+</lootgroup>
+<lootgroup name="Railgun" count="all" loot_quality_template="QLTemplateT3">
+	<item name="Railgun"/>
+	<item name="ammoDartIron" count="10,30"/>
+</lootgroup>
+<lootgroup name="Flamethrower" count="all" loot_quality_template="QLTemplateT3">
+	<item name="Flamethrower"/>
+	<item name="ammoGasCan" count="100,300"/>
+</lootgroup>
+
+
+<lootgroup name="M79GL40" count="all" loot_quality_template="QLTemplateT2">
+	<item name="M79GL40"/>
+	<item name="ammo40mmExplosive" count="1,3"/>
+</lootgroup>
+
+</insertBefore>
+
+
+
+<append xpath="/lootcontainers/lootgroup[@name='groupWeaponsT0_Ranged']">
+	<item group="Colt38"/>
+	<item group="Beretta NANO"/>
+	<item group="VZ61 Skorpion"/>
+</append> 
+<append xpath="/lootcontainers/lootgroup[@name='groupWeaponsT2_Ranged']">
+	<item group="SCAR"/>
+	<item group="Glock40"/>
+	<item group="JNG90"/>
+	<item group="SR25"/>
+	<item group="HK USP"/>
+	<item group="M4A1"/>
+	<item group="ARX160"/>
+	<item group="SPAS12"/>
+	<item group="M79GL40"/>
+</append> 
+<append xpath="/lootcontainers/lootgroup[@name='groupWeaponsT1_Ranged']">
+	<item group="Colt1911"/>
+	<item group="Winchester"/>
+	<item group="FNFAL"/>
+	<item group="M1garand"/>
+	<item group="Mac10"/>
+	<item group="P226"/>
+	<item group="M16"/>
+	<item group="ACWR"/>
+</append> 
+<append xpath="/lootcontainers/lootgroup[@name='groupWeaponsT3_Ranged']">
+	<item group="M98"/>
+	<item group="KSG12"/>
+	<item group="M240"/>
+</append> 
+<append xpath="/lootcontainers/lootgroup[@name='groupAmmoRegularT2']">
+	<item name="ammo50BMGBulletBall" prob="0.05" count="4,9"/>
+</append> 
+<append xpath="/lootcontainers/lootgroup[@name='groupAmmoAdvanced']">
+	<item name="ammo50BMGBulletBall" count="9,15"/>
+	<item name="ammo50BMGAP" count="4,9"/>
+	<item name="ammo50BMGIncendiary" count="4,9"/>
+	<item name="ammo40mmExplosive" count="1,2"/>
+</append> 
+
+
+
+
+
+<append xpath="/lootcontainers/lootcontainer[@id='40']">
+	<item group="Chaingun" loot_prob_template="ProbT4"/>
+	<item group="M82 Barrett" loot_prob_template="ProbT4"/>
+</append> 
+<append xpath="/lootcontainers/lootcontainer[@id='7']">
+	<item group="groupSafeLoot"/>
+	<item group="groupSafeLoot"/>
+	<item group="AA12" loot_prob_template="ProbT4"/>
+	<item group="Thompson" loot_prob_template="ProbT4"/>
+</append> 
+<append xpath="/lootcontainers/lootcontainer[@id='95']">
+	<item group="Railgun" loot_prob_template="ProbT4"/>
+</append> 
+<append xpath="/lootcontainers/lootcontainer[@id='92']">
+	<item group="Flamethrower" loot_prob_template="ProbT4"/>
+	<item group="Flamethrower" loot_prob_template="ProbT4"/>
+	<item group="Flamethrower" loot_prob_template="ProbT4"/>
+	<item group="Flamethrower" loot_prob_template="ProbT4"/>
+	<item group="Flamethrower" loot_prob_template="ProbT4"/>
+</append> 
+
+
+
+
+
+
+<append xpath="/lootcontainers/lootgroup[@name='schematicsWeaponsArmorT1']">
+	<item name="Mac10 Schematic"/>
+	<item name="FNFAL Schematic"/>
+	<item name="Winchester Schematic"/>
+	<item name="M1 Schematic"/>
+	<item name="Colt1911 Schematic"/>
+	<item name="P226 Schematic"/>
+	<item name="M16 Schematic"/>
+	<item name="ACWR Schematic"/>	
+</append> 
+<append xpath="/lootcontainers/lootgroup[@name='schematicsWeaponsArmorT2']">
+	<item name="Flamethrower Schematic"/>
+	<item name="M79GL40Schematic"/>
+	<item name="50BMGBulletBallSchematic"/>
+	<item name="50BMGAPSchematic"/>
+	<item name="50BMGIncendiarySchematic"/>		
+</append> 
+
+
+</FirearmsExpansion4>

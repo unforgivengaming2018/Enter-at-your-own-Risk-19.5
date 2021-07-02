@@ -1,0 +1,94 @@
+<!-- - - - - - - - - - - -
+#########################
+###### H7SB Storage #####
+### 7 Days to Die Mod ###
+#########################
+####### Eihwaz © ########
+##### NO REUPLAOD! ######
+#### CC BY-NC-ND-SA #####
+#########################
+- - - - - - - - - - - -->
+<eihwaz.de>
+	<!--vehicle-->
+	<append xpath="/recipes">
+		<recipe name="h7sb_einkaufswagen" count="1">
+			<ingredient name="resourceScrapPolymers" count="12"/>
+			<ingredient name="resourceMetalPipe" count="12"/>
+		</recipe>
+		<recipe name="h7sb_einkaufswagen" count="1">
+			<ingredient name="cntShoppingCartEmpty" count="1"/>
+			<ingredient name="resourceScrapPolymers" count="4"/>
+		</recipe>
+		<recipe name="h7sb_kippkarre" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceMetalPipe" count="1"/>
+			<ingredient name="vehicleWheels" count="2"/>
+			<ingredient name="resourceScrapPolymers" count="48"/>
+		</recipe>
+	<!--blocks-->	
+		<recipe name="h7sb_holzkisteOffen" count="1">
+			<ingredient name="resourceWood" count="12"/>
+		</recipe>
+		<recipe name="h7sb_holzkiste1" count="1">
+			<ingredient name="resourceWood" count="16"/>
+			<ingredient name="resourceNail" count="8"/>
+		</recipe>
+		<recipe name="h7sb_eisenkiste" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceMechanicalParts" count="2"/>
+			<ingredient name="resourceForgedIron" count="12"/>
+		</recipe>
+		<recipe name="h7sb_eisenkiste1" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceMechanicalParts" count="2"/>
+			<ingredient name="resourceSpring" count="2"/>
+			<ingredient name="resourceForgedIron" count="24"/>
+		</recipe>
+		<recipe name="h7sb_stahlkiste" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceMechanicalParts" count="4"/>
+			<ingredient name="resourceSpring" count="4"/>
+			<ingredient name="resourceForgedSteel" count="24"/>
+		</recipe>
+		<recipe name="h7sb_werkzeugkiste" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceMechanicalParts" count="2"/>
+			<ingredient name="resourceForgedIron" count="8"/>
+		</recipe>
+		<recipe name="h7sb_werkzeugkiste1" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceMechanicalParts" count="4"/>
+			<ingredient name="resourceSpring" count="2"/>
+			<ingredient name="resourceForgedIron" count="18"/>
+		</recipe>
+		<recipe name="h7sb_kasse" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceMechanicalParts" count="2"/>
+			<ingredient name="resourceSpring" count="2"/>
+			<ingredient name="resourceForgedSteel" count="8"/>
+		</recipe>
+		<recipe name="h7sb_wandtresor" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceMechanicalParts" count="2"/>
+			<ingredient name="resourceSpring" count="2"/>
+			<ingredient name="resourceForgedSteel" count="16"/>
+		</recipe>
+		<recipe name="h7sb_tresor" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceMechanicalParts" count="4"/>
+			<ingredient name="resourceSpring" count="4"/>
+			<ingredient name="resourceForgedSteel" count="24"/>
+		</recipe>
+		<recipe name="h7sb_eisenschreibtisch" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceMechanicalParts" count="4"/>
+			<ingredient name="resourceForgedIron" count="16"/>
+		</recipe>
+		<recipe name="h7sb_briefkastenHelfer" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceMechanicalParts" count="2"/>
+			<ingredient name="resourceForgedIron" count="12"/>
+		</recipe>
+		
+		<recipe name="h7sb_metallMöbel" count="1" craft_area="workbench" tags="workbenchCrafting">
+			<ingredient name="resourceMechanicalParts" count="4"/>
+			<ingredient name="resourceForgedIron" count="12"/>
+		</recipe>
+		<recipe name="h7sb_holzMöbel" count="1">
+			<ingredient name="resourceNail" count="10"/>
+			<ingredient name="resourceWood" count="16"/>
+		</recipe>
+		<recipe name="h7sb_papierkorb" count="1">
+			<ingredient name="resourceScrapPolymers" count="10"/>
+		</recipe>
+	</append>
+</eihwaz.de>

@@ -1,0 +1,45 @@
+<!-- - - - - - - - - - - -
+#########################
+###### H7SB Storage #####
+### 7 Days to Die Mod ###
+#########################
+####### Eihwaz © ########
+##### NO REUPLAOD! ######
+#### CC BY-NC-ND-SA #####
+#########################
+- - - - - - - - - - - -->
+<eihwaz.de>
+<append xpath="/items">
+	<item name="h7sb_einkaufswagen">
+		<property name="Extends" value="vehicleMinibikePlaceable"/>
+		<property name="CustomIcon" value="cntShoppingCart"/>
+		<property name="ItemTypeIcon" value="assemble"/>
+		<property name="DescriptionKey" value="h7sb_stItems"/>
+		<property name="PickupJournalEntry" value="h7sb_stTip"/>
+		<property name="Tags" value="vehicle"/>
+		<property name="Meshfile" value="#Entities/Vehicles?bicycle_Prefab.prefab"/>
+		<property name="SellableToTrader" value="false"/>
+		<property class="Action1">
+			<property name="Vehicle" value="h7sb_einkaufswagen"/>
+		</property>
+		<effect_group tiered="false">
+			<passive_effect name="ModSlots" operation="base_set" value="0"/>
+			<passive_effect name="DegradationMax" operation="base_set" value="225"/>
+		</effect_group>
+	</item>
+</append>
+
+<append xpath="/items">
+	<item name="h7sb_kippkarre">
+		<property name="Extends" value="h7sb_einkaufswagen"/>
+		<property name="CustomIcon" value="cntTiltTruckFull"/>
+		<property class="Action1">
+			<property name="Vehicle" value="h7sb_kippkarre"/>
+		</property>
+		<effect_group name="eihwaz.de" tiered="false">
+			<passive_effect name="ModSlots" operation="base_set" value="0"/>
+			<passive_effect name="DegradationMax" operation="base_set" value="500"/>
+		</effect_group>
+	</item>
+</append>
+</eihwaz.de>

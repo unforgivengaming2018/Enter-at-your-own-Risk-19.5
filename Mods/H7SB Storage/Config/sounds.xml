@@ -1,0 +1,13 @@
+<!-- - - - - - - - - - - -
+#########################
+###### H7SB Storage #####
+### 7 Days to Die Mod ###
+#########################
+####### Eihwaz © ########
+##### NO REUPLAOD! ######
+#### CC BY-NC-ND-SA #####
+#########################
+- - - - - - - - - - - -->
+<eihwaz.de>
+<append xpath="/Sounds" ><SoundDataNode name="summen"> <AudioSource name="Sounds/AudioSource_VO"/><Noise ID="2" noise="15" time="3" muffled_when_crouched="0.5"/><AudioClip ClipName="Sounds/VO/Trader/Male/Like/trader_male_like_greeting_24"/><AudioClip ClipName="Sounds/VO/Trader/Male/Like/trader_male_like_greeting_25"/><LowestPitch name="0.9"/> <HighestPitch name="1"/><LocalCrouchVolumeScale value="1.0"/> <CrouchNoiseScale value="0.5"/> <NoiseScale value="1"/> <MaxVoices value="10"/> <MaxRepeatRate value="0.15"/> </SoundDataNode></append>
+</eihwaz.de>

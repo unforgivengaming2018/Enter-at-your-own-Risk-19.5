@@ -1,0 +1,288 @@
+<config>
+
+
+	<insertAfter xpath="/quests/quest[@id='quest_whiteRiverCitizen1']/reward[@type='Exp']">
+		<reward type="Quest" id="q_farmlife" stage="aftercomplete"/>
+	</insertAfter>
+	
+	<append xpath="/quests" >
+	
+	
+	<quest id="q_farmlife">
+		<property name="name" value="Farm Life" />
+		<property name="subtitle" value="Start your Farm Life" />
+		<property name="description" value="A Farm Table is the heart of your Farm Life. Everything you do starts at your Farm Table. Use you Quest Tokens to get more quests and more rewards. Craft seeds to plant your crops and build workstations to expand you your farm." />
+		<property name="repeatable" value="false" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty_tier" value="1" />
+		<property name="difficulty" value="veryeasy" />
+		<property name="offer" value="Start your Farm Life" />
+		<property name="shareable" value="false" />
+		<property name="completiontype" value="TurnIn" />
+		<property name="statement_key" value="q_farmlife_statement_key" /> <!-- check Localization.txt -->
+		<property name="response_key" value="q_farmlife_response_key" /> <!-- check Localization.txt -->
+		<property name="completion_key" value="q_farmlife_completion_key" /> <!-- check Localization.txt -->
+		<action type="TrackQuest" />
+
+		<!-- Phase 1 -->
+		<objective type="Craft" id="Farm Table" value="1" phase="1" />
+		<objective type="BlockPlace" id="Farm Table" value="1" phase="1" />
+		<!-- Phase 2 (auto, if you add by yourself this won't be generated) -->
+		<objective type="ReturnToNPC">
+			<property name="phase" value="2" />
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2" />
+			<property name="nav_object" value="return_to_trader" />
+			<property name="use_closest" value="true" />
+		</objective>
+
+		<reward type="Exp" value="500" />
+		<reward type="Item" id="casinoCoin" value="500" />
+		<reward type="Item" id="QuestToken" value= "2" />
+	</quest>
+	<quest id="q_Cloning1">
+		<property name="name" value="Beginner Cloning" />
+		<property name="subtitle" value="Learn the Art of Cloning" />
+		<property name="description" value="In order to start cloning you will need a Cloning Station. Craft and place one to recieve your next quest on the road to becoming a Master Cloner" />
+		<property name="repeatable" value="false" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty_tier" value="1" />
+		<property name="difficulty" value="veryeasy" />
+		<property name="offer" value="Start Quest?" />
+		<property name="shareable" value="false" />
+		<property name="completiontype" value="TurnIn" />
+		<property name="statement_key" value="q_Cloning_statement_key" /> <!-- check Localization.txt -->
+		<property name="response_key" value="q_Cloning_response_key" /> <!-- check Localization.txt -->
+		<property name="completion_key" value="q_Cloning_completion_key" /> <!-- check Localization.txt -->
+
+		<action type="TrackQuest" />
+
+		<!-- Phase 1 -->
+		<objective type="Craft" id="Cloning Station" value="1" phase="1" />
+		<objective type="BlockPlace" id="Cloning Station" value="1" phase="1" />
+		<!-- Phase 2 (auto, if you add by yourself this won't be generated) -->
+		<objective type="ReturnToNPC">
+			<property name="phase" value="2" />
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2" />
+			<property name="nav_object" value="return_to_trader" />
+			<property name="use_closest" value="true" />
+		</objective>
+
+		<reward type="Exp" value="500" />
+		<reward type="Item" id="casinoCoin" value="500" />
+		<reward type="Item" id="Animal DNA" value="2" />
+		<reward type="Item" id="Basic Cryogenic Material" value="2" />
+		<reward type="Item" id="drugSteroids" value="2" />
+		<reward type="Item" id="medicalBloodBag" value="2" />
+		<reward type="Item" id="resourceScrapPolymers" value="2" />
+		<reward type="Quest" id="q_Cloning2" />
+
+	</quest>
+
+	<quest id="q_Cloning2">
+		<property name="name" value="Intermediate Cloning" />
+		<property name="subtitle" value="Continue to Learn the Art of Cloning" />
+		<property name="description" value="Now that you have a Cloning Station lets put it to use! With the rewards you just received got to your Cloning Station and  craft yourself a couple of Random Pet Cloning Chambers and test your luck with Cloning! Remember that Cloning is a finnicky process and is not reliable, you only have about a  20% chance at succes." />
+		<property name="repeatable" value="false" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty_tier" value="1" />
+		<property name="difficulty" value="veryeasy" />
+		<property name="offer" value="Start Quest?" />
+		<property name="shareable" value="false" />
+		<property name="completiontype" value="TurnIn" />
+		<property name="statement_key" value="q_Cloning2_statement_key" /> <!-- check Localization.txt -->
+		<property name="response_key" value="q_Cloning2_response_key" /> <!-- check Localization.txt -->
+		<property name="completion_key" value="q_Cloning2_completion_key" /> <!-- check Localization.txt -->
+
+		<action type="TrackQuest" />
+
+		<!-- Phase 1 -->
+		<objective type="Craft" id="Random Pet Cloning Chamber" value="2" phase="1" />
+		<objective type="BlockPlace" id="Random Pet Cloning Chamber" value="2" phase="1" />
+		<!-- Phase 2 (auto, if you add by yourself this won't be generated) -->
+		<objective type="ReturnToNPC">
+			<property name="phase" value="2" />
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2" />
+			<property name="nav_object" value="return_to_trader" />
+			<property name="use_closest" value="true" />
+		</objective>
+
+		<reward type="Exp" value="500" />
+		<reward type="Item" id="casinoCoin" value="500" />
+		<reward type="Item" id="Human DNA" value="2" />
+		<reward type="Item" id="Intermediate Cryogenic Material" value="2" />
+		<reward type="Item" id="drugSteroids" value="2" />
+		<reward type="Item" id="medicalBloodBag" value="2" />
+		<reward type="Item" id="resourceScrapPolymers" value="20" />
+		<reward type="Quest" id="q_Cloning3" />
+	</quest>
+
+	<quest id="q_Cloning3">
+		<property name="name" value="Advanced Cloning" />
+		<property name="subtitle" value="You are starting to get the hang of this." />
+		<property name="description" value="Great job with the pets! Now lets see wht you cna do with Humans. With the rewards you jsut received go and craft a couple of Random Turret Guard Chambers and test your luck!" />
+		<property name="repeatable" value="false" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty_tier" value="1" />
+		<property name="difficulty" value="veryeasy" />
+		<property name="offer" value="Start your Farm Life" />
+		<property name="shareable" value="false" />
+		<property name="completiontype" value="TurnIn" />
+		<property name="statement_key" value="q_Cloning3_statement_key" /> <!-- check Localization.txt -->
+		<property name="response_key" value="q_Cloning3_response_key" /> <!-- check Localization.txt -->
+		<property name="completion_key" value="q_Cloning3_completion_key" /> <!-- check Localization.txt -->
+
+		<action type="TrackQuest" />
+
+		<!-- Phase 1 -->
+		<objective type="Craft" id="Random Turret Guard Cloning Chamber" value="2" phase="1" />
+		<objective type="BlockPlace" id="Random Turret Guard Cloning Chamber" value="2" phase="1" />
+		<!-- Phase 2 (auto, if you add by yourself this won't be generated) -->
+		<objective type="ReturnToNPC">
+			<property name="phase" value="2" />
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2" />
+			<property name="nav_object" value="return_to_trader" />
+			<property name="use_closest" value="true" />
+		</objective>
+
+		<reward type="Exp" value="5000" />
+		<reward type="Item" id="casinoCoin" value="1000" />
+		<reward type="Item" id="QuestToken" value= "3" />
+	</quest>		
+
+	
+	<quest id="q_Seeds1">
+		<property name="name" value="Seeds Seeds Seeds!" />
+		<property name="subtitle" value="Get prepared for growing crops." />
+		<property name="description" value="In order to plant seeds you first need fertile ground!" />
+		<property name="repeatable" value="false" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty_tier" value="1" />
+		<property name="difficulty" value="veryeasy" />
+		<property name="offer" value="Craft and Place a Farm Plot and receive some seeds for planting." />
+		<property name="shareable" value="false" />
+		<property name="completiontype" value="TurnIn" />
+		<property name="statement_key" value="q_Seeds1_statement_key" /> <!-- check Localization.txt -->
+		<property name="response_key" value="q_Seeds1_response_key" /> <!-- check Localization.txt -->
+		<property name="completion_key" value="q_Seeds1_completion_key" /> <!-- check Localization.txt -->
+
+		<action type="TrackQuest" />
+
+		<!-- Phase 1 -->
+		<objective type="Craft" id="farmPlotBlockPlayer" value="1" phase="1" />
+		<objective type="BlockPlace" id="farmPlotBlockPlayer" value="1" phase="1" />
+		<!-- Phase 2 (auto, if you add by yourself this won't be generated) -->
+		<objective type="ReturnToNPC">
+			<property name="phase" value="2" />
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2" />
+			<property name="nav_object" value="return_to_trader" />
+			<property name="use_closest" value="true" />
+		</objective>
+
+		<reward type="Exp" value="500" />
+		<reward type="Item" id="casinoCoin" value="500" />
+		<reward type="Item" id="Seed Pack" value= "1" />
+		<reward type="Quest" id="q_Seeds2" />
+	</quest>	
+	
+	
+	
+	
+	<quest id="q_Seeds2">
+		<property name="name" value="Planting!" />
+		<property name="subtitle" value="Crafting and Planting Seeds." />
+		<property name="description" value="Now that you have some seed packs  you can use those to craft any seed that you would like. Lets craft some Wheat seeds and grow some Wheat! use your Farm Table but make sure you have a Seed Processor first!" />
+		<property name="repeatable" value="false" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty_tier" value="1" />
+		<property name="difficulty" value="veryeasy" />
+		<property name="offer" value="Start your Farm Life" />
+		<property name="shareable" value="false" />
+		<property name="completiontype" value="TurnIn" />
+		<property name="statement_key" value="q_Seeds2_statement_key" /> <!-- check Localization.txt -->
+		<property name="response_key" value="q_Seeds2_response_key" /> <!-- check Localization.txt -->
+		<property name="completion_key" value="q_Seeds2_completion_key" /> <!-- check Localization.txt -->
+
+		<action type="TrackQuest" />
+
+		<!-- Phase 1 -->
+		<objective type="Craft" id="Seed Processor" value="1" phase="1" />
+		<objective type="Craft" id="Wheat Seed" value="1" phase="1" />
+		<objective type="BlockPlace" id="Wheat Seed" value="1" phase="1" />
+		<!-- Phase 2 (auto, if you add by yourself this won't be generated) -->
+		<objective type="ReturnToNPC">
+			<property name="phase" value="2" />
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2" />
+			<property name="nav_object" value="return_to_trader" />
+			<property name="use_closest" value="true" />
+		</objective>
+
+		<reward type="Exp" value="500" />
+		<reward type="Item" id="casinoCoin" value="200" />
+		<reward type="Item" id="Seed Pack" value= "1" />
+		<reward type="Quest" id="q_Seeds3" />
+	</quest>
+	<quest id="q_Seeds3">
+		<property name="name" value="Make a Farm!" />
+		<property name="subtitle" value="Crafting and Planting Seeds." />
+		<property name="description" value="You know how to get seeds and you know how to plant them. Time to take advantage and build your own garden" />
+		<property name="repeatable" value="false" />
+		<property name="category_key" value="quest" />
+		<property name="difficulty_tier" value="1" />
+		<property name="difficulty" value="veryeasy" />
+		<property name="offer" value="Start your Farm Life" />
+		<property name="shareable" value="false" />
+		<property name="completiontype" value="TurnIn" />
+		<property name="statement_key" value="q_Cloning3_statement_key" /> <!-- check Localization.txt -->
+		<property name="response_key" value="q_Cloning3_response_key" /> <!-- check Localization.txt -->
+		<property name="completion_key" value="q_Cloning3_completion_key" /> <!-- check Localization.txt -->
+
+		<action type="TrackQuest" />
+
+		<!-- Phase 1 -->
+		<objective type="BlockPlace" id="plantedcorn1" value="10" phase="1" />
+		<objective type="BlockPlace" id="Wheat Seed" value="4" phase="1" />
+		<objective type="BlockPlace" id="Tomato Seed" value="4" phase="1" />
+		<objective type="BlockPlace" id="SugarCane Seed" value="4" phase="1" />
+		<objective type="BlockPlace" id="plantedPotato1" value="4" phase="1" />		
+		
+
+		<!-- Phase 2 (auto, if you add by yourself this won't be generated) -->
+		<objective type="ReturnToNPC">
+			<property name="phase" value="2" />
+			<property name="nav_object" value="return_to_trader" />
+		</objective>
+		<objective type="InteractWithNPC">
+			<property name="phase" value="2" />
+			<property name="nav_object" value="return_to_trader" />
+			<property name="use_closest" value="true" />
+		</objective>
+
+		<reward type="Exp" value="5000" />
+		<reward type="Item" id="casinoCoin" value="2000" />
+		<reward type="SkillPoints"  value="4"/>
+
+	</quest>	
+	
+	</append>
+
+
+
+</config>

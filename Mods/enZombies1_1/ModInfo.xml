@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="enZombies" />
+		<Description value="More Server Side Zombies" />
+		<Author value="ErrorNull" />
+		<Version value="1.1" compat="A19" />
+		<Website value="https://community.7daystodie.com/topic/24594-enzombies-a-spawn-of-snufkins-server-side-zombies" />
+	</ModInfo>
+</xml>
